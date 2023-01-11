@@ -53,7 +53,7 @@ jmh {
     resultFormat = "CSV"
 
     val dateTime = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss").format(LocalDateTime.now())
-    val name = if (isKogera) "${dateTime}_kogera" else dateTime
+    val name = if (isKogera) "${dateTime}_kogera" else "${dateTime}_orig"
 
     resultsFile = project.file("${project.buildDir}/reports/jmh/${name}.csv")
     humanOutputFile = project.file("${project.buildDir}/reports/jmh/${name}.txt")
