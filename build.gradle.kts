@@ -14,8 +14,17 @@ repositories {
     mavenCentral()
 }
 
+val isKogera: Boolean = false
+
 dependencies {
-    jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.1")
+    jmhImplementation(kotlin("reflect"))
+
+    if (isKogera) {
+        jmhImplementation(files("your local jar here"))
+    } else {
+        jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.1")
+    }
+
     testImplementation(kotlin("test"))
 }
 
@@ -43,7 +52,9 @@ jmh {
 
     resultFormat = "CSV"
 
-    val dateTime = DateTimeFormatter.ofPattern("yyyyMMddHHmmss").format(LocalDateTime.now())
-    resultsFile = project.file("${project.buildDir}/reports/jmh/${dateTime}.csv")
-    humanOutputFile = project.file("${project.buildDir}/reports/jmh/${dateTime}.txt")
+    val dateTime = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss").format(LocalDateTime.now())
+    val name = if (isKogera) "${dateTime}_kogera" else dateTime
+
+    resultsFile = project.file("${project.buildDir}/reports/jmh/${name}.csv")
+    humanOutputFile = project.file("${project.buildDir}/reports/jmh/${name}.txt")
 }

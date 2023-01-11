@@ -6,8 +6,8 @@ import org.openjdk.jmh.annotations.Level
 import org.openjdk.jmh.annotations.Scope
 import org.openjdk.jmh.annotations.Setup
 import org.openjdk.jmh.annotations.State
+import org.wrongwrong.fromRandomInts
 import org.wrongwrong.mapper
-import kotlin.random.Random
 
 @State(Scope.Benchmark)
 open class FiveProps {
@@ -23,14 +23,12 @@ open class FiveProps {
 
     @Setup(Level.Trial)
     fun setUp() {
-        fullJson = mapper.writeValueAsString(
-            Dst(Random.nextInt(), Random.nextInt(), Random.nextInt(), Random.nextInt(), Random.nextInt())
-        )
+        fullJson = mapper.writeValueAsString(::Dst.fromRandomInts())
     }
 
     @Benchmark
-    fun d_f_five() = mapper.readValue<Dst>(fullJson)
+    fun e_five() = mapper.readValue<Dst>(fullJson)
 
     @Benchmark
-    fun d_f_five_default() = mapper.readValue<Dst>("{}")
+    fun e_five_default() = mapper.readValue<Dst>("{}")
 }
