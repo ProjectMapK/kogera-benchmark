@@ -5,4 +5,4 @@ import kotlin.random.Random
 import kotlin.reflect.KFunction
 
 val mapper = jacksonObjectMapper()
-fun <T> KFunction<T>.fromRandomInts() = call(*parameters.map { Random.nextInt() }.toTypedArray())
+fun <T> KFunction<T>.fromRandomInts() = call(*parameters.map { Random.nextInt(10) }.toTypedArray())
