@@ -1,5 +1,6 @@
 package org.wrongwrong.deser
 
+import com.fasterxml.jackson.annotation.JsonCreator
 import com.fasterxml.jackson.module.kotlin.readValue
 import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level
@@ -10,7 +11,7 @@ import org.wrongwrong.fromRandomInts
 import org.wrongwrong.mapper
 
 @State(Scope.Benchmark)
-open class OneProps {
+open class A_OneProps_Constructor {
     data class Dst(val p0: Int = -1)
 
     lateinit var fullJson: String
@@ -21,8 +22,32 @@ open class OneProps {
     }
 
     @Benchmark
-    fun a_one() = mapper.readValue<Dst>(fullJson)
+    fun one() = mapper.readValue<Dst>(fullJson)
 
     @Benchmark
-    fun a_one_default() = mapper.readValue<Dst>("{}")
+    fun one_default() = mapper.readValue<Dst>("{}")
+}
+
+@State(Scope.Benchmark)
+open class A_OneProps_Function {
+    data class Dst(val p0: Int) {
+        companion object {
+            @JvmStatic
+            @JsonCreator
+            fun creator(p0: Int = -1) = Dst(p0)
+        }
+    }
+
+    lateinit var fullJson: String
+
+    @Setup(Level.Trial)
+    fun setUp() {
+        fullJson = mapper.writeValueAsString(::Dst.fromRandomInts())
+    }
+
+    @Benchmark
+    fun one() = mapper.readValue<Dst>(fullJson)
+
+    @Benchmark
+    fun one_default() = mapper.readValue<Dst>("{}")
 }
