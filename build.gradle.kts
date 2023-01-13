@@ -21,6 +21,8 @@ dependencies {
 
     if (isKogera) {
         jmhImplementation(files("your local jar here"))
+        jmhImplementation("com.fasterxml.jackson.core:jackson-databind:2.14.1")
+        jmhImplementation("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.5.0")
     } else {
         jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.1")
     }
