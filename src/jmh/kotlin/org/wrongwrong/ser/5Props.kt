@@ -9,7 +9,7 @@ import org.wrongwrong.fromRandomInts
 import org.wrongwrong.mapper
 
 @State(Scope.Benchmark)
-open class E_FiveProps {
+open class E_5Props {
     data class Dst(
         val p0: Int,
         val p1: Int,
@@ -25,5 +25,5 @@ open class E_FiveProps {
     }
 
     @Benchmark
-    fun five() = mapper.writeValueAsString(target)
+    fun call() = mapper.writeValueAsString(target)
 }

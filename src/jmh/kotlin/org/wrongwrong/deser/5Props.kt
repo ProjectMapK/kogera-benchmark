@@ -11,7 +11,7 @@ import org.wrongwrong.fromRandomInts
 import org.wrongwrong.mapper
 
 @State(Scope.Benchmark)
-open class E_FiveProps_Constructor {
+open class E_5Props_Constructor {
     data class Dst(
         val p0: Int = -1,
         val p1: Int = -1,
@@ -28,14 +28,14 @@ open class E_FiveProps_Constructor {
     }
 
     @Benchmark
-    fun five() = mapper.readValue<Dst>(fullJson)
+    fun call() = mapper.readValue<Dst>(fullJson)
 
     @Benchmark
-    fun five_default() = mapper.readValue<Dst>("{}")
+    fun call_default() = mapper.readValue<Dst>("{}")
 }
 
 @State(Scope.Benchmark)
-open class E_FiveProps_Function {
+open class E_5Props_Function {
     data class Dst(
         val p0: Int,
         val p1: Int,
@@ -64,8 +64,8 @@ open class E_FiveProps_Function {
     }
 
     @Benchmark
-    fun five() = mapper.readValue<Dst>(fullJson)
+    fun call() = mapper.readValue<Dst>(fullJson)
 
     @Benchmark
-    fun five_default() = mapper.readValue<Dst>("{}")
+    fun call_default() = mapper.readValue<Dst>("{}")
 }

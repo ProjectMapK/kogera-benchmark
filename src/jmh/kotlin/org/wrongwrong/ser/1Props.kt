@@ -9,7 +9,7 @@ import org.wrongwrong.fromRandomInts
 import org.wrongwrong.mapper
 
 @State(Scope.Benchmark)
-open class A_OneProps {
+open class A_1Props {
     data class Dst(val p0: Int)
     lateinit var target: Dst
 
@@ -19,5 +19,5 @@ open class A_OneProps {
     }
 
     @Benchmark
-    fun one() = mapper.writeValueAsString(target)
+    fun call() = mapper.writeValueAsString(target)
 }

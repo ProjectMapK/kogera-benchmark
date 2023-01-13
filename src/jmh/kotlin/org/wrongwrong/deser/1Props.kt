@@ -11,7 +11,7 @@ import org.wrongwrong.fromRandomInts
 import org.wrongwrong.mapper
 
 @State(Scope.Benchmark)
-open class A_OneProps_Constructor {
+open class A_1Props_Constructor {
     data class Dst(val p0: Int = -1)
 
     lateinit var fullJson: String
@@ -22,14 +22,14 @@ open class A_OneProps_Constructor {
     }
 
     @Benchmark
-    fun one() = mapper.readValue<Dst>(fullJson)
+    fun call() = mapper.readValue<Dst>(fullJson)
 
     @Benchmark
-    fun one_default() = mapper.readValue<Dst>("{}")
+    fun call_default() = mapper.readValue<Dst>("{}")
 }
 
 @State(Scope.Benchmark)
-open class A_OneProps_Function {
+open class A_1Props_Function {
     data class Dst(val p0: Int) {
         companion object {
             @JvmStatic
@@ -46,8 +46,8 @@ open class A_OneProps_Function {
     }
 
     @Benchmark
-    fun one() = mapper.readValue<Dst>(fullJson)
+    fun call() = mapper.readValue<Dst>(fullJson)
 
     @Benchmark
-    fun one_default() = mapper.readValue<Dst>("{}")
+    fun call_default() = mapper.readValue<Dst>("{}")
 }
