@@ -16,6 +16,7 @@ repositories {
 }
 
 val isKogera: Boolean = true
+val isSingleShot = false
 
 dependencies {
     jmhImplementation(kotlin("reflect"))
@@ -38,15 +39,26 @@ tasks.withType<KotlinCompile> {
 }
 
 jmh {
-    warmupForks = 2
-    warmupBatchSize = 3
-    warmupIterations = 3
-    warmup = "1s"
+    if (isSingleShot) {
+        benchmarkMode = listOf("ss")
+        timeUnit = "ms"
 
-    fork = 2
-    batchSize = 3
-    iterations = 2
-    timeOnIteration = "1500ms"
+        forceGC = true
+    } else {
+        benchmarkMode = listOf("thrpt")
+
+        warmupForks = 2
+        warmupBatchSize = 3
+        warmupIterations = 3
+        warmup = "1s"
+
+        fork = 2
+        batchSize = 3
+        iterations = 2
+        timeOnIteration = "1500ms"
+
+        forceGC = false
+    }
 
     failOnError = true
     isIncludeTests = false
@@ -54,7 +66,9 @@ jmh {
     resultFormat = "CSV"
 
     val dateTime = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss").format(LocalDateTime.now())
-    val name = if (isKogera) "${dateTime}_kogera" else "${dateTime}_orig"
+    val target = if (isKogera) "kogera" else "orig"
+    val mode = if (isSingleShot) "ss" else "thrpt"
+    val name = listOf(dateTime, target, mode).joinToString(separator = "_")
 
     resultsFile = project.file("${project.buildDir}/reports/jmh/${name}.csv")
     humanOutputFile = project.file("${project.buildDir}/reports/jmh/${name}.txt")
