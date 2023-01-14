@@ -1,17 +1,8 @@
 package org.wrongwrong.deser
 
 import com.fasterxml.jackson.annotation.JsonCreator
-import com.fasterxml.jackson.module.kotlin.readValue
-import org.openjdk.jmh.annotations.Benchmark
-import org.openjdk.jmh.annotations.Level
-import org.openjdk.jmh.annotations.Scope
-import org.openjdk.jmh.annotations.Setup
-import org.openjdk.jmh.annotations.State
-import org.wrongwrong.fromRandomInts
-import org.wrongwrong.mapper
 
-@State(Scope.Benchmark)
-open class T_20Props_Constructor {
+open class T_20Props_Constructor : DeserBase<T_20Props_Constructor.Dst>(::Dst, Dst::class) {
     data class Dst(
         val p00: Int = -1,
         val p01: Int = -1,
@@ -34,23 +25,9 @@ open class T_20Props_Constructor {
         val p18: Int = -1,
         val p19: Int = -1
     )
-
-    lateinit var fullJson: String
-
-    @Setup(Level.Trial)
-    fun setUp() {
-        fullJson = mapper.writeValueAsString(::Dst.fromRandomInts())
-    }
-
-    @Benchmark
-    fun call() = mapper.readValue<Dst>(fullJson)
-
-    @Benchmark
-    fun call_default() = mapper.readValue<Dst>("{}")
 }
 
-@State(Scope.Benchmark)
-open class T_20Props_Function {
+open class T_20Props_Function : DeserBase<T_20Props_Function.Dst>(::Dst, Dst::class) {
     data class Dst(
         val p00: Int,
         val p01: Int,
@@ -100,17 +77,4 @@ open class T_20Props_Function {
             ) = Dst(p00, p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19)
         }
     }
-
-    lateinit var fullJson: String
-
-    @Setup(Level.Trial)
-    fun setUp() {
-        fullJson = mapper.writeValueAsString(::Dst.fromRandomInts())
-    }
-
-    @Benchmark
-    fun call() = mapper.readValue<Dst>(fullJson)
-
-    @Benchmark
-    fun call_default() = mapper.readValue<Dst>("{}")
 }
