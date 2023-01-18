@@ -61,6 +61,7 @@ o.w.main.ser.T_20Props.call                        thrpt    4   533113.542 ±   
 
 ### kogera(790db409416)
 ```
+Benchmark                                           Mode  Cnt        Score         Error  Units
 o.w.extra.deser.StrictNullChecks.array             thrpt    4   968999.635 ±  22231.973  ops/s
 o.w.extra.deser.StrictNullChecks.arrayStrict       thrpt    4   921253.654 ±  25505.923  ops/s
 o.w.extra.deser.StrictNullChecks.list              thrpt    4   989496.854 ±  32741.244  ops/s
