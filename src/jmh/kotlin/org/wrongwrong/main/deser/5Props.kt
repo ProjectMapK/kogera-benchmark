@@ -1,8 +1,8 @@
-package org.wrongwrong.deser
+package org.wrongwrong.main.deser
 
 import com.fasterxml.jackson.annotation.JsonCreator
 
-open class E_5Props_Constructor : DeserBase<E_5Props_Constructor.Dst>(::Dst, Dst::class) {
+open class E_5Props_Constructor : DeserBase<E_5Props_Constructor.Dst>(E_5Props_Constructor::Dst, Dst::class) {
     data class Dst(
         val p0: Int = -1,
         val p1: Int = -1,
@@ -12,7 +12,7 @@ open class E_5Props_Constructor : DeserBase<E_5Props_Constructor.Dst>(::Dst, Dst
     )
 }
 
-open class E_5Props_Function : DeserBase<E_5Props_Function.Dst>(::Dst, Dst::class) {
+open class E_5Props_Function : DeserBase<E_5Props_Function.Dst>(E_5Props_Function::Dst, Dst::class) {
     data class Dst(
         val p0: Int,
         val p1: Int,

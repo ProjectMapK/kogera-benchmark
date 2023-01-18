@@ -1,4 +1,4 @@
-package org.wrongwrong.deser
+package org.wrongwrong.main.deser
 
 import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level

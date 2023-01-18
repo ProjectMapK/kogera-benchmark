@@ -1,4 +1,4 @@
-package org.wrongwrong.ser
+package org.wrongwrong.main.ser
 
 import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level
@@ -15,7 +15,7 @@ open class A_1Props {
 
     @Setup(Level.Trial)
     fun setUp() {
-        target = ::Dst.fromRandomInts()
+        target = A_1Props::Dst.fromRandomInts()
     }
 
     @Benchmark
