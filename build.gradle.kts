@@ -17,6 +17,7 @@ repositories {
 
 val isKogera: Boolean = true
 val isSingleShot = false
+val isOnlyMain = true
 
 dependencies {
     jmhImplementation(kotlin("reflect"))
@@ -59,6 +60,8 @@ jmh {
 
         forceGC = false
     }
+
+    include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
 
     failOnError = true
     isIncludeTests = false
