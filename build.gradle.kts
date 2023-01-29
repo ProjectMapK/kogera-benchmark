@@ -23,7 +23,7 @@ dependencies {
     jmhImplementation(kotlin("reflect"))
 
     if (isKogera) {
-        jmhImplementation("com.github.ProjectMapK:jackson-module-kogera:2.14.1-alpha0")
+        jmhImplementation("com.github.ProjectMapK:jackson-module-kogera:2.14.1-alpha1-hotfix")
     } else {
         jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.1")
     }
