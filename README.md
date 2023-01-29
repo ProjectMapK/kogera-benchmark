@@ -59,30 +59,29 @@ o.w.main.ser.E_5Props.call                         thrpt    4  1459062.930 ±   
 o.w.main.ser.T_20Props.call                        thrpt    4   533113.542 ±   36285.744  ops/s
 ```
 
-### kogera(790db409416)
+### kogera(2.14.1-alpha1-hotfix)
 ```
 Benchmark                                           Mode  Cnt        Score         Error  Units
-o.w.extra.deser.StrictNullChecks.array             thrpt    4   968999.635 ±  22231.973  ops/s
-o.w.extra.deser.StrictNullChecks.arrayStrict       thrpt    4   921253.654 ±  25505.923  ops/s
-o.w.extra.deser.StrictNullChecks.list              thrpt    4   989496.854 ±  32741.244  ops/s
-o.w.extra.deser.StrictNullChecks.listStrict        thrpt    4   987504.414 ±  48033.178  ops/s
-o.w.extra.deser.StrictNullChecks.map               thrpt    4   886742.960 ±  25096.656  ops/s
-o.w.extra.deser.StrictNullChecks.mapStrict         thrpt    4   871995.858 ±  25538.408  ops/s
-o.w.main.deser.A_1Props_Constructor.call           thrpt    4  1221311.809 ±  94134.838  ops/s
-o.w.main.deser.A_1Props_Constructor.call_default   thrpt    4   958209.206 ±  75025.877  ops/s
-o.w.main.deser.A_1Props_Function.call              thrpt    4  1199348.443 ±  52423.484  ops/s
-o.w.main.deser.A_1Props_Function.call_default      thrpt    4   732714.781 ±  78290.138  ops/s
-o.w.main.deser.E_5Props_Constructor.call           thrpt    4   661713.055 ± 125433.549  ops/s
-o.w.main.deser.E_5Props_Constructor.call_default   thrpt    4   481910.932 ±  72936.356  ops/s
-o.w.main.deser.E_5Props_Function.call              thrpt    4   656376.988 ±  96061.017  ops/s
-o.w.main.deser.E_5Props_Function.call_default      thrpt    4   410847.289 ± 117227.726  ops/s
-o.w.main.deser.T_20Props_Constructor.call          thrpt    4   237124.856 ±  10259.702  ops/s
-o.w.main.deser.T_20Props_Constructor.call_default  thrpt    4   144592.802 ±  25836.356  ops/s
-o.w.main.deser.T_20Props_Function.call             thrpt    4   241609.010 ±   7838.227  ops/s
-o.w.main.deser.T_20Props_Function.call_default     thrpt    4   157349.793 ±  12057.137  ops/s
-o.w.main.ser.A_1Props.call                         thrpt    4  2333857.282 ± 643068.529  ops/s
-o.w.main.ser.E_5Props.call                         thrpt    4  1393190.585 ± 105930.925  ops/s
-o.w.main.ser.T_20Props.call                        thrpt    4   530833.839 ±  19199.730  ops/s
+o.w.extra.deser.StrictNullChecks.array             thrpt    4   943445.307 �}   49209.038  ops/s
+o.w.extra.deser.StrictNullChecks.list              thrpt    4  1004273.573 �}   47402.208  ops/s
+o.w.extra.deser.StrictNullChecks.listStrict        thrpt    4   842937.081 �} 1115520.433  ops/s
+o.w.extra.deser.StrictNullChecks.map               thrpt    4   872452.500 �}   71162.570  ops/s
+o.w.extra.deser.StrictNullChecks.mapStrict         thrpt    4   858926.035 �}   44232.698  ops/s
+o.w.main.deser.A_1Props_Constructor.call           thrpt    4  1221527.041 �}  135683.634  ops/s
+o.w.main.deser.A_1Props_Constructor.call_default   thrpt    4   958502.063 �}   87132.661  ops/s
+o.w.main.deser.A_1Props_Function.call              thrpt    4  1108791.222 �}  790931.384  ops/s
+o.w.main.deser.A_1Props_Function.call_default      thrpt    4   752642.521 �}   23218.535  ops/s
+o.w.main.deser.E_5Props_Constructor.call           thrpt    4   654951.859 �}  160062.900  ops/s
+o.w.main.deser.E_5Props_Constructor.call_default   thrpt    4   487165.819 �}   88732.302  ops/s
+o.w.main.deser.E_5Props_Function.call              thrpt    4   641341.629 �}   74857.602  ops/s
+o.w.main.deser.E_5Props_Function.call_default      thrpt    4   425854.845 �}  170721.340  ops/s
+o.w.main.deser.T_20Props_Constructor.call          thrpt    4   247436.325 �}   73713.301  ops/s
+o.w.main.deser.T_20Props_Constructor.call_default  thrpt    4   133562.488 �}   66551.415  ops/s
+o.w.main.deser.T_20Props_Function.call             thrpt    4   238201.084 �}    8658.807  ops/s
+o.w.main.deser.T_20Props_Function.call_default     thrpt    4   154396.792 �}   12588.314  ops/s
+o.w.main.ser.A_1Props.call                         thrpt    4  2399564.241 �}  224796.216  ops/s
+o.w.main.ser.E_5Props.call                         thrpt    4  1455413.558 �}  103668.468  ops/s
+o.w.main.ser.T_20Props.call                        thrpt    4   532497.200 �}   31091.997  ops/s
 ```
 
 ## SingleShot mode
@@ -111,22 +110,22 @@ o.w.ser.E_5Props.call                           ss    5  59.042 ± 3.804  ms/op
 o.w.ser.T_20Props.call                          ss    5  67.898 ± 2.479  ms/op
 ```
 
-### kogera
+### kogera(2.14.1-alpha1-hotfix)
 ```
-Benchmark                                     Mode  Cnt   Score   Error  Units
-o.w.deser.A_1Props_Constructor.call             ss    5  20.756 ± 1.813  ms/op
-o.w.deser.A_1Props_Constructor.call_default     ss    5  21.861 ± 0.689  ms/op
-o.w.deser.A_1Props_Function.call                ss    5  22.034 ± 3.631  ms/op
-o.w.deser.A_1Props_Function.call_default        ss    5  23.171 ± 0.886  ms/op
-o.w.deser.E_5Props_Constructor.call             ss    5  22.634 ± 0.604  ms/op
-o.w.deser.E_5Props_Constructor.call_default     ss    5  24.435 ± 1.532  ms/op
-o.w.deser.E_5Props_Function.call                ss    5  24.239 ± 1.774  ms/op
-o.w.deser.E_5Props_Function.call_default        ss    5  25.658 ± 1.174  ms/op
-o.w.deser.T_20Props_Constructor.call            ss    5  26.508 ± 0.943  ms/op
-o.w.deser.T_20Props_Constructor.call_default    ss    5  27.831 ± 0.957  ms/op
-o.w.deser.T_20Props_Function.call               ss    5  28.895 ± 2.484  ms/op
-o.w.deser.T_20Props_Function.call_default       ss    5  30.278 ± 1.634  ms/op
-o.w.ser.A_1Props.call                           ss    5  70.356 ± 5.123  ms/op
-o.w.ser.E_5Props.call                           ss    5  72.016 ± 3.723  ms/op
-o.w.ser.T_20Props.call                          ss    5  81.907 ± 5.221  ms/op
+Benchmark                                       Mode  Cnt   Score   Error  Units
+o.w.m.deser.A_1Props_Constructor.call             ss    5  20.768 ± 1.178  ms/op
+o.w.m.deser.A_1Props_Constructor.call_default     ss    5  22.429 ± 1.909  ms/op
+o.w.m.deser.A_1Props_Function.call                ss    5  21.829 ± 1.843  ms/op
+o.w.m.deser.A_1Props_Function.call_default        ss    5  23.162 ± 1.719  ms/op
+o.w.m.deser.E_5Props_Constructor.call             ss    5  22.796 ± 2.256  ms/op
+o.w.m.deser.E_5Props_Constructor.call_default     ss    5  24.870 ± 1.604  ms/op
+o.w.m.deser.E_5Props_Function.call                ss    5  24.452 ± 2.280  ms/op
+o.w.m.deser.E_5Props_Function.call_default        ss    5  26.127 ± 1.320  ms/op
+o.w.m.deser.T_20Props_Constructor.call            ss    5  27.558 ± 1.774  ms/op
+o.w.m.deser.T_20Props_Constructor.call_default    ss    5  29.070 ± 2.430  ms/op
+o.w.m.deser.T_20Props_Function.call               ss    5  29.143 ± 2.029  ms/op
+o.w.m.deser.T_20Props_Function.call_default       ss    5  31.117 ± 1.361  ms/op
+o.w.m.ser.A_1Props.call                           ss    5  71.932 ± 4.146  ms/op
+o.w.m.ser.E_5Props.call                           ss    5  75.345 ± 5.284  ms/op
+o.w.m.ser.T_20Props.call                          ss    5  83.564 ± 2.718  ms/op
 ```
