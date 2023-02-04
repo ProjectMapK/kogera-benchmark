@@ -71,8 +71,8 @@ jmh {
 
     resultFormat = "CSV"
 
-    val dateTime = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss").format(LocalDateTime.now())
-    val target = if (isKogera) "kogera_$kogeraVersion" else "orig_$originalVersion"
+    val dateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss").format(LocalDateTime.now())
+    val target = if (isKogera) "kogera-$kogeraVersion" else "orig-$originalVersion"
     val mode = if (isSingleShot) "ss" else "thrpt"
     val name = listOf(dateTime, target, mode).joinToString(separator = "_")
 
