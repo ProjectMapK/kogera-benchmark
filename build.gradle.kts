@@ -19,13 +19,16 @@ val isKogera: Boolean = true
 val isSingleShot = false
 val isOnlyMain = true
 
+val kogeraVersion = "2.14.1-alpha2"
+val originalVersion = "2.14.1"
+
 dependencies {
     jmhImplementation(kotlin("reflect"))
 
     if (isKogera) {
-        jmhImplementation("com.github.ProjectMapK:jackson-module-kogera:2.14.1-alpha2")
+        jmhImplementation("com.github.ProjectMapK:jackson-module-kogera:$kogeraVersion")
     } else {
-        jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.1")
+        jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:$originalVersion")
     }
 
     testImplementation(kotlin("test"))
@@ -69,7 +72,7 @@ jmh {
     resultFormat = "CSV"
 
     val dateTime = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss").format(LocalDateTime.now())
-    val target = if (isKogera) "kogera" else "orig"
+    val target = if (isKogera) "kogera_$kogeraVersion" else "orig_$originalVersion"
     val mode = if (isSingleShot) "ss" else "thrpt"
     val name = listOf(dateTime, target, mode).joinToString(separator = "_")
 
