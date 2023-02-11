@@ -19,8 +19,8 @@ val isKogera: Boolean = true
 val isSingleShot = false
 val isOnlyMain = true
 
-val kogeraVersion = "2.14.1-alpha2"
-val originalVersion = "2.14.1"
+val kogeraVersion = "2.14.2-alpha3"
+val originalVersion = "2.14.2"
 
 dependencies {
     jmhImplementation(kotlin("reflect"))
