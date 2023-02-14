@@ -13,10 +13,21 @@ The extra benchmark relate to options that affect performance.
 Currently, only benchmarks for `strictNullChecks` are implemented.  
 Also, these benchmarks are not run by default.
 
-A simple configuration is provided in `build.gradle.kts`.  
-By rewriting the `isKogera` property, you can compare with the original.  
-By rewriting the `isSingleShot` property, you can compare the performance of the first run.  
+A simple configuration is provided in arguments.  
+By rewriting the `isKogera` property, you can run benchmarks on `jackson-module-kotlin` (but exclude benchmarks on non-supported content).  
+By rewriting the `isSingleShot` property, you can benchmark the performance on the first run.  
 By rewriting the `isOnlyMain` property, you can exec all benchmarks.
+
+The following is an example of running all four benchmarks described in the `README` in succession.
+
+```shell
+./gradlew jmh -PisKogera=false -PisSingleShot=true -PisOnlyMain=false;
+./gradlew jmh -PisKogera=false -PisSingleShot=false -PisOnlyMain=false;
+./gradlew jmh -PisKogera=true -PisSingleShot=true -PisOnlyMain=false;
+./gradlew jmh -PisKogera=true -PisSingleShot=false -PisOnlyMain=false
+```
+
+If you want to specify more detailed options, edit `build.gradle.kts`.
 
 # Results
 The results shown here are for the following commit.  
