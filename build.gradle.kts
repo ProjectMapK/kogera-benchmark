@@ -15,9 +15,12 @@ repositories {
     maven { setUrl("https://jitpack.io") }
 }
 
-val isKogera: Boolean = true
-val isSingleShot = false
-val isOnlyMain = true
+fun getOptionOrDefault(name: String, default: Boolean): Boolean =
+    project.properties[name]?.let { (it as String).toBoolean() } ?: default
+
+val isKogera: Boolean = getOptionOrDefault("isKogera", true)
+val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
+val isOnlyMain: Boolean = getOptionOrDefault("isOnlyMain", true)
 
 val kogeraVersion = "2.14.2-alpha4"
 val originalVersion = "2.14.2"
