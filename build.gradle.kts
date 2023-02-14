@@ -19,7 +19,7 @@ val isKogera: Boolean = true
 val isSingleShot = false
 val isOnlyMain = true
 
-val kogeraVersion = "2.14.2-alpha3"
+val kogeraVersion = "2.14.2-alpha4"
 val originalVersion = "2.14.2"
 
 dependencies {
