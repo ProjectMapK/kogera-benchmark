@@ -65,6 +65,7 @@ jmh {
     }
 
     include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
+    exclude = if (isKogera) emptyList() else listOf("org.wrongwrong.extra.value_class.*")
 
     failOnError = true
     isIncludeTests = false
