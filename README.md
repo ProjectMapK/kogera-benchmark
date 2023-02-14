@@ -30,10 +30,7 @@ The following is an example of running all four benchmarks described in the `REA
 If you want to specify more detailed options, edit `build.gradle.kts`.
 
 # Results
-The results shown here are for the following commit.  
-https://github.com/ProjectMapK/jackson-module-kogera/tree/01cad94664f1504ae4cdd2da144b3d56b4e3efce
-
-The version of `jackson-module-kotlin` is the same as the version of this commit.
+For ease of comparison, descriptions of kogera-specific implementations are separated.
 
 ## Throughput mode
 This is a comparison regarding the case of multiple runs.  
