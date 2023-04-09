@@ -5,7 +5,7 @@ This project is a benchmark to compare the performance of `jackson-module-kogera
 
 # About benchmark
 `./gradlew jmh` to run the benchmark.  
-The benchmark results are output to `${project.buildDir}/reports/jmh/`.
+The benchmark results are output to `jmh-reports/reports/jmh/`.
 
 The main benchmark is to serialize and deserialize for classes with 1, 5, and 20 properties.  
 
