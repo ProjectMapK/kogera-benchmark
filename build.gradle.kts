@@ -80,6 +80,6 @@ jmh {
     val mode = if (isSingleShot) "ss" else "thrpt"
     val name = listOf(dateTime, target, mode).joinToString(separator = "_")
 
-    resultsFile = project.file("${project.buildDir}/reports/jmh/${name}.csv")
-    humanOutputFile = project.file("${project.buildDir}/reports/jmh/${name}.txt")
+    resultsFile = project.file("${project.rootDir}/jmh-reports/${name}.csv")
+    humanOutputFile = project.file("${project.rootDir}/jmh-reports/${name}.txt")
 }
