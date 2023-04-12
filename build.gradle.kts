@@ -76,9 +76,10 @@ jmh {
     resultFormat = "CSV"
 
     val dateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss").format(LocalDateTime.now())
-    val target = if (isKogera) "kogera-$kogeraVersion" else "orig-$originalVersion"
+    val targetDependency = if (isKogera) "kogera-$kogeraVersion" else "orig-$originalVersion"
+    val targetBenchmark = if (isOnlyMain) "main" else "full"
     val mode = if (isSingleShot) "ss" else "thrpt"
-    val name = listOf(dateTime, target, mode).joinToString(separator = "_")
+    val name = listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
 
     resultsFile = project.file("${project.rootDir}/jmh-reports/${name}.csv")
     humanOutputFile = project.file("${project.rootDir}/jmh-reports/${name}.txt")
