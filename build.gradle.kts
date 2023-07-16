@@ -17,8 +17,12 @@ repositories {
 fun getOptionOrDefault(name: String, default: Boolean): Boolean =
     project.properties[name]?.let { (it as String).toBoolean() } ?: default
 
-val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", true)
-// val isOnlyMain: Boolean = getOptionOrDefault("isOnlyMain", true)
+// @see org.wrongwrong.Mapper for find options
+val mapper: String = project.properties["mapper"] as? String ?: "Kogera"
+val isKogera = mapper.contains("Kogera")
+
+val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
+val isOnlyMain: Boolean = getOptionOrDefault("isOnlyMain", true)
 
 val kogeraVersion = "2.15.2-beta0"
 val originalVersion = "2.15.2"
@@ -63,9 +67,7 @@ import org.openjdk.jmh.annotations.State
  */
 @State(Scope.Benchmark)
 abstract class BenchmarkBase {
-    @Param(value = ["Original", "Kogera"])
-    private lateinit var _mapper: Mapper
-    val mapper get() = _mapper.value
+    val mapper = Mapper.${mapper}.value
 }
 
                 """.trimIndent()
@@ -105,8 +107,9 @@ jmh {
         forceGC = false
     }
 
-    // include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
-    // exclude = if (isKogera) emptyList() else listOf("org.wrongwrong.extra.value_class.*")
+    include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
+    // Benchmarks on value class deserialization are valid only for Kogera.
+    exclude = if (isKogera) emptyList() else listOf("org.wrongwrong.extra.value_class.deser.*")
 
     failOnError = true
     isIncludeTests = false
@@ -114,11 +117,10 @@ jmh {
     resultFormat = "CSV"
 
     val dateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss").format(LocalDateTime.now())
-    // val targetDependency = if (isKogera) "kogera-$kogeraVersion" else "orig-$originalVersion"
-    // val targetBenchmark = if (isOnlyMain) "main" else "full"
+    val targetDependency = if (isKogera) "${mapper}-$kogeraVersion" else "${mapper}-$originalVersion"
+    val targetBenchmark = if (isOnlyMain) "main" else "full"
     val mode = if (isSingleShot) "ss" else "thrpt"
-    // val name = listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
-    val name = listOf(dateTime, mode).joinToString(separator = "_")
+    val name = listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
 
     resultsFile = project.file("${project.rootDir}/jmh-reports/${name}.csv")
     humanOutputFile = project.file("${project.rootDir}/jmh-reports/${name}.txt")
