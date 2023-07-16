@@ -4,7 +4,7 @@ import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level
 import org.openjdk.jmh.annotations.Setup
 import org.wrongwrong.BenchmarkBase
-import org.wrongwrong.fromRandomInts
+import org.wrongwrong.main.fromRandomInts
 
 open class E_5Props : BenchmarkBase() {
     data class Dst(
