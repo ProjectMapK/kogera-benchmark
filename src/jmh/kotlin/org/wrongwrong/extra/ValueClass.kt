@@ -1,4 +1,4 @@
-package org.wrongwrong.extra.value_class
+package org.wrongwrong.extra
 
 import kotlin.random.Random
 import kotlin.reflect.KFunction

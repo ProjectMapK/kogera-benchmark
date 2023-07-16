@@ -1,10 +1,10 @@
-package org.wrongwrong.extra.value_class.deser
+package org.wrongwrong.extra.deser.value_class
 
 import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level
 import org.openjdk.jmh.annotations.Setup
 import org.wrongwrong.BenchmarkBase
-import org.wrongwrong.extra.value_class.fromRandomIntValues
+import org.wrongwrong.extra.fromRandomIntValues
 import kotlin.reflect.KClass
 import kotlin.reflect.KFunction
 

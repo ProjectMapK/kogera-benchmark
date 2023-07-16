@@ -109,7 +109,7 @@ jmh {
 
     include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
     // Benchmarks on value class deserialization are valid only for Kogera.
-    exclude = if (isKogera) emptyList() else listOf("org.wrongwrong.extra.value_class.deser.*")
+    exclude = if (isKogera) emptyList() else listOf("org.wrongwrong.extra.deser.value_class.*")
 
     failOnError = true
     isIncludeTests = false

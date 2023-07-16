@@ -1,11 +1,11 @@
-package org.wrongwrong.extra.value_class.ser
+package org.wrongwrong.extra.ser.value_class
 
 import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level
 import org.openjdk.jmh.annotations.Setup
 import org.wrongwrong.BenchmarkBase
-import org.wrongwrong.extra.value_class.ValueClass
-import org.wrongwrong.extra.value_class.fromRandomIntValues
+import org.wrongwrong.extra.ValueClass
+import org.wrongwrong.extra.fromRandomIntValues
 
 open class E_5Props : BenchmarkBase() {
     data class Dst(

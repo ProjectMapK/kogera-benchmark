@@ -1,7 +1,7 @@
-package org.wrongwrong.extra.value_class.deser
+package org.wrongwrong.extra.deser.value_class
 
 import com.fasterxml.jackson.annotation.JsonCreator
-import org.wrongwrong.extra.value_class.ValueClass
+import org.wrongwrong.extra.ValueClass
 
 open class A_1Props_Constructor : DeserBase<A_1Props_Constructor.Dst>(A_1Props_Constructor::Dst, Dst::class) {
     data class Dst(val p0: ValueClass = ValueClass(-1))
