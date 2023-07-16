@@ -2,14 +2,11 @@ package org.wrongwrong.main.ser
 
 import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level
-import org.openjdk.jmh.annotations.Scope
 import org.openjdk.jmh.annotations.Setup
-import org.openjdk.jmh.annotations.State
+import org.wrongwrong.BenchmarkBase
 import org.wrongwrong.fromRandomInts
-import org.wrongwrong.mapper
 
-@State(Scope.Benchmark)
-open class E_5Props {
+open class E_5Props : BenchmarkBase() {
     data class Dst(
         val p0: Int,
         val p1: Int,
