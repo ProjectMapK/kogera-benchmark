@@ -1,9 +1,8 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.time.format.DateTimeFormatter
 import java.time.LocalDateTime
 
 plugins {
-    kotlin("jvm") version "1.7.21"
+    kotlin("jvm") version "1.7.22"
     id("me.champeau.gradle.jmh") version "0.5.3"
 }
 
@@ -18,21 +17,17 @@ repositories {
 fun getOptionOrDefault(name: String, default: Boolean): Boolean =
     project.properties[name]?.let { (it as String).toBoolean() } ?: default
 
-val isKogera: Boolean = getOptionOrDefault("isKogera", true)
-val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
-val isOnlyMain: Boolean = getOptionOrDefault("isOnlyMain", true)
+val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", true)
+// val isOnlyMain: Boolean = getOptionOrDefault("isOnlyMain", true)
 
-val kogeraVersion = "2.14.2-alpha6"
-val originalVersion = "2.14.2"
+val kogeraVersion = "2.15.2-beta0"
+val originalVersion = "2.15.2"
 
 dependencies {
     jmhImplementation(kotlin("reflect"))
 
-    if (isKogera) {
-        jmhImplementation("com.github.ProjectMapK:jackson-module-kogera:$kogeraVersion")
-    } else {
-        jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:$originalVersion")
-    }
+    jmhImplementation("com.github.ProjectMapK:jackson-module-kogera:$kogeraVersion")
+    jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:$originalVersion")
 
     testImplementation(kotlin("test"))
 }
@@ -41,8 +36,51 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+val generatedSrcPath = "$buildDir/generated/kotlin"
+kotlin {
+    // for PackageVersion
+    sourceSets["jmh"].apply {
+        kotlin.srcDir(generatedSrcPath)
+    }
+}
+
+tasks {
+    // Task to generate BenchmarkBase file
+    val generateBenchmarkBase by registering(Copy::class) {
+        val packageStr = "org.wrongwrong"
+
+        from(
+            resources.text.fromString(
+                """
+package $packageStr
+
+import org.openjdk.jmh.annotations.Param
+import org.openjdk.jmh.annotations.Scope
+import org.openjdk.jmh.annotations.State
+
+/**
+ * @see org.wrongwrong.Mapper
+ */
+@State(Scope.Benchmark)
+abstract class BenchmarkBase {
+    @Param(value = ["Original", "Kogera"])
+    private lateinit var _mapper: Mapper
+    val mapper get() = _mapper.value
+}
+
+                """.trimIndent()
+            )
+        ) {
+            rename { "BenchmarkBase.kt" }
+        }
+
+        into(file("$generatedSrcPath/${packageStr.replace(".", "/")}"))
+    }
+
+    compileKotlin {
+        dependsOn.add(generateBenchmarkBase)
+        kotlinOptions.jvmTarget = "1.8"
+    }
 }
 
 jmh {
@@ -67,8 +105,8 @@ jmh {
         forceGC = false
     }
 
-    include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
-    exclude = if (isKogera) emptyList() else listOf("org.wrongwrong.extra.value_class.*")
+    // include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
+    // exclude = if (isKogera) emptyList() else listOf("org.wrongwrong.extra.value_class.*")
 
     failOnError = true
     isIncludeTests = false
@@ -76,10 +114,11 @@ jmh {
     resultFormat = "CSV"
 
     val dateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss").format(LocalDateTime.now())
-    val targetDependency = if (isKogera) "kogera-$kogeraVersion" else "orig-$originalVersion"
-    val targetBenchmark = if (isOnlyMain) "main" else "full"
+    // val targetDependency = if (isKogera) "kogera-$kogeraVersion" else "orig-$originalVersion"
+    // val targetBenchmark = if (isOnlyMain) "main" else "full"
     val mode = if (isSingleShot) "ss" else "thrpt"
-    val name = listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
+    // val name = listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
+    val name = listOf(dateTime, mode).joinToString(separator = "_")
 
     resultsFile = project.file("${project.rootDir}/jmh-reports/${name}.csv")
     humanOutputFile = project.file("${project.rootDir}/jmh-reports/${name}.txt")
