@@ -1,0 +1,1847 @@
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.Collections.array
+
+# Run progress: 0.00% complete, ETA 00:14:24
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 152395.343 ops/s
+# Warmup Iteration   2: 326356.667 ops/s
+# Warmup Iteration   3: 360981.774 ops/s
+Iteration   1: 360647.856 ops/s
+Iteration   2: 375315.147 ops/s
+
+# Run progress: 0.69% complete, ETA 00:17:26
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 171450.157 ops/s
+# Warmup Iteration   2: 339941.248 ops/s
+# Warmup Iteration   3: 339803.581 ops/s
+Iteration   1: 359569.535 ops/s
+Iteration   2: 358742.036 ops/s
+
+# Run progress: 1.39% complete, ETA 00:17:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 162890.240 ops/s
+# Warmup Iteration   2: 339469.140 ops/s
+# Warmup Iteration   3: 355226.354 ops/s
+Iteration   1: 358922.862 ops/s
+Iteration   2: 356486.854 ops/s
+
+# Run progress: 2.08% complete, ETA 00:17:04
+# Fork: 2 of 2
+# Warmup Iteration   1: 172957.289 ops/s
+# Warmup Iteration   2: 332475.981 ops/s
+# Warmup Iteration   3: 346897.446 ops/s
+Iteration   1: 356360.018 ops/s
+Iteration   2: 364824.425 ops/s
+
+
+Result "org.wrongwrong.extra.deser.Collections.array":
+  359148.540 ±(99.9%) 25611.831 ops/s [Average]
+  (min, avg, max) = (356360.018, 359148.540, 364824.425), stdev = 3963.459
+  CI (99.9%): [333536.709, 384760.371] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.Collections.list
+
+# Run progress: 2.78% complete, ETA 00:16:56
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 148367.405 ops/s
+# Warmup Iteration   2: 334569.516 ops/s
+# Warmup Iteration   3: 356166.896 ops/s
+Iteration   1: 372688.139 ops/s
+Iteration   2: 366083.002 ops/s
+
+# Run progress: 3.47% complete, ETA 00:16:50
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 196156.425 ops/s
+# Warmup Iteration   2: 354730.394 ops/s
+# Warmup Iteration   3: 363022.768 ops/s
+Iteration   1: 367143.427 ops/s
+Iteration   2: 371182.642 ops/s
+
+# Run progress: 4.17% complete, ETA 00:16:42
+# Fork: 1 of 2
+# Warmup Iteration   1: 167872.050 ops/s
+# Warmup Iteration   2: 343166.670 ops/s
+# Warmup Iteration   3: 363766.845 ops/s
+Iteration   1: 354003.932 ops/s
+Iteration   2: 370115.776 ops/s
+
+# Run progress: 4.86% complete, ETA 00:16:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 172158.144 ops/s
+# Warmup Iteration   2: 355064.949 ops/s
+# Warmup Iteration   3: 365255.904 ops/s
+Iteration   1: 372547.455 ops/s
+Iteration   2: 374165.351 ops/s
+
+
+Result "org.wrongwrong.extra.deser.Collections.list":
+  367708.129 ±(99.9%) 60009.184 ops/s [Average]
+  (min, avg, max) = (354003.932, 367708.129, 374165.351), stdev = 9286.488
+  CI (99.9%): [307698.944, 427717.313] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.Collections.map
+
+# Run progress: 5.56% complete, ETA 00:16:26
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 126672.998 ops/s
+# Warmup Iteration   2: 271280.532 ops/s
+# Warmup Iteration   3: 276903.444 ops/s
+Iteration   1: 285417.199 ops/s
+Iteration   2: 281330.238 ops/s
+
+# Run progress: 6.25% complete, ETA 00:16:19
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 133922.088 ops/s
+# Warmup Iteration   2: 262074.377 ops/s
+# Warmup Iteration   3: 276933.641 ops/s
+Iteration   1: 292009.382 ops/s
+Iteration   2: 280677.080 ops/s
+
+# Run progress: 6.94% complete, ETA 00:16:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 124890.742 ops/s
+# Warmup Iteration   2: 268088.633 ops/s
+# Warmup Iteration   3: 272253.898 ops/s
+Iteration   1: 289503.213 ops/s
+Iteration   2: 280680.030 ops/s
+
+# Run progress: 7.64% complete, ETA 00:16:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 140985.370 ops/s
+# Warmup Iteration   2: 275466.286 ops/s
+# Warmup Iteration   3: 281835.874 ops/s
+Iteration   1: 296290.021 ops/s
+Iteration   2: 281371.706 ops/s
+
+
+Result "org.wrongwrong.extra.deser.Collections.map":
+  286961.242 ±(99.9%) 47804.786 ops/s [Average]
+  (min, avg, max) = (280680.030, 286961.242, 296290.021), stdev = 7397.843
+  CI (99.9%): [239156.457, 334766.028] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.A_1Props_Constructor.call
+
+# Run progress: 8.33% complete, ETA 00:15:55
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 266516.298 ops/s
+# Warmup Iteration   2: 467624.146 ops/s
+# Warmup Iteration   3: 517800.700 ops/s
+Iteration   1: 511832.652 ops/s
+Iteration   2: 511864.456 ops/s
+
+# Run progress: 9.03% complete, ETA 00:15:48
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 256688.906 ops/s
+# Warmup Iteration   2: 468465.337 ops/s
+# Warmup Iteration   3: 515359.271 ops/s
+Iteration   1: 512767.713 ops/s
+Iteration   2: 507791.948 ops/s
+
+# Run progress: 9.72% complete, ETA 00:15:41
+# Fork: 1 of 2
+# Warmup Iteration   1: 234565.321 ops/s
+# Warmup Iteration   2: 459156.305 ops/s
+# Warmup Iteration   3: 476359.227 ops/s
+Iteration   1: 498892.691 ops/s
+Iteration   2: 491789.433 ops/s
+
+# Run progress: 10.42% complete, ETA 00:15:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 213631.014 ops/s
+# Warmup Iteration   2: 466644.345 ops/s
+# Warmup Iteration   3: 487563.029 ops/s
+Iteration   1: 522142.555 ops/s
+Iteration   2: 503164.974 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.A_1Props_Constructor.call":
+  503997.413 ±(99.9%) 83842.670 ops/s [Average]
+  (min, avg, max) = (491789.433, 503997.413, 522142.555), stdev = 12974.746
+  CI (99.9%): [420154.743, 587840.084] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.A_1Props_Constructor.call_default
+
+# Run progress: 11.11% complete, ETA 00:15:26
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 44128.645 ops/s
+# Warmup Iteration   2: 233827.241 ops/s
+# Warmup Iteration   3: 308863.266 ops/s
+Iteration   1: 312161.151 ops/s
+Iteration   2: 313988.960 ops/s
+
+# Run progress: 11.81% complete, ETA 00:15:19
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 37878.275 ops/s
+# Warmup Iteration   2: 194613.115 ops/s
+# Warmup Iteration   3: 287807.231 ops/s
+Iteration   1: 309258.529 ops/s
+Iteration   2: 304029.196 ops/s
+
+# Run progress: 12.50% complete, ETA 00:15:11
+# Fork: 1 of 2
+# Warmup Iteration   1: 44171.853 ops/s
+# Warmup Iteration   2: 177701.634 ops/s
+# Warmup Iteration   3: 304727.665 ops/s
+Iteration   1: 311485.469 ops/s
+Iteration   2: 311148.220 ops/s
+
+# Run progress: 13.19% complete, ETA 00:15:04
+# Fork: 2 of 2
+# Warmup Iteration   1: 34843.710 ops/s
+# Warmup Iteration   2: 191045.026 ops/s
+# Warmup Iteration   3: 297373.243 ops/s
+Iteration   1: 299124.311 ops/s
+Iteration   2: 310707.016 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.A_1Props_Constructor.call_default":
+  308116.254 ±(99.9%) 38791.948 ops/s [Average]
+  (min, avg, max) = (299124.311, 308116.254, 311485.469), stdev = 6003.097
+  CI (99.9%): [269324.306, 346908.202] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.A_1Props_Function.call
+
+# Run progress: 13.89% complete, ETA 00:14:57
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 116907.600 ops/s
+# Warmup Iteration   2: 326361.509 ops/s
+# Warmup Iteration   3: 346639.219 ops/s
+Iteration   1: 362089.007 ops/s
+Iteration   2: 354354.152 ops/s
+
+# Run progress: 14.58% complete, ETA 00:14:50
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 100062.092 ops/s
+# Warmup Iteration   2: 315983.217 ops/s
+# Warmup Iteration   3: 341916.217 ops/s
+Iteration   1: 352710.625 ops/s
+Iteration   2: 356617.211 ops/s
+
+# Run progress: 15.28% complete, ETA 00:14:43
+# Fork: 1 of 2
+# Warmup Iteration   1: 77162.138 ops/s
+# Warmup Iteration   2: 311814.411 ops/s
+# Warmup Iteration   3: 341127.579 ops/s
+Iteration   1: 350139.173 ops/s
+Iteration   2: 349769.039 ops/s
+
+# Run progress: 15.97% complete, ETA 00:14:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 114628.195 ops/s
+# Warmup Iteration   2: 320760.975 ops/s
+# Warmup Iteration   3: 343899.406 ops/s
+Iteration   1: 353217.287 ops/s
+Iteration   2: 351555.011 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.A_1Props_Function.call":
+  351170.127 ±(99.9%) 10124.869 ops/s [Average]
+  (min, avg, max) = (349769.039, 351170.127, 353217.287), stdev = 1566.835
+  CI (99.9%): [341045.258, 361294.996] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.A_1Props_Function.call_default
+
+# Run progress: 16.67% complete, ETA 00:14:28
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 30994.240 ops/s
+# Warmup Iteration   2: 135264.604 ops/s
+# Warmup Iteration   3: 256006.590 ops/s
+Iteration   1: 265114.190 ops/s
+Iteration   2: 266743.338 ops/s
+
+# Run progress: 17.36% complete, ETA 00:14:21
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 25814.966 ops/s
+# Warmup Iteration   2: 128704.736 ops/s
+# Warmup Iteration   3: 256282.677 ops/s
+Iteration   1: 272680.842 ops/s
+Iteration   2: 275203.831 ops/s
+
+# Run progress: 18.06% complete, ETA 00:14:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 29975.976 ops/s
+# Warmup Iteration   2: 123983.454 ops/s
+# Warmup Iteration   3: 251365.263 ops/s
+Iteration   1: 270370.468 ops/s
+Iteration   2: 271088.727 ops/s
+
+# Run progress: 18.75% complete, ETA 00:14:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 34878.014 ops/s
+# Warmup Iteration   2: 139609.507 ops/s
+# Warmup Iteration   3: 262133.467 ops/s
+Iteration   1: 267749.302 ops/s
+Iteration   2: 265831.112 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.A_1Props_Function.call_default":
+  268759.902 ±(99.9%) 15659.037 ops/s [Average]
+  (min, avg, max) = (265831.112, 268759.902, 271088.727), stdev = 2423.253
+  CI (99.9%): [253100.865, 284418.939] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.E_5Props_Constructor.call
+
+# Run progress: 19.44% complete, ETA 00:14:00
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 97572.351 ops/s
+# Warmup Iteration   2: 175886.256 ops/s
+# Warmup Iteration   3: 182933.973 ops/s
+Iteration   1: 189731.449 ops/s
+Iteration   2: 190593.123 ops/s
+
+# Run progress: 20.14% complete, ETA 00:13:52
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 93495.248 ops/s
+# Warmup Iteration   2: 174510.922 ops/s
+# Warmup Iteration   3: 181889.045 ops/s
+Iteration   1: 187698.027 ops/s
+Iteration   2: 190865.265 ops/s
+
+# Run progress: 20.83% complete, ETA 00:13:45
+# Fork: 1 of 2
+# Warmup Iteration   1: 101031.493 ops/s
+# Warmup Iteration   2: 168422.989 ops/s
+# Warmup Iteration   3: 171871.365 ops/s
+Iteration   1: 182970.728 ops/s
+Iteration   2: 190076.275 ops/s
+
+# Run progress: 21.53% complete, ETA 00:13:37
+# Fork: 2 of 2
+# Warmup Iteration   1: 93661.550 ops/s
+# Warmup Iteration   2: 175409.030 ops/s
+# Warmup Iteration   3: 180357.392 ops/s
+Iteration   1: 190005.544 ops/s
+Iteration   2: 189785.997 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.E_5Props_Constructor.call":
+  188209.636 ±(99.9%) 22583.304 ops/s [Average]
+  (min, avg, max) = (182970.728, 188209.636, 190076.275), stdev = 3494.791
+  CI (99.9%): [165626.331, 210792.940] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.E_5Props_Constructor.call_default
+
+# Run progress: 22.22% complete, ETA 00:13:30
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 20510.388 ops/s
+# Warmup Iteration   2: 73952.741 ops/s
+# Warmup Iteration   3: 103153.346 ops/s
+Iteration   1: 108701.991 ops/s
+Iteration   2: 107403.010 ops/s
+
+# Run progress: 22.92% complete, ETA 00:13:23
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 18097.143 ops/s
+# Warmup Iteration   2: 38399.685 ops/s
+# Warmup Iteration   3: 96058.982 ops/s
+Iteration   1: 107793.439 ops/s
+Iteration   2: 108788.723 ops/s
+
+# Run progress: 23.61% complete, ETA 00:13:15
+# Fork: 1 of 2
+# Warmup Iteration   1: 19452.076 ops/s
+# Warmup Iteration   2: 66276.608 ops/s
+# Warmup Iteration   3: 102269.213 ops/s
+Iteration   1: 107256.489 ops/s
+Iteration   2: 105951.368 ops/s
+
+# Run progress: 24.31% complete, ETA 00:13:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 16321.524 ops/s
+# Warmup Iteration   2: 52355.775 ops/s
+# Warmup Iteration   3: 100823.783 ops/s
+Iteration   1: 104375.748 ops/s
+Iteration   2: 102675.569 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.E_5Props_Constructor.call_default":
+  105064.793 ±(99.9%) 12801.005 ops/s [Average]
+  (min, avg, max) = (102675.569, 105064.793, 107256.489), stdev = 1980.970
+  CI (99.9%): [92263.789, 117865.798] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.E_5Props_Function.call
+
+# Run progress: 25.00% complete, ETA 00:13:01
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 35780.079 ops/s
+# Warmup Iteration   2: 120385.097 ops/s
+# Warmup Iteration   3: 132438.438 ops/s
+Iteration   1: 139324.716 ops/s
+Iteration   2: 137773.131 ops/s
+
+# Run progress: 25.69% complete, ETA 00:12:54
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 36359.084 ops/s
+# Warmup Iteration   2: 123041.720 ops/s
+# Warmup Iteration   3: 134082.177 ops/s
+Iteration   1: 138741.576 ops/s
+Iteration   2: 139083.349 ops/s
+
+# Run progress: 26.39% complete, ETA 00:12:47
+# Fork: 1 of 2
+# Warmup Iteration   1: 36205.125 ops/s
+# Warmup Iteration   2: 121516.865 ops/s
+# Warmup Iteration   3: 133407.596 ops/s
+Iteration   1: 138538.357 ops/s
+Iteration   2: 137910.348 ops/s
+
+# Run progress: 27.08% complete, ETA 00:12:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 35139.572 ops/s
+# Warmup Iteration   2: 120866.427 ops/s
+# Warmup Iteration   3: 133153.910 ops/s
+Iteration   1: 138138.681 ops/s
+Iteration   2: 139713.056 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.E_5Props_Function.call":
+  138575.111 ±(99.9%) 5181.225 ops/s [Average]
+  (min, avg, max) = (137910.348, 138575.111, 139713.056), stdev = 801.800
+  CI (99.9%): [133393.886, 143756.335] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.E_5Props_Function.call_default
+
+# Run progress: 27.78% complete, ETA 00:12:33
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 18147.982 ops/s
+# Warmup Iteration   2: 50442.676 ops/s
+# Warmup Iteration   3: 92566.668 ops/s
+Iteration   1: 101355.222 ops/s
+Iteration   2: 101153.833 ops/s
+
+# Run progress: 28.47% complete, ETA 00:12:26
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 18823.844 ops/s
+# Warmup Iteration   2: 65251.114 ops/s
+# Warmup Iteration   3: 95222.133 ops/s
+Iteration   1: 102326.422 ops/s
+Iteration   2: 102285.945 ops/s
+
+# Run progress: 29.17% complete, ETA 00:12:19
+# Fork: 1 of 2
+# Warmup Iteration   1: 21914.766 ops/s
+# Warmup Iteration   2: 77105.468 ops/s
+# Warmup Iteration   3: 100128.470 ops/s
+Iteration   1: 103023.770 ops/s
+Iteration   2: 104053.435 ops/s
+
+# Run progress: 29.86% complete, ETA 00:12:11
+# Fork: 2 of 2
+# Warmup Iteration   1: 23082.577 ops/s
+# Warmup Iteration   2: 67116.354 ops/s
+# Warmup Iteration   3: 98630.461 ops/s
+Iteration   1: 104013.117 ops/s
+Iteration   2: 102422.860 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.E_5Props_Function.call_default":
+  103378.296 ±(99.9%) 5139.019 ops/s [Average]
+  (min, avg, max) = (102422.860, 103378.296, 104053.435), stdev = 795.269
+  CI (99.9%): [98239.276, 108517.315] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.T_20Props_Constructor.call
+
+# Run progress: 30.56% complete, ETA 00:12:04
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 26260.459 ops/s
+# Warmup Iteration   2: 46385.552 ops/s
+# Warmup Iteration   3: 49923.040 ops/s
+Iteration   1: 48799.652 ops/s
+Iteration   2: 50319.596 ops/s
+
+# Run progress: 31.25% complete, ETA 00:11:57
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 27464.952 ops/s
+# Warmup Iteration   2: 45150.081 ops/s
+# Warmup Iteration   3: 49238.881 ops/s
+Iteration   1: 51209.615 ops/s
+Iteration   2: 50005.518 ops/s
+
+# Run progress: 31.94% complete, ETA 00:11:50
+# Fork: 1 of 2
+# Warmup Iteration   1: 29523.722 ops/s
+# Warmup Iteration   2: 48004.531 ops/s
+# Warmup Iteration   3: 47418.635 ops/s
+Iteration   1: 50973.102 ops/s
+Iteration   2: 51240.371 ops/s
+
+# Run progress: 32.64% complete, ETA 00:11:42
+# Fork: 2 of 2
+# Warmup Iteration   1: 29838.496 ops/s
+# Warmup Iteration   2: 47030.880 ops/s
+# Warmup Iteration   3: 49988.749 ops/s
+Iteration   1: 51472.430 ops/s
+Iteration   2: 52128.856 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.T_20Props_Constructor.call":
+  51453.690 ±(99.9%) 3193.447 ops/s [Average]
+  (min, avg, max) = (50973.102, 51453.690, 52128.856), stdev = 494.189
+  CI (99.9%): [48260.243, 54647.137] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.T_20Props_Constructor.call_default
+
+# Run progress: 33.33% complete, ETA 00:11:35
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 8255.088 ops/s
+# Warmup Iteration   2: 20691.736 ops/s
+# Warmup Iteration   3: 28194.684 ops/s
+Iteration   1: 30083.613 ops/s
+Iteration   2: 29284.008 ops/s
+
+# Run progress: 34.03% complete, ETA 00:11:28
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 8527.502 ops/s
+# Warmup Iteration   2: 22478.959 ops/s
+# Warmup Iteration   3: 28668.898 ops/s
+Iteration   1: 29225.917 ops/s
+Iteration   2: 29172.052 ops/s
+
+# Run progress: 34.72% complete, ETA 00:11:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 8106.242 ops/s
+# Warmup Iteration   2: 21924.894 ops/s
+# Warmup Iteration   3: 28471.433 ops/s
+Iteration   1: 28462.405 ops/s
+Iteration   2: 29132.029 ops/s
+
+# Run progress: 35.42% complete, ETA 00:11:14
+# Fork: 2 of 2
+# Warmup Iteration   1: 8016.176 ops/s
+# Warmup Iteration   2: 23208.285 ops/s
+# Warmup Iteration   3: 27934.760 ops/s
+Iteration   1: 28240.222 ops/s
+Iteration   2: 28345.134 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.T_20Props_Constructor.call_default":
+  28544.947 ±(99.9%) 2596.244 ops/s [Average]
+  (min, avg, max) = (28240.222, 28544.947, 29132.029), stdev = 401.772
+  CI (99.9%): [25948.704, 31141.191] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.T_20Props_Function.call
+
+# Run progress: 36.11% complete, ETA 00:11:07
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 15909.262 ops/s
+# Warmup Iteration   2: 35823.371 ops/s
+# Warmup Iteration   3: 37462.296 ops/s
+Iteration   1: 40961.495 ops/s
+Iteration   2: 42036.446 ops/s
+
+# Run progress: 36.81% complete, ETA 00:10:59
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 18153.478 ops/s
+# Warmup Iteration   2: 35647.556 ops/s
+# Warmup Iteration   3: 40367.117 ops/s
+Iteration   1: 38872.566 ops/s
+Iteration   2: 39579.996 ops/s
+
+# Run progress: 37.50% complete, ETA 00:10:52
+# Fork: 1 of 2
+# Warmup Iteration   1: 18612.293 ops/s
+# Warmup Iteration   2: 36635.871 ops/s
+# Warmup Iteration   3: 39888.179 ops/s
+Iteration   1: 38143.560 ops/s
+Iteration   2: 40550.084 ops/s
+
+# Run progress: 38.19% complete, ETA 00:10:45
+# Fork: 2 of 2
+# Warmup Iteration   1: 18573.556 ops/s
+# Warmup Iteration   2: 34803.872 ops/s
+# Warmup Iteration   3: 38110.661 ops/s
+Iteration   1: 39016.924 ops/s
+Iteration   2: 40651.642 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.T_20Props_Function.call":
+  39590.553 ±(99.9%) 7887.378 ops/s [Average]
+  (min, avg, max) = (38143.560, 39590.553, 40651.642), stdev = 1220.581
+  CI (99.9%): [31703.174, 47477.931] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.deser.wrapper.T_20Props_Function.call_default
+
+# Run progress: 38.89% complete, ETA 00:10:38
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 6420.820 ops/s
+# Warmup Iteration   2: 19080.222 ops/s
+# Warmup Iteration   3: 26766.270 ops/s
+Iteration   1: 28695.152 ops/s
+Iteration   2: 28720.049 ops/s
+
+# Run progress: 39.58% complete, ETA 00:10:31
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 6888.565 ops/s
+# Warmup Iteration   2: 18733.269 ops/s
+# Warmup Iteration   3: 27438.004 ops/s
+Iteration   1: 28996.464 ops/s
+Iteration   2: 29349.181 ops/s
+
+# Run progress: 40.28% complete, ETA 00:10:24
+# Fork: 1 of 2
+# Warmup Iteration   1: 7747.704 ops/s
+# Warmup Iteration   2: 20769.051 ops/s
+# Warmup Iteration   3: 28182.504 ops/s
+Iteration   1: 28555.488 ops/s
+Iteration   2: 29195.863 ops/s
+
+# Run progress: 40.97% complete, ETA 00:10:17
+# Fork: 2 of 2
+# Warmup Iteration   1: 7414.290 ops/s
+# Warmup Iteration   2: 19808.856 ops/s
+# Warmup Iteration   3: 27712.227 ops/s
+Iteration   1: 27060.481 ops/s
+Iteration   2: 28774.344 ops/s
+
+
+Result "org.wrongwrong.extra.deser.wrapper.T_20Props_Function.call_default":
+  28396.544 ±(99.9%) 6006.487 ops/s [Average]
+  (min, avg, max) = (27060.481, 28396.544, 29195.863), stdev = 929.511
+  CI (99.9%): [22390.057, 34403.031] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.ser.value_class.A_1Props.call
+
+# Run progress: 41.67% complete, ETA 00:10:10
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 323820.529 ops/s
+# Warmup Iteration   2: 611085.271 ops/s
+# Warmup Iteration   3: 619483.193 ops/s
+Iteration   1: 636715.858 ops/s
+Iteration   2: 660982.403 ops/s
+
+# Run progress: 42.36% complete, ETA 00:10:02
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 333314.916 ops/s
+# Warmup Iteration   2: 610020.465 ops/s
+# Warmup Iteration   3: 601766.087 ops/s
+Iteration   1: 648089.783 ops/s
+Iteration   2: 635988.440 ops/s
+
+# Run progress: 43.06% complete, ETA 00:09:55
+# Fork: 1 of 2
+# Warmup Iteration   1: 382168.782 ops/s
+# Warmup Iteration   2: 614356.244 ops/s
+# Warmup Iteration   3: 672997.736 ops/s
+Iteration   1: 674969.450 ops/s
+Iteration   2: 688505.805 ops/s
+
+# Run progress: 43.75% complete, ETA 00:09:47
+# Fork: 2 of 2
+# Warmup Iteration   1: 367067.333 ops/s
+# Warmup Iteration   2: 623650.341 ops/s
+# Warmup Iteration   3: 672391.287 ops/s
+Iteration   1: 687441.555 ops/s
+Iteration   2: 684150.674 ops/s
+
+
+Result "org.wrongwrong.extra.ser.value_class.A_1Props.call":
+  683766.871 ±(99.9%) 39747.401 ops/s [Average]
+  (min, avg, max) = (674969.450, 683766.871, 688505.805), stdev = 6150.954
+  CI (99.9%): [644019.470, 723514.272] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.ser.value_class.E_5Props.call
+
+# Run progress: 44.44% complete, ETA 00:09:40
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 105371.906 ops/s
+# Warmup Iteration   2: 174171.806 ops/s
+# Warmup Iteration   3: 173182.001 ops/s
+Iteration   1: 183864.996 ops/s
+Iteration   2: 185322.313 ops/s
+
+# Run progress: 45.14% complete, ETA 00:09:32
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 112040.240 ops/s
+# Warmup Iteration   2: 177577.290 ops/s
+# Warmup Iteration   3: 181813.038 ops/s
+Iteration   1: 179003.464 ops/s
+Iteration   2: 182727.542 ops/s
+
+# Run progress: 45.83% complete, ETA 00:09:25
+# Fork: 1 of 2
+# Warmup Iteration   1: 108856.344 ops/s
+# Warmup Iteration   2: 173148.437 ops/s
+# Warmup Iteration   3: 173047.288 ops/s
+Iteration   1: 182675.736 ops/s
+Iteration   2: 183614.155 ops/s
+
+# Run progress: 46.53% complete, ETA 00:09:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 114323.091 ops/s
+# Warmup Iteration   2: 180205.402 ops/s
+# Warmup Iteration   3: 186472.035 ops/s
+Iteration   1: 193325.881 ops/s
+Iteration   2: 195179.551 ops/s
+
+
+Result "org.wrongwrong.extra.ser.value_class.E_5Props.call":
+  188698.831 ±(99.9%) 41802.116 ops/s [Average]
+  (min, avg, max) = (182675.736, 188698.831, 195179.551), stdev = 6468.924
+  CI (99.9%): [146896.714, 230500.947] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.ser.value_class.T_20Props.call
+
+# Run progress: 47.22% complete, ETA 00:09:10
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 31615.222 ops/s
+# Warmup Iteration   2: 47244.135 ops/s
+# Warmup Iteration   3: 48409.067 ops/s
+Iteration   1: 49379.076 ops/s
+Iteration   2: 50396.863 ops/s
+
+# Run progress: 47.92% complete, ETA 00:09:03
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 31140.691 ops/s
+# Warmup Iteration   2: 47440.089 ops/s
+# Warmup Iteration   3: 49652.426 ops/s
+Iteration   1: 50059.396 ops/s
+Iteration   2: 50449.426 ops/s
+
+# Run progress: 48.61% complete, ETA 00:08:56
+# Fork: 1 of 2
+# Warmup Iteration   1: 30310.732 ops/s
+# Warmup Iteration   2: 45364.849 ops/s
+# Warmup Iteration   3: 48774.220 ops/s
+Iteration   1: 49130.856 ops/s
+Iteration   2: 48130.501 ops/s
+
+# Run progress: 49.31% complete, ETA 00:08:48
+# Fork: 2 of 2
+# Warmup Iteration   1: 18720.798 ops/s
+# Warmup Iteration   2: 27731.393 ops/s
+# Warmup Iteration   3: 26338.814 ops/s
+Iteration   1: 29060.932 ops/s
+Iteration   2: 28429.421 ops/s
+
+
+Result "org.wrongwrong.extra.ser.value_class.T_20Props.call":
+  38687.927 ±(99.9%) 74255.067 ops/s [Average]
+  (min, avg, max) = (28429.421, 38687.927, 49130.856), stdev = 11491.054
+  CI (99.9%): [≈ 0, 112942.995] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.ser.wrapper.A_1Props.call
+
+# Run progress: 50.00% complete, ETA 00:08:41
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 616735.999 ops/s
+# Warmup Iteration   2: 1151787.796 ops/s
+# Warmup Iteration   3: 1257069.596 ops/s
+Iteration   1: 1313384.060 ops/s
+Iteration   2: 1314715.084 ops/s
+
+# Run progress: 50.69% complete, ETA 00:08:34
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 576503.015 ops/s
+# Warmup Iteration   2: 1136520.070 ops/s
+# Warmup Iteration   3: 1209568.429 ops/s
+Iteration   1: 1251464.529 ops/s
+Iteration   2: 1317505.355 ops/s
+
+# Run progress: 51.39% complete, ETA 00:08:26
+# Fork: 1 of 2
+# Warmup Iteration   1: 611016.682 ops/s
+# Warmup Iteration   2: 1208457.660 ops/s
+# Warmup Iteration   3: 1375057.143 ops/s
+Iteration   1: 1334202.900 ops/s
+Iteration   2: 1324523.313 ops/s
+
+# Run progress: 52.08% complete, ETA 00:08:19
+# Fork: 2 of 2
+# Warmup Iteration   1: 716456.163 ops/s
+# Warmup Iteration   2: 1224367.409 ops/s
+# Warmup Iteration   3: 1352605.151 ops/s
+Iteration   1: 1346384.419 ops/s
+Iteration   2: 1354737.626 ops/s
+
+
+Result "org.wrongwrong.extra.ser.wrapper.A_1Props.call":
+  1339962.065 ±(99.9%) 85978.208 ops/s [Average]
+  (min, avg, max) = (1324523.313, 1339962.065, 1354737.626), stdev = 13305.223
+  CI (99.9%): [1253983.856, 1425940.273] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.ser.wrapper.E_5Props.call
+
+# Run progress: 52.78% complete, ETA 00:08:11
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 400522.764 ops/s
+# Warmup Iteration   2: 768182.047 ops/s
+# Warmup Iteration   3: 807869.346 ops/s
+Iteration   1: 839337.120 ops/s
+Iteration   2: 822502.399 ops/s
+
+# Run progress: 53.47% complete, ETA 00:08:04
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 472452.946 ops/s
+# Warmup Iteration   2: 735653.907 ops/s
+# Warmup Iteration   3: 717950.216 ops/s
+Iteration   1: 723549.965 ops/s
+Iteration   2: 775625.282 ops/s
+
+# Run progress: 54.17% complete, ETA 00:07:57
+# Fork: 1 of 2
+# Warmup Iteration   1: 515455.776 ops/s
+# Warmup Iteration   2: 749531.520 ops/s
+# Warmup Iteration   3: 820077.222 ops/s
+Iteration   1: 848057.031 ops/s
+Iteration   2: 819482.117 ops/s
+
+# Run progress: 54.86% complete, ETA 00:07:49
+# Fork: 2 of 2
+# Warmup Iteration   1: 441281.384 ops/s
+# Warmup Iteration   2: 762099.032 ops/s
+# Warmup Iteration   3: 797431.622 ops/s
+Iteration   1: 815439.921 ops/s
+Iteration   2: 795506.273 ops/s
+
+
+Result "org.wrongwrong.extra.ser.wrapper.E_5Props.call":
+  819621.335 ±(99.9%) 139974.737 ops/s [Average]
+  (min, avg, max) = (795506.273, 819621.335, 848057.031), stdev = 21661.245
+  CI (99.9%): [679646.599, 959596.072] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.extra.ser.wrapper.T_20Props.call
+
+# Run progress: 55.56% complete, ETA 00:07:42
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 159791.152 ops/s
+# Warmup Iteration   2: 280161.093 ops/s
+# Warmup Iteration   3: 281045.702 ops/s
+Iteration   1: 292196.851 ops/s
+Iteration   2: 297876.770 ops/s
+
+# Run progress: 56.25% complete, ETA 00:07:35
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 186141.869 ops/s
+# Warmup Iteration   2: 286857.019 ops/s
+# Warmup Iteration   3: 298181.387 ops/s
+Iteration   1: 304926.639 ops/s
+Iteration   2: 313625.386 ops/s
+
+# Run progress: 56.94% complete, ETA 00:07:27
+# Fork: 1 of 2
+# Warmup Iteration   1: 175353.630 ops/s
+# Warmup Iteration   2: 291747.876 ops/s
+# Warmup Iteration   3: 299859.442 ops/s
+Iteration   1: 308742.259 ops/s
+Iteration   2: 313773.299 ops/s
+
+# Run progress: 57.64% complete, ETA 00:07:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 179967.799 ops/s
+# Warmup Iteration   2: 268868.000 ops/s
+# Warmup Iteration   3: 289397.508 ops/s
+Iteration   1: 293303.565 ops/s
+Iteration   2: 300859.564 ops/s
+
+
+Result "org.wrongwrong.extra.ser.wrapper.T_20Props.call":
+  304169.671 ±(99.9%) 58058.172 ops/s [Average]
+  (min, avg, max) = (293303.565, 304169.671, 313773.299), stdev = 8984.566
+  CI (99.9%): [246111.499, 362227.844] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.A_1Props_Constructor.call
+
+# Run progress: 58.33% complete, ETA 00:07:12
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 262400.741 ops/s
+# Warmup Iteration   2: 471130.329 ops/s
+# Warmup Iteration   3: 532337.185 ops/s
+Iteration   1: 529065.822 ops/s
+Iteration   2: 524548.466 ops/s
+
+# Run progress: 59.03% complete, ETA 00:07:05
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 263741.827 ops/s
+# Warmup Iteration   2: 465777.995 ops/s
+# Warmup Iteration   3: 503376.234 ops/s
+Iteration   1: 511335.228 ops/s
+Iteration   2: 505277.518 ops/s
+
+# Run progress: 59.72% complete, ETA 00:06:58
+# Fork: 1 of 2
+# Warmup Iteration   1: 252032.682 ops/s
+# Warmup Iteration   2: 456971.371 ops/s
+# Warmup Iteration   3: 487876.113 ops/s
+Iteration   1: 490133.516 ops/s
+Iteration   2: 499309.767 ops/s
+
+# Run progress: 60.42% complete, ETA 00:06:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 245877.881 ops/s
+# Warmup Iteration   2: 468799.065 ops/s
+# Warmup Iteration   3: 509686.381 ops/s
+Iteration   1: 514118.891 ops/s
+Iteration   2: 502597.204 ops/s
+
+
+Result "org.wrongwrong.main.deser.A_1Props_Constructor.call":
+  501539.844 ±(99.9%) 64016.975 ops/s [Average]
+  (min, avg, max) = (490133.516, 501539.844, 514118.891), stdev = 9906.698
+  CI (99.9%): [437522.869, 565556.820] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.A_1Props_Constructor.call_default
+
+# Run progress: 61.11% complete, ETA 00:06:44
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 38973.454 ops/s
+# Warmup Iteration   2: 192568.232 ops/s
+# Warmup Iteration   3: 296306.795 ops/s
+Iteration   1: 309885.679 ops/s
+Iteration   2: 310231.277 ops/s
+
+# Run progress: 61.81% complete, ETA 00:06:36
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 39235.120 ops/s
+# Warmup Iteration   2: 195093.705 ops/s
+# Warmup Iteration   3: 293562.364 ops/s
+Iteration   1: 300413.077 ops/s
+Iteration   2: 292310.284 ops/s
+
+# Run progress: 62.50% complete, ETA 00:06:29
+# Fork: 1 of 2
+# Warmup Iteration   1: 28936.692 ops/s
+# Warmup Iteration   2: 164603.647 ops/s
+# Warmup Iteration   3: 290460.027 ops/s
+Iteration   1: 306598.846 ops/s
+Iteration   2: 305602.344 ops/s
+
+# Run progress: 63.19% complete, ETA 00:06:22
+# Fork: 2 of 2
+# Warmup Iteration   1: 32603.114 ops/s
+# Warmup Iteration   2: 192819.809 ops/s
+# Warmup Iteration   3: 295646.554 ops/s
+Iteration   1: 299459.030 ops/s
+Iteration   2: 298566.646 ops/s
+
+
+Result "org.wrongwrong.main.deser.A_1Props_Constructor.call_default":
+  302556.716 ±(99.9%) 26677.656 ops/s [Average]
+  (min, avg, max) = (298566.646, 302556.716, 306598.846), stdev = 4128.397
+  CI (99.9%): [275879.060, 329234.372] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.A_1Props_Function.call
+
+# Run progress: 63.89% complete, ETA 00:06:15
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 81987.062 ops/s
+# Warmup Iteration   2: 305778.803 ops/s
+# Warmup Iteration   3: 341626.655 ops/s
+Iteration   1: 354984.552 ops/s
+Iteration   2: 348950.706 ops/s
+
+# Run progress: 64.58% complete, ETA 00:06:08
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 78127.864 ops/s
+# Warmup Iteration   2: 316525.090 ops/s
+# Warmup Iteration   3: 351786.738 ops/s
+Iteration   1: 351805.681 ops/s
+Iteration   2: 355636.251 ops/s
+
+# Run progress: 65.28% complete, ETA 00:06:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 76005.387 ops/s
+# Warmup Iteration   2: 282715.227 ops/s
+# Warmup Iteration   3: 336416.467 ops/s
+Iteration   1: 347559.669 ops/s
+Iteration   2: 351723.389 ops/s
+
+# Run progress: 65.97% complete, ETA 00:05:53
+# Fork: 2 of 2
+# Warmup Iteration   1: 104498.002 ops/s
+# Warmup Iteration   2: 309930.335 ops/s
+# Warmup Iteration   3: 339804.656 ops/s
+Iteration   1: 345896.237 ops/s
+Iteration   2: 357386.572 ops/s
+
+
+Result "org.wrongwrong.main.deser.A_1Props_Function.call":
+  350641.467 ±(99.9%) 33093.479 ops/s [Average]
+  (min, avg, max) = (345896.237, 350641.467, 357386.572), stdev = 5121.253
+  CI (99.9%): [317547.988, 383734.946] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.A_1Props_Function.call_default
+
+# Run progress: 66.67% complete, ETA 00:05:46
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 32533.272 ops/s
+# Warmup Iteration   2: 113264.959 ops/s
+# Warmup Iteration   3: 255553.442 ops/s
+Iteration   1: 279587.951 ops/s
+Iteration   2: 279836.901 ops/s
+
+# Run progress: 67.36% complete, ETA 00:05:39
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 31998.684 ops/s
+# Warmup Iteration   2: 144871.032 ops/s
+# Warmup Iteration   3: 265159.363 ops/s
+Iteration   1: 272769.079 ops/s
+Iteration   2: 270733.645 ops/s
+
+# Run progress: 68.06% complete, ETA 00:05:32
+# Fork: 1 of 2
+# Warmup Iteration   1: 27927.544 ops/s
+# Warmup Iteration   2: 105832.331 ops/s
+# Warmup Iteration   3: 244373.042 ops/s
+Iteration   1: 277371.617 ops/s
+Iteration   2: 270564.036 ops/s
+
+# Run progress: 68.75% complete, ETA 00:05:24
+# Fork: 2 of 2
+# Warmup Iteration   1: 29012.461 ops/s
+# Warmup Iteration   2: 111822.479 ops/s
+# Warmup Iteration   3: 246310.484 ops/s
+Iteration   1: 267116.953 ops/s
+Iteration   2: 278693.047 ops/s
+
+
+Result "org.wrongwrong.main.deser.A_1Props_Function.call_default":
+  273436.413 ±(99.9%) 35649.290 ops/s [Average]
+  (min, avg, max) = (267116.953, 273436.413, 278693.047), stdev = 5516.767
+  CI (99.9%): [237787.123, 309085.704] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.E_5Props_Constructor.call
+
+# Run progress: 69.44% complete, ETA 00:05:17
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 95080.957 ops/s
+# Warmup Iteration   2: 171214.282 ops/s
+# Warmup Iteration   3: 176377.657 ops/s
+Iteration   1: 180732.854 ops/s
+Iteration   2: 183626.932 ops/s
+
+# Run progress: 70.14% complete, ETA 00:05:10
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 97937.667 ops/s
+# Warmup Iteration   2: 184558.349 ops/s
+# Warmup Iteration   3: 191044.352 ops/s
+Iteration   1: 196036.387 ops/s
+Iteration   2: 193210.183 ops/s
+
+# Run progress: 70.83% complete, ETA 00:05:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 96543.871 ops/s
+# Warmup Iteration   2: 181278.158 ops/s
+# Warmup Iteration   3: 178782.779 ops/s
+Iteration   1: 184353.037 ops/s
+Iteration   2: 187649.775 ops/s
+
+# Run progress: 71.53% complete, ETA 00:04:56
+# Fork: 2 of 2
+# Warmup Iteration   1: 94299.379 ops/s
+# Warmup Iteration   2: 168503.742 ops/s
+# Warmup Iteration   3: 167124.853 ops/s
+Iteration   1: 178919.030 ops/s
+Iteration   2: 178761.150 ops/s
+
+
+Result "org.wrongwrong.main.deser.E_5Props_Constructor.call":
+  182420.748 ±(99.9%) 28100.654 ops/s [Average]
+  (min, avg, max) = (178761.150, 182420.748, 187649.775), stdev = 4348.607
+  CI (99.9%): [154320.094, 210521.401] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.E_5Props_Constructor.call_default
+
+# Run progress: 72.22% complete, ETA 00:04:48
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 22033.556 ops/s
+# Warmup Iteration   2: 82385.296 ops/s
+# Warmup Iteration   3: 103490.477 ops/s
+Iteration   1: 107665.085 ops/s
+Iteration   2: 108131.766 ops/s
+
+# Run progress: 72.92% complete, ETA 00:04:41
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 20439.256 ops/s
+# Warmup Iteration   2: 86247.271 ops/s
+# Warmup Iteration   3: 100561.601 ops/s
+Iteration   1: 104738.653 ops/s
+Iteration   2: 105153.406 ops/s
+
+# Run progress: 73.61% complete, ETA 00:04:34
+# Fork: 1 of 2
+# Warmup Iteration   1: 18969.458 ops/s
+# Warmup Iteration   2: 71862.306 ops/s
+# Warmup Iteration   3: 99152.991 ops/s
+Iteration   1: 104898.292 ops/s
+Iteration   2: 103628.048 ops/s
+
+# Run progress: 74.31% complete, ETA 00:04:27
+# Fork: 2 of 2
+# Warmup Iteration   1: 16447.171 ops/s
+# Warmup Iteration   2: 58382.780 ops/s
+# Warmup Iteration   3: 100062.790 ops/s
+Iteration   1: 105161.667 ops/s
+Iteration   2: 104456.172 ops/s
+
+
+Result "org.wrongwrong.main.deser.E_5Props_Constructor.call_default":
+  104536.045 ±(99.9%) 4340.392 ops/s [Average]
+  (min, avg, max) = (103628.048, 104536.045, 105161.667), stdev = 671.680
+  CI (99.9%): [100195.653, 108876.436] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.E_5Props_Function.call
+
+# Run progress: 75.00% complete, ETA 00:04:19
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 34188.296 ops/s
+# Warmup Iteration   2: 122217.486 ops/s
+# Warmup Iteration   3: 134100.814 ops/s
+Iteration   1: 137483.343 ops/s
+Iteration   2: 141130.735 ops/s
+
+# Run progress: 75.69% complete, ETA 00:04:12
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 38628.119 ops/s
+# Warmup Iteration   2: 120862.026 ops/s
+# Warmup Iteration   3: 131351.215 ops/s
+Iteration   1: 135793.549 ops/s
+Iteration   2: 135761.360 ops/s
+
+# Run progress: 76.39% complete, ETA 00:04:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 59805.510 ops/s
+# Warmup Iteration   2: 128539.482 ops/s
+# Warmup Iteration   3: 139670.357 ops/s
+Iteration   1: 142392.721 ops/s
+Iteration   2: 142509.636 ops/s
+
+# Run progress: 77.08% complete, ETA 00:03:58
+# Fork: 2 of 2
+# Warmup Iteration   1: 27531.933 ops/s
+# Warmup Iteration   2: 121933.065 ops/s
+# Warmup Iteration   3: 133397.705 ops/s
+Iteration   1: 137226.242 ops/s
+Iteration   2: 136795.546 ops/s
+
+
+Result "org.wrongwrong.main.deser.E_5Props_Function.call":
+  139731.036 ±(99.9%) 20330.902 ops/s [Average]
+  (min, avg, max) = (136795.546, 139731.036, 142509.636), stdev = 3146.230
+  CI (99.9%): [119400.134, 160061.938] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.E_5Props_Function.call_default
+
+# Run progress: 77.78% complete, ETA 00:03:51
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 17970.209 ops/s
+# Warmup Iteration   2: 51605.995 ops/s
+# Warmup Iteration   3: 96093.665 ops/s
+Iteration   1: 102991.404 ops/s
+Iteration   2: 100915.847 ops/s
+
+# Run progress: 78.47% complete, ETA 00:03:43
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 18675.142 ops/s
+# Warmup Iteration   2: 47477.144 ops/s
+# Warmup Iteration   3: 94929.790 ops/s
+Iteration   1: 97942.007 ops/s
+Iteration   2: 101173.767 ops/s
+
+# Run progress: 79.17% complete, ETA 00:03:36
+# Fork: 1 of 2
+# Warmup Iteration   1: 16727.352 ops/s
+# Warmup Iteration   2: 44232.621 ops/s
+# Warmup Iteration   3: 90550.383 ops/s
+Iteration   1: 101520.889 ops/s
+Iteration   2: 99720.425 ops/s
+
+# Run progress: 79.86% complete, ETA 00:03:29
+# Fork: 2 of 2
+# Warmup Iteration   1: 18348.794 ops/s
+# Warmup Iteration   2: 72853.972 ops/s
+# Warmup Iteration   3: 98553.452 ops/s
+Iteration   1: 102842.363 ops/s
+Iteration   2: 101091.316 ops/s
+
+
+Result "org.wrongwrong.main.deser.E_5Props_Function.call_default":
+  101293.748 ±(99.9%) 8314.086 ops/s [Average]
+  (min, avg, max) = (99720.425, 101293.748, 102842.363), stdev = 1286.614
+  CI (99.9%): [92979.662, 109607.834] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.T_20Props_Constructor.call
+
+# Run progress: 80.56% complete, ETA 00:03:22
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 30660.983 ops/s
+# Warmup Iteration   2: 46287.080 ops/s
+# Warmup Iteration   3: 53782.576 ops/s
+Iteration   1: 52788.674 ops/s
+Iteration   2: 53238.562 ops/s
+
+# Run progress: 81.25% complete, ETA 00:03:15
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 32632.302 ops/s
+# Warmup Iteration   2: 51697.331 ops/s
+# Warmup Iteration   3: 54014.961 ops/s
+Iteration   1: 55677.635 ops/s
+Iteration   2: 54026.655 ops/s
+
+# Run progress: 81.94% complete, ETA 00:03:07
+# Fork: 1 of 2
+# Warmup Iteration   1: 30417.389 ops/s
+# Warmup Iteration   2: 49467.971 ops/s
+# Warmup Iteration   3: 52581.802 ops/s
+Iteration   1: 53952.142 ops/s
+Iteration   2: 52965.198 ops/s
+
+# Run progress: 82.64% complete, ETA 00:03:00
+# Fork: 2 of 2
+# Warmup Iteration   1: 33001.773 ops/s
+# Warmup Iteration   2: 53864.897 ops/s
+# Warmup Iteration   3: 56024.930 ops/s
+Iteration   1: 59086.372 ops/s
+Iteration   2: 58086.646 ops/s
+
+
+Result "org.wrongwrong.main.deser.T_20Props_Constructor.call":
+  56022.590 ±(99.9%) 19486.759 ops/s [Average]
+  (min, avg, max) = (52965.198, 56022.590, 59086.372), stdev = 3015.598
+  CI (99.9%): [36535.831, 75509.349] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.T_20Props_Constructor.call_default
+
+# Run progress: 83.33% complete, ETA 00:02:53
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 8694.351 ops/s
+# Warmup Iteration   2: 21770.051 ops/s
+# Warmup Iteration   3: 28300.611 ops/s
+Iteration   1: 29179.578 ops/s
+Iteration   2: 28960.188 ops/s
+
+# Run progress: 84.03% complete, ETA 00:02:46
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 8124.513 ops/s
+# Warmup Iteration   2: 22956.647 ops/s
+# Warmup Iteration   3: 27593.492 ops/s
+Iteration   1: 28088.191 ops/s
+Iteration   2: 28539.056 ops/s
+
+# Run progress: 84.72% complete, ETA 00:02:38
+# Fork: 1 of 2
+# Warmup Iteration   1: 7904.584 ops/s
+# Warmup Iteration   2: 20702.466 ops/s
+# Warmup Iteration   3: 28157.274 ops/s
+Iteration   1: 27894.362 ops/s
+Iteration   2: 28952.099 ops/s
+
+# Run progress: 85.42% complete, ETA 00:02:31
+# Fork: 2 of 2
+# Warmup Iteration   1: 7307.875 ops/s
+# Warmup Iteration   2: 21373.866 ops/s
+# Warmup Iteration   3: 28071.741 ops/s
+Iteration   1: 28602.235 ops/s
+Iteration   2: 28283.903 ops/s
+
+
+Result "org.wrongwrong.main.deser.T_20Props_Constructor.call_default":
+  28433.150 ±(99.9%) 2914.984 ops/s [Average]
+  (min, avg, max) = (27894.362, 28433.150, 28952.099), stdev = 451.097
+  CI (99.9%): [25518.166, 31348.133] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.T_20Props_Function.call
+
+# Run progress: 86.11% complete, ETA 00:02:24
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 16333.500 ops/s
+# Warmup Iteration   2: 37391.183 ops/s
+# Warmup Iteration   3: 41071.007 ops/s
+Iteration   1: 40414.309 ops/s
+Iteration   2: 41936.187 ops/s
+
+# Run progress: 86.81% complete, ETA 00:02:17
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 19688.231 ops/s
+# Warmup Iteration   2: 35923.119 ops/s
+# Warmup Iteration   3: 41106.842 ops/s
+Iteration   1: 40285.043 ops/s
+Iteration   2: 40685.764 ops/s
+
+# Run progress: 87.50% complete, ETA 00:02:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 17454.974 ops/s
+# Warmup Iteration   2: 37161.153 ops/s
+# Warmup Iteration   3: 40506.485 ops/s
+Iteration   1: 40028.647 ops/s
+Iteration   2: 41713.205 ops/s
+
+# Run progress: 88.19% complete, ETA 00:02:02
+# Fork: 2 of 2
+# Warmup Iteration   1: 15878.617 ops/s
+# Warmup Iteration   2: 35801.130 ops/s
+# Warmup Iteration   3: 40080.573 ops/s
+Iteration   1: 40957.033 ops/s
+Iteration   2: 39869.244 ops/s
+
+
+Result "org.wrongwrong.main.deser.T_20Props_Function.call":
+  40642.032 ±(99.9%) 5558.912 ops/s [Average]
+  (min, avg, max) = (39869.244, 40642.032, 41713.205), stdev = 860.248
+  CI (99.9%): [35083.120, 46200.944] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.deser.T_20Props_Function.call_default
+
+# Run progress: 88.89% complete, ETA 00:01:55
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 7429.383 ops/s
+# Warmup Iteration   2: 19137.416 ops/s
+# Warmup Iteration   3: 26934.382 ops/s
+Iteration   1: 28552.805 ops/s
+Iteration   2: 28557.875 ops/s
+
+# Run progress: 89.58% complete, ETA 00:01:48
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 7848.665 ops/s
+# Warmup Iteration   2: 21216.199 ops/s
+# Warmup Iteration   3: 27388.434 ops/s
+Iteration   1: 28536.415 ops/s
+Iteration   2: 29057.864 ops/s
+
+# Run progress: 90.28% complete, ETA 00:01:41
+# Fork: 1 of 2
+# Warmup Iteration   1: 8313.204 ops/s
+# Warmup Iteration   2: 20585.471 ops/s
+# Warmup Iteration   3: 27129.163 ops/s
+Iteration   1: 28537.991 ops/s
+Iteration   2: 28917.857 ops/s
+
+# Run progress: 90.97% complete, ETA 00:01:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 7525.945 ops/s
+# Warmup Iteration   2: 18817.106 ops/s
+# Warmup Iteration   3: 27788.454 ops/s
+Iteration   1: 27721.711 ops/s
+Iteration   2: 28223.058 ops/s
+
+
+Result "org.wrongwrong.main.deser.T_20Props_Function.call_default":
+  28350.154 ±(99.9%) 3270.950 ops/s [Average]
+  (min, avg, max) = (27721.711, 28350.154, 28917.857), stdev = 506.183
+  CI (99.9%): [25079.204, 31621.104] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.ser.A_1Props.call
+
+# Run progress: 91.67% complete, ETA 00:01:26
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 780967.751 ops/s
+# Warmup Iteration   2: 1283598.827 ops/s
+# Warmup Iteration   3: 1423738.860 ops/s
+Iteration   1: 1421587.345 ops/s
+Iteration   2: 1378170.924 ops/s
+
+# Run progress: 92.36% complete, ETA 00:01:19
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 812741.699 ops/s
+# Warmup Iteration   2: 1376792.583 ops/s
+# Warmup Iteration   3: 1466388.061 ops/s
+Iteration   1: 1485466.389 ops/s
+Iteration   2: 1489477.964 ops/s
+
+# Run progress: 93.06% complete, ETA 00:01:12
+# Fork: 1 of 2
+# Warmup Iteration   1: 745974.026 ops/s
+# Warmup Iteration   2: 1263342.699 ops/s
+# Warmup Iteration   3: 1339807.586 ops/s
+Iteration   1: 1395644.398 ops/s
+Iteration   2: 1401273.094 ops/s
+
+# Run progress: 93.75% complete, ETA 00:01:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 797468.907 ops/s
+# Warmup Iteration   2: 1342129.675 ops/s
+# Warmup Iteration   3: 1431376.947 ops/s
+Iteration   1: 1426435.242 ops/s
+Iteration   2: 1414006.846 ops/s
+
+
+Result "org.wrongwrong.main.ser.A_1Props.call":
+  1409339.895 ±(99.9%) 88811.907 ops/s [Average]
+  (min, avg, max) = (1395644.398, 1409339.895, 1426435.242), stdev = 13743.741
+  CI (99.9%): [1320527.988, 1498151.802] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.ser.E_5Props.call
+
+# Run progress: 94.44% complete, ETA 00:00:57
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 535753.144 ops/s
+# Warmup Iteration   2: 789428.402 ops/s
+# Warmup Iteration   3: 878193.128 ops/s
+Iteration   1: 870340.824 ops/s
+Iteration   2: 886546.243 ops/s
+
+# Run progress: 95.14% complete, ETA 00:00:50
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 507648.130 ops/s
+# Warmup Iteration   2: 797571.710 ops/s
+# Warmup Iteration   3: 898534.153 ops/s
+Iteration   1: 867005.174 ops/s
+Iteration   2: 892121.710 ops/s
+
+# Run progress: 95.83% complete, ETA 00:00:43
+# Fork: 1 of 2
+# Warmup Iteration   1: 492282.404 ops/s
+# Warmup Iteration   2: 814376.715 ops/s
+# Warmup Iteration   3: 868904.710 ops/s
+Iteration   1: 887158.601 ops/s
+Iteration   2: 884875.489 ops/s
+
+# Run progress: 96.53% complete, ETA 00:00:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 506865.565 ops/s
+# Warmup Iteration   2: 784619.777 ops/s
+# Warmup Iteration   3: 888618.747 ops/s
+Iteration   1: 878709.340 ops/s
+Iteration   2: 876166.191 ops/s
+
+
+Result "org.wrongwrong.main.ser.E_5Props.call":
+  881727.406 ±(99.9%) 33253.437 ops/s [Average]
+  (min, avg, max) = (876166.191, 881727.406, 887158.601), stdev = 5146.006
+  CI (99.9%): [848473.969, 914980.842] (assumes normal distribution)
+
+
+# JMH version: 1.25
+# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
+# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 1 s each, 3 calls per op
+# Measurement: 2 iterations, 1500 ms each, 3 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wrongwrong.main.ser.T_20Props.call
+
+# Run progress: 97.22% complete, ETA 00:00:28
+# Warmup Fork: 1 of 2
+# Warmup Iteration   1: 192855.772 ops/s
+# Warmup Iteration   2: 301899.287 ops/s
+# Warmup Iteration   3: 324438.617 ops/s
+Iteration   1: 332119.334 ops/s
+Iteration   2: 327380.231 ops/s
+
+# Run progress: 97.92% complete, ETA 00:00:21
+# Warmup Fork: 2 of 2
+# Warmup Iteration   1: 190596.490 ops/s
+# Warmup Iteration   2: 309351.466 ops/s
+# Warmup Iteration   3: 330819.526 ops/s
+Iteration   1: 333980.957 ops/s
+Iteration   2: 332371.013 ops/s
+
+# Run progress: 98.61% complete, ETA 00:00:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 181031.724 ops/s
+# Warmup Iteration   2: 311316.023 ops/s
+# Warmup Iteration   3: 330784.677 ops/s
+Iteration   1: 337110.385 ops/s
+Iteration   2: 325313.969 ops/s
+
+# Run progress: 99.31% complete, ETA 00:00:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 204278.847 ops/s
+# Warmup Iteration   2: 313166.235 ops/s
+# Warmup Iteration   3: 329129.407 ops/s
+Iteration   1: 337613.947 ops/s
+Iteration   2: 337205.664 ops/s
+
+
+Result "org.wrongwrong.main.ser.T_20Props.call":
+  334310.992 ±(99.9%) 38784.798 ops/s [Average]
+  (min, avg, max) = (325313.969, 334310.992, 337613.947), stdev = 6001.990
+  CI (99.9%): [295526.194, 373095.789] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:17:19
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                    Mode  Cnt        Score        Error  Units
+o.w.extra.deser.Collections.array                           thrpt    4   359148.540 ±  25611.831  ops/s
+o.w.extra.deser.Collections.list                            thrpt    4   367708.129 ±  60009.184  ops/s
+o.w.extra.deser.Collections.map                             thrpt    4   286961.242 ±  47804.786  ops/s
+o.w.extra.deser.wrapper.A_1Props_Constructor.call           thrpt    4   503997.413 ±  83842.670  ops/s
+o.w.extra.deser.wrapper.A_1Props_Constructor.call_default   thrpt    4   308116.254 ±  38791.948  ops/s
+o.w.extra.deser.wrapper.A_1Props_Function.call              thrpt    4   351170.127 ±  10124.869  ops/s
+o.w.extra.deser.wrapper.A_1Props_Function.call_default      thrpt    4   268759.902 ±  15659.037  ops/s
+o.w.extra.deser.wrapper.E_5Props_Constructor.call           thrpt    4   188209.636 ±  22583.304  ops/s
+o.w.extra.deser.wrapper.E_5Props_Constructor.call_default   thrpt    4   105064.793 ±  12801.005  ops/s
+o.w.extra.deser.wrapper.E_5Props_Function.call              thrpt    4   138575.111 ±   5181.225  ops/s
+o.w.extra.deser.wrapper.E_5Props_Function.call_default      thrpt    4   103378.296 ±   5139.019  ops/s
+o.w.extra.deser.wrapper.T_20Props_Constructor.call          thrpt    4    51453.690 ±   3193.447  ops/s
+o.w.extra.deser.wrapper.T_20Props_Constructor.call_default  thrpt    4    28544.947 ±   2596.244  ops/s
+o.w.extra.deser.wrapper.T_20Props_Function.call             thrpt    4    39590.553 ±   7887.378  ops/s
+o.w.extra.deser.wrapper.T_20Props_Function.call_default     thrpt    4    28396.544 ±   6006.487  ops/s
+o.w.extra.ser.value_class.A_1Props.call                     thrpt    4   683766.871 ±  39747.401  ops/s
+o.w.extra.ser.value_class.E_5Props.call                     thrpt    4   188698.831 ±  41802.116  ops/s
+o.w.extra.ser.value_class.T_20Props.call                    thrpt    4    38687.927 ±  74255.067  ops/s
+o.w.extra.ser.wrapper.A_1Props.call                         thrpt    4  1339962.065 ±  85978.208  ops/s
+o.w.extra.ser.wrapper.E_5Props.call                         thrpt    4   819621.335 ± 139974.737  ops/s
+o.w.extra.ser.wrapper.T_20Props.call                        thrpt    4   304169.671 ±  58058.172  ops/s
+o.w.main.deser.A_1Props_Constructor.call                    thrpt    4   501539.844 ±  64016.975  ops/s
+o.w.main.deser.A_1Props_Constructor.call_default            thrpt    4   302556.716 ±  26677.656  ops/s
+o.w.main.deser.A_1Props_Function.call                       thrpt    4   350641.467 ±  33093.479  ops/s
+o.w.main.deser.A_1Props_Function.call_default               thrpt    4   273436.413 ±  35649.290  ops/s
+o.w.main.deser.E_5Props_Constructor.call                    thrpt    4   182420.748 ±  28100.654  ops/s
+o.w.main.deser.E_5Props_Constructor.call_default            thrpt    4   104536.045 ±   4340.392  ops/s
+o.w.main.deser.E_5Props_Function.call                       thrpt    4   139731.036 ±  20330.902  ops/s
+o.w.main.deser.E_5Props_Function.call_default               thrpt    4   101293.748 ±   8314.086  ops/s
+o.w.main.deser.T_20Props_Constructor.call                   thrpt    4    56022.590 ±  19486.759  ops/s
+o.w.main.deser.T_20Props_Constructor.call_default           thrpt    4    28433.150 ±   2914.984  ops/s
+o.w.main.deser.T_20Props_Function.call                      thrpt    4    40642.032 ±   5558.912  ops/s
+o.w.main.deser.T_20Props_Function.call_default              thrpt    4    28350.154 ±   3270.950  ops/s
+o.w.main.ser.A_1Props.call                                  thrpt    4  1409339.895 ±  88811.907  ops/s
+o.w.main.ser.E_5Props.call                                  thrpt    4   881727.406 ±  33253.437  ops/s
+o.w.main.ser.T_20Props.call                                 thrpt    4   334310.992 ±  38784.798  ops/s
+
+Benchmark result is saved to /home/runner/work/kogera-benchmark/kogera-benchmark/ci-reports/Original-thrpt.csv
