@@ -3,7 +3,7 @@ package org.wrongwrong.extra.deser.value_class
 import com.fasterxml.jackson.annotation.JsonCreator
 import org.wrongwrong.extra.ValueClass
 
-open class E_5Props_Constructor : DeserBase<E_5Props_Constructor.Dst>(E_5Props_Constructor::Dst, Dst::class) {
+open class E_5P_Ctor : DeserBase<E_5P_Ctor.Dst>(E_5P_Ctor::Dst, Dst::class) {
     data class Dst(
         val p0: ValueClass = ValueClass(-1),
         val p1: ValueClass = ValueClass(-1),
@@ -13,7 +13,7 @@ open class E_5Props_Constructor : DeserBase<E_5Props_Constructor.Dst>(E_5Props_C
     )
 }
 
-open class E_5Props_Function : DeserBase<E_5Props_Function.Dst>(E_5Props_Function::Dst, Dst::class) {
+open class E_5P_Func : DeserBase<E_5P_Func.Dst>(E_5P_Func::Dst, Dst::class) {
     data class Dst(
         val p0: ValueClass,
         val p1: ValueClass,

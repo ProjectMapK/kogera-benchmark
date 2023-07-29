@@ -6,7 +6,7 @@ import org.openjdk.jmh.annotations.Setup
 import org.wrongwrong.BenchmarkBase
 import org.wrongwrong.main.fromRandomInts
 
-open class E_5Props : BenchmarkBase() {
+open class E_5P : BenchmarkBase() {
     data class Dst(
         val p0: Int,
         val p1: Int,
@@ -18,7 +18,7 @@ open class E_5Props : BenchmarkBase() {
 
     @Setup(Level.Trial)
     fun setUp() {
-        target = E_5Props::Dst.fromRandomInts()
+        target = E_5P::Dst.fromRandomInts()
     }
 
     @Benchmark

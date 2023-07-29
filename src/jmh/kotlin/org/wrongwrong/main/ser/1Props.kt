@@ -6,13 +6,13 @@ import org.openjdk.jmh.annotations.Setup
 import org.wrongwrong.BenchmarkBase
 import org.wrongwrong.main.fromRandomInts
 
-open class A_1Props : BenchmarkBase() {
+open class A_1P : BenchmarkBase() {
     data class Dst(val p0: Int)
     lateinit var target: Dst
 
     @Setup(Level.Trial)
     fun setUp() {
-        target = A_1Props::Dst.fromRandomInts()
+        target = A_1P::Dst.fromRandomInts()
     }
 
     @Benchmark

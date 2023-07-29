@@ -7,7 +7,7 @@ import org.wrongwrong.BenchmarkBase
 import org.wrongwrong.extra.ValueClass
 import org.wrongwrong.extra.fromRandomIntValues
 
-open class T_20Props : BenchmarkBase() {
+open class T_20P : BenchmarkBase() {
     data class Dst(
         val p00: ValueClass,
         val p01: ValueClass,
@@ -34,7 +34,7 @@ open class T_20Props : BenchmarkBase() {
 
     @Setup(Level.Trial)
     fun setUp() {
-        target = T_20Props::Dst.fromRandomIntValues()
+        target = T_20P::Dst.fromRandomIntValues()
     }
 
     @Benchmark

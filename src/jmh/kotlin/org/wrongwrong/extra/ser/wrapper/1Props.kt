@@ -7,13 +7,13 @@ import org.wrongwrong.BenchmarkBase
 import org.wrongwrong.extra.DataClass
 import org.wrongwrong.extra.fromRandomIntDatas
 
-open class A_1Props : BenchmarkBase() {
+open class A_1P : BenchmarkBase() {
     data class Dst(val p0: DataClass)
     lateinit var target: Dst
 
     @Setup(Level.Trial)
     fun setUp() {
-        target = A_1Props::Dst.fromRandomIntDatas()
+        target = A_1P::Dst.fromRandomIntDatas()
     }
 
     @Benchmark
