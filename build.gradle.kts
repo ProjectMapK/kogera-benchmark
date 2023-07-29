@@ -23,6 +23,7 @@ val isKogera = mapper.contains("Kogera")
 
 val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
 val isOnlyMain: Boolean = getOptionOrDefault("isOnlyMain", true)
+val isCi: Boolean = System.getenv().containsKey("CI") // True when executed in GitHub Actions
 
 val kogeraVersion = "2.15.2-beta0"
 val originalVersion = "2.15.2"
@@ -122,6 +123,7 @@ jmh {
     val mode = if (isSingleShot) "ss" else "thrpt"
     val name = listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
 
-    resultsFile = project.file("${project.rootDir}/jmh-reports/${name}.csv")
-    humanOutputFile = project.file("${project.rootDir}/jmh-reports/${name}.txt")
+    val outputDir = if (isCi) "${project.rootDir}/ci-reports" else "${project.rootDir}/jmh-reports"
+    resultsFile = project.file("${outputDir}/${name}.csv")
+    humanOutputFile = project.file("${outputDir}/${name}.txt")
 }
