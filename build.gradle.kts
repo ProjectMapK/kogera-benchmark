@@ -117,11 +117,15 @@ jmh {
 
     resultFormat = "CSV"
 
-    val dateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss").format(LocalDateTime.now())
-    val targetDependency = if (isKogera) "${mapper}-$kogeraVersion" else "${mapper}-$originalVersion"
-    val targetBenchmark = if (isOnlyMain) "main" else "full"
     val mode = if (isSingleShot) "ss" else "thrpt"
-    val name = listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
+    val name = if (isCi) {
+        "$mapper-$mode"
+    } else {
+        val dateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss").format(LocalDateTime.now())
+        val targetDependency = if (isKogera) "${mapper}-$kogeraVersion" else "${mapper}-$originalVersion"
+        val targetBenchmark = if (isOnlyMain) "main" else "full"
+        listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
+    }
 
     val outputDir = if (isCi) "${project.rootDir}/ci-reports" else "${project.rootDir}/jmh-reports"
     resultsFile = project.file("${outputDir}/${name}.csv")
