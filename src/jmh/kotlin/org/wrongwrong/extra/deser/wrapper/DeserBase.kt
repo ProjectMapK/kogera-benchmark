@@ -25,8 +25,8 @@ abstract class DeserBase<T : Any>(
     }
 
     @Benchmark
-    fun call(): T = mapper.readValue(fullJson, clazz)
+    fun present(): T = mapper.readValue(fullJson, clazz)
 
     @Benchmark
-    fun call_default(): T = mapper.readValue(replacedJson, clazz)
+    fun missing(): T = mapper.readValue(replacedJson, clazz)
 }
