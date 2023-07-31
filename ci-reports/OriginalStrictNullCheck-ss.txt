@@ -11,57 +11,57 @@
 
 # Run progress: 0.00% complete, ETA 00:00:00
 # Fork: 1 of 5
-Iteration   1: 48.640 ms/op
+Iteration   1: 59.127 ms/op
 
-# Run progress: 0.56% complete, ETA 00:04:38
+# Run progress: 0.56% complete, ETA 00:04:43
 # Fork: 2 of 5
-Iteration   1: 42.456 ms/op
+Iteration   1: 57.418 ms/op
 
-# Run progress: 1.11% complete, ETA 00:04:33
+# Run progress: 1.11% complete, ETA 00:04:41
 # Fork: 3 of 5
-Iteration   1: 46.888 ms/op
+Iteration   1: 46.812 ms/op
 
-# Run progress: 1.67% complete, ETA 00:04:33
+# Run progress: 1.67% complete, ETA 00:04:37
 # Fork: 4 of 5
-Iteration   1: 57.020 ms/op
+Iteration   1: 47.072 ms/op
 
-# Run progress: 2.22% complete, ETA 00:04:30
+# Run progress: 2.22% complete, ETA 00:04:36
 # Fork: 5 of 5
-Iteration   1: 54.771 ms/op
+Iteration   1: 45.649 ms/op
 
 
 Result "org.wrongwrong.extra.deser.Collections.array":
   N = 5
-  mean =     49.955 ±(99.9%) 22.819 ms/op
+  mean =     51.215 ±(99.9%) 25.001 ms/op
 
   Histogram, ms/op:
     [40.000, 41.250) = 0 
-    [41.250, 42.500) = 1 
+    [41.250, 42.500) = 0 
     [42.500, 43.750) = 0 
     [43.750, 45.000) = 0 
-    [45.000, 46.250) = 0 
-    [46.250, 47.500) = 1 
-    [47.500, 48.750) = 1 
+    [45.000, 46.250) = 1 
+    [46.250, 47.500) = 2 
+    [47.500, 48.750) = 0 
     [48.750, 50.000) = 0 
     [50.000, 51.250) = 0 
     [51.250, 52.500) = 0 
     [52.500, 53.750) = 0 
-    [53.750, 55.000) = 1 
+    [53.750, 55.000) = 0 
     [55.000, 56.250) = 0 
     [56.250, 57.500) = 1 
     [57.500, 58.750) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     42.456 ms/op
-     p(50.0000) =     48.640 ms/op
-     p(90.0000) =     57.020 ms/op
-     p(95.0000) =     57.020 ms/op
-     p(99.0000) =     57.020 ms/op
-     p(99.9000) =     57.020 ms/op
-     p(99.9900) =     57.020 ms/op
-     p(99.9990) =     57.020 ms/op
-     p(99.9999) =     57.020 ms/op
-    p(100.0000) =     57.020 ms/op
+      p(0.0000) =     45.649 ms/op
+     p(50.0000) =     47.072 ms/op
+     p(90.0000) =     59.127 ms/op
+     p(95.0000) =     59.127 ms/op
+     p(99.0000) =     59.127 ms/op
+     p(99.9000) =     59.127 ms/op
+     p(99.9900) =     59.127 ms/op
+     p(99.9990) =     59.127 ms/op
+     p(99.9999) =     59.127 ms/op
+    p(100.0000) =     59.127 ms/op
 
 
 # JMH version: 1.25
@@ -75,55 +75,59 @@ Result "org.wrongwrong.extra.deser.Collections.array":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.Collections.list
 
-# Run progress: 2.78% complete, ETA 00:04:28
+# Run progress: 2.78% complete, ETA 00:04:34
 # Fork: 1 of 5
-Iteration   1: 33.018 ms/op
+Iteration   1: 34.353 ms/op
 
-# Run progress: 3.33% complete, ETA 00:04:27
+# Run progress: 3.33% complete, ETA 00:04:34
 # Fork: 2 of 5
-Iteration   1: 32.153 ms/op
+Iteration   1: 34.719 ms/op
 
-# Run progress: 3.89% complete, ETA 00:04:24
+# Run progress: 3.89% complete, ETA 00:04:31
 # Fork: 3 of 5
-Iteration   1: 31.822 ms/op
+Iteration   1: 33.882 ms/op
 
-# Run progress: 4.44% complete, ETA 00:04:21
+# Run progress: 4.44% complete, ETA 00:04:30
 # Fork: 4 of 5
-Iteration   1: 31.903 ms/op
+Iteration   1: 35.255 ms/op
 
-# Run progress: 5.00% complete, ETA 00:04:19
+# Run progress: 5.00% complete, ETA 00:04:27
 # Fork: 5 of 5
-Iteration   1: 32.856 ms/op
+Iteration   1: 36.597 ms/op
 
 
 Result "org.wrongwrong.extra.deser.Collections.list":
   N = 5
-  mean =     32.351 ±(99.9%) 2.127 ms/op
+  mean =     34.961 ±(99.9%) 4.017 ms/op
 
   Histogram, ms/op:
-    [31.000, 31.250) = 0 
-    [31.250, 31.500) = 0 
-    [31.500, 31.750) = 0 
-    [31.750, 32.000) = 2 
-    [32.000, 32.250) = 1 
-    [32.250, 32.500) = 0 
-    [32.500, 32.750) = 0 
-    [32.750, 33.000) = 1 
-    [33.000, 33.250) = 1 
+    [33.000, 33.250) = 0 
     [33.250, 33.500) = 0 
     [33.500, 33.750) = 0 
+    [33.750, 34.000) = 1 
+    [34.000, 34.250) = 0 
+    [34.250, 34.500) = 1 
+    [34.500, 34.750) = 1 
+    [34.750, 35.000) = 0 
+    [35.000, 35.250) = 0 
+    [35.250, 35.500) = 1 
+    [35.500, 35.750) = 0 
+    [35.750, 36.000) = 0 
+    [36.000, 36.250) = 0 
+    [36.250, 36.500) = 0 
+    [36.500, 36.750) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     31.822 ms/op
-     p(50.0000) =     32.153 ms/op
-     p(90.0000) =     33.018 ms/op
-     p(95.0000) =     33.018 ms/op
-     p(99.0000) =     33.018 ms/op
-     p(99.9000) =     33.018 ms/op
-     p(99.9900) =     33.018 ms/op
-     p(99.9990) =     33.018 ms/op
-     p(99.9999) =     33.018 ms/op
-    p(100.0000) =     33.018 ms/op
+      p(0.0000) =     33.882 ms/op
+     p(50.0000) =     34.719 ms/op
+     p(90.0000) =     36.597 ms/op
+     p(95.0000) =     36.597 ms/op
+     p(99.0000) =     36.597 ms/op
+     p(99.9000) =     36.597 ms/op
+     p(99.9900) =     36.597 ms/op
+     p(99.9990) =     36.597 ms/op
+     p(99.9999) =     36.597 ms/op
+    p(100.0000) =     36.597 ms/op
 
 
 # JMH version: 1.25
@@ -137,59 +141,59 @@ Result "org.wrongwrong.extra.deser.Collections.list":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.Collections.map
 
-# Run progress: 5.56% complete, ETA 00:04:17
+# Run progress: 5.56% complete, ETA 00:04:25
 # Fork: 1 of 5
-Iteration   1: 35.268 ms/op
+Iteration   1: 38.037 ms/op
 
-# Run progress: 6.11% complete, ETA 00:04:15
+# Run progress: 6.11% complete, ETA 00:04:23
 # Fork: 2 of 5
-Iteration   1: 33.748 ms/op
+Iteration   1: 37.232 ms/op
 
-# Run progress: 6.67% complete, ETA 00:04:13
+# Run progress: 6.67% complete, ETA 00:04:22
 # Fork: 3 of 5
-Iteration   1: 36.865 ms/op
+Iteration   1: 36.588 ms/op
 
-# Run progress: 7.22% complete, ETA 00:04:11
+# Run progress: 7.22% complete, ETA 00:04:20
 # Fork: 4 of 5
-Iteration   1: 34.234 ms/op
+Iteration   1: 38.267 ms/op
 
-# Run progress: 7.78% complete, ETA 00:04:10
+# Run progress: 7.78% complete, ETA 00:04:19
 # Fork: 5 of 5
-Iteration   1: 34.606 ms/op
+Iteration   1: 35.617 ms/op
 
 
 Result "org.wrongwrong.extra.deser.Collections.map":
   N = 5
-  mean =     34.944 ±(99.9%) 4.654 ms/op
+  mean =     37.148 ±(99.9%) 4.177 ms/op
 
   Histogram, ms/op:
-    [33.000, 33.250) = 0 
-    [33.250, 33.500) = 0 
-    [33.500, 33.750) = 1 
-    [33.750, 34.000) = 0 
-    [34.000, 34.250) = 1 
-    [34.250, 34.500) = 0 
-    [34.500, 34.750) = 1 
-    [34.750, 35.000) = 0 
     [35.000, 35.250) = 0 
-    [35.250, 35.500) = 1 
-    [35.500, 35.750) = 0 
+    [35.250, 35.500) = 0 
+    [35.500, 35.750) = 1 
     [35.750, 36.000) = 0 
     [36.000, 36.250) = 0 
     [36.250, 36.500) = 0 
-    [36.500, 36.750) = 0 
+    [36.500, 36.750) = 1 
+    [36.750, 37.000) = 0 
+    [37.000, 37.250) = 1 
+    [37.250, 37.500) = 0 
+    [37.500, 37.750) = 0 
+    [37.750, 38.000) = 0 
+    [38.000, 38.250) = 1 
+    [38.250, 38.500) = 1 
+    [38.500, 38.750) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     33.748 ms/op
-     p(50.0000) =     34.606 ms/op
-     p(90.0000) =     36.865 ms/op
-     p(95.0000) =     36.865 ms/op
-     p(99.0000) =     36.865 ms/op
-     p(99.9000) =     36.865 ms/op
-     p(99.9900) =     36.865 ms/op
-     p(99.9990) =     36.865 ms/op
-     p(99.9999) =     36.865 ms/op
-    p(100.0000) =     36.865 ms/op
+      p(0.0000) =     35.617 ms/op
+     p(50.0000) =     37.232 ms/op
+     p(90.0000) =     38.267 ms/op
+     p(95.0000) =     38.267 ms/op
+     p(99.0000) =     38.267 ms/op
+     p(99.9000) =     38.267 ms/op
+     p(99.9900) =     38.267 ms/op
+     p(99.9990) =     38.267 ms/op
+     p(99.9999) =     38.267 ms/op
+    p(100.0000) =     38.267 ms/op
 
 
 # JMH version: 1.25
@@ -203,57 +207,59 @@ Result "org.wrongwrong.extra.deser.Collections.map":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.missing
 
-# Run progress: 8.33% complete, ETA 00:04:08
+# Run progress: 8.33% complete, ETA 00:04:17
 # Fork: 1 of 5
-Iteration   1: 30.793 ms/op
+Iteration   1: 35.007 ms/op
 
-# Run progress: 8.89% complete, ETA 00:04:06
+# Run progress: 8.89% complete, ETA 00:04:15
 # Fork: 2 of 5
-Iteration   1: 30.843 ms/op
+Iteration   1: 34.446 ms/op
 
-# Run progress: 9.44% complete, ETA 00:04:04
+# Run progress: 9.44% complete, ETA 00:04:13
 # Fork: 3 of 5
-Iteration   1: 31.385 ms/op
+Iteration   1: 35.581 ms/op
 
-# Run progress: 10.00% complete, ETA 00:04:03
+# Run progress: 10.00% complete, ETA 00:04:12
 # Fork: 4 of 5
-Iteration   1: 30.892 ms/op
+Iteration   1: 32.962 ms/op
 
-# Run progress: 10.56% complete, ETA 00:04:01
+# Run progress: 10.56% complete, ETA 00:04:10
 # Fork: 5 of 5
-Iteration   1: 30.855 ms/op
+Iteration   1: 33.777 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.missing":
   N = 5
-  mean =     30.954 ±(99.9%) 0.939 ms/op
+  mean =     34.355 ±(99.9%) 3.950 ms/op
 
   Histogram, ms/op:
-    [30.700, 30.750) = 0 
-    [30.750, 30.800) = 1 
-    [30.800, 30.850) = 1 
-    [30.850, 30.900) = 2 
-    [30.900, 30.950) = 0 
-    [30.950, 31.000) = 0 
-    [31.000, 31.050) = 0 
-    [31.050, 31.100) = 0 
-    [31.100, 31.150) = 0 
-    [31.150, 31.200) = 0 
-    [31.200, 31.250) = 0 
-    [31.250, 31.300) = 0 
-    [31.300, 31.350) = 0 
+    [32.000, 32.250) = 0 
+    [32.250, 32.500) = 0 
+    [32.500, 32.750) = 0 
+    [32.750, 33.000) = 1 
+    [33.000, 33.250) = 0 
+    [33.250, 33.500) = 0 
+    [33.500, 33.750) = 0 
+    [33.750, 34.000) = 1 
+    [34.000, 34.250) = 0 
+    [34.250, 34.500) = 1 
+    [34.500, 34.750) = 0 
+    [34.750, 35.000) = 0 
+    [35.000, 35.250) = 1 
+    [35.250, 35.500) = 0 
+    [35.500, 35.750) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     30.793 ms/op
-     p(50.0000) =     30.855 ms/op
-     p(90.0000) =     31.385 ms/op
-     p(95.0000) =     31.385 ms/op
-     p(99.0000) =     31.385 ms/op
-     p(99.9000) =     31.385 ms/op
-     p(99.9900) =     31.385 ms/op
-     p(99.9990) =     31.385 ms/op
-     p(99.9999) =     31.385 ms/op
-    p(100.0000) =     31.385 ms/op
+      p(0.0000) =     32.962 ms/op
+     p(50.0000) =     34.446 ms/op
+     p(90.0000) =     35.581 ms/op
+     p(95.0000) =     35.581 ms/op
+     p(99.0000) =     35.581 ms/op
+     p(99.9000) =     35.581 ms/op
+     p(99.9900) =     35.581 ms/op
+     p(99.9990) =     35.581 ms/op
+     p(99.9999) =     35.581 ms/op
+    p(100.0000) =     35.581 ms/op
 
 
 # JMH version: 1.25
@@ -267,59 +273,59 @@ Result "org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.present
 
-# Run progress: 11.11% complete, ETA 00:03:59
+# Run progress: 11.11% complete, ETA 00:04:08
 # Fork: 1 of 5
-Iteration   1: 28.215 ms/op
+Iteration   1: 31.755 ms/op
 
-# Run progress: 11.67% complete, ETA 00:03:58
+# Run progress: 11.67% complete, ETA 00:04:07
 # Fork: 2 of 5
-Iteration   1: 28.948 ms/op
+Iteration   1: 30.437 ms/op
 
-# Run progress: 12.22% complete, ETA 00:03:56
+# Run progress: 12.22% complete, ETA 00:04:05
 # Fork: 3 of 5
-Iteration   1: 29.867 ms/op
+Iteration   1: 33.069 ms/op
 
-# Run progress: 12.78% complete, ETA 00:03:54
+# Run progress: 12.78% complete, ETA 00:04:03
 # Fork: 4 of 5
-Iteration   1: 28.367 ms/op
+Iteration   1: 30.183 ms/op
 
-# Run progress: 13.33% complete, ETA 00:03:53
+# Run progress: 13.33% complete, ETA 00:04:02
 # Fork: 5 of 5
-Iteration   1: 28.807 ms/op
+Iteration   1: 30.890 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.present":
   N = 5
-  mean =     28.841 ±(99.9%) 2.497 ms/op
+  mean =     31.267 ±(99.9%) 4.511 ms/op
 
   Histogram, ms/op:
-    [28.000, 28.125) = 0 
-    [28.125, 28.250) = 1 
-    [28.250, 28.375) = 1 
-    [28.375, 28.500) = 0 
-    [28.500, 28.625) = 0 
-    [28.625, 28.750) = 0 
-    [28.750, 28.875) = 1 
-    [28.875, 29.000) = 1 
-    [29.000, 29.125) = 0 
-    [29.125, 29.250) = 0 
-    [29.250, 29.375) = 0 
-    [29.375, 29.500) = 0 
-    [29.500, 29.625) = 0 
-    [29.625, 29.750) = 0 
-    [29.750, 29.875) = 1 
+    [30.000, 30.250) = 1 
+    [30.250, 30.500) = 1 
+    [30.500, 30.750) = 0 
+    [30.750, 31.000) = 1 
+    [31.000, 31.250) = 0 
+    [31.250, 31.500) = 0 
+    [31.500, 31.750) = 0 
+    [31.750, 32.000) = 1 
+    [32.000, 32.250) = 0 
+    [32.250, 32.500) = 0 
+    [32.500, 32.750) = 0 
+    [32.750, 33.000) = 0 
+    [33.000, 33.250) = 1 
+    [33.250, 33.500) = 0 
+    [33.500, 33.750) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     28.215 ms/op
-     p(50.0000) =     28.807 ms/op
-     p(90.0000) =     29.867 ms/op
-     p(95.0000) =     29.867 ms/op
-     p(99.0000) =     29.867 ms/op
-     p(99.9000) =     29.867 ms/op
-     p(99.9900) =     29.867 ms/op
-     p(99.9990) =     29.867 ms/op
-     p(99.9999) =     29.867 ms/op
-    p(100.0000) =     29.867 ms/op
+      p(0.0000) =     30.183 ms/op
+     p(50.0000) =     30.890 ms/op
+     p(90.0000) =     33.069 ms/op
+     p(95.0000) =     33.069 ms/op
+     p(99.0000) =     33.069 ms/op
+     p(99.9000) =     33.069 ms/op
+     p(99.9900) =     33.069 ms/op
+     p(99.9990) =     33.069 ms/op
+     p(99.9999) =     33.069 ms/op
+    p(100.0000) =     33.069 ms/op
 
 
 # JMH version: 1.25
@@ -333,59 +339,60 @@ Result "org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.A_1P_Func.missing
 
-# Run progress: 13.89% complete, ETA 00:03:51
+# Run progress: 13.89% complete, ETA 00:04:00
 # Fork: 1 of 5
-Iteration   1: 32.352 ms/op
+Iteration   1: 35.587 ms/op
 
-# Run progress: 14.44% complete, ETA 00:03:49
+# Run progress: 14.44% complete, ETA 00:03:59
 # Fork: 2 of 5
-Iteration   1: 33.082 ms/op
+Iteration   1: 35.957 ms/op
 
-# Run progress: 15.00% complete, ETA 00:03:48
+# Run progress: 15.00% complete, ETA 00:03:57
 # Fork: 3 of 5
-Iteration   1: 32.334 ms/op
+Iteration   1: 36.282 ms/op
 
-# Run progress: 15.56% complete, ETA 00:03:47
+# Run progress: 15.56% complete, ETA 00:03:56
 # Fork: 4 of 5
-Iteration   1: 32.472 ms/op
+Iteration   1: 35.911 ms/op
 
-# Run progress: 16.11% complete, ETA 00:03:45
+# Run progress: 16.11% complete, ETA 00:03:54
 # Fork: 5 of 5
-Iteration   1: 32.976 ms/op
+Iteration   1: 35.582 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.A_1P_Func.missing":
   N = 5
-  mean =     32.643 ±(99.9%) 1.380 ms/op
+  mean =     35.863 ±(99.9%) 1.125 ms/op
 
   Histogram, ms/op:
-    [32.300, 32.350) = 1 
-    [32.350, 32.400) = 1 
-    [32.400, 32.450) = 0 
-    [32.450, 32.500) = 1 
-    [32.500, 32.550) = 0 
-    [32.550, 32.600) = 0 
-    [32.600, 32.650) = 0 
-    [32.650, 32.700) = 0 
-    [32.700, 32.750) = 0 
-    [32.750, 32.800) = 0 
-    [32.800, 32.850) = 0 
-    [32.850, 32.900) = 0 
-    [32.900, 32.950) = 0 
-    [32.950, 33.000) = 1 
-    [33.000, 33.050) = 0 
+    [35.500, 35.550) = 0 
+    [35.550, 35.600) = 2 
+    [35.600, 35.650) = 0 
+    [35.650, 35.700) = 0 
+    [35.700, 35.750) = 0 
+    [35.750, 35.800) = 0 
+    [35.800, 35.850) = 0 
+    [35.850, 35.900) = 0 
+    [35.900, 35.950) = 1 
+    [35.950, 36.000) = 1 
+    [36.000, 36.050) = 0 
+    [36.050, 36.100) = 0 
+    [36.100, 36.150) = 0 
+    [36.150, 36.200) = 0 
+    [36.200, 36.250) = 0 
+    [36.250, 36.300) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     32.334 ms/op
-     p(50.0000) =     32.472 ms/op
-     p(90.0000) =     33.082 ms/op
-     p(95.0000) =     33.082 ms/op
-     p(99.0000) =     33.082 ms/op
-     p(99.9000) =     33.082 ms/op
-     p(99.9900) =     33.082 ms/op
-     p(99.9990) =     33.082 ms/op
-     p(99.9999) =     33.082 ms/op
-    p(100.0000) =     33.082 ms/op
+      p(0.0000) =     35.582 ms/op
+     p(50.0000) =     35.911 ms/op
+     p(90.0000) =     36.282 ms/op
+     p(95.0000) =     36.282 ms/op
+     p(99.0000) =     36.282 ms/op
+     p(99.9000) =     36.282 ms/op
+     p(99.9900) =     36.282 ms/op
+     p(99.9990) =     36.282 ms/op
+     p(99.9999) =     36.282 ms/op
+    p(100.0000) =     36.282 ms/op
 
 
 # JMH version: 1.25
@@ -399,60 +406,59 @@ Result "org.wrongwrong.extra.deser.wrapper.A_1P_Func.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.A_1P_Func.present
 
-# Run progress: 16.67% complete, ETA 00:03:44
+# Run progress: 16.67% complete, ETA 00:03:52
 # Fork: 1 of 5
-Iteration   1: 30.860 ms/op
+Iteration   1: 34.506 ms/op
 
-# Run progress: 17.22% complete, ETA 00:03:43
+# Run progress: 17.22% complete, ETA 00:03:51
 # Fork: 2 of 5
-Iteration   1: 30.990 ms/op
+Iteration   1: 33.535 ms/op
 
-# Run progress: 17.78% complete, ETA 00:03:41
+# Run progress: 17.78% complete, ETA 00:03:49
 # Fork: 3 of 5
-Iteration   1: 30.574 ms/op
+Iteration   1: 33.174 ms/op
 
-# Run progress: 18.33% complete, ETA 00:03:40
+# Run progress: 18.33% complete, ETA 00:03:48
 # Fork: 4 of 5
-Iteration   1: 30.605 ms/op
+Iteration   1: 33.507 ms/op
 
-# Run progress: 18.89% complete, ETA 00:03:38
+# Run progress: 18.89% complete, ETA 00:03:46
 # Fork: 5 of 5
-Iteration   1: 31.280 ms/op
+Iteration   1: 34.723 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.A_1P_Func.present":
   N = 5
-  mean =     30.862 ±(99.9%) 1.123 ms/op
+  mean =     33.889 ±(99.9%) 2.625 ms/op
 
   Histogram, ms/op:
-    [30.500, 30.550) = 0 
-    [30.550, 30.600) = 1 
-    [30.600, 30.650) = 1 
-    [30.650, 30.700) = 0 
-    [30.700, 30.750) = 0 
-    [30.750, 30.800) = 0 
-    [30.800, 30.850) = 0 
-    [30.850, 30.900) = 1 
-    [30.900, 30.950) = 0 
-    [30.950, 31.000) = 1 
-    [31.000, 31.050) = 0 
-    [31.050, 31.100) = 0 
-    [31.100, 31.150) = 0 
-    [31.150, 31.200) = 0 
-    [31.200, 31.250) = 0 
-    [31.250, 31.300) = 1 
+    [33.000, 33.125) = 0 
+    [33.125, 33.250) = 1 
+    [33.250, 33.375) = 0 
+    [33.375, 33.500) = 0 
+    [33.500, 33.625) = 2 
+    [33.625, 33.750) = 0 
+    [33.750, 33.875) = 0 
+    [33.875, 34.000) = 0 
+    [34.000, 34.125) = 0 
+    [34.125, 34.250) = 0 
+    [34.250, 34.375) = 0 
+    [34.375, 34.500) = 0 
+    [34.500, 34.625) = 1 
+    [34.625, 34.750) = 1 
+    [34.750, 34.875) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     30.574 ms/op
-     p(50.0000) =     30.860 ms/op
-     p(90.0000) =     31.280 ms/op
-     p(95.0000) =     31.280 ms/op
-     p(99.0000) =     31.280 ms/op
-     p(99.9000) =     31.280 ms/op
-     p(99.9900) =     31.280 ms/op
-     p(99.9990) =     31.280 ms/op
-     p(99.9999) =     31.280 ms/op
-    p(100.0000) =     31.280 ms/op
+      p(0.0000) =     33.174 ms/op
+     p(50.0000) =     33.535 ms/op
+     p(90.0000) =     34.723 ms/op
+     p(95.0000) =     34.723 ms/op
+     p(99.0000) =     34.723 ms/op
+     p(99.9000) =     34.723 ms/op
+     p(99.9900) =     34.723 ms/op
+     p(99.9990) =     34.723 ms/op
+     p(99.9999) =     34.723 ms/op
+    p(100.0000) =     34.723 ms/op
 
 
 # JMH version: 1.25
@@ -466,58 +472,55 @@ Result "org.wrongwrong.extra.deser.wrapper.A_1P_Func.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.missing
 
-# Run progress: 19.44% complete, ETA 00:03:37
+# Run progress: 19.44% complete, ETA 00:03:45
 # Fork: 1 of 5
-Iteration   1: 32.023 ms/op
+Iteration   1: 35.835 ms/op
 
-# Run progress: 20.00% complete, ETA 00:03:35
+# Run progress: 20.00% complete, ETA 00:03:43
 # Fork: 2 of 5
-Iteration   1: 32.090 ms/op
+Iteration   1: 39.424 ms/op
 
-# Run progress: 20.56% complete, ETA 00:03:34
+# Run progress: 20.56% complete, ETA 00:03:41
 # Fork: 3 of 5
-Iteration   1: 32.559 ms/op
+Iteration   1: 34.927 ms/op
 
-# Run progress: 21.11% complete, ETA 00:03:32
+# Run progress: 21.11% complete, ETA 00:03:40
 # Fork: 4 of 5
-Iteration   1: 32.352 ms/op
+Iteration   1: 36.010 ms/op
 
-# Run progress: 21.67% complete, ETA 00:03:31
+# Run progress: 21.67% complete, ETA 00:03:38
 # Fork: 5 of 5
-Iteration   1: 32.666 ms/op
+Iteration   1: 35.228 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.missing":
   N = 5
-  mean =     32.338 ±(99.9%) 1.084 ms/op
+  mean =     36.285 ±(99.9%) 6.967 ms/op
 
   Histogram, ms/op:
-    [32.000, 32.050) = 1 
-    [32.050, 32.100) = 1 
-    [32.100, 32.150) = 0 
-    [32.150, 32.200) = 0 
-    [32.200, 32.250) = 0 
-    [32.250, 32.300) = 0 
-    [32.300, 32.350) = 0 
-    [32.350, 32.400) = 1 
-    [32.400, 32.450) = 0 
-    [32.450, 32.500) = 0 
-    [32.500, 32.550) = 0 
-    [32.550, 32.600) = 1 
-    [32.600, 32.650) = 0 
-    [32.650, 32.700) = 1 
+    [34.000, 34.500) = 0 
+    [34.500, 35.000) = 1 
+    [35.000, 35.500) = 1 
+    [35.500, 36.000) = 1 
+    [36.000, 36.500) = 1 
+    [36.500, 37.000) = 0 
+    [37.000, 37.500) = 0 
+    [37.500, 38.000) = 0 
+    [38.000, 38.500) = 0 
+    [38.500, 39.000) = 0 
+    [39.000, 39.500) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     32.023 ms/op
-     p(50.0000) =     32.352 ms/op
-     p(90.0000) =     32.666 ms/op
-     p(95.0000) =     32.666 ms/op
-     p(99.0000) =     32.666 ms/op
-     p(99.9000) =     32.666 ms/op
-     p(99.9900) =     32.666 ms/op
-     p(99.9990) =     32.666 ms/op
-     p(99.9999) =     32.666 ms/op
-    p(100.0000) =     32.666 ms/op
+      p(0.0000) =     34.927 ms/op
+     p(50.0000) =     35.835 ms/op
+     p(90.0000) =     39.424 ms/op
+     p(95.0000) =     39.424 ms/op
+     p(99.0000) =     39.424 ms/op
+     p(99.9000) =     39.424 ms/op
+     p(99.9900) =     39.424 ms/op
+     p(99.9990) =     39.424 ms/op
+     p(99.9999) =     39.424 ms/op
+    p(100.0000) =     39.424 ms/op
 
 
 # JMH version: 1.25
@@ -531,53 +534,59 @@ Result "org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.present
 
-# Run progress: 22.22% complete, ETA 00:03:29
+# Run progress: 22.22% complete, ETA 00:03:37
 # Fork: 1 of 5
-Iteration   1: 30.195 ms/op
+Iteration   1: 33.539 ms/op
 
-# Run progress: 22.78% complete, ETA 00:03:27
+# Run progress: 22.78% complete, ETA 00:03:35
 # Fork: 2 of 5
-Iteration   1: 30.478 ms/op
+Iteration   1: 32.768 ms/op
 
-# Run progress: 23.33% complete, ETA 00:03:26
+# Run progress: 23.33% complete, ETA 00:03:34
 # Fork: 3 of 5
-Iteration   1: 31.034 ms/op
+Iteration   1: 31.763 ms/op
 
-# Run progress: 23.89% complete, ETA 00:03:24
+# Run progress: 23.89% complete, ETA 00:03:32
 # Fork: 4 of 5
-Iteration   1: 30.545 ms/op
+Iteration   1: 32.128 ms/op
 
-# Run progress: 24.44% complete, ETA 00:03:23
+# Run progress: 24.44% complete, ETA 00:03:30
 # Fork: 5 of 5
-Iteration   1: 30.322 ms/op
+Iteration   1: 34.026 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.present":
   N = 5
-  mean =     30.515 ±(99.9%) 1.235 ms/op
+  mean =     32.845 ±(99.9%) 3.636 ms/op
 
   Histogram, ms/op:
-    [30.100, 30.200) = 1 
-    [30.200, 30.300) = 0 
-    [30.300, 30.400) = 1 
-    [30.400, 30.500) = 1 
-    [30.500, 30.600) = 1 
-    [30.600, 30.700) = 0 
-    [30.700, 30.800) = 0 
-    [30.800, 30.900) = 0 
-    [30.900, 31.000) = 0 
+    [31.000, 31.250) = 0 
+    [31.250, 31.500) = 0 
+    [31.500, 31.750) = 0 
+    [31.750, 32.000) = 1 
+    [32.000, 32.250) = 1 
+    [32.250, 32.500) = 0 
+    [32.500, 32.750) = 0 
+    [32.750, 33.000) = 1 
+    [33.000, 33.250) = 0 
+    [33.250, 33.500) = 0 
+    [33.500, 33.750) = 1 
+    [33.750, 34.000) = 0 
+    [34.000, 34.250) = 1 
+    [34.250, 34.500) = 0 
+    [34.500, 34.750) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     30.195 ms/op
-     p(50.0000) =     30.478 ms/op
-     p(90.0000) =     31.034 ms/op
-     p(95.0000) =     31.034 ms/op
-     p(99.0000) =     31.034 ms/op
-     p(99.9000) =     31.034 ms/op
-     p(99.9900) =     31.034 ms/op
-     p(99.9990) =     31.034 ms/op
-     p(99.9999) =     31.034 ms/op
-    p(100.0000) =     31.034 ms/op
+      p(0.0000) =     31.763 ms/op
+     p(50.0000) =     32.768 ms/op
+     p(90.0000) =     34.026 ms/op
+     p(95.0000) =     34.026 ms/op
+     p(99.0000) =     34.026 ms/op
+     p(99.9000) =     34.026 ms/op
+     p(99.9900) =     34.026 ms/op
+     p(99.9990) =     34.026 ms/op
+     p(99.9999) =     34.026 ms/op
+    p(100.0000) =     34.026 ms/op
 
 
 # JMH version: 1.25
@@ -591,59 +600,61 @@ Result "org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.E_5P_Func.missing
 
-# Run progress: 25.00% complete, ETA 00:03:21
+# Run progress: 25.00% complete, ETA 00:03:29
 # Fork: 1 of 5
-Iteration   1: 36.078 ms/op
+Iteration   1: 40.952 ms/op
 
-# Run progress: 25.56% complete, ETA 00:03:20
+# Run progress: 25.56% complete, ETA 00:03:27
 # Fork: 2 of 5
-Iteration   1: 36.552 ms/op
+Iteration   1: 39.539 ms/op
 
-# Run progress: 26.11% complete, ETA 00:03:18
+# Run progress: 26.11% complete, ETA 00:03:26
 # Fork: 3 of 5
-Iteration   1: 37.162 ms/op
+Iteration   1: 40.061 ms/op
 
-# Run progress: 26.67% complete, ETA 00:03:17
+# Run progress: 26.67% complete, ETA 00:03:24
 # Fork: 4 of 5
-Iteration   1: 36.819 ms/op
+Iteration   1: 46.338 ms/op
 
-# Run progress: 27.22% complete, ETA 00:03:15
+# Run progress: 27.22% complete, ETA 00:03:23
 # Fork: 5 of 5
-Iteration   1: 37.016 ms/op
+Iteration   1: 38.586 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.E_5P_Func.missing":
   N = 5
-  mean =     36.725 ±(99.9%) 1.647 ms/op
+  mean =     41.095 ±(99.9%) 11.758 ms/op
 
   Histogram, ms/op:
-    [36.000, 36.125) = 1 
-    [36.125, 36.250) = 0 
-    [36.250, 36.375) = 0 
-    [36.375, 36.500) = 0 
-    [36.500, 36.625) = 1 
-    [36.625, 36.750) = 0 
-    [36.750, 36.875) = 1 
-    [36.875, 37.000) = 0 
-    [37.000, 37.125) = 1 
-    [37.125, 37.250) = 1 
-    [37.250, 37.375) = 0 
-    [37.375, 37.500) = 0 
-    [37.500, 37.625) = 0 
-    [37.625, 37.750) = 0 
-    [37.750, 37.875) = 0 
+    [38.000, 38.500) = 0 
+    [38.500, 39.000) = 1 
+    [39.000, 39.500) = 0 
+    [39.500, 40.000) = 1 
+    [40.000, 40.500) = 1 
+    [40.500, 41.000) = 1 
+    [41.000, 41.500) = 0 
+    [41.500, 42.000) = 0 
+    [42.000, 42.500) = 0 
+    [42.500, 43.000) = 0 
+    [43.000, 43.500) = 0 
+    [43.500, 44.000) = 0 
+    [44.000, 44.500) = 0 
+    [44.500, 45.000) = 0 
+    [45.000, 45.500) = 0 
+    [45.500, 46.000) = 0 
+    [46.000, 46.500) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     36.078 ms/op
-     p(50.0000) =     36.819 ms/op
-     p(90.0000) =     37.162 ms/op
-     p(95.0000) =     37.162 ms/op
-     p(99.0000) =     37.162 ms/op
-     p(99.9000) =     37.162 ms/op
-     p(99.9900) =     37.162 ms/op
-     p(99.9990) =     37.162 ms/op
-     p(99.9999) =     37.162 ms/op
-    p(100.0000) =     37.162 ms/op
+      p(0.0000) =     38.586 ms/op
+     p(50.0000) =     40.061 ms/op
+     p(90.0000) =     46.338 ms/op
+     p(95.0000) =     46.338 ms/op
+     p(99.0000) =     46.338 ms/op
+     p(99.9000) =     46.338 ms/op
+     p(99.9900) =     46.338 ms/op
+     p(99.9990) =     46.338 ms/op
+     p(99.9999) =     46.338 ms/op
+    p(100.0000) =     46.338 ms/op
 
 
 # JMH version: 1.25
@@ -657,59 +668,55 @@ Result "org.wrongwrong.extra.deser.wrapper.E_5P_Func.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.E_5P_Func.present
 
-# Run progress: 27.78% complete, ETA 00:03:14
+# Run progress: 27.78% complete, ETA 00:03:21
 # Fork: 1 of 5
-Iteration   1: 34.626 ms/op
+Iteration   1: 39.303 ms/op
 
-# Run progress: 28.33% complete, ETA 00:03:13
+# Run progress: 28.33% complete, ETA 00:03:20
 # Fork: 2 of 5
-Iteration   1: 39.412 ms/op
+Iteration   1: 40.023 ms/op
 
-# Run progress: 28.89% complete, ETA 00:03:11
+# Run progress: 28.89% complete, ETA 00:03:18
 # Fork: 3 of 5
-Iteration   1: 34.589 ms/op
+Iteration   1: 41.511 ms/op
 
-# Run progress: 29.44% complete, ETA 00:03:10
+# Run progress: 29.44% complete, ETA 00:03:17
 # Fork: 4 of 5
-Iteration   1: 41.064 ms/op
+Iteration   1: 42.612 ms/op
 
-# Run progress: 30.00% complete, ETA 00:03:08
+# Run progress: 30.00% complete, ETA 00:03:15
 # Fork: 5 of 5
-Iteration   1: 35.258 ms/op
+Iteration   1: 37.824 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.E_5P_Func.present":
   N = 5
-  mean =     36.990 ±(99.9%) 11.683 ms/op
+  mean =     40.255 ±(99.9%) 7.204 ms/op
 
   Histogram, ms/op:
-    [34.000, 34.500) = 0 
-    [34.500, 35.000) = 2 
-    [35.000, 35.500) = 1 
-    [35.500, 36.000) = 0 
-    [36.000, 36.500) = 0 
-    [36.500, 37.000) = 0 
     [37.000, 37.500) = 0 
-    [37.500, 38.000) = 0 
+    [37.500, 38.000) = 1 
     [38.000, 38.500) = 0 
     [38.500, 39.000) = 0 
     [39.000, 39.500) = 1 
     [39.500, 40.000) = 0 
-    [40.000, 40.500) = 0 
+    [40.000, 40.500) = 1 
     [40.500, 41.000) = 0 
-    [41.000, 41.500) = 1 
+    [41.000, 41.500) = 0 
+    [41.500, 42.000) = 1 
+    [42.000, 42.500) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     34.589 ms/op
-     p(50.0000) =     35.258 ms/op
-     p(90.0000) =     41.064 ms/op
-     p(95.0000) =     41.064 ms/op
-     p(99.0000) =     41.064 ms/op
-     p(99.9000) =     41.064 ms/op
-     p(99.9900) =     41.064 ms/op
-     p(99.9990) =     41.064 ms/op
-     p(99.9999) =     41.064 ms/op
-    p(100.0000) =     41.064 ms/op
+      p(0.0000) =     37.824 ms/op
+     p(50.0000) =     40.023 ms/op
+     p(90.0000) =     42.612 ms/op
+     p(95.0000) =     42.612 ms/op
+     p(99.0000) =     42.612 ms/op
+     p(99.9000) =     42.612 ms/op
+     p(99.9900) =     42.612 ms/op
+     p(99.9990) =     42.612 ms/op
+     p(99.9999) =     42.612 ms/op
+    p(100.0000) =     42.612 ms/op
 
 
 # JMH version: 1.25
@@ -723,53 +730,55 @@ Result "org.wrongwrong.extra.deser.wrapper.E_5P_Func.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.missing
 
-# Run progress: 30.56% complete, ETA 00:03:07
+# Run progress: 30.56% complete, ETA 00:03:14
 # Fork: 1 of 5
-Iteration   1: 37.775 ms/op
+Iteration   1: 38.734 ms/op
 
-# Run progress: 31.11% complete, ETA 00:03:05
+# Run progress: 31.11% complete, ETA 00:03:12
 # Fork: 2 of 5
-Iteration   1: 37.625 ms/op
+Iteration   1: 42.815 ms/op
 
-# Run progress: 31.67% complete, ETA 00:03:04
+# Run progress: 31.67% complete, ETA 00:03:11
 # Fork: 3 of 5
-Iteration   1: 37.101 ms/op
+Iteration   1: 41.251 ms/op
 
-# Run progress: 32.22% complete, ETA 00:03:03
+# Run progress: 32.22% complete, ETA 00:03:09
 # Fork: 4 of 5
-Iteration   1: 36.813 ms/op
+Iteration   1: 43.837 ms/op
 
-# Run progress: 32.78% complete, ETA 00:03:01
+# Run progress: 32.78% complete, ETA 00:03:08
 # Fork: 5 of 5
-Iteration   1: 36.996 ms/op
+Iteration   1: 39.806 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.missing":
   N = 5
-  mean =     37.262 ±(99.9%) 1.604 ms/op
+  mean =     41.288 ±(99.9%) 8.065 ms/op
 
   Histogram, ms/op:
-    [36.800, 36.900) = 1 
-    [36.900, 37.000) = 1 
-    [37.000, 37.100) = 0 
-    [37.100, 37.200) = 1 
-    [37.200, 37.300) = 0 
-    [37.300, 37.400) = 0 
-    [37.400, 37.500) = 0 
-    [37.500, 37.600) = 0 
-    [37.600, 37.700) = 1 
+    [38.000, 38.500) = 0 
+    [38.500, 39.000) = 1 
+    [39.000, 39.500) = 0 
+    [39.500, 40.000) = 1 
+    [40.000, 40.500) = 0 
+    [40.500, 41.000) = 0 
+    [41.000, 41.500) = 1 
+    [41.500, 42.000) = 0 
+    [42.000, 42.500) = 0 
+    [42.500, 43.000) = 1 
+    [43.000, 43.500) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     36.813 ms/op
-     p(50.0000) =     37.101 ms/op
-     p(90.0000) =     37.775 ms/op
-     p(95.0000) =     37.775 ms/op
-     p(99.0000) =     37.775 ms/op
-     p(99.9000) =     37.775 ms/op
-     p(99.9900) =     37.775 ms/op
-     p(99.9990) =     37.775 ms/op
-     p(99.9999) =     37.775 ms/op
-    p(100.0000) =     37.775 ms/op
+      p(0.0000) =     38.734 ms/op
+     p(50.0000) =     41.251 ms/op
+     p(90.0000) =     43.837 ms/op
+     p(95.0000) =     43.837 ms/op
+     p(99.0000) =     43.837 ms/op
+     p(99.9000) =     43.837 ms/op
+     p(99.9900) =     43.837 ms/op
+     p(99.9990) =     43.837 ms/op
+     p(99.9999) =     43.837 ms/op
+    p(100.0000) =     43.837 ms/op
 
 
 # JMH version: 1.25
@@ -783,59 +792,53 @@ Result "org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.present
 
-# Run progress: 33.33% complete, ETA 00:03:00
+# Run progress: 33.33% complete, ETA 00:03:06
 # Fork: 1 of 5
-Iteration   1: 35.417 ms/op
+Iteration   1: 40.946 ms/op
 
-# Run progress: 33.89% complete, ETA 00:02:58
+# Run progress: 33.89% complete, ETA 00:03:05
 # Fork: 2 of 5
-Iteration   1: 45.815 ms/op
+Iteration   1: 39.224 ms/op
 
-# Run progress: 34.44% complete, ETA 00:02:57
+# Run progress: 34.44% complete, ETA 00:03:03
 # Fork: 3 of 5
-Iteration   1: 40.139 ms/op
+Iteration   1: 36.663 ms/op
 
-# Run progress: 35.00% complete, ETA 00:02:55
+# Run progress: 35.00% complete, ETA 00:03:01
 # Fork: 4 of 5
-Iteration   1: 34.249 ms/op
+Iteration   1: 36.709 ms/op
 
-# Run progress: 35.56% complete, ETA 00:02:54
+# Run progress: 35.56% complete, ETA 00:03:00
 # Fork: 5 of 5
-Iteration   1: 35.303 ms/op
+Iteration   1: 36.588 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.present":
   N = 5
-  mean =     38.185 ±(99.9%) 18.615 ms/op
+  mean =     38.026 ±(99.9%) 7.609 ms/op
 
   Histogram, ms/op:
-    [30.000, 31.250) = 0 
-    [31.250, 32.500) = 0 
-    [32.500, 33.750) = 0 
-    [33.750, 35.000) = 1 
-    [35.000, 36.250) = 2 
-    [36.250, 37.500) = 0 
-    [37.500, 38.750) = 0 
-    [38.750, 40.000) = 0 
-    [40.000, 41.250) = 1 
-    [41.250, 42.500) = 0 
-    [42.500, 43.750) = 0 
-    [43.750, 45.000) = 0 
-    [45.000, 46.250) = 1 
-    [46.250, 47.500) = 0 
-    [47.500, 48.750) = 0 
+    [36.000, 36.500) = 0 
+    [36.500, 37.000) = 3 
+    [37.000, 37.500) = 0 
+    [37.500, 38.000) = 0 
+    [38.000, 38.500) = 0 
+    [38.500, 39.000) = 0 
+    [39.000, 39.500) = 1 
+    [39.500, 40.000) = 0 
+    [40.000, 40.500) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     34.249 ms/op
-     p(50.0000) =     35.417 ms/op
-     p(90.0000) =     45.815 ms/op
-     p(95.0000) =     45.815 ms/op
-     p(99.0000) =     45.815 ms/op
-     p(99.9000) =     45.815 ms/op
-     p(99.9900) =     45.815 ms/op
-     p(99.9990) =     45.815 ms/op
-     p(99.9999) =     45.815 ms/op
-    p(100.0000) =     45.815 ms/op
+      p(0.0000) =     36.588 ms/op
+     p(50.0000) =     36.709 ms/op
+     p(90.0000) =     40.946 ms/op
+     p(95.0000) =     40.946 ms/op
+     p(99.0000) =     40.946 ms/op
+     p(99.9000) =     40.946 ms/op
+     p(99.9900) =     40.946 ms/op
+     p(99.9990) =     40.946 ms/op
+     p(99.9999) =     40.946 ms/op
+    p(100.0000) =     40.946 ms/op
 
 
 # JMH version: 1.25
@@ -849,53 +852,61 @@ Result "org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.T_20P_Func.missing
 
-# Run progress: 36.11% complete, ETA 00:02:52
+# Run progress: 36.11% complete, ETA 00:02:58
 # Fork: 1 of 5
-Iteration   1: 43.542 ms/op
+Iteration   1: 48.732 ms/op
 
-# Run progress: 36.67% complete, ETA 00:02:51
+# Run progress: 36.67% complete, ETA 00:02:57
 # Fork: 2 of 5
-Iteration   1: 45.910 ms/op
+Iteration   1: 46.312 ms/op
 
-# Run progress: 37.22% complete, ETA 00:02:49
+# Run progress: 37.22% complete, ETA 00:02:55
 # Fork: 3 of 5
-Iteration   1: 42.137 ms/op
+Iteration   1: 52.003 ms/op
 
-# Run progress: 37.78% complete, ETA 00:02:48
+# Run progress: 37.78% complete, ETA 00:02:54
 # Fork: 4 of 5
-Iteration   1: 41.995 ms/op
+Iteration   1: 44.687 ms/op
 
-# Run progress: 38.33% complete, ETA 00:02:47
+# Run progress: 38.33% complete, ETA 00:02:52
 # Fork: 5 of 5
-Iteration   1: 42.487 ms/op
+Iteration   1: 45.501 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.T_20P_Func.missing":
   N = 5
-  mean =     43.214 ±(99.9%) 6.254 ms/op
+  mean =     47.447 ±(99.9%) 11.406 ms/op
 
   Histogram, ms/op:
-    [41.000, 41.500) = 0 
-    [41.500, 42.000) = 1 
-    [42.000, 42.500) = 2 
-    [42.500, 43.000) = 0 
-    [43.000, 43.500) = 0 
-    [43.500, 44.000) = 1 
     [44.000, 44.500) = 0 
-    [44.500, 45.000) = 0 
+    [44.500, 45.000) = 1 
     [45.000, 45.500) = 0 
+    [45.500, 46.000) = 1 
+    [46.000, 46.500) = 1 
+    [46.500, 47.000) = 0 
+    [47.000, 47.500) = 0 
+    [47.500, 48.000) = 0 
+    [48.000, 48.500) = 0 
+    [48.500, 49.000) = 1 
+    [49.000, 49.500) = 0 
+    [49.500, 50.000) = 0 
+    [50.000, 50.500) = 0 
+    [50.500, 51.000) = 0 
+    [51.000, 51.500) = 0 
+    [51.500, 52.000) = 0 
+    [52.000, 52.500) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     41.995 ms/op
-     p(50.0000) =     42.487 ms/op
-     p(90.0000) =     45.910 ms/op
-     p(95.0000) =     45.910 ms/op
-     p(99.0000) =     45.910 ms/op
-     p(99.9000) =     45.910 ms/op
-     p(99.9900) =     45.910 ms/op
-     p(99.9990) =     45.910 ms/op
-     p(99.9999) =     45.910 ms/op
-    p(100.0000) =     45.910 ms/op
+      p(0.0000) =     44.687 ms/op
+     p(50.0000) =     46.312 ms/op
+     p(90.0000) =     52.003 ms/op
+     p(95.0000) =     52.003 ms/op
+     p(99.0000) =     52.003 ms/op
+     p(99.9000) =     52.003 ms/op
+     p(99.9900) =     52.003 ms/op
+     p(99.9990) =     52.003 ms/op
+     p(99.9999) =     52.003 ms/op
+    p(100.0000) =     52.003 ms/op
 
 
 # JMH version: 1.25
@@ -909,53 +920,59 @@ Result "org.wrongwrong.extra.deser.wrapper.T_20P_Func.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.T_20P_Func.present
 
-# Run progress: 38.89% complete, ETA 00:02:45
+# Run progress: 38.89% complete, ETA 00:02:51
 # Fork: 1 of 5
-Iteration   1: 40.721 ms/op
+Iteration   1: 43.784 ms/op
 
-# Run progress: 39.44% complete, ETA 00:02:44
+# Run progress: 39.44% complete, ETA 00:02:50
 # Fork: 2 of 5
-Iteration   1: 39.799 ms/op
+Iteration   1: 43.511 ms/op
 
-# Run progress: 40.00% complete, ETA 00:02:42
+# Run progress: 40.00% complete, ETA 00:02:48
 # Fork: 3 of 5
-Iteration   1: 39.611 ms/op
+Iteration   1: 42.728 ms/op
 
-# Run progress: 40.56% complete, ETA 00:02:41
+# Run progress: 40.56% complete, ETA 00:02:47
 # Fork: 4 of 5
-Iteration   1: 43.495 ms/op
+Iteration   1: 43.594 ms/op
 
-# Run progress: 41.11% complete, ETA 00:02:39
+# Run progress: 41.11% complete, ETA 00:02:45
 # Fork: 5 of 5
-Iteration   1: 40.133 ms/op
+Iteration   1: 45.464 ms/op
 
 
 Result "org.wrongwrong.extra.deser.wrapper.T_20P_Func.present":
   N = 5
-  mean =     40.752 ±(99.9%) 6.125 ms/op
+  mean =     43.816 ±(99.9%) 3.872 ms/op
 
   Histogram, ms/op:
-    [39.000, 39.500) = 0 
-    [39.500, 40.000) = 2 
-    [40.000, 40.500) = 1 
-    [40.500, 41.000) = 1 
-    [41.000, 41.500) = 0 
-    [41.500, 42.000) = 0 
-    [42.000, 42.500) = 0 
-    [42.500, 43.000) = 0 
-    [43.000, 43.500) = 1 
+    [42.000, 42.250) = 0 
+    [42.250, 42.500) = 0 
+    [42.500, 42.750) = 1 
+    [42.750, 43.000) = 0 
+    [43.000, 43.250) = 0 
+    [43.250, 43.500) = 0 
+    [43.500, 43.750) = 2 
+    [43.750, 44.000) = 1 
+    [44.000, 44.250) = 0 
+    [44.250, 44.500) = 0 
+    [44.500, 44.750) = 0 
+    [44.750, 45.000) = 0 
+    [45.000, 45.250) = 0 
+    [45.250, 45.500) = 1 
+    [45.500, 45.750) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     39.611 ms/op
-     p(50.0000) =     40.133 ms/op
-     p(90.0000) =     43.495 ms/op
-     p(95.0000) =     43.495 ms/op
-     p(99.0000) =     43.495 ms/op
-     p(99.9000) =     43.495 ms/op
-     p(99.9900) =     43.495 ms/op
-     p(99.9990) =     43.495 ms/op
-     p(99.9999) =     43.495 ms/op
-    p(100.0000) =     43.495 ms/op
+      p(0.0000) =     42.728 ms/op
+     p(50.0000) =     43.594 ms/op
+     p(90.0000) =     45.464 ms/op
+     p(95.0000) =     45.464 ms/op
+     p(99.0000) =     45.464 ms/op
+     p(99.9000) =     45.464 ms/op
+     p(99.9900) =     45.464 ms/op
+     p(99.9990) =     45.464 ms/op
+     p(99.9999) =     45.464 ms/op
+    p(100.0000) =     45.464 ms/op
 
 
 # JMH version: 1.25
@@ -969,55 +986,53 @@ Result "org.wrongwrong.extra.deser.wrapper.T_20P_Func.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.ser.value_class.A_1P.call
 
-# Run progress: 41.67% complete, ETA 00:02:38
+# Run progress: 41.67% complete, ETA 00:02:44
 # Fork: 1 of 5
-Iteration   1: 81.784 ms/op
+Iteration   1: 91.419 ms/op
 
-# Run progress: 42.22% complete, ETA 00:02:36
+# Run progress: 42.22% complete, ETA 00:02:42
 # Fork: 2 of 5
-Iteration   1: 88.949 ms/op
+Iteration   1: 90.590 ms/op
 
-# Run progress: 42.78% complete, ETA 00:02:35
+# Run progress: 42.78% complete, ETA 00:02:40
 # Fork: 3 of 5
-Iteration   1: 81.581 ms/op
+Iteration   1: 87.114 ms/op
 
-# Run progress: 43.33% complete, ETA 00:02:33
+# Run progress: 43.33% complete, ETA 00:02:39
 # Fork: 4 of 5
-Iteration   1: 97.388 ms/op
+Iteration   1: 93.451 ms/op
 
-# Run progress: 43.89% complete, ETA 00:02:32
+# Run progress: 43.89% complete, ETA 00:02:37
 # Fork: 5 of 5
-Iteration   1: 76.753 ms/op
+Iteration   1: 84.094 ms/op
 
 
 Result "org.wrongwrong.extra.ser.value_class.A_1P.call":
   N = 5
-  mean =     85.291 ±(99.9%) 30.966 ms/op
+  mean =     89.334 ±(99.9%) 14.313 ms/op
 
   Histogram, ms/op:
-    [ 70.000,  72.500) = 0 
-    [ 72.500,  75.000) = 0 
-    [ 75.000,  77.500) = 1 
-    [ 77.500,  80.000) = 0 
-    [ 80.000,  82.500) = 2 
-    [ 82.500,  85.000) = 0 
-    [ 85.000,  87.500) = 0 
-    [ 87.500,  90.000) = 1 
-    [ 90.000,  92.500) = 0 
-    [ 92.500,  95.000) = 0 
-    [ 95.000,  97.500) = 1 
+    [84.000, 85.000) = 1 
+    [85.000, 86.000) = 0 
+    [86.000, 87.000) = 0 
+    [87.000, 88.000) = 1 
+    [88.000, 89.000) = 0 
+    [89.000, 90.000) = 0 
+    [90.000, 91.000) = 1 
+    [91.000, 92.000) = 1 
+    [92.000, 93.000) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     76.753 ms/op
-     p(50.0000) =     81.784 ms/op
-     p(90.0000) =     97.388 ms/op
-     p(95.0000) =     97.388 ms/op
-     p(99.0000) =     97.388 ms/op
-     p(99.9000) =     97.388 ms/op
-     p(99.9900) =     97.388 ms/op
-     p(99.9990) =     97.388 ms/op
-     p(99.9999) =     97.388 ms/op
-    p(100.0000) =     97.388 ms/op
+      p(0.0000) =     84.094 ms/op
+     p(50.0000) =     90.590 ms/op
+     p(90.0000) =     93.451 ms/op
+     p(95.0000) =     93.451 ms/op
+     p(99.0000) =     93.451 ms/op
+     p(99.9000) =     93.451 ms/op
+     p(99.9900) =     93.451 ms/op
+     p(99.9990) =     93.451 ms/op
+     p(99.9999) =     93.451 ms/op
+    p(100.0000) =     93.451 ms/op
 
 
 # JMH version: 1.25
@@ -1031,59 +1046,59 @@ Result "org.wrongwrong.extra.ser.value_class.A_1P.call":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.ser.value_class.E_5P.call
 
-# Run progress: 44.44% complete, ETA 00:02:30
+# Run progress: 44.44% complete, ETA 00:02:35
 # Fork: 1 of 5
-Iteration   1: 80.637 ms/op
+Iteration   1: 92.479 ms/op
 
-# Run progress: 45.00% complete, ETA 00:02:28
+# Run progress: 45.00% complete, ETA 00:02:34
 # Fork: 2 of 5
-Iteration   1: 87.093 ms/op
+Iteration   1: 87.916 ms/op
 
-# Run progress: 45.56% complete, ETA 00:02:27
+# Run progress: 45.56% complete, ETA 00:02:32
 # Fork: 3 of 5
-Iteration   1: 87.800 ms/op
+Iteration   1: 102.624 ms/op
 
-# Run progress: 46.11% complete, ETA 00:02:25
+# Run progress: 46.11% complete, ETA 00:02:30
 # Fork: 4 of 5
-Iteration   1: 81.559 ms/op
+Iteration   1: 110.157 ms/op
 
-# Run progress: 46.67% complete, ETA 00:02:24
+# Run progress: 46.67% complete, ETA 00:02:29
 # Fork: 5 of 5
-Iteration   1: 83.365 ms/op
+Iteration   1: 109.656 ms/op
 
 
 Result "org.wrongwrong.extra.ser.value_class.E_5P.call":
   N = 5
-  mean =     84.091 ±(99.9%) 12.424 ms/op
+  mean =    100.566 ±(99.9%) 38.711 ms/op
 
   Histogram, ms/op:
-    [80.000, 80.500) = 0 
-    [80.500, 81.000) = 1 
-    [81.000, 81.500) = 0 
-    [81.500, 82.000) = 1 
-    [82.000, 82.500) = 0 
-    [82.500, 83.000) = 0 
-    [83.000, 83.500) = 1 
-    [83.500, 84.000) = 0 
-    [84.000, 84.500) = 0 
-    [84.500, 85.000) = 0 
-    [85.000, 85.500) = 0 
-    [85.500, 86.000) = 0 
-    [86.000, 86.500) = 0 
-    [86.500, 87.000) = 0 
-    [87.000, 87.500) = 1 
+    [ 80.000,  82.500) = 0 
+    [ 82.500,  85.000) = 0 
+    [ 85.000,  87.500) = 0 
+    [ 87.500,  90.000) = 1 
+    [ 90.000,  92.500) = 1 
+    [ 92.500,  95.000) = 0 
+    [ 95.000,  97.500) = 0 
+    [ 97.500, 100.000) = 0 
+    [100.000, 102.500) = 0 
+    [102.500, 105.000) = 1 
+    [105.000, 107.500) = 0 
+    [107.500, 110.000) = 1 
+    [110.000, 112.500) = 1 
+    [112.500, 115.000) = 0 
+    [115.000, 117.500) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     80.637 ms/op
-     p(50.0000) =     83.365 ms/op
-     p(90.0000) =     87.800 ms/op
-     p(95.0000) =     87.800 ms/op
-     p(99.0000) =     87.800 ms/op
-     p(99.9000) =     87.800 ms/op
-     p(99.9900) =     87.800 ms/op
-     p(99.9990) =     87.800 ms/op
-     p(99.9999) =     87.800 ms/op
-    p(100.0000) =     87.800 ms/op
+      p(0.0000) =     87.916 ms/op
+     p(50.0000) =    102.624 ms/op
+     p(90.0000) =    110.157 ms/op
+     p(95.0000) =    110.157 ms/op
+     p(99.0000) =    110.157 ms/op
+     p(99.9000) =    110.157 ms/op
+     p(99.9900) =    110.157 ms/op
+     p(99.9990) =    110.157 ms/op
+     p(99.9999) =    110.157 ms/op
+    p(100.0000) =    110.157 ms/op
 
 
 # JMH version: 1.25
@@ -1097,59 +1112,53 @@ Result "org.wrongwrong.extra.ser.value_class.E_5P.call":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.ser.value_class.T_20P.call
 
-# Run progress: 47.22% complete, ETA 00:02:22
+# Run progress: 47.22% complete, ETA 00:02:27
 # Fork: 1 of 5
-Iteration   1: 94.221 ms/op
+Iteration   1: 102.206 ms/op
 
-# Run progress: 47.78% complete, ETA 00:02:21
+# Run progress: 47.78% complete, ETA 00:02:26
 # Fork: 2 of 5
-Iteration   1: 125.807 ms/op
+Iteration   1: 101.451 ms/op
 
-# Run progress: 48.33% complete, ETA 00:02:19
+# Run progress: 48.33% complete, ETA 00:02:24
 # Fork: 3 of 5
-Iteration   1: 98.341 ms/op
+Iteration   1: 140.068 ms/op
 
-# Run progress: 48.89% complete, ETA 00:02:18
+# Run progress: 48.89% complete, ETA 00:02:22
 # Fork: 4 of 5
-Iteration   1: 95.969 ms/op
+Iteration   1: 114.373 ms/op
 
-# Run progress: 49.44% complete, ETA 00:02:16
+# Run progress: 49.44% complete, ETA 00:02:21
 # Fork: 5 of 5
-Iteration   1: 96.575 ms/op
+Iteration   1: 128.826 ms/op
 
 
 Result "org.wrongwrong.extra.ser.value_class.T_20P.call":
   N = 5
-  mean =    102.183 ±(99.9%) 51.168 ms/op
+  mean =    117.385 ±(99.9%) 64.971 ms/op
 
   Histogram, ms/op:
-    [ 90.000,  92.500) = 0 
-    [ 92.500,  95.000) = 1 
-    [ 95.000,  97.500) = 2 
-    [ 97.500, 100.000) = 1 
-    [100.000, 102.500) = 0 
-    [102.500, 105.000) = 0 
-    [105.000, 107.500) = 0 
-    [107.500, 110.000) = 0 
-    [110.000, 112.500) = 0 
-    [112.500, 115.000) = 0 
-    [115.000, 117.500) = 0 
-    [117.500, 120.000) = 0 
-    [120.000, 122.500) = 0 
-    [122.500, 125.000) = 0 
-    [125.000, 127.500) = 1 
+    [100.000, 105.000) = 2 
+    [105.000, 110.000) = 0 
+    [110.000, 115.000) = 1 
+    [115.000, 120.000) = 0 
+    [120.000, 125.000) = 0 
+    [125.000, 130.000) = 1 
+    [130.000, 135.000) = 0 
+    [135.000, 140.000) = 0 
+    [140.000, 145.000) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     94.221 ms/op
-     p(50.0000) =     96.575 ms/op
-     p(90.0000) =    125.807 ms/op
-     p(95.0000) =    125.807 ms/op
-     p(99.0000) =    125.807 ms/op
-     p(99.9000) =    125.807 ms/op
-     p(99.9900) =    125.807 ms/op
-     p(99.9990) =    125.807 ms/op
-     p(99.9999) =    125.807 ms/op
-    p(100.0000) =    125.807 ms/op
+      p(0.0000) =    101.451 ms/op
+     p(50.0000) =    114.373 ms/op
+     p(90.0000) =    140.068 ms/op
+     p(95.0000) =    140.068 ms/op
+     p(99.0000) =    140.068 ms/op
+     p(99.9000) =    140.068 ms/op
+     p(99.9900) =    140.068 ms/op
+     p(99.9990) =    140.068 ms/op
+     p(99.9999) =    140.068 ms/op
+    p(100.0000) =    140.068 ms/op
 
 
 # JMH version: 1.25
@@ -1163,59 +1172,61 @@ Result "org.wrongwrong.extra.ser.value_class.T_20P.call":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.ser.wrapper.A_1P.call
 
-# Run progress: 50.00% complete, ETA 00:02:15
+# Run progress: 50.00% complete, ETA 00:02:19
 # Fork: 1 of 5
-Iteration   1: 131.917 ms/op
+Iteration   1: 122.150 ms/op
 
-# Run progress: 50.56% complete, ETA 00:02:13
+# Run progress: 50.56% complete, ETA 00:02:18
 # Fork: 2 of 5
-Iteration   1: 119.415 ms/op
+Iteration   1: 115.049 ms/op
 
-# Run progress: 51.11% complete, ETA 00:02:11
+# Run progress: 51.11% complete, ETA 00:02:16
 # Fork: 3 of 5
-Iteration   1: 111.307 ms/op
+Iteration   1: 115.303 ms/op
 
-# Run progress: 51.67% complete, ETA 00:02:10
+# Run progress: 51.67% complete, ETA 00:02:14
 # Fork: 4 of 5
-Iteration   1: 106.742 ms/op
+Iteration   1: 115.716 ms/op
 
-# Run progress: 52.22% complete, ETA 00:02:08
+# Run progress: 52.22% complete, ETA 00:02:13
 # Fork: 5 of 5
-Iteration   1: 107.559 ms/op
+Iteration   1: 114.325 ms/op
 
 
 Result "org.wrongwrong.extra.ser.wrapper.A_1P.call":
   N = 5
-  mean =    115.388 ±(99.9%) 40.483 ms/op
+  mean =    116.509 ±(99.9%) 12.298 ms/op
 
   Histogram, ms/op:
-    [100.000, 102.500) = 0 
-    [102.500, 105.000) = 0 
-    [105.000, 107.500) = 1 
-    [107.500, 110.000) = 1 
-    [110.000, 112.500) = 1 
-    [112.500, 115.000) = 0 
-    [115.000, 117.500) = 0 
-    [117.500, 120.000) = 1 
-    [120.000, 122.500) = 0 
-    [122.500, 125.000) = 0 
-    [125.000, 127.500) = 0 
-    [127.500, 130.000) = 0 
-    [130.000, 132.500) = 1 
-    [132.500, 135.000) = 0 
-    [135.000, 137.500) = 0 
+    [114.000, 114.500) = 1 
+    [114.500, 115.000) = 0 
+    [115.000, 115.500) = 2 
+    [115.500, 116.000) = 1 
+    [116.000, 116.500) = 0 
+    [116.500, 117.000) = 0 
+    [117.000, 117.500) = 0 
+    [117.500, 118.000) = 0 
+    [118.000, 118.500) = 0 
+    [118.500, 119.000) = 0 
+    [119.000, 119.500) = 0 
+    [119.500, 120.000) = 0 
+    [120.000, 120.500) = 0 
+    [120.500, 121.000) = 0 
+    [121.000, 121.500) = 0 
+    [121.500, 122.000) = 0 
+    [122.000, 122.500) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =    106.742 ms/op
-     p(50.0000) =    111.307 ms/op
-     p(90.0000) =    131.917 ms/op
-     p(95.0000) =    131.917 ms/op
-     p(99.0000) =    131.917 ms/op
-     p(99.9000) =    131.917 ms/op
-     p(99.9900) =    131.917 ms/op
-     p(99.9990) =    131.917 ms/op
-     p(99.9999) =    131.917 ms/op
-    p(100.0000) =    131.917 ms/op
+      p(0.0000) =    114.325 ms/op
+     p(50.0000) =    115.303 ms/op
+     p(90.0000) =    122.150 ms/op
+     p(95.0000) =    122.150 ms/op
+     p(99.0000) =    122.150 ms/op
+     p(99.9000) =    122.150 ms/op
+     p(99.9900) =    122.150 ms/op
+     p(99.9990) =    122.150 ms/op
+     p(99.9999) =    122.150 ms/op
+    p(100.0000) =    122.150 ms/op
 
 
 # JMH version: 1.25
@@ -1229,59 +1240,59 @@ Result "org.wrongwrong.extra.ser.wrapper.A_1P.call":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.ser.wrapper.E_5P.call
 
-# Run progress: 52.78% complete, ETA 00:02:07
+# Run progress: 52.78% complete, ETA 00:02:11
 # Fork: 1 of 5
-Iteration   1: 118.563 ms/op
+Iteration   1: 148.462 ms/op
 
-# Run progress: 53.33% complete, ETA 00:02:05
+# Run progress: 53.33% complete, ETA 00:02:10
 # Fork: 2 of 5
-Iteration   1: 126.233 ms/op
+Iteration   1: 138.869 ms/op
 
-# Run progress: 53.89% complete, ETA 00:02:04
+# Run progress: 53.89% complete, ETA 00:02:08
 # Fork: 3 of 5
-Iteration   1: 116.507 ms/op
+Iteration   1: 130.602 ms/op
 
-# Run progress: 54.44% complete, ETA 00:02:02
+# Run progress: 54.44% complete, ETA 00:02:06
 # Fork: 4 of 5
-Iteration   1: 115.271 ms/op
+Iteration   1: 135.395 ms/op
 
-# Run progress: 55.00% complete, ETA 00:02:01
+# Run progress: 55.00% complete, ETA 00:02:05
 # Fork: 5 of 5
-Iteration   1: 126.340 ms/op
+Iteration   1: 140.350 ms/op
 
 
 Result "org.wrongwrong.extra.ser.wrapper.E_5P.call":
   N = 5
-  mean =    120.583 ±(99.9%) 20.554 ms/op
+  mean =    138.736 ±(99.9%) 25.437 ms/op
 
   Histogram, ms/op:
-    [110.000, 111.250) = 0 
-    [111.250, 112.500) = 0 
-    [112.500, 113.750) = 0 
-    [113.750, 115.000) = 0 
-    [115.000, 116.250) = 1 
-    [116.250, 117.500) = 1 
-    [117.500, 118.750) = 1 
-    [118.750, 120.000) = 0 
-    [120.000, 121.250) = 0 
-    [121.250, 122.500) = 0 
-    [122.500, 123.750) = 0 
-    [123.750, 125.000) = 0 
-    [125.000, 126.250) = 1 
-    [126.250, 127.500) = 1 
-    [127.500, 128.750) = 0 
+    [130.000, 131.250) = 1 
+    [131.250, 132.500) = 0 
+    [132.500, 133.750) = 0 
+    [133.750, 135.000) = 0 
+    [135.000, 136.250) = 1 
+    [136.250, 137.500) = 0 
+    [137.500, 138.750) = 0 
+    [138.750, 140.000) = 1 
+    [140.000, 141.250) = 1 
+    [141.250, 142.500) = 0 
+    [142.500, 143.750) = 0 
+    [143.750, 145.000) = 0 
+    [145.000, 146.250) = 0 
+    [146.250, 147.500) = 0 
+    [147.500, 148.750) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =    115.271 ms/op
-     p(50.0000) =    118.563 ms/op
-     p(90.0000) =    126.340 ms/op
-     p(95.0000) =    126.340 ms/op
-     p(99.0000) =    126.340 ms/op
-     p(99.9000) =    126.340 ms/op
-     p(99.9900) =    126.340 ms/op
-     p(99.9990) =    126.340 ms/op
-     p(99.9999) =    126.340 ms/op
-    p(100.0000) =    126.340 ms/op
+      p(0.0000) =    130.602 ms/op
+     p(50.0000) =    138.869 ms/op
+     p(90.0000) =    148.462 ms/op
+     p(95.0000) =    148.462 ms/op
+     p(99.0000) =    148.462 ms/op
+     p(99.9000) =    148.462 ms/op
+     p(99.9900) =    148.462 ms/op
+     p(99.9990) =    148.462 ms/op
+     p(99.9999) =    148.462 ms/op
+    p(100.0000) =    148.462 ms/op
 
 
 # JMH version: 1.25
@@ -1295,59 +1306,61 @@ Result "org.wrongwrong.extra.ser.wrapper.E_5P.call":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.extra.ser.wrapper.T_20P.call
 
-# Run progress: 55.56% complete, ETA 00:01:59
+# Run progress: 55.56% complete, ETA 00:02:03
 # Fork: 1 of 5
-Iteration   1: 129.699 ms/op
+Iteration   1: 156.056 ms/op
 
-# Run progress: 56.11% complete, ETA 00:01:57
+# Run progress: 56.11% complete, ETA 00:02:02
 # Fork: 2 of 5
-Iteration   1: 123.379 ms/op
+Iteration   1: 156.150 ms/op
 
-# Run progress: 56.67% complete, ETA 00:01:56
+# Run progress: 56.67% complete, ETA 00:02:00
 # Fork: 3 of 5
-Iteration   1: 123.741 ms/op
+Iteration   1: 151.843 ms/op
 
-# Run progress: 57.22% complete, ETA 00:01:54
+# Run progress: 57.22% complete, ETA 00:01:59
 # Fork: 4 of 5
-Iteration   1: 130.950 ms/op
+Iteration   1: 158.076 ms/op
 
-# Run progress: 57.78% complete, ETA 00:01:53
+# Run progress: 57.78% complete, ETA 00:01:57
 # Fork: 5 of 5
-Iteration   1: 138.759 ms/op
+Iteration   1: 150.888 ms/op
 
 
 Result "org.wrongwrong.extra.ser.wrapper.T_20P.call":
   N = 5
-  mean =    129.306 ±(99.9%) 24.226 ms/op
+  mean =    154.603 ±(99.9%) 11.866 ms/op
 
   Histogram, ms/op:
-    [120.000, 121.250) = 0 
-    [121.250, 122.500) = 0 
-    [122.500, 123.750) = 2 
-    [123.750, 125.000) = 0 
-    [125.000, 126.250) = 0 
-    [126.250, 127.500) = 0 
-    [127.500, 128.750) = 0 
-    [128.750, 130.000) = 1 
-    [130.000, 131.250) = 1 
-    [131.250, 132.500) = 0 
-    [132.500, 133.750) = 0 
-    [133.750, 135.000) = 0 
-    [135.000, 136.250) = 0 
-    [136.250, 137.500) = 0 
-    [137.500, 138.750) = 0 
+    [150.000, 150.500) = 0 
+    [150.500, 151.000) = 1 
+    [151.000, 151.500) = 0 
+    [151.500, 152.000) = 1 
+    [152.000, 152.500) = 0 
+    [152.500, 153.000) = 0 
+    [153.000, 153.500) = 0 
+    [153.500, 154.000) = 0 
+    [154.000, 154.500) = 0 
+    [154.500, 155.000) = 0 
+    [155.000, 155.500) = 0 
+    [155.500, 156.000) = 0 
+    [156.000, 156.500) = 2 
+    [156.500, 157.000) = 0 
+    [157.000, 157.500) = 0 
+    [157.500, 158.000) = 0 
+    [158.000, 158.500) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =    123.379 ms/op
-     p(50.0000) =    129.699 ms/op
-     p(90.0000) =    138.759 ms/op
-     p(95.0000) =    138.759 ms/op
-     p(99.0000) =    138.759 ms/op
-     p(99.9000) =    138.759 ms/op
-     p(99.9900) =    138.759 ms/op
-     p(99.9990) =    138.759 ms/op
-     p(99.9999) =    138.759 ms/op
-    p(100.0000) =    138.759 ms/op
+      p(0.0000) =    150.888 ms/op
+     p(50.0000) =    156.056 ms/op
+     p(90.0000) =    158.076 ms/op
+     p(95.0000) =    158.076 ms/op
+     p(99.0000) =    158.076 ms/op
+     p(99.9000) =    158.076 ms/op
+     p(99.9900) =    158.076 ms/op
+     p(99.9990) =    158.076 ms/op
+     p(99.9999) =    158.076 ms/op
+    p(100.0000) =    158.076 ms/op
 
 
 # JMH version: 1.25
@@ -1361,54 +1374,59 @@ Result "org.wrongwrong.extra.ser.wrapper.T_20P.call":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.A_1P_Ctor.missing
 
-# Run progress: 58.33% complete, ETA 00:01:51
+# Run progress: 58.33% complete, ETA 00:01:55
 # Fork: 1 of 5
-Iteration   1: 32.751 ms/op
+Iteration   1: 34.374 ms/op
 
-# Run progress: 58.89% complete, ETA 00:01:50
+# Run progress: 58.89% complete, ETA 00:01:54
 # Fork: 2 of 5
-Iteration   1: 32.572 ms/op
+Iteration   1: 35.121 ms/op
 
-# Run progress: 59.44% complete, ETA 00:01:48
+# Run progress: 59.44% complete, ETA 00:01:52
 # Fork: 3 of 5
-Iteration   1: 32.405 ms/op
+Iteration   1: 34.116 ms/op
 
-# Run progress: 60.00% complete, ETA 00:01:47
+# Run progress: 60.00% complete, ETA 00:01:51
 # Fork: 4 of 5
-Iteration   1: 32.739 ms/op
+Iteration   1: 35.176 ms/op
 
-# Run progress: 60.56% complete, ETA 00:01:45
+# Run progress: 60.56% complete, ETA 00:01:49
 # Fork: 5 of 5
-Iteration   1: 31.827 ms/op
+Iteration   1: 34.930 ms/op
 
 
 Result "org.wrongwrong.main.deser.A_1P_Ctor.missing":
   N = 5
-  mean =     32.459 ±(99.9%) 1.465 ms/op
+  mean =     34.744 ±(99.9%) 1.821 ms/op
 
   Histogram, ms/op:
-    [31.800, 31.900) = 1 
-    [31.900, 32.000) = 0 
-    [32.000, 32.100) = 0 
-    [32.100, 32.200) = 0 
-    [32.200, 32.300) = 0 
-    [32.300, 32.400) = 0 
-    [32.400, 32.500) = 1 
-    [32.500, 32.600) = 1 
-    [32.600, 32.700) = 0 
-    [32.700, 32.800) = 2 
+    [34.000, 34.125) = 1 
+    [34.125, 34.250) = 0 
+    [34.250, 34.375) = 1 
+    [34.375, 34.500) = 0 
+    [34.500, 34.625) = 0 
+    [34.625, 34.750) = 0 
+    [34.750, 34.875) = 0 
+    [34.875, 35.000) = 1 
+    [35.000, 35.125) = 1 
+    [35.125, 35.250) = 1 
+    [35.250, 35.375) = 0 
+    [35.375, 35.500) = 0 
+    [35.500, 35.625) = 0 
+    [35.625, 35.750) = 0 
+    [35.750, 35.875) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     31.827 ms/op
-     p(50.0000) =     32.572 ms/op
-     p(90.0000) =     32.751 ms/op
-     p(95.0000) =     32.751 ms/op
-     p(99.0000) =     32.751 ms/op
-     p(99.9000) =     32.751 ms/op
-     p(99.9900) =     32.751 ms/op
-     p(99.9990) =     32.751 ms/op
-     p(99.9999) =     32.751 ms/op
-    p(100.0000) =     32.751 ms/op
+      p(0.0000) =     34.116 ms/op
+     p(50.0000) =     34.930 ms/op
+     p(90.0000) =     35.176 ms/op
+     p(95.0000) =     35.176 ms/op
+     p(99.0000) =     35.176 ms/op
+     p(99.9000) =     35.176 ms/op
+     p(99.9900) =     35.176 ms/op
+     p(99.9990) =     35.176 ms/op
+     p(99.9999) =     35.176 ms/op
+    p(100.0000) =     35.176 ms/op
 
 
 # JMH version: 1.25
@@ -1422,58 +1440,59 @@ Result "org.wrongwrong.main.deser.A_1P_Ctor.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.A_1P_Ctor.present
 
-# Run progress: 61.11% complete, ETA 00:01:44
+# Run progress: 61.11% complete, ETA 00:01:48
 # Fork: 1 of 5
-Iteration   1: 29.546 ms/op
+Iteration   1: 32.825 ms/op
 
-# Run progress: 61.67% complete, ETA 00:01:42
+# Run progress: 61.67% complete, ETA 00:01:46
 # Fork: 2 of 5
-Iteration   1: 29.754 ms/op
+Iteration   1: 32.314 ms/op
 
-# Run progress: 62.22% complete, ETA 00:01:41
+# Run progress: 62.22% complete, ETA 00:01:44
 # Fork: 3 of 5
-Iteration   1: 30.155 ms/op
+Iteration   1: 32.045 ms/op
 
-# Run progress: 62.78% complete, ETA 00:01:39
+# Run progress: 62.78% complete, ETA 00:01:43
 # Fork: 4 of 5
-Iteration   1: 29.887 ms/op
+Iteration   1: 32.381 ms/op
 
-# Run progress: 63.33% complete, ETA 00:01:38
+# Run progress: 63.33% complete, ETA 00:01:41
 # Fork: 5 of 5
-Iteration   1: 29.536 ms/op
+Iteration   1: 31.538 ms/op
 
 
 Result "org.wrongwrong.main.deser.A_1P_Ctor.present":
   N = 5
-  mean =     29.776 ±(99.9%) 0.995 ms/op
+  mean =     32.220 ±(99.9%) 1.823 ms/op
 
   Histogram, ms/op:
-    [29.500, 29.550) = 2 
-    [29.550, 29.600) = 0 
-    [29.600, 29.650) = 0 
-    [29.650, 29.700) = 0 
-    [29.700, 29.750) = 0 
-    [29.750, 29.800) = 1 
-    [29.800, 29.850) = 0 
-    [29.850, 29.900) = 1 
-    [29.900, 29.950) = 0 
-    [29.950, 30.000) = 0 
-    [30.000, 30.050) = 0 
-    [30.050, 30.100) = 0 
-    [30.100, 30.150) = 0 
-    [30.150, 30.200) = 1 
+    [31.000, 31.125) = 0 
+    [31.125, 31.250) = 0 
+    [31.250, 31.375) = 0 
+    [31.375, 31.500) = 0 
+    [31.500, 31.625) = 1 
+    [31.625, 31.750) = 0 
+    [31.750, 31.875) = 0 
+    [31.875, 32.000) = 0 
+    [32.000, 32.125) = 1 
+    [32.125, 32.250) = 0 
+    [32.250, 32.375) = 1 
+    [32.375, 32.500) = 1 
+    [32.500, 32.625) = 0 
+    [32.625, 32.750) = 0 
+    [32.750, 32.875) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     29.536 ms/op
-     p(50.0000) =     29.754 ms/op
-     p(90.0000) =     30.155 ms/op
-     p(95.0000) =     30.155 ms/op
-     p(99.0000) =     30.155 ms/op
-     p(99.9000) =     30.155 ms/op
-     p(99.9900) =     30.155 ms/op
-     p(99.9990) =     30.155 ms/op
-     p(99.9999) =     30.155 ms/op
-    p(100.0000) =     30.155 ms/op
+      p(0.0000) =     31.538 ms/op
+     p(50.0000) =     32.314 ms/op
+     p(90.0000) =     32.825 ms/op
+     p(95.0000) =     32.825 ms/op
+     p(99.0000) =     32.825 ms/op
+     p(99.9000) =     32.825 ms/op
+     p(99.9900) =     32.825 ms/op
+     p(99.9990) =     32.825 ms/op
+     p(99.9999) =     32.825 ms/op
+    p(100.0000) =     32.825 ms/op
 
 
 # JMH version: 1.25
@@ -1487,59 +1506,59 @@ Result "org.wrongwrong.main.deser.A_1P_Ctor.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.A_1P_Func.missing
 
-# Run progress: 63.89% complete, ETA 00:01:36
+# Run progress: 63.89% complete, ETA 00:01:40
 # Fork: 1 of 5
-Iteration   1: 34.487 ms/op
+Iteration   1: 36.939 ms/op
 
-# Run progress: 64.44% complete, ETA 00:01:35
+# Run progress: 64.44% complete, ETA 00:01:38
 # Fork: 2 of 5
-Iteration   1: 35.632 ms/op
+Iteration   1: 36.332 ms/op
 
-# Run progress: 65.00% complete, ETA 00:01:33
+# Run progress: 65.00% complete, ETA 00:01:37
 # Fork: 3 of 5
-Iteration   1: 34.266 ms/op
+Iteration   1: 37.661 ms/op
 
-# Run progress: 65.56% complete, ETA 00:01:32
+# Run progress: 65.56% complete, ETA 00:01:35
 # Fork: 4 of 5
-Iteration   1: 35.634 ms/op
+Iteration   1: 36.585 ms/op
 
-# Run progress: 66.11% complete, ETA 00:01:30
+# Run progress: 66.11% complete, ETA 00:01:34
 # Fork: 5 of 5
-Iteration   1: 34.156 ms/op
+Iteration   1: 36.971 ms/op
 
 
 Result "org.wrongwrong.main.deser.A_1P_Func.missing":
   N = 5
-  mean =     34.835 ±(99.9%) 2.842 ms/op
+  mean =     36.898 ±(99.9%) 1.932 ms/op
 
   Histogram, ms/op:
-    [34.000, 34.125) = 0 
-    [34.125, 34.250) = 1 
-    [34.250, 34.375) = 1 
-    [34.375, 34.500) = 1 
-    [34.500, 34.625) = 0 
-    [34.625, 34.750) = 0 
-    [34.750, 34.875) = 0 
-    [34.875, 35.000) = 0 
-    [35.000, 35.125) = 0 
-    [35.125, 35.250) = 0 
-    [35.250, 35.375) = 0 
-    [35.375, 35.500) = 0 
-    [35.500, 35.625) = 0 
-    [35.625, 35.750) = 2 
-    [35.750, 35.875) = 0 
+    [36.000, 36.125) = 0 
+    [36.125, 36.250) = 0 
+    [36.250, 36.375) = 1 
+    [36.375, 36.500) = 0 
+    [36.500, 36.625) = 1 
+    [36.625, 36.750) = 0 
+    [36.750, 36.875) = 0 
+    [36.875, 37.000) = 2 
+    [37.000, 37.125) = 0 
+    [37.125, 37.250) = 0 
+    [37.250, 37.375) = 0 
+    [37.375, 37.500) = 0 
+    [37.500, 37.625) = 0 
+    [37.625, 37.750) = 1 
+    [37.750, 37.875) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     34.156 ms/op
-     p(50.0000) =     34.487 ms/op
-     p(90.0000) =     35.634 ms/op
-     p(95.0000) =     35.634 ms/op
-     p(99.0000) =     35.634 ms/op
-     p(99.9000) =     35.634 ms/op
-     p(99.9900) =     35.634 ms/op
-     p(99.9990) =     35.634 ms/op
-     p(99.9999) =     35.634 ms/op
-    p(100.0000) =     35.634 ms/op
+      p(0.0000) =     36.332 ms/op
+     p(50.0000) =     36.939 ms/op
+     p(90.0000) =     37.661 ms/op
+     p(95.0000) =     37.661 ms/op
+     p(99.0000) =     37.661 ms/op
+     p(99.9000) =     37.661 ms/op
+     p(99.9900) =     37.661 ms/op
+     p(99.9990) =     37.661 ms/op
+     p(99.9999) =     37.661 ms/op
+    p(100.0000) =     37.661 ms/op
 
 
 # JMH version: 1.25
@@ -1553,59 +1572,59 @@ Result "org.wrongwrong.main.deser.A_1P_Func.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.A_1P_Func.present
 
-# Run progress: 66.67% complete, ETA 00:01:29
+# Run progress: 66.67% complete, ETA 00:01:32
 # Fork: 1 of 5
-Iteration   1: 32.534 ms/op
+Iteration   1: 35.154 ms/op
 
-# Run progress: 67.22% complete, ETA 00:01:27
+# Run progress: 67.22% complete, ETA 00:01:31
 # Fork: 2 of 5
-Iteration   1: 32.090 ms/op
+Iteration   1: 34.699 ms/op
 
-# Run progress: 67.78% complete, ETA 00:01:26
+# Run progress: 67.78% complete, ETA 00:01:29
 # Fork: 3 of 5
-Iteration   1: 31.744 ms/op
+Iteration   1: 34.696 ms/op
 
-# Run progress: 68.33% complete, ETA 00:01:24
+# Run progress: 68.33% complete, ETA 00:01:27
 # Fork: 4 of 5
-Iteration   1: 32.700 ms/op
+Iteration   1: 35.478 ms/op
 
-# Run progress: 68.89% complete, ETA 00:01:23
+# Run progress: 68.89% complete, ETA 00:01:26
 # Fork: 5 of 5
-Iteration   1: 31.547 ms/op
+Iteration   1: 34.084 ms/op
 
 
 Result "org.wrongwrong.main.deser.A_1P_Func.present":
   N = 5
-  mean =     32.123 ±(99.9%) 1.905 ms/op
+  mean =     34.822 ±(99.9%) 2.035 ms/op
 
   Histogram, ms/op:
-    [31.000, 31.125) = 0 
-    [31.125, 31.250) = 0 
-    [31.250, 31.375) = 0 
-    [31.375, 31.500) = 0 
-    [31.500, 31.625) = 1 
-    [31.625, 31.750) = 1 
-    [31.750, 31.875) = 0 
-    [31.875, 32.000) = 0 
-    [32.000, 32.125) = 1 
-    [32.125, 32.250) = 0 
-    [32.250, 32.375) = 0 
-    [32.375, 32.500) = 0 
-    [32.500, 32.625) = 1 
-    [32.625, 32.750) = 1 
-    [32.750, 32.875) = 0 
+    [34.000, 34.125) = 1 
+    [34.125, 34.250) = 0 
+    [34.250, 34.375) = 0 
+    [34.375, 34.500) = 0 
+    [34.500, 34.625) = 0 
+    [34.625, 34.750) = 2 
+    [34.750, 34.875) = 0 
+    [34.875, 35.000) = 0 
+    [35.000, 35.125) = 0 
+    [35.125, 35.250) = 1 
+    [35.250, 35.375) = 0 
+    [35.375, 35.500) = 1 
+    [35.500, 35.625) = 0 
+    [35.625, 35.750) = 0 
+    [35.750, 35.875) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     31.547 ms/op
-     p(50.0000) =     32.090 ms/op
-     p(90.0000) =     32.700 ms/op
-     p(95.0000) =     32.700 ms/op
-     p(99.0000) =     32.700 ms/op
-     p(99.9000) =     32.700 ms/op
-     p(99.9900) =     32.700 ms/op
-     p(99.9990) =     32.700 ms/op
-     p(99.9999) =     32.700 ms/op
-    p(100.0000) =     32.700 ms/op
+      p(0.0000) =     34.084 ms/op
+     p(50.0000) =     34.699 ms/op
+     p(90.0000) =     35.478 ms/op
+     p(95.0000) =     35.478 ms/op
+     p(99.0000) =     35.478 ms/op
+     p(99.9000) =     35.478 ms/op
+     p(99.9900) =     35.478 ms/op
+     p(99.9990) =     35.478 ms/op
+     p(99.9999) =     35.478 ms/op
+    p(100.0000) =     35.478 ms/op
 
 
 # JMH version: 1.25
@@ -1619,60 +1638,59 @@ Result "org.wrongwrong.main.deser.A_1P_Func.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.E_5P_Ctor.missing
 
-# Run progress: 69.44% complete, ETA 00:01:22
+# Run progress: 69.44% complete, ETA 00:01:24
 # Fork: 1 of 5
-Iteration   1: 32.924 ms/op
+Iteration   1: 36.820 ms/op
 
-# Run progress: 70.00% complete, ETA 00:01:20
+# Run progress: 70.00% complete, ETA 00:01:23
 # Fork: 2 of 5
-Iteration   1: 33.167 ms/op
+Iteration   1: 35.046 ms/op
 
-# Run progress: 70.56% complete, ETA 00:01:18
+# Run progress: 70.56% complete, ETA 00:01:21
 # Fork: 3 of 5
-Iteration   1: 32.970 ms/op
+Iteration   1: 35.530 ms/op
 
-# Run progress: 71.11% complete, ETA 00:01:17
+# Run progress: 71.11% complete, ETA 00:01:20
 # Fork: 4 of 5
-Iteration   1: 33.249 ms/op
+Iteration   1: 36.396 ms/op
 
-# Run progress: 71.67% complete, ETA 00:01:15
+# Run progress: 71.67% complete, ETA 00:01:18
 # Fork: 5 of 5
-Iteration   1: 33.295 ms/op
+Iteration   1: 36.121 ms/op
 
 
 Result "org.wrongwrong.main.deser.E_5P_Ctor.missing":
   N = 5
-  mean =     33.121 ±(99.9%) 0.639 ms/op
+  mean =     35.983 ±(99.9%) 2.705 ms/op
 
   Histogram, ms/op:
-    [32.900, 32.925) = 1 
-    [32.925, 32.950) = 0 
-    [32.950, 32.975) = 1 
-    [32.975, 33.000) = 0 
-    [33.000, 33.025) = 0 
-    [33.025, 33.050) = 0 
-    [33.050, 33.075) = 0 
-    [33.075, 33.100) = 0 
-    [33.100, 33.125) = 0 
-    [33.125, 33.150) = 0 
-    [33.150, 33.175) = 1 
-    [33.175, 33.200) = 0 
-    [33.200, 33.225) = 0 
-    [33.225, 33.250) = 1 
-    [33.250, 33.275) = 0 
-    [33.275, 33.300) = 1 
+    [35.000, 35.125) = 1 
+    [35.125, 35.250) = 0 
+    [35.250, 35.375) = 0 
+    [35.375, 35.500) = 0 
+    [35.500, 35.625) = 1 
+    [35.625, 35.750) = 0 
+    [35.750, 35.875) = 0 
+    [35.875, 36.000) = 0 
+    [36.000, 36.125) = 1 
+    [36.125, 36.250) = 0 
+    [36.250, 36.375) = 0 
+    [36.375, 36.500) = 1 
+    [36.500, 36.625) = 0 
+    [36.625, 36.750) = 0 
+    [36.750, 36.875) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     32.924 ms/op
-     p(50.0000) =     33.167 ms/op
-     p(90.0000) =     33.295 ms/op
-     p(95.0000) =     33.295 ms/op
-     p(99.0000) =     33.295 ms/op
-     p(99.9000) =     33.295 ms/op
-     p(99.9900) =     33.295 ms/op
-     p(99.9990) =     33.295 ms/op
-     p(99.9999) =     33.295 ms/op
-    p(100.0000) =     33.295 ms/op
+      p(0.0000) =     35.046 ms/op
+     p(50.0000) =     36.121 ms/op
+     p(90.0000) =     36.820 ms/op
+     p(95.0000) =     36.820 ms/op
+     p(99.0000) =     36.820 ms/op
+     p(99.9000) =     36.820 ms/op
+     p(99.9900) =     36.820 ms/op
+     p(99.9990) =     36.820 ms/op
+     p(99.9999) =     36.820 ms/op
+    p(100.0000) =     36.820 ms/op
 
 
 # JMH version: 1.25
@@ -1686,59 +1704,59 @@ Result "org.wrongwrong.main.deser.E_5P_Ctor.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.E_5P_Ctor.present
 
-# Run progress: 72.22% complete, ETA 00:01:14
+# Run progress: 72.22% complete, ETA 00:01:17
 # Fork: 1 of 5
-Iteration   1: 30.596 ms/op
+Iteration   1: 33.396 ms/op
 
-# Run progress: 72.78% complete, ETA 00:01:13
+# Run progress: 72.78% complete, ETA 00:01:15
 # Fork: 2 of 5
-Iteration   1: 30.769 ms/op
+Iteration   1: 32.056 ms/op
 
-# Run progress: 73.33% complete, ETA 00:01:11
+# Run progress: 73.33% complete, ETA 00:01:14
 # Fork: 3 of 5
-Iteration   1: 30.951 ms/op
+Iteration   1: 32.842 ms/op
 
-# Run progress: 73.89% complete, ETA 00:01:10
+# Run progress: 73.89% complete, ETA 00:01:12
 # Fork: 4 of 5
-Iteration   1: 31.938 ms/op
+Iteration   1: 33.895 ms/op
 
-# Run progress: 74.44% complete, ETA 00:01:08
+# Run progress: 74.44% complete, ETA 00:01:10
 # Fork: 5 of 5
-Iteration   1: 30.964 ms/op
+Iteration   1: 32.674 ms/op
 
 
 Result "org.wrongwrong.main.deser.E_5P_Ctor.present":
   N = 5
-  mean =     31.044 ±(99.9%) 2.012 ms/op
+  mean =     32.973 ±(99.9%) 2.706 ms/op
 
   Histogram, ms/op:
-    [30.000, 30.125) = 0 
-    [30.125, 30.250) = 0 
-    [30.250, 30.375) = 0 
-    [30.375, 30.500) = 0 
-    [30.500, 30.625) = 1 
-    [30.625, 30.750) = 0 
-    [30.750, 30.875) = 1 
-    [30.875, 31.000) = 2 
-    [31.000, 31.125) = 0 
-    [31.125, 31.250) = 0 
-    [31.250, 31.375) = 0 
-    [31.375, 31.500) = 0 
-    [31.500, 31.625) = 0 
-    [31.625, 31.750) = 0 
-    [31.750, 31.875) = 0 
+    [32.000, 32.125) = 1 
+    [32.125, 32.250) = 0 
+    [32.250, 32.375) = 0 
+    [32.375, 32.500) = 0 
+    [32.500, 32.625) = 0 
+    [32.625, 32.750) = 1 
+    [32.750, 32.875) = 1 
+    [32.875, 33.000) = 0 
+    [33.000, 33.125) = 0 
+    [33.125, 33.250) = 0 
+    [33.250, 33.375) = 0 
+    [33.375, 33.500) = 1 
+    [33.500, 33.625) = 0 
+    [33.625, 33.750) = 0 
+    [33.750, 33.875) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     30.596 ms/op
-     p(50.0000) =     30.951 ms/op
-     p(90.0000) =     31.938 ms/op
-     p(95.0000) =     31.938 ms/op
-     p(99.0000) =     31.938 ms/op
-     p(99.9000) =     31.938 ms/op
-     p(99.9900) =     31.938 ms/op
-     p(99.9990) =     31.938 ms/op
-     p(99.9999) =     31.938 ms/op
-    p(100.0000) =     31.938 ms/op
+      p(0.0000) =     32.056 ms/op
+     p(50.0000) =     32.842 ms/op
+     p(90.0000) =     33.895 ms/op
+     p(95.0000) =     33.895 ms/op
+     p(99.0000) =     33.895 ms/op
+     p(99.9000) =     33.895 ms/op
+     p(99.9900) =     33.895 ms/op
+     p(99.9990) =     33.895 ms/op
+     p(99.9999) =     33.895 ms/op
+    p(100.0000) =     33.895 ms/op
 
 
 # JMH version: 1.25
@@ -1752,59 +1770,53 @@ Result "org.wrongwrong.main.deser.E_5P_Ctor.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.E_5P_Func.missing
 
-# Run progress: 75.00% complete, ETA 00:01:07
+# Run progress: 75.00% complete, ETA 00:01:09
 # Fork: 1 of 5
-Iteration   1: 38.419 ms/op
+Iteration   1: 40.862 ms/op
 
-# Run progress: 75.56% complete, ETA 00:01:05
+# Run progress: 75.56% complete, ETA 00:01:07
 # Fork: 2 of 5
-Iteration   1: 37.149 ms/op
+Iteration   1: 39.762 ms/op
 
-# Run progress: 76.11% complete, ETA 00:01:04
+# Run progress: 76.11% complete, ETA 00:01:06
 # Fork: 3 of 5
-Iteration   1: 37.030 ms/op
+Iteration   1: 38.883 ms/op
 
-# Run progress: 76.67% complete, ETA 00:01:02
+# Run progress: 76.67% complete, ETA 00:01:04
 # Fork: 4 of 5
-Iteration   1: 37.315 ms/op
+Iteration   1: 40.567 ms/op
 
-# Run progress: 77.22% complete, ETA 00:01:01
+# Run progress: 77.22% complete, ETA 00:01:03
 # Fork: 5 of 5
-Iteration   1: 37.693 ms/op
+Iteration   1: 47.725 ms/op
 
 
 Result "org.wrongwrong.main.deser.E_5P_Func.missing":
   N = 5
-  mean =     37.521 ±(99.9%) 2.160 ms/op
+  mean =     41.560 ±(99.9%) 13.597 ms/op
 
   Histogram, ms/op:
-    [37.000, 37.125) = 1 
-    [37.125, 37.250) = 1 
-    [37.250, 37.375) = 1 
-    [37.375, 37.500) = 0 
-    [37.500, 37.625) = 0 
-    [37.625, 37.750) = 1 
-    [37.750, 37.875) = 0 
-    [37.875, 38.000) = 0 
-    [38.000, 38.125) = 0 
-    [38.125, 38.250) = 0 
-    [38.250, 38.375) = 0 
-    [38.375, 38.500) = 1 
-    [38.500, 38.625) = 0 
-    [38.625, 38.750) = 0 
-    [38.750, 38.875) = 0 
+    [38.000, 39.000) = 1 
+    [39.000, 40.000) = 1 
+    [40.000, 41.000) = 2 
+    [41.000, 42.000) = 0 
+    [42.000, 43.000) = 0 
+    [43.000, 44.000) = 0 
+    [44.000, 45.000) = 0 
+    [45.000, 46.000) = 0 
+    [46.000, 47.000) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     37.030 ms/op
-     p(50.0000) =     37.315 ms/op
-     p(90.0000) =     38.419 ms/op
-     p(95.0000) =     38.419 ms/op
-     p(99.0000) =     38.419 ms/op
-     p(99.9000) =     38.419 ms/op
-     p(99.9900) =     38.419 ms/op
-     p(99.9990) =     38.419 ms/op
-     p(99.9999) =     38.419 ms/op
-    p(100.0000) =     38.419 ms/op
+      p(0.0000) =     38.883 ms/op
+     p(50.0000) =     40.567 ms/op
+     p(90.0000) =     47.725 ms/op
+     p(95.0000) =     47.725 ms/op
+     p(99.0000) =     47.725 ms/op
+     p(99.9000) =     47.725 ms/op
+     p(99.9900) =     47.725 ms/op
+     p(99.9990) =     47.725 ms/op
+     p(99.9999) =     47.725 ms/op
+    p(100.0000) =     47.725 ms/op
 
 
 # JMH version: 1.25
@@ -1818,59 +1830,59 @@ Result "org.wrongwrong.main.deser.E_5P_Func.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.E_5P_Func.present
 
-# Run progress: 77.78% complete, ETA 00:00:59
+# Run progress: 77.78% complete, ETA 00:01:01
 # Fork: 1 of 5
-Iteration   1: 35.732 ms/op
+Iteration   1: 36.276 ms/op
 
-# Run progress: 78.33% complete, ETA 00:00:58
+# Run progress: 78.33% complete, ETA 00:01:00
 # Fork: 2 of 5
-Iteration   1: 34.188 ms/op
+Iteration   1: 38.022 ms/op
 
-# Run progress: 78.89% complete, ETA 00:00:56
+# Run progress: 78.89% complete, ETA 00:00:58
 # Fork: 3 of 5
-Iteration   1: 34.225 ms/op
+Iteration   1: 37.238 ms/op
 
-# Run progress: 79.44% complete, ETA 00:00:55
+# Run progress: 79.44% complete, ETA 00:00:57
 # Fork: 4 of 5
-Iteration   1: 35.334 ms/op
+Iteration   1: 39.761 ms/op
 
-# Run progress: 80.00% complete, ETA 00:00:53
+# Run progress: 80.00% complete, ETA 00:00:55
 # Fork: 5 of 5
-Iteration   1: 35.797 ms/op
+Iteration   1: 37.295 ms/op
 
 
 Result "org.wrongwrong.main.deser.E_5P_Func.present":
   N = 5
-  mean =     35.056 ±(99.9%) 3.061 ms/op
+  mean =     37.718 ±(99.9%) 5.004 ms/op
 
   Histogram, ms/op:
-    [34.000, 34.125) = 0 
-    [34.125, 34.250) = 2 
-    [34.250, 34.375) = 0 
-    [34.375, 34.500) = 0 
-    [34.500, 34.625) = 0 
-    [34.625, 34.750) = 0 
-    [34.750, 34.875) = 0 
-    [34.875, 35.000) = 0 
-    [35.000, 35.125) = 0 
-    [35.125, 35.250) = 0 
-    [35.250, 35.375) = 1 
-    [35.375, 35.500) = 0 
-    [35.500, 35.625) = 0 
-    [35.625, 35.750) = 1 
-    [35.750, 35.875) = 1 
+    [36.000, 36.250) = 0 
+    [36.250, 36.500) = 1 
+    [36.500, 36.750) = 0 
+    [36.750, 37.000) = 0 
+    [37.000, 37.250) = 1 
+    [37.250, 37.500) = 1 
+    [37.500, 37.750) = 0 
+    [37.750, 38.000) = 0 
+    [38.000, 38.250) = 1 
+    [38.250, 38.500) = 0 
+    [38.500, 38.750) = 0 
+    [38.750, 39.000) = 0 
+    [39.000, 39.250) = 0 
+    [39.250, 39.500) = 0 
+    [39.500, 39.750) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     34.188 ms/op
-     p(50.0000) =     35.334 ms/op
-     p(90.0000) =     35.797 ms/op
-     p(95.0000) =     35.797 ms/op
-     p(99.0000) =     35.797 ms/op
-     p(99.9000) =     35.797 ms/op
-     p(99.9900) =     35.797 ms/op
-     p(99.9990) =     35.797 ms/op
-     p(99.9999) =     35.797 ms/op
-    p(100.0000) =     35.797 ms/op
+      p(0.0000) =     36.276 ms/op
+     p(50.0000) =     37.295 ms/op
+     p(90.0000) =     39.761 ms/op
+     p(95.0000) =     39.761 ms/op
+     p(99.0000) =     39.761 ms/op
+     p(99.9000) =     39.761 ms/op
+     p(99.9900) =     39.761 ms/op
+     p(99.9990) =     39.761 ms/op
+     p(99.9999) =     39.761 ms/op
+    p(100.0000) =     39.761 ms/op
 
 
 # JMH version: 1.25
@@ -1884,59 +1896,59 @@ Result "org.wrongwrong.main.deser.E_5P_Func.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.T_20P_Ctor.missing
 
-# Run progress: 80.56% complete, ETA 00:00:52
+# Run progress: 80.56% complete, ETA 00:00:54
 # Fork: 1 of 5
-Iteration   1: 37.190 ms/op
+Iteration   1: 39.816 ms/op
 
-# Run progress: 81.11% complete, ETA 00:00:50
+# Run progress: 81.11% complete, ETA 00:00:52
 # Fork: 2 of 5
-Iteration   1: 36.338 ms/op
+Iteration   1: 39.125 ms/op
 
-# Run progress: 81.67% complete, ETA 00:00:49
+# Run progress: 81.67% complete, ETA 00:00:50
 # Fork: 3 of 5
-Iteration   1: 39.122 ms/op
+Iteration   1: 42.695 ms/op
 
-# Run progress: 82.22% complete, ETA 00:00:47
+# Run progress: 82.22% complete, ETA 00:00:49
 # Fork: 4 of 5
-Iteration   1: 36.519 ms/op
+Iteration   1: 41.204 ms/op
 
-# Run progress: 82.78% complete, ETA 00:00:46
+# Run progress: 82.78% complete, ETA 00:00:47
 # Fork: 5 of 5
-Iteration   1: 37.987 ms/op
+Iteration   1: 39.346 ms/op
 
 
 Result "org.wrongwrong.main.deser.T_20P_Ctor.missing":
   N = 5
-  mean =     37.431 ±(99.9%) 4.412 ms/op
+  mean =     40.437 ±(99.9%) 5.772 ms/op
 
   Histogram, ms/op:
-    [36.000, 36.250) = 0 
-    [36.250, 36.500) = 1 
-    [36.500, 36.750) = 1 
-    [36.750, 37.000) = 0 
-    [37.000, 37.250) = 1 
-    [37.250, 37.500) = 0 
-    [37.500, 37.750) = 0 
-    [37.750, 38.000) = 1 
-    [38.000, 38.250) = 0 
-    [38.250, 38.500) = 0 
-    [38.500, 38.750) = 0 
-    [38.750, 39.000) = 0 
     [39.000, 39.250) = 1 
-    [39.250, 39.500) = 0 
+    [39.250, 39.500) = 1 
     [39.500, 39.750) = 0 
+    [39.750, 40.000) = 1 
+    [40.000, 40.250) = 0 
+    [40.250, 40.500) = 0 
+    [40.500, 40.750) = 0 
+    [40.750, 41.000) = 0 
+    [41.000, 41.250) = 1 
+    [41.250, 41.500) = 0 
+    [41.500, 41.750) = 0 
+    [41.750, 42.000) = 0 
+    [42.000, 42.250) = 0 
+    [42.250, 42.500) = 0 
+    [42.500, 42.750) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     36.338 ms/op
-     p(50.0000) =     37.190 ms/op
-     p(90.0000) =     39.122 ms/op
-     p(95.0000) =     39.122 ms/op
-     p(99.0000) =     39.122 ms/op
-     p(99.9000) =     39.122 ms/op
-     p(99.9900) =     39.122 ms/op
-     p(99.9990) =     39.122 ms/op
-     p(99.9999) =     39.122 ms/op
-    p(100.0000) =     39.122 ms/op
+      p(0.0000) =     39.125 ms/op
+     p(50.0000) =     39.816 ms/op
+     p(90.0000) =     42.695 ms/op
+     p(95.0000) =     42.695 ms/op
+     p(99.0000) =     42.695 ms/op
+     p(99.9000) =     42.695 ms/op
+     p(99.9900) =     42.695 ms/op
+     p(99.9990) =     42.695 ms/op
+     p(99.9999) =     42.695 ms/op
+    p(100.0000) =     42.695 ms/op
 
 
 # JMH version: 1.25
@@ -1950,55 +1962,59 @@ Result "org.wrongwrong.main.deser.T_20P_Ctor.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.T_20P_Ctor.present
 
-# Run progress: 83.33% complete, ETA 00:00:44
+# Run progress: 83.33% complete, ETA 00:00:46
 # Fork: 1 of 5
-Iteration   1: 34.052 ms/op
+Iteration   1: 37.159 ms/op
 
-# Run progress: 83.89% complete, ETA 00:00:43
+# Run progress: 83.89% complete, ETA 00:00:44
 # Fork: 2 of 5
-Iteration   1: 35.092 ms/op
+Iteration   1: 37.357 ms/op
 
-# Run progress: 84.44% complete, ETA 00:00:41
+# Run progress: 84.44% complete, ETA 00:00:43
 # Fork: 3 of 5
-Iteration   1: 33.750 ms/op
+Iteration   1: 36.229 ms/op
 
-# Run progress: 85.00% complete, ETA 00:00:40
+# Run progress: 85.00% complete, ETA 00:00:41
 # Fork: 4 of 5
-Iteration   1: 33.845 ms/op
+Iteration   1: 36.609 ms/op
 
-# Run progress: 85.56% complete, ETA 00:00:38
+# Run progress: 85.56% complete, ETA 00:00:40
 # Fork: 5 of 5
-Iteration   1: 33.818 ms/op
+Iteration   1: 36.501 ms/op
 
 
 Result "org.wrongwrong.main.deser.T_20P_Ctor.present":
   N = 5
-  mean =     34.112 ±(99.9%) 2.155 ms/op
+  mean =     36.771 ±(99.9%) 1.814 ms/op
 
   Histogram, ms/op:
-    [33.000, 33.250) = 0 
-    [33.250, 33.500) = 0 
-    [33.500, 33.750) = 0 
-    [33.750, 34.000) = 3 
-    [34.000, 34.250) = 1 
-    [34.250, 34.500) = 0 
-    [34.500, 34.750) = 0 
-    [34.750, 35.000) = 0 
-    [35.000, 35.250) = 1 
-    [35.250, 35.500) = 0 
-    [35.500, 35.750) = 0 
+    [36.000, 36.125) = 0 
+    [36.125, 36.250) = 1 
+    [36.250, 36.375) = 0 
+    [36.375, 36.500) = 0 
+    [36.500, 36.625) = 2 
+    [36.625, 36.750) = 0 
+    [36.750, 36.875) = 0 
+    [36.875, 37.000) = 0 
+    [37.000, 37.125) = 0 
+    [37.125, 37.250) = 1 
+    [37.250, 37.375) = 1 
+    [37.375, 37.500) = 0 
+    [37.500, 37.625) = 0 
+    [37.625, 37.750) = 0 
+    [37.750, 37.875) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     33.750 ms/op
-     p(50.0000) =     33.845 ms/op
-     p(90.0000) =     35.092 ms/op
-     p(95.0000) =     35.092 ms/op
-     p(99.0000) =     35.092 ms/op
-     p(99.9000) =     35.092 ms/op
-     p(99.9900) =     35.092 ms/op
-     p(99.9990) =     35.092 ms/op
-     p(99.9999) =     35.092 ms/op
-    p(100.0000) =     35.092 ms/op
+      p(0.0000) =     36.229 ms/op
+     p(50.0000) =     36.609 ms/op
+     p(90.0000) =     37.357 ms/op
+     p(95.0000) =     37.357 ms/op
+     p(99.0000) =     37.357 ms/op
+     p(99.9000) =     37.357 ms/op
+     p(99.9900) =     37.357 ms/op
+     p(99.9990) =     37.357 ms/op
+     p(99.9999) =     37.357 ms/op
+    p(100.0000) =     37.357 ms/op
 
 
 # JMH version: 1.25
@@ -2012,55 +2028,59 @@ Result "org.wrongwrong.main.deser.T_20P_Ctor.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.T_20P_Func.missing
 
-# Run progress: 86.11% complete, ETA 00:00:37
+# Run progress: 86.11% complete, ETA 00:00:38
 # Fork: 1 of 5
-Iteration   1: 41.178 ms/op
+Iteration   1: 46.797 ms/op
 
-# Run progress: 86.67% complete, ETA 00:00:35
+# Run progress: 86.67% complete, ETA 00:00:37
 # Fork: 2 of 5
-Iteration   1: 42.499 ms/op
+Iteration   1: 44.514 ms/op
 
-# Run progress: 87.22% complete, ETA 00:00:34
+# Run progress: 87.22% complete, ETA 00:00:35
 # Fork: 3 of 5
-Iteration   1: 42.604 ms/op
+Iteration   1: 46.237 ms/op
 
-# Run progress: 87.78% complete, ETA 00:00:32
+# Run progress: 87.78% complete, ETA 00:00:34
 # Fork: 4 of 5
-Iteration   1: 43.726 ms/op
+Iteration   1: 45.388 ms/op
 
-# Run progress: 88.33% complete, ETA 00:00:31
+# Run progress: 88.33% complete, ETA 00:00:32
 # Fork: 5 of 5
-Iteration   1: 43.015 ms/op
+Iteration   1: 47.305 ms/op
 
 
 Result "org.wrongwrong.main.deser.T_20P_Func.missing":
   N = 5
-  mean =     42.605 ±(99.9%) 3.588 ms/op
+  mean =     46.048 ±(99.9%) 4.291 ms/op
 
   Histogram, ms/op:
-    [41.000, 41.250) = 1 
-    [41.250, 41.500) = 0 
-    [41.500, 41.750) = 0 
-    [41.750, 42.000) = 0 
-    [42.000, 42.250) = 0 
-    [42.250, 42.500) = 1 
-    [42.500, 42.750) = 1 
-    [42.750, 43.000) = 0 
-    [43.000, 43.250) = 1 
-    [43.250, 43.500) = 0 
-    [43.500, 43.750) = 1 
+    [44.000, 44.250) = 0 
+    [44.250, 44.500) = 0 
+    [44.500, 44.750) = 1 
+    [44.750, 45.000) = 0 
+    [45.000, 45.250) = 0 
+    [45.250, 45.500) = 1 
+    [45.500, 45.750) = 0 
+    [45.750, 46.000) = 0 
+    [46.000, 46.250) = 1 
+    [46.250, 46.500) = 0 
+    [46.500, 46.750) = 0 
+    [46.750, 47.000) = 1 
+    [47.000, 47.250) = 0 
+    [47.250, 47.500) = 1 
+    [47.500, 47.750) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     41.178 ms/op
-     p(50.0000) =     42.604 ms/op
-     p(90.0000) =     43.726 ms/op
-     p(95.0000) =     43.726 ms/op
-     p(99.0000) =     43.726 ms/op
-     p(99.9000) =     43.726 ms/op
-     p(99.9900) =     43.726 ms/op
-     p(99.9990) =     43.726 ms/op
-     p(99.9999) =     43.726 ms/op
-    p(100.0000) =     43.726 ms/op
+      p(0.0000) =     44.514 ms/op
+     p(50.0000) =     46.237 ms/op
+     p(90.0000) =     47.305 ms/op
+     p(95.0000) =     47.305 ms/op
+     p(99.0000) =     47.305 ms/op
+     p(99.9000) =     47.305 ms/op
+     p(99.9900) =     47.305 ms/op
+     p(99.9990) =     47.305 ms/op
+     p(99.9999) =     47.305 ms/op
+    p(100.0000) =     47.305 ms/op
 
 
 # JMH version: 1.25
@@ -2074,59 +2094,55 @@ Result "org.wrongwrong.main.deser.T_20P_Func.missing":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.deser.T_20P_Func.present
 
-# Run progress: 88.89% complete, ETA 00:00:29
+# Run progress: 88.89% complete, ETA 00:00:30
 # Fork: 1 of 5
-Iteration   1: 39.867 ms/op
+Iteration   1: 43.073 ms/op
 
-# Run progress: 89.44% complete, ETA 00:00:28
+# Run progress: 89.44% complete, ETA 00:00:29
 # Fork: 2 of 5
-Iteration   1: 39.825 ms/op
+Iteration   1: 44.612 ms/op
 
-# Run progress: 90.00% complete, ETA 00:00:26
+# Run progress: 90.00% complete, ETA 00:00:27
 # Fork: 3 of 5
-Iteration   1: 39.547 ms/op
+Iteration   1: 42.186 ms/op
 
-# Run progress: 90.56% complete, ETA 00:00:25
+# Run progress: 90.56% complete, ETA 00:00:26
 # Fork: 4 of 5
-Iteration   1: 39.121 ms/op
+Iteration   1: 42.287 ms/op
 
-# Run progress: 91.11% complete, ETA 00:00:23
+# Run progress: 91.11% complete, ETA 00:00:24
 # Fork: 5 of 5
-Iteration   1: 40.860 ms/op
+Iteration   1: 42.737 ms/op
 
 
 Result "org.wrongwrong.main.deser.T_20P_Func.present":
   N = 5
-  mean =     39.844 ±(99.9%) 2.468 ms/op
+  mean =     42.979 ±(99.9%) 3.775 ms/op
 
   Histogram, ms/op:
-    [39.000, 39.125) = 1 
-    [39.125, 39.250) = 0 
-    [39.250, 39.375) = 0 
-    [39.375, 39.500) = 0 
-    [39.500, 39.625) = 1 
-    [39.625, 39.750) = 0 
-    [39.750, 39.875) = 2 
-    [39.875, 40.000) = 0 
-    [40.000, 40.125) = 0 
-    [40.125, 40.250) = 0 
-    [40.250, 40.375) = 0 
-    [40.375, 40.500) = 0 
-    [40.500, 40.625) = 0 
-    [40.625, 40.750) = 0 
-    [40.750, 40.875) = 1 
+    [42.000, 42.250) = 1 
+    [42.250, 42.500) = 1 
+    [42.500, 42.750) = 1 
+    [42.750, 43.000) = 0 
+    [43.000, 43.250) = 1 
+    [43.250, 43.500) = 0 
+    [43.500, 43.750) = 0 
+    [43.750, 44.000) = 0 
+    [44.000, 44.250) = 0 
+    [44.250, 44.500) = 0 
+    [44.500, 44.750) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     39.121 ms/op
-     p(50.0000) =     39.825 ms/op
-     p(90.0000) =     40.860 ms/op
-     p(95.0000) =     40.860 ms/op
-     p(99.0000) =     40.860 ms/op
-     p(99.9000) =     40.860 ms/op
-     p(99.9900) =     40.860 ms/op
-     p(99.9990) =     40.860 ms/op
-     p(99.9999) =     40.860 ms/op
-    p(100.0000) =     40.860 ms/op
+      p(0.0000) =     42.186 ms/op
+     p(50.0000) =     42.737 ms/op
+     p(90.0000) =     44.612 ms/op
+     p(95.0000) =     44.612 ms/op
+     p(99.0000) =     44.612 ms/op
+     p(99.9000) =     44.612 ms/op
+     p(99.9900) =     44.612 ms/op
+     p(99.9990) =     44.612 ms/op
+     p(99.9999) =     44.612 ms/op
+    p(100.0000) =     44.612 ms/op
 
 
 # JMH version: 1.25
@@ -2140,54 +2156,53 @@ Result "org.wrongwrong.main.deser.T_20P_Func.present":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.ser.A_1P.call
 
-# Run progress: 91.67% complete, ETA 00:00:22
+# Run progress: 91.67% complete, ETA 00:00:23
 # Fork: 1 of 5
-Iteration   1: 89.131 ms/op
+Iteration   1: 102.051 ms/op
 
-# Run progress: 92.22% complete, ETA 00:00:20
+# Run progress: 92.22% complete, ETA 00:00:21
 # Fork: 2 of 5
-Iteration   1: 95.814 ms/op
+Iteration   1: 93.253 ms/op
 
-# Run progress: 92.78% complete, ETA 00:00:19
+# Run progress: 92.78% complete, ETA 00:00:20
 # Fork: 3 of 5
-Iteration   1: 85.891 ms/op
+Iteration   1: 102.447 ms/op
 
-# Run progress: 93.33% complete, ETA 00:00:17
+# Run progress: 93.33% complete, ETA 00:00:18
 # Fork: 4 of 5
-Iteration   1: 91.022 ms/op
+Iteration   1: 96.189 ms/op
 
-# Run progress: 93.89% complete, ETA 00:00:16
+# Run progress: 93.89% complete, ETA 00:00:17
 # Fork: 5 of 5
-Iteration   1: 91.255 ms/op
+Iteration   1: 97.189 ms/op
 
 
 Result "org.wrongwrong.main.ser.A_1P.call":
   N = 5
-  mean =     90.623 ±(99.9%) 13.901 ms/op
+  mean =     98.226 ±(99.9%) 15.210 ms/op
 
   Histogram, ms/op:
-    [85.000, 86.000) = 1 
-    [86.000, 87.000) = 0 
-    [87.000, 88.000) = 0 
-    [88.000, 89.000) = 0 
-    [89.000, 90.000) = 1 
-    [90.000, 91.000) = 0 
-    [91.000, 92.000) = 2 
-    [92.000, 93.000) = 0 
-    [93.000, 94.000) = 0 
-    [94.000, 95.000) = 0 
+    [ 93.000,  94.000) = 1 
+    [ 94.000,  95.000) = 0 
+    [ 95.000,  96.000) = 0 
+    [ 96.000,  97.000) = 1 
+    [ 97.000,  98.000) = 1 
+    [ 98.000,  99.000) = 0 
+    [ 99.000, 100.000) = 0 
+    [100.000, 101.000) = 0 
+    [101.000, 102.000) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     85.891 ms/op
-     p(50.0000) =     91.022 ms/op
-     p(90.0000) =     95.814 ms/op
-     p(95.0000) =     95.814 ms/op
-     p(99.0000) =     95.814 ms/op
-     p(99.9000) =     95.814 ms/op
-     p(99.9900) =     95.814 ms/op
-     p(99.9990) =     95.814 ms/op
-     p(99.9999) =     95.814 ms/op
-    p(100.0000) =     95.814 ms/op
+      p(0.0000) =     93.253 ms/op
+     p(50.0000) =     97.189 ms/op
+     p(90.0000) =    102.447 ms/op
+     p(95.0000) =    102.447 ms/op
+     p(99.0000) =    102.447 ms/op
+     p(99.9000) =    102.447 ms/op
+     p(99.9900) =    102.447 ms/op
+     p(99.9990) =    102.447 ms/op
+     p(99.9999) =    102.447 ms/op
+    p(100.0000) =    102.447 ms/op
 
 
 # JMH version: 1.25
@@ -2201,53 +2216,55 @@ Result "org.wrongwrong.main.ser.A_1P.call":
 # Benchmark mode: Single shot invocation time
 # Benchmark: org.wrongwrong.main.ser.E_5P.call
 
-# Run progress: 94.44% complete, ETA 00:00:14
+# Run progress: 94.44% complete, ETA 00:00:15
 # Fork: 1 of 5
-Iteration   1: 94.733 ms/op
+Iteration   1: 101.615 ms/op
 
 # Run progress: 95.00% complete, ETA 00:00:13
 # Fork: 2 of 5
-Iteration   1: 93.101 ms/op
+Iteration   1: 98.278 ms/op
 
-# Run progress: 95.56% complete, ETA 00:00:11
+# Run progress: 95.56% complete, ETA 00:00:12
 # Fork: 3 of 5
-Iteration   1: 94.306 ms/op
+Iteration   1: 116.291 ms/op
 
 # Run progress: 96.11% complete, ETA 00:00:10
 # Fork: 4 of 5
-Iteration   1: 95.114 ms/op
+Iteration   1: 109.020 ms/op
 
-# Run progress: 96.67% complete, ETA 00:00:08
+# Run progress: 96.67% complete, ETA 00:00:09
 # Fork: 5 of 5
-Iteration   1: 91.543 ms/op
+Iteration   1: 100.455 ms/op
 
 
 Result "org.wrongwrong.main.ser.E_5P.call":
   N = 5
-  mean =     93.759 ±(99.9%) 5.589 ms/op
+  mean =    105.132 ±(99.9%) 28.613 ms/op
 
   Histogram, ms/op:
-    [91.000, 91.500) = 0 
-    [91.500, 92.000) = 1 
-    [92.000, 92.500) = 0 
-    [92.500, 93.000) = 0 
-    [93.000, 93.500) = 1 
-    [93.500, 94.000) = 0 
-    [94.000, 94.500) = 1 
-    [94.500, 95.000) = 1 
-    [95.000, 95.500) = 1 
+    [ 90.000,  92.500) = 0 
+    [ 92.500,  95.000) = 0 
+    [ 95.000,  97.500) = 0 
+    [ 97.500, 100.000) = 1 
+    [100.000, 102.500) = 2 
+    [102.500, 105.000) = 0 
+    [105.000, 107.500) = 0 
+    [107.500, 110.000) = 1 
+    [110.000, 112.500) = 0 
+    [112.500, 115.000) = 0 
+    [115.000, 117.500) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =     91.543 ms/op
-     p(50.0000) =     94.306 ms/op
-     p(90.0000) =     95.114 ms/op
-     p(95.0000) =     95.114 ms/op
-     p(99.0000) =     95.114 ms/op
-     p(99.9000) =     95.114 ms/op
-     p(99.9900) =     95.114 ms/op
-     p(99.9990) =     95.114 ms/op
-     p(99.9999) =     95.114 ms/op
-    p(100.0000) =     95.114 ms/op
+      p(0.0000) =     98.278 ms/op
+     p(50.0000) =    101.615 ms/op
+     p(90.0000) =    116.291 ms/op
+     p(95.0000) =    116.291 ms/op
+     p(99.0000) =    116.291 ms/op
+     p(99.9000) =    116.291 ms/op
+     p(99.9900) =    116.291 ms/op
+     p(99.9990) =    116.291 ms/op
+     p(99.9999) =    116.291 ms/op
+    p(100.0000) =    116.291 ms/op
 
 
 # JMH version: 1.25
@@ -2263,54 +2280,56 @@ Result "org.wrongwrong.main.ser.E_5P.call":
 
 # Run progress: 97.22% complete, ETA 00:00:07
 # Fork: 1 of 5
-Iteration   1: 104.990 ms/op
+Iteration   1: 109.533 ms/op
 
-# Run progress: 97.78% complete, ETA 00:00:05
+# Run progress: 97.78% complete, ETA 00:00:06
 # Fork: 2 of 5
-Iteration   1: 109.362 ms/op
+Iteration   1: 124.161 ms/op
 
 # Run progress: 98.33% complete, ETA 00:00:04
 # Fork: 3 of 5
-Iteration   1: 113.083 ms/op
+Iteration   1: 107.283 ms/op
 
-# Run progress: 98.89% complete, ETA 00:00:02
+# Run progress: 98.89% complete, ETA 00:00:03
 # Fork: 4 of 5
-Iteration   1: 110.344 ms/op
+Iteration   1: 112.284 ms/op
 
 # Run progress: 99.44% complete, ETA 00:00:01
 # Fork: 5 of 5
-Iteration   1: 112.209 ms/op
+Iteration   1: 112.962 ms/op
 
 
 Result "org.wrongwrong.main.ser.T_20P.call":
   N = 5
-  mean =    109.997 ±(99.9%) 12.178 ms/op
+  mean =    113.244 ±(99.9%) 25.065 ms/op
 
   Histogram, ms/op:
-    [104.000, 105.000) = 1 
-    [105.000, 106.000) = 0 
-    [106.000, 107.000) = 0 
-    [107.000, 108.000) = 0 
-    [108.000, 109.000) = 0 
-    [109.000, 110.000) = 1 
-    [110.000, 111.000) = 1 
-    [111.000, 112.000) = 0 
-    [112.000, 113.000) = 1 
+    [100.000, 102.500) = 0 
+    [102.500, 105.000) = 0 
+    [105.000, 107.500) = 1 
+    [107.500, 110.000) = 1 
+    [110.000, 112.500) = 1 
+    [112.500, 115.000) = 1 
+    [115.000, 117.500) = 0 
+    [117.500, 120.000) = 0 
+    [120.000, 122.500) = 0 
+    [122.500, 125.000) = 1 
+    [125.000, 127.500) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =    104.990 ms/op
-     p(50.0000) =    110.344 ms/op
-     p(90.0000) =    113.083 ms/op
-     p(95.0000) =    113.083 ms/op
-     p(99.0000) =    113.083 ms/op
-     p(99.9000) =    113.083 ms/op
-     p(99.9900) =    113.083 ms/op
-     p(99.9990) =    113.083 ms/op
-     p(99.9999) =    113.083 ms/op
-    p(100.0000) =    113.083 ms/op
+      p(0.0000) =    107.283 ms/op
+     p(50.0000) =    112.284 ms/op
+     p(90.0000) =    124.161 ms/op
+     p(95.0000) =    124.161 ms/op
+     p(99.0000) =    124.161 ms/op
+     p(99.9000) =    124.161 ms/op
+     p(99.9900) =    124.161 ms/op
+     p(99.9990) =    124.161 ms/op
+     p(99.9999) =    124.161 ms/op
+    p(100.0000) =    124.161 ms/op
 
 
-# Run complete. Total time: 00:04:28
+# Run complete. Total time: 00:04:37
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -2319,41 +2338,41 @@ the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from th
 Do not assume the numbers tell you what you want them to tell.
 
 Benchmark                                   Mode  Cnt    Score    Error  Units
-o.w.extra.deser.Collections.array             ss    5   49.955 ± 22.819  ms/op
-o.w.extra.deser.Collections.list              ss    5   32.351 ±  2.127  ms/op
-o.w.extra.deser.Collections.map               ss    5   34.944 ±  4.654  ms/op
-o.w.extra.deser.wrapper.A_1P_Ctor.missing     ss    5   30.954 ±  0.939  ms/op
-o.w.extra.deser.wrapper.A_1P_Ctor.present     ss    5   28.841 ±  2.497  ms/op
-o.w.extra.deser.wrapper.A_1P_Func.missing     ss    5   32.643 ±  1.380  ms/op
-o.w.extra.deser.wrapper.A_1P_Func.present     ss    5   30.862 ±  1.123  ms/op
-o.w.extra.deser.wrapper.E_5P_Ctor.missing     ss    5   32.338 ±  1.084  ms/op
-o.w.extra.deser.wrapper.E_5P_Ctor.present     ss    5   30.515 ±  1.235  ms/op
-o.w.extra.deser.wrapper.E_5P_Func.missing     ss    5   36.725 ±  1.647  ms/op
-o.w.extra.deser.wrapper.E_5P_Func.present     ss    5   36.990 ± 11.683  ms/op
-o.w.extra.deser.wrapper.T_20P_Ctor.missing    ss    5   37.262 ±  1.604  ms/op
-o.w.extra.deser.wrapper.T_20P_Ctor.present    ss    5   38.185 ± 18.615  ms/op
-o.w.extra.deser.wrapper.T_20P_Func.missing    ss    5   43.214 ±  6.254  ms/op
-o.w.extra.deser.wrapper.T_20P_Func.present    ss    5   40.752 ±  6.125  ms/op
-o.w.extra.ser.value_class.A_1P.call           ss    5   85.291 ± 30.966  ms/op
-o.w.extra.ser.value_class.E_5P.call           ss    5   84.091 ± 12.424  ms/op
-o.w.extra.ser.value_class.T_20P.call          ss    5  102.183 ± 51.168  ms/op
-o.w.extra.ser.wrapper.A_1P.call               ss    5  115.388 ± 40.483  ms/op
-o.w.extra.ser.wrapper.E_5P.call               ss    5  120.583 ± 20.554  ms/op
-o.w.extra.ser.wrapper.T_20P.call              ss    5  129.306 ± 24.226  ms/op
-o.w.main.deser.A_1P_Ctor.missing              ss    5   32.459 ±  1.465  ms/op
-o.w.main.deser.A_1P_Ctor.present              ss    5   29.776 ±  0.995  ms/op
-o.w.main.deser.A_1P_Func.missing              ss    5   34.835 ±  2.842  ms/op
-o.w.main.deser.A_1P_Func.present              ss    5   32.123 ±  1.905  ms/op
-o.w.main.deser.E_5P_Ctor.missing              ss    5   33.121 ±  0.639  ms/op
-o.w.main.deser.E_5P_Ctor.present              ss    5   31.044 ±  2.012  ms/op
-o.w.main.deser.E_5P_Func.missing              ss    5   37.521 ±  2.160  ms/op
-o.w.main.deser.E_5P_Func.present              ss    5   35.056 ±  3.061  ms/op
-o.w.main.deser.T_20P_Ctor.missing             ss    5   37.431 ±  4.412  ms/op
-o.w.main.deser.T_20P_Ctor.present             ss    5   34.112 ±  2.155  ms/op
-o.w.main.deser.T_20P_Func.missing             ss    5   42.605 ±  3.588  ms/op
-o.w.main.deser.T_20P_Func.present             ss    5   39.844 ±  2.468  ms/op
-o.w.main.ser.A_1P.call                        ss    5   90.623 ± 13.901  ms/op
-o.w.main.ser.E_5P.call                        ss    5   93.759 ±  5.589  ms/op
-o.w.main.ser.T_20P.call                       ss    5  109.997 ± 12.178  ms/op
+o.w.extra.deser.Collections.array             ss    5   51.215 ± 25.001  ms/op
+o.w.extra.deser.Collections.list              ss    5   34.961 ±  4.017  ms/op
+o.w.extra.deser.Collections.map               ss    5   37.148 ±  4.177  ms/op
+o.w.extra.deser.wrapper.A_1P_Ctor.missing     ss    5   34.355 ±  3.950  ms/op
+o.w.extra.deser.wrapper.A_1P_Ctor.present     ss    5   31.267 ±  4.511  ms/op
+o.w.extra.deser.wrapper.A_1P_Func.missing     ss    5   35.863 ±  1.125  ms/op
+o.w.extra.deser.wrapper.A_1P_Func.present     ss    5   33.889 ±  2.625  ms/op
+o.w.extra.deser.wrapper.E_5P_Ctor.missing     ss    5   36.285 ±  6.967  ms/op
+o.w.extra.deser.wrapper.E_5P_Ctor.present     ss    5   32.845 ±  3.636  ms/op
+o.w.extra.deser.wrapper.E_5P_Func.missing     ss    5   41.095 ± 11.758  ms/op
+o.w.extra.deser.wrapper.E_5P_Func.present     ss    5   40.255 ±  7.204  ms/op
+o.w.extra.deser.wrapper.T_20P_Ctor.missing    ss    5   41.288 ±  8.065  ms/op
+o.w.extra.deser.wrapper.T_20P_Ctor.present    ss    5   38.026 ±  7.609  ms/op
+o.w.extra.deser.wrapper.T_20P_Func.missing    ss    5   47.447 ± 11.406  ms/op
+o.w.extra.deser.wrapper.T_20P_Func.present    ss    5   43.816 ±  3.872  ms/op
+o.w.extra.ser.value_class.A_1P.call           ss    5   89.334 ± 14.313  ms/op
+o.w.extra.ser.value_class.E_5P.call           ss    5  100.566 ± 38.711  ms/op
+o.w.extra.ser.value_class.T_20P.call          ss    5  117.385 ± 64.971  ms/op
+o.w.extra.ser.wrapper.A_1P.call               ss    5  116.509 ± 12.298  ms/op
+o.w.extra.ser.wrapper.E_5P.call               ss    5  138.736 ± 25.437  ms/op
+o.w.extra.ser.wrapper.T_20P.call              ss    5  154.603 ± 11.866  ms/op
+o.w.main.deser.A_1P_Ctor.missing              ss    5   34.744 ±  1.821  ms/op
+o.w.main.deser.A_1P_Ctor.present              ss    5   32.220 ±  1.823  ms/op
+o.w.main.deser.A_1P_Func.missing              ss    5   36.898 ±  1.932  ms/op
+o.w.main.deser.A_1P_Func.present              ss    5   34.822 ±  2.035  ms/op
+o.w.main.deser.E_5P_Ctor.missing              ss    5   35.983 ±  2.705  ms/op
+o.w.main.deser.E_5P_Ctor.present              ss    5   32.973 ±  2.706  ms/op
+o.w.main.deser.E_5P_Func.missing              ss    5   41.560 ± 13.597  ms/op
+o.w.main.deser.E_5P_Func.present              ss    5   37.718 ±  5.004  ms/op
+o.w.main.deser.T_20P_Ctor.missing             ss    5   40.437 ±  5.772  ms/op
+o.w.main.deser.T_20P_Ctor.present             ss    5   36.771 ±  1.814  ms/op
+o.w.main.deser.T_20P_Func.missing             ss    5   46.048 ±  4.291  ms/op
+o.w.main.deser.T_20P_Func.present             ss    5   42.979 ±  3.775  ms/op
+o.w.main.ser.A_1P.call                        ss    5   98.226 ± 15.210  ms/op
+o.w.main.ser.E_5P.call                        ss    5  105.132 ± 28.613  ms/op
+o.w.main.ser.T_20P.call                       ss    5  113.244 ± 25.065  ms/op
 
 Benchmark result is saved to /home/runner/work/kogera-benchmark/kogera-benchmark/ci-reports/OriginalStrictNullCheck-ss.csv
