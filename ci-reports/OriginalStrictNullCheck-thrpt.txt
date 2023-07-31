@@ -9,43 +9,43 @@
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.Collections.array
 
-# Run progress: 0.00% complete, ETA 00:14:24
+# Run progress: 0.00% complete, ETA 00:10:48
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 194161.949 ops/s
-# Warmup Iteration   2: 370755.902 ops/s
-# Warmup Iteration   3: 398117.439 ops/s
-Iteration   1: 396570.117 ops/s
-Iteration   2: 395786.356 ops/s
+# Warmup Iteration   1: 192137.270 ops/s
+# Warmup Iteration   2: 335719.277 ops/s
+# Warmup Iteration   3: 392828.488 ops/s
+Iteration   1: 393507.519 ops/s
+Iteration   2: 387490.035 ops/s
 
-# Run progress: 0.69% complete, ETA 00:16:31
+# Run progress: 0.93% complete, ETA 00:12:18
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 194581.270 ops/s
-# Warmup Iteration   2: 378594.324 ops/s
-# Warmup Iteration   3: 404777.697 ops/s
-Iteration   1: 403695.845 ops/s
-Iteration   2: 402154.783 ops/s
+# Warmup Iteration   1: 163872.625 ops/s
+# Warmup Iteration   2: 353783.927 ops/s
+# Warmup Iteration   3: 409577.412 ops/s
+Iteration   1: 404526.328 ops/s
+Iteration   2: 398807.822 ops/s
 
-# Run progress: 1.39% complete, ETA 00:16:19
+# Run progress: 1.85% complete, ETA 00:12:11
 # Fork: 1 of 2
-# Warmup Iteration   1: 195369.154 ops/s
-# Warmup Iteration   2: 371063.063 ops/s
-# Warmup Iteration   3: 399320.715 ops/s
-Iteration   1: 398428.844 ops/s
-Iteration   2: 396598.875 ops/s
+# Warmup Iteration   1: 188006.072 ops/s
+# Warmup Iteration   2: 336430.375 ops/s
+# Warmup Iteration   3: 395859.767 ops/s
+Iteration   1: 394857.767 ops/s
+Iteration   2: 393977.334 ops/s
 
-# Run progress: 2.08% complete, ETA 00:16:12
+# Run progress: 2.78% complete, ETA 00:12:04
 # Fork: 2 of 2
-# Warmup Iteration   1: 175889.635 ops/s
-# Warmup Iteration   2: 354485.780 ops/s
-# Warmup Iteration   3: 387157.057 ops/s
-Iteration   1: 386474.494 ops/s
-Iteration   2: 386116.752 ops/s
+# Warmup Iteration   1: 178323.007 ops/s
+# Warmup Iteration   2: 342357.358 ops/s
+# Warmup Iteration   3: 396921.847 ops/s
+Iteration   1: 389921.297 ops/s
+Iteration   2: 397001.928 ops/s
 
 
 Result "org.wrongwrong.extra.deser.Collections.array":
-  391904.741 ±(99.9%) 42141.421 ops/s [Average]
-  (min, avg, max) = (386116.752, 391904.741, 398428.844), stdev = 6521.432
-  CI (99.9%): [349763.321, 434046.162] (assumes normal distribution)
+  393939.582 ±(99.9%) 19158.124 ops/s [Average]
+  (min, avg, max) = (389921.297, 393939.582, 397001.928), stdev = 2964.741
+  CI (99.9%): [374781.458, 413097.705] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -59,43 +59,43 @@ Result "org.wrongwrong.extra.deser.Collections.array":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.Collections.list
 
-# Run progress: 2.78% complete, ETA 00:16:05
+# Run progress: 3.70% complete, ETA 00:11:56
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 173381.436 ops/s
-# Warmup Iteration   2: 365955.066 ops/s
-# Warmup Iteration   3: 395288.531 ops/s
-Iteration   1: 394923.103 ops/s
-Iteration   2: 394032.572 ops/s
+# Warmup Iteration   1: 175898.135 ops/s
+# Warmup Iteration   2: 339200.369 ops/s
+# Warmup Iteration   3: 397350.459 ops/s
+Iteration   1: 396504.835 ops/s
+Iteration   2: 394614.784 ops/s
 
-# Run progress: 3.47% complete, ETA 00:16:00
+# Run progress: 4.63% complete, ETA 00:11:50
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 170072.309 ops/s
-# Warmup Iteration   2: 362322.566 ops/s
-# Warmup Iteration   3: 393155.086 ops/s
-Iteration   1: 392264.061 ops/s
-Iteration   2: 392054.794 ops/s
+# Warmup Iteration   1: 158004.362 ops/s
+# Warmup Iteration   2: 337221.656 ops/s
+# Warmup Iteration   3: 386801.891 ops/s
+Iteration   1: 385692.034 ops/s
+Iteration   2: 386590.628 ops/s
 
-# Run progress: 4.17% complete, ETA 00:15:52
+# Run progress: 5.56% complete, ETA 00:11:43
 # Fork: 1 of 2
-# Warmup Iteration   1: 164508.476 ops/s
-# Warmup Iteration   2: 360959.247 ops/s
-# Warmup Iteration   3: 387945.642 ops/s
-Iteration   1: 387545.023 ops/s
-Iteration   2: 386583.249 ops/s
+# Warmup Iteration   1: 161493.334 ops/s
+# Warmup Iteration   2: 331638.347 ops/s
+# Warmup Iteration   3: 388033.317 ops/s
+Iteration   1: 385388.901 ops/s
+Iteration   2: 386260.483 ops/s
 
-# Run progress: 4.86% complete, ETA 00:15:45
+# Run progress: 6.48% complete, ETA 00:11:36
 # Fork: 2 of 2
-# Warmup Iteration   1: 162413.819 ops/s
-# Warmup Iteration   2: 379479.958 ops/s
-# Warmup Iteration   3: 413928.847 ops/s
-Iteration   1: 413160.717 ops/s
-Iteration   2: 411564.804 ops/s
+# Warmup Iteration   1: 167568.077 ops/s
+# Warmup Iteration   2: 338464.153 ops/s
+# Warmup Iteration   3: 383328.293 ops/s
+Iteration   1: 383726.645 ops/s
+Iteration   2: 382810.237 ops/s
 
 
 Result "org.wrongwrong.extra.deser.Collections.list":
-  399713.448 ±(99.9%) 94512.818 ops/s [Average]
-  (min, avg, max) = (386583.249, 399713.448, 413160.717), stdev = 14625.963
-  CI (99.9%): [305200.631, 494226.266] (assumes normal distribution)
+  384546.566 ±(99.9%) 10103.699 ops/s [Average]
+  (min, avg, max) = (382810.237, 384546.566, 386260.483), stdev = 1563.559
+  CI (99.9%): [374442.868, 394650.265] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -109,43 +109,43 @@ Result "org.wrongwrong.extra.deser.Collections.list":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.Collections.map
 
-# Run progress: 5.56% complete, ETA 00:15:38
+# Run progress: 7.41% complete, ETA 00:11:29
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 120912.944 ops/s
-# Warmup Iteration   2: 271041.954 ops/s
-# Warmup Iteration   3: 293894.799 ops/s
-Iteration   1: 292999.063 ops/s
-Iteration   2: 292863.665 ops/s
+# Warmup Iteration   1: 130055.404 ops/s
+# Warmup Iteration   2: 259805.707 ops/s
+# Warmup Iteration   3: 303506.695 ops/s
+Iteration   1: 303018.292 ops/s
+Iteration   2: 303867.186 ops/s
 
-# Run progress: 6.25% complete, ETA 00:15:32
+# Run progress: 8.33% complete, ETA 00:11:22
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 121231.362 ops/s
-# Warmup Iteration   2: 276820.699 ops/s
-# Warmup Iteration   3: 296324.301 ops/s
-Iteration   1: 296017.566 ops/s
-Iteration   2: 295230.740 ops/s
+# Warmup Iteration   1: 123990.644 ops/s
+# Warmup Iteration   2: 263549.575 ops/s
+# Warmup Iteration   3: 302203.069 ops/s
+Iteration   1: 301555.353 ops/s
+Iteration   2: 300563.493 ops/s
 
-# Run progress: 6.94% complete, ETA 00:15:24
+# Run progress: 9.26% complete, ETA 00:11:15
 # Fork: 1 of 2
-# Warmup Iteration   1: 122609.534 ops/s
-# Warmup Iteration   2: 270834.777 ops/s
-# Warmup Iteration   3: 290487.863 ops/s
-Iteration   1: 289907.516 ops/s
-Iteration   2: 289596.963 ops/s
+# Warmup Iteration   1: 107406.634 ops/s
+# Warmup Iteration   2: 258800.643 ops/s
+# Warmup Iteration   3: 301830.774 ops/s
+Iteration   1: 301546.367 ops/s
+Iteration   2: 301060.979 ops/s
 
-# Run progress: 7.64% complete, ETA 00:15:17
+# Run progress: 10.19% complete, ETA 00:11:08
 # Fork: 2 of 2
-# Warmup Iteration   1: 123989.742 ops/s
-# Warmup Iteration   2: 268616.506 ops/s
-# Warmup Iteration   3: 289866.096 ops/s
-Iteration   1: 290124.666 ops/s
-Iteration   2: 289057.458 ops/s
+# Warmup Iteration   1: 128832.874 ops/s
+# Warmup Iteration   2: 261868.608 ops/s
+# Warmup Iteration   3: 303304.959 ops/s
+Iteration   1: 302405.548 ops/s
+Iteration   2: 300708.856 ops/s
 
 
 Result "org.wrongwrong.extra.deser.Collections.map":
-  289671.651 ±(99.9%) 2993.202 ops/s [Average]
-  (min, avg, max) = (289057.458, 289671.651, 290124.666), stdev = 463.201
-  CI (99.9%): [286678.449, 292664.853] (assumes normal distribution)
+  301430.438 ±(99.9%) 4750.712 ops/s [Average]
+  (min, avg, max) = (300708.856, 301430.438, 302405.548), stdev = 735.178
+  CI (99.9%): [296679.725, 306181.150] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -159,43 +159,43 @@ Result "org.wrongwrong.extra.deser.Collections.map":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.missing
 
-# Run progress: 8.33% complete, ETA 00:15:10
+# Run progress: 11.11% complete, ETA 00:11:02
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 75280.806 ops/s
-# Warmup Iteration   2: 327267.911 ops/s
-# Warmup Iteration   3: 371269.528 ops/s
-Iteration   1: 371027.994 ops/s
-Iteration   2: 369189.551 ops/s
+# Warmup Iteration   1: 122459.484 ops/s
+# Warmup Iteration   2: 351234.331 ops/s
+# Warmup Iteration   3: 410474.464 ops/s
+Iteration   1: 409687.098 ops/s
+Iteration   2: 406655.210 ops/s
 
-# Run progress: 9.03% complete, ETA 00:15:03
+# Run progress: 12.04% complete, ETA 00:10:55
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 75879.899 ops/s
-# Warmup Iteration   2: 335748.348 ops/s
-# Warmup Iteration   3: 377248.794 ops/s
-Iteration   1: 375551.244 ops/s
-Iteration   2: 374177.193 ops/s
+# Warmup Iteration   1: 87382.820 ops/s
+# Warmup Iteration   2: 344080.463 ops/s
+# Warmup Iteration   3: 406857.236 ops/s
+Iteration   1: 404895.195 ops/s
+Iteration   2: 400081.131 ops/s
 
-# Run progress: 9.72% complete, ETA 00:14:57
+# Run progress: 12.96% complete, ETA 00:10:48
 # Fork: 1 of 2
-# Warmup Iteration   1: 79406.674 ops/s
-# Warmup Iteration   2: 337819.343 ops/s
-# Warmup Iteration   3: 376495.382 ops/s
-Iteration   1: 375720.334 ops/s
-Iteration   2: 372958.017 ops/s
+# Warmup Iteration   1: 129367.131 ops/s
+# Warmup Iteration   2: 343328.385 ops/s
+# Warmup Iteration   3: 396122.720 ops/s
+Iteration   1: 397761.266 ops/s
+Iteration   2: 396359.911 ops/s
 
-# Run progress: 10.42% complete, ETA 00:14:50
+# Run progress: 13.89% complete, ETA 00:10:41
 # Fork: 2 of 2
-# Warmup Iteration   1: 84513.644 ops/s
-# Warmup Iteration   2: 330746.624 ops/s
-# Warmup Iteration   3: 354236.124 ops/s
-Iteration   1: 353912.062 ops/s
-Iteration   2: 348896.191 ops/s
+# Warmup Iteration   1: 89159.920 ops/s
+# Warmup Iteration   2: 347763.189 ops/s
+# Warmup Iteration   3: 410687.014 ops/s
+Iteration   1: 408572.121 ops/s
+Iteration   2: 403636.548 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.missing":
-  362871.651 ±(99.9%) 86890.022 ops/s [Average]
-  (min, avg, max) = (348896.191, 362871.651, 375720.334), stdev = 13446.327
-  CI (99.9%): [275981.629, 449761.673] (assumes normal distribution)
+  401582.462 ±(99.9%) 36354.300 ops/s [Average]
+  (min, avg, max) = (396359.911, 401582.462, 408572.121), stdev = 5625.868
+  CI (99.9%): [365228.162, 437936.762] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -209,43 +209,43 @@ Result "org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.present
 
-# Run progress: 11.11% complete, ETA 00:14:43
+# Run progress: 14.81% complete, ETA 00:10:34
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 391330.568 ops/s
-# Warmup Iteration   2: 638849.640 ops/s
-# Warmup Iteration   3: 658234.414 ops/s
-Iteration   1: 656602.296 ops/s
-Iteration   2: 654918.153 ops/s
+# Warmup Iteration   1: 352841.403 ops/s
+# Warmup Iteration   2: 605017.959 ops/s
+# Warmup Iteration   3: 672033.652 ops/s
+Iteration   1: 669810.901 ops/s
+Iteration   2: 668246.610 ops/s
 
-# Run progress: 11.81% complete, ETA 00:14:36
+# Run progress: 15.74% complete, ETA 00:10:28
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 372579.283 ops/s
-# Warmup Iteration   2: 624020.264 ops/s
-# Warmup Iteration   3: 652657.002 ops/s
-Iteration   1: 651159.381 ops/s
-Iteration   2: 645710.968 ops/s
+# Warmup Iteration   1: 354253.704 ops/s
+# Warmup Iteration   2: 621144.309 ops/s
+# Warmup Iteration   3: 678938.949 ops/s
+Iteration   1: 674090.813 ops/s
+Iteration   2: 672581.280 ops/s
 
-# Run progress: 12.50% complete, ETA 00:14:29
+# Run progress: 16.67% complete, ETA 00:10:21
 # Fork: 1 of 2
-# Warmup Iteration   1: 372043.776 ops/s
-# Warmup Iteration   2: 611974.799 ops/s
-# Warmup Iteration   3: 638280.731 ops/s
-Iteration   1: 637685.734 ops/s
-Iteration   2: 636727.724 ops/s
+# Warmup Iteration   1: 356163.220 ops/s
+# Warmup Iteration   2: 562280.010 ops/s
+# Warmup Iteration   3: 638404.916 ops/s
+Iteration   1: 637672.579 ops/s
+Iteration   2: 637342.001 ops/s
 
-# Run progress: 13.19% complete, ETA 00:14:22
+# Run progress: 17.59% complete, ETA 00:10:14
 # Fork: 2 of 2
-# Warmup Iteration   1: 373360.312 ops/s
-# Warmup Iteration   2: 627900.808 ops/s
-# Warmup Iteration   3: 654664.640 ops/s
-Iteration   1: 654555.602 ops/s
-Iteration   2: 653030.624 ops/s
+# Warmup Iteration   1: 367529.318 ops/s
+# Warmup Iteration   2: 593307.330 ops/s
+# Warmup Iteration   3: 641432.490 ops/s
+Iteration   1: 639959.139 ops/s
+Iteration   2: 639008.240 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.present":
-  645499.921 ±(99.9%) 62063.115 ops/s [Average]
-  (min, avg, max) = (636727.724, 645499.921, 654555.602), stdev = 9604.336
-  CI (99.9%): [583436.806, 707563.036] (assumes normal distribution)
+  638495.490 ±(99.9%) 7837.322 ops/s [Average]
+  (min, avg, max) = (637342.001, 638495.490, 639959.139), stdev = 1212.834
+  CI (99.9%): [630658.168, 646332.812] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -259,43 +259,43 @@ Result "org.wrongwrong.extra.deser.wrapper.A_1P_Ctor.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.A_1P_Func.missing
 
-# Run progress: 13.89% complete, ETA 00:14:15
+# Run progress: 18.52% complete, ETA 00:10:07
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 57851.571 ops/s
-# Warmup Iteration   2: 246010.250 ops/s
-# Warmup Iteration   3: 316930.782 ops/s
-Iteration   1: 319594.154 ops/s
-Iteration   2: 317666.989 ops/s
+# Warmup Iteration   1: 74411.297 ops/s
+# Warmup Iteration   2: 255265.307 ops/s
+# Warmup Iteration   3: 360814.967 ops/s
+Iteration   1: 361578.179 ops/s
+Iteration   2: 359058.434 ops/s
 
-# Run progress: 14.58% complete, ETA 00:14:08
+# Run progress: 19.44% complete, ETA 00:10:00
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 69861.095 ops/s
-# Warmup Iteration   2: 275671.855 ops/s
-# Warmup Iteration   3: 321768.407 ops/s
-Iteration   1: 321634.070 ops/s
-Iteration   2: 320422.710 ops/s
+# Warmup Iteration   1: 63830.141 ops/s
+# Warmup Iteration   2: 246402.645 ops/s
+# Warmup Iteration   3: 352916.575 ops/s
+Iteration   1: 355255.258 ops/s
+Iteration   2: 349142.683 ops/s
 
-# Run progress: 15.28% complete, ETA 00:14:01
+# Run progress: 20.37% complete, ETA 00:09:53
 # Fork: 1 of 2
-# Warmup Iteration   1: 72214.637 ops/s
-# Warmup Iteration   2: 251630.354 ops/s
-# Warmup Iteration   3: 326731.575 ops/s
-Iteration   1: 327122.457 ops/s
-Iteration   2: 325483.545 ops/s
+# Warmup Iteration   1: 76513.925 ops/s
+# Warmup Iteration   2: 260501.969 ops/s
+# Warmup Iteration   3: 363591.291 ops/s
+Iteration   1: 360605.146 ops/s
+Iteration   2: 361213.959 ops/s
 
-# Run progress: 15.97% complete, ETA 00:13:54
+# Run progress: 21.30% complete, ETA 00:09:47
 # Fork: 2 of 2
-# Warmup Iteration   1: 68851.698 ops/s
-# Warmup Iteration   2: 258559.363 ops/s
-# Warmup Iteration   3: 326063.790 ops/s
-Iteration   1: 329632.187 ops/s
-Iteration   2: 327359.149 ops/s
+# Warmup Iteration   1: 81996.950 ops/s
+# Warmup Iteration   2: 283215.312 ops/s
+# Warmup Iteration   3: 353586.839 ops/s
+Iteration   1: 353295.889 ops/s
+Iteration   2: 351419.549 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.A_1P_Func.missing":
-  327399.334 ±(99.9%) 11025.952 ops/s [Average]
-  (min, avg, max) = (325483.545, 327399.334, 329632.187), stdev = 1706.278
-  CI (99.9%): [316373.382, 338425.287] (assumes normal distribution)
+  356633.636 ±(99.9%) 32327.068 ops/s [Average]
+  (min, avg, max) = (351419.549, 356633.636, 361213.959), stdev = 5002.650
+  CI (99.9%): [324306.568, 388960.704] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -309,43 +309,43 @@ Result "org.wrongwrong.extra.deser.wrapper.A_1P_Func.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.A_1P_Func.present
 
-# Run progress: 16.67% complete, ETA 00:13:47
+# Run progress: 22.22% complete, ETA 00:09:40
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 114329.120 ops/s
-# Warmup Iteration   2: 380862.867 ops/s
-# Warmup Iteration   3: 400462.061 ops/s
-Iteration   1: 408349.326 ops/s
-Iteration   2: 406988.999 ops/s
+# Warmup Iteration   1: 195685.382 ops/s
+# Warmup Iteration   2: 400047.056 ops/s
+# Warmup Iteration   3: 462570.363 ops/s
+Iteration   1: 463390.642 ops/s
+Iteration   2: 462130.372 ops/s
 
-# Run progress: 17.36% complete, ETA 00:13:40
+# Run progress: 23.15% complete, ETA 00:09:33
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 205706.726 ops/s
-# Warmup Iteration   2: 403370.947 ops/s
-# Warmup Iteration   3: 431665.449 ops/s
-Iteration   1: 430263.715 ops/s
-Iteration   2: 430052.362 ops/s
+# Warmup Iteration   1: 181089.220 ops/s
+# Warmup Iteration   2: 397008.601 ops/s
+# Warmup Iteration   3: 458434.053 ops/s
+Iteration   1: 457000.606 ops/s
+Iteration   2: 457604.976 ops/s
 
-# Run progress: 18.06% complete, ETA 00:13:34
+# Run progress: 24.07% complete, ETA 00:09:26
 # Fork: 1 of 2
-# Warmup Iteration   1: 146411.500 ops/s
-# Warmup Iteration   2: 392399.979 ops/s
-# Warmup Iteration   3: 421910.425 ops/s
-Iteration   1: 421910.815 ops/s
-Iteration   2: 420420.364 ops/s
+# Warmup Iteration   1: 219544.785 ops/s
+# Warmup Iteration   2: 398766.965 ops/s
+# Warmup Iteration   3: 461926.324 ops/s
+Iteration   1: 460472.715 ops/s
+Iteration   2: 458751.719 ops/s
 
-# Run progress: 18.75% complete, ETA 00:13:27
+# Run progress: 25.00% complete, ETA 00:09:19
 # Fork: 2 of 2
-# Warmup Iteration   1: 184152.182 ops/s
-# Warmup Iteration   2: 397635.196 ops/s
-# Warmup Iteration   3: 428906.629 ops/s
-Iteration   1: 428021.498 ops/s
-Iteration   2: 427881.884 ops/s
+# Warmup Iteration   1: 188280.566 ops/s
+# Warmup Iteration   2: 394923.521 ops/s
+# Warmup Iteration   3: 466007.967 ops/s
+Iteration   1: 463753.866 ops/s
+Iteration   2: 463043.927 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.A_1P_Func.present":
-  424558.640 ±(99.9%) 25623.951 ops/s [Average]
-  (min, avg, max) = (420420.364, 424558.640, 428021.498), stdev = 3965.335
-  CI (99.9%): [398934.690, 450182.591] (assumes normal distribution)
+  461505.557 ±(99.9%) 14956.802 ops/s [Average]
+  (min, avg, max) = (458751.719, 461505.557, 463753.866), stdev = 2314.582
+  CI (99.9%): [446548.754, 476462.359] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -359,43 +359,43 @@ Result "org.wrongwrong.extra.deser.wrapper.A_1P_Func.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.missing
 
-# Run progress: 19.44% complete, ETA 00:13:20
+# Run progress: 25.93% complete, ETA 00:09:12
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 42125.842 ops/s
-# Warmup Iteration   2: 117437.240 ops/s
-# Warmup Iteration   3: 127654.664 ops/s
-Iteration   1: 129365.491 ops/s
-Iteration   2: 129017.129 ops/s
+# Warmup Iteration   1: 33818.323 ops/s
+# Warmup Iteration   2: 108615.923 ops/s
+# Warmup Iteration   3: 142227.638 ops/s
+Iteration   1: 141155.823 ops/s
+Iteration   2: 140000.323 ops/s
 
-# Run progress: 20.14% complete, ETA 00:13:13
+# Run progress: 26.85% complete, ETA 00:09:06
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 42853.328 ops/s
-# Warmup Iteration   2: 121261.154 ops/s
-# Warmup Iteration   3: 133288.276 ops/s
-Iteration   1: 132832.647 ops/s
-Iteration   2: 131291.445 ops/s
+# Warmup Iteration   1: 49584.239 ops/s
+# Warmup Iteration   2: 123974.509 ops/s
+# Warmup Iteration   3: 142688.279 ops/s
+Iteration   1: 142370.579 ops/s
+Iteration   2: 141163.883 ops/s
 
-# Run progress: 20.83% complete, ETA 00:13:06
+# Run progress: 27.78% complete, ETA 00:08:59
 # Fork: 1 of 2
-# Warmup Iteration   1: 37248.055 ops/s
-# Warmup Iteration   2: 118639.577 ops/s
-# Warmup Iteration   3: 131461.109 ops/s
-Iteration   1: 133206.591 ops/s
-Iteration   2: 133035.811 ops/s
+# Warmup Iteration   1: 39475.191 ops/s
+# Warmup Iteration   2: 117829.199 ops/s
+# Warmup Iteration   3: 142241.894 ops/s
+Iteration   1: 141414.898 ops/s
+Iteration   2: 140241.131 ops/s
 
-# Run progress: 21.53% complete, ETA 00:12:59
+# Run progress: 28.70% complete, ETA 00:08:52
 # Fork: 2 of 2
-# Warmup Iteration   1: 47013.311 ops/s
-# Warmup Iteration   2: 124025.706 ops/s
-# Warmup Iteration   3: 133131.607 ops/s
-Iteration   1: 134077.974 ops/s
-Iteration   2: 133468.684 ops/s
+# Warmup Iteration   1: 29151.444 ops/s
+# Warmup Iteration   2: 102484.156 ops/s
+# Warmup Iteration   3: 136406.327 ops/s
+Iteration   1: 138472.952 ops/s
+Iteration   2: 138682.278 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.missing":
-  133447.265 ±(99.9%) 2950.591 ops/s [Average]
-  (min, avg, max) = (133035.811, 133447.265, 134077.974), stdev = 456.607
-  CI (99.9%): [130496.674, 136397.856] (assumes normal distribution)
+  139702.815 ±(99.9%) 8965.700 ops/s [Average]
+  (min, avg, max) = (138472.952, 139702.815, 141414.898), stdev = 1387.452
+  CI (99.9%): [130737.115, 148668.515] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -409,43 +409,43 @@ Result "org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.present
 
-# Run progress: 22.22% complete, ETA 00:12:52
+# Run progress: 29.63% complete, ETA 00:08:45
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 138810.581 ops/s
-# Warmup Iteration   2: 218378.727 ops/s
-# Warmup Iteration   3: 228875.222 ops/s
-Iteration   1: 230873.200 ops/s
-Iteration   2: 231862.593 ops/s
+# Warmup Iteration   1: 142816.302 ops/s
+# Warmup Iteration   2: 213796.883 ops/s
+# Warmup Iteration   3: 230581.786 ops/s
+Iteration   1: 238524.693 ops/s
+Iteration   2: 238133.340 ops/s
 
-# Run progress: 22.92% complete, ETA 00:12:45
+# Run progress: 30.56% complete, ETA 00:08:38
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 139970.291 ops/s
-# Warmup Iteration   2: 225838.504 ops/s
-# Warmup Iteration   3: 237449.669 ops/s
-Iteration   1: 240017.570 ops/s
-Iteration   2: 239280.071 ops/s
+# Warmup Iteration   1: 142404.923 ops/s
+# Warmup Iteration   2: 214409.865 ops/s
+# Warmup Iteration   3: 231097.462 ops/s
+Iteration   1: 239072.214 ops/s
+Iteration   2: 239281.423 ops/s
 
-# Run progress: 23.61% complete, ETA 00:12:38
+# Run progress: 31.48% complete, ETA 00:08:31
 # Fork: 1 of 2
-# Warmup Iteration   1: 145405.716 ops/s
-# Warmup Iteration   2: 223005.109 ops/s
-# Warmup Iteration   3: 237925.226 ops/s
-Iteration   1: 238129.896 ops/s
-Iteration   2: 238477.186 ops/s
+# Warmup Iteration   1: 139682.818 ops/s
+# Warmup Iteration   2: 214744.107 ops/s
+# Warmup Iteration   3: 226530.845 ops/s
+Iteration   1: 236108.013 ops/s
+Iteration   2: 236715.841 ops/s
 
-# Run progress: 24.31% complete, ETA 00:12:32
+# Run progress: 32.41% complete, ETA 00:08:24
 # Fork: 2 of 2
-# Warmup Iteration   1: 146169.696 ops/s
-# Warmup Iteration   2: 219672.575 ops/s
-# Warmup Iteration   3: 232394.420 ops/s
-Iteration   1: 234573.096 ops/s
-Iteration   2: 234412.209 ops/s
+# Warmup Iteration   1: 141496.922 ops/s
+# Warmup Iteration   2: 215818.902 ops/s
+# Warmup Iteration   3: 231689.428 ops/s
+Iteration   1: 240234.143 ops/s
+Iteration   2: 240391.873 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.present":
-  236398.097 ±(99.9%) 14253.591 ops/s [Average]
-  (min, avg, max) = (234412.209, 236398.097, 238477.186), stdev = 2205.759
-  CI (99.9%): [222144.505, 250651.688] (assumes normal distribution)
+  238362.467 ±(99.9%) 14648.254 ops/s [Average]
+  (min, avg, max) = (236108.013, 238362.467, 240391.873), stdev = 2266.833
+  CI (99.9%): [223714.214, 253010.721] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -459,43 +459,43 @@ Result "org.wrongwrong.extra.deser.wrapper.E_5P_Ctor.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.E_5P_Func.missing
 
-# Run progress: 25.00% complete, ETA 00:12:25
+# Run progress: 33.33% complete, ETA 00:08:17
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 31492.669 ops/s
-# Warmup Iteration   2: 95429.798 ops/s
-# Warmup Iteration   3: 125066.888 ops/s
-Iteration   1: 126062.959 ops/s
-Iteration   2: 126642.290 ops/s
+# Warmup Iteration   1: 38241.141 ops/s
+# Warmup Iteration   2: 105001.194 ops/s
+# Warmup Iteration   3: 135325.202 ops/s
+Iteration   1: 134714.307 ops/s
+Iteration   2: 134427.013 ops/s
 
-# Run progress: 25.69% complete, ETA 00:12:18
+# Run progress: 34.26% complete, ETA 00:08:10
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 37715.893 ops/s
-# Warmup Iteration   2: 107519.734 ops/s
-# Warmup Iteration   3: 123031.877 ops/s
-Iteration   1: 122899.460 ops/s
-Iteration   2: 122583.585 ops/s
+# Warmup Iteration   1: 38507.784 ops/s
+# Warmup Iteration   2: 112497.100 ops/s
+# Warmup Iteration   3: 134658.386 ops/s
+Iteration   1: 134665.169 ops/s
+Iteration   2: 134962.296 ops/s
 
-# Run progress: 26.39% complete, ETA 00:12:11
+# Run progress: 35.19% complete, ETA 00:08:03
 # Fork: 1 of 2
-# Warmup Iteration   1: 38205.791 ops/s
-# Warmup Iteration   2: 113521.180 ops/s
-# Warmup Iteration   3: 124930.574 ops/s
-Iteration   1: 125139.019 ops/s
-Iteration   2: 124815.735 ops/s
+# Warmup Iteration   1: 36009.054 ops/s
+# Warmup Iteration   2: 94723.315 ops/s
+# Warmup Iteration   3: 135475.227 ops/s
+Iteration   1: 134987.270 ops/s
+Iteration   2: 133968.490 ops/s
 
-# Run progress: 27.08% complete, ETA 00:12:04
+# Run progress: 36.11% complete, ETA 00:07:56
 # Fork: 2 of 2
-# Warmup Iteration   1: 36968.177 ops/s
-# Warmup Iteration   2: 108301.682 ops/s
-# Warmup Iteration   3: 123816.880 ops/s
-Iteration   1: 126582.257 ops/s
-Iteration   2: 125934.693 ops/s
+# Warmup Iteration   1: 38337.392 ops/s
+# Warmup Iteration   2: 99187.540 ops/s
+# Warmup Iteration   3: 132283.825 ops/s
+Iteration   1: 131668.299 ops/s
+Iteration   2: 130419.538 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.E_5P_Func.missing":
-  125617.926 ±(99.9%) 5146.840 ops/s [Average]
-  (min, avg, max) = (124815.735, 125617.926, 126582.257), stdev = 796.479
-  CI (99.9%): [120471.086, 130764.766] (assumes normal distribution)
+  132760.899 ±(99.9%) 13498.573 ops/s [Average]
+  (min, avg, max) = (130419.538, 132760.899, 134987.270), stdev = 2088.919
+  CI (99.9%): [119262.326, 146259.473] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -509,43 +509,43 @@ Result "org.wrongwrong.extra.deser.wrapper.E_5P_Func.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.E_5P_Func.present
 
-# Run progress: 27.78% complete, ETA 00:11:57
+# Run progress: 37.04% complete, ETA 00:07:49
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 80435.814 ops/s
-# Warmup Iteration   2: 164062.640 ops/s
-# Warmup Iteration   3: 168498.585 ops/s
-Iteration   1: 172228.862 ops/s
-Iteration   2: 171941.538 ops/s
+# Warmup Iteration   1: 80902.973 ops/s
+# Warmup Iteration   2: 163374.580 ops/s
+# Warmup Iteration   3: 172326.377 ops/s
+Iteration   1: 180564.587 ops/s
+Iteration   2: 180320.824 ops/s
 
-# Run progress: 28.47% complete, ETA 00:11:50
+# Run progress: 37.96% complete, ETA 00:07:43
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 75887.897 ops/s
-# Warmup Iteration   2: 159959.600 ops/s
-# Warmup Iteration   3: 164769.792 ops/s
-Iteration   1: 168876.876 ops/s
-Iteration   2: 168652.280 ops/s
+# Warmup Iteration   1: 77938.010 ops/s
+# Warmup Iteration   2: 162522.698 ops/s
+# Warmup Iteration   3: 172345.088 ops/s
+Iteration   1: 180516.667 ops/s
+Iteration   2: 180203.003 ops/s
 
-# Run progress: 29.17% complete, ETA 00:11:43
+# Run progress: 38.89% complete, ETA 00:07:36
 # Fork: 1 of 2
-# Warmup Iteration   1: 68860.625 ops/s
-# Warmup Iteration   2: 163350.638 ops/s
-# Warmup Iteration   3: 168071.544 ops/s
-Iteration   1: 171267.814 ops/s
-Iteration   2: 171672.871 ops/s
+# Warmup Iteration   1: 57878.720 ops/s
+# Warmup Iteration   2: 154955.279 ops/s
+# Warmup Iteration   3: 169743.173 ops/s
+Iteration   1: 177684.389 ops/s
+Iteration   2: 176784.392 ops/s
 
-# Run progress: 29.86% complete, ETA 00:11:37
+# Run progress: 39.81% complete, ETA 00:07:29
 # Fork: 2 of 2
-# Warmup Iteration   1: 71012.426 ops/s
-# Warmup Iteration   2: 157302.716 ops/s
-# Warmup Iteration   3: 161270.812 ops/s
-Iteration   1: 165113.895 ops/s
-Iteration   2: 165208.416 ops/s
+# Warmup Iteration   1: 73233.142 ops/s
+# Warmup Iteration   2: 162027.599 ops/s
+# Warmup Iteration   3: 169319.775 ops/s
+Iteration   1: 177170.612 ops/s
+Iteration   2: 174468.098 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.E_5P_Func.present":
-  168315.749 ±(99.9%) 23564.074 ops/s [Average]
-  (min, avg, max) = (165113.895, 168315.749, 171672.871), stdev = 3646.567
-  CI (99.9%): [144751.675, 191879.823] (assumes normal distribution)
+  176526.873 ±(99.9%) 9183.540 ops/s [Average]
+  (min, avg, max) = (174468.098, 176526.873, 177684.389), stdev = 1421.163
+  CI (99.9%): [167343.332, 185710.413] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -559,43 +559,43 @@ Result "org.wrongwrong.extra.deser.wrapper.E_5P_Func.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.missing
 
-# Run progress: 30.56% complete, ETA 00:11:30
+# Run progress: 40.74% complete, ETA 00:07:22
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 15337.235 ops/s
-# Warmup Iteration   2: 34653.476 ops/s
-# Warmup Iteration   3: 38442.048 ops/s
-Iteration   1: 38413.645 ops/s
-Iteration   2: 38372.487 ops/s
+# Warmup Iteration   1: 16451.897 ops/s
+# Warmup Iteration   2: 31092.163 ops/s
+# Warmup Iteration   3: 35874.099 ops/s
+Iteration   1: 35711.448 ops/s
+Iteration   2: 35623.211 ops/s
 
-# Run progress: 31.25% complete, ETA 00:11:23
+# Run progress: 41.67% complete, ETA 00:07:15
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 14077.670 ops/s
-# Warmup Iteration   2: 34845.680 ops/s
-# Warmup Iteration   3: 38507.429 ops/s
-Iteration   1: 38665.140 ops/s
-Iteration   2: 38607.469 ops/s
+# Warmup Iteration   1: 15455.508 ops/s
+# Warmup Iteration   2: 31613.994 ops/s
+# Warmup Iteration   3: 36998.297 ops/s
+Iteration   1: 37210.297 ops/s
+Iteration   2: 36819.517 ops/s
 
-# Run progress: 31.94% complete, ETA 00:11:16
+# Run progress: 42.59% complete, ETA 00:07:08
 # Fork: 1 of 2
-# Warmup Iteration   1: 15215.125 ops/s
-# Warmup Iteration   2: 34410.623 ops/s
-# Warmup Iteration   3: 38083.442 ops/s
-Iteration   1: 38016.706 ops/s
-Iteration   2: 37831.651 ops/s
+# Warmup Iteration   1: 14656.236 ops/s
+# Warmup Iteration   2: 31984.628 ops/s
+# Warmup Iteration   3: 37310.927 ops/s
+Iteration   1: 37582.213 ops/s
+Iteration   2: 37408.406 ops/s
 
-# Run progress: 32.64% complete, ETA 00:11:09
+# Run progress: 43.52% complete, ETA 00:07:01
 # Fork: 2 of 2
-# Warmup Iteration   1: 16383.245 ops/s
-# Warmup Iteration   2: 34911.061 ops/s
-# Warmup Iteration   3: 38110.541 ops/s
-Iteration   1: 37993.546 ops/s
-Iteration   2: 37904.573 ops/s
+# Warmup Iteration   1: 14921.681 ops/s
+# Warmup Iteration   2: 32392.069 ops/s
+# Warmup Iteration   3: 37521.491 ops/s
+Iteration   1: 37577.114 ops/s
+Iteration   2: 36864.630 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.missing":
-  37936.619 ±(99.9%) 549.586 ops/s [Average]
-  (min, avg, max) = (37831.651, 37936.619, 38016.706), stdev = 85.049
-  CI (99.9%): [37387.034, 38486.205] (assumes normal distribution)
+  37358.091 ±(99.9%) 2188.941 ops/s [Average]
+  (min, avg, max) = (36864.630, 37358.091, 37582.213), stdev = 338.741
+  CI (99.9%): [35169.149, 39547.032] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -609,43 +609,43 @@ Result "org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.present
 
-# Run progress: 33.33% complete, ETA 00:11:02
+# Run progress: 44.44% complete, ETA 00:06:54
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 41406.514 ops/s
-# Warmup Iteration   2: 61230.327 ops/s
-# Warmup Iteration   3: 62891.915 ops/s
-Iteration   1: 64184.950 ops/s
-Iteration   2: 64190.291 ops/s
+# Warmup Iteration   1: 38098.767 ops/s
+# Warmup Iteration   2: 56086.695 ops/s
+# Warmup Iteration   3: 59145.849 ops/s
+Iteration   1: 61299.917 ops/s
+Iteration   2: 62017.351 ops/s
 
-# Run progress: 34.03% complete, ETA 00:10:55
+# Run progress: 45.37% complete, ETA 00:06:47
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 42513.832 ops/s
-# Warmup Iteration   2: 61928.552 ops/s
-# Warmup Iteration   3: 63747.293 ops/s
-Iteration   1: 65225.628 ops/s
-Iteration   2: 65127.456 ops/s
+# Warmup Iteration   1: 37410.540 ops/s
+# Warmup Iteration   2: 56522.258 ops/s
+# Warmup Iteration   3: 59430.950 ops/s
+Iteration   1: 62440.907 ops/s
+Iteration   2: 62491.218 ops/s
 
-# Run progress: 34.72% complete, ETA 00:10:48
+# Run progress: 46.30% complete, ETA 00:06:40
 # Fork: 1 of 2
-# Warmup Iteration   1: 42742.752 ops/s
-# Warmup Iteration   2: 62143.093 ops/s
-# Warmup Iteration   3: 63395.917 ops/s
-Iteration   1: 64998.670 ops/s
-Iteration   2: 65041.741 ops/s
+# Warmup Iteration   1: 39713.495 ops/s
+# Warmup Iteration   2: 55268.250 ops/s
+# Warmup Iteration   3: 59028.118 ops/s
+Iteration   1: 61570.090 ops/s
+Iteration   2: 61136.294 ops/s
 
-# Run progress: 35.42% complete, ETA 00:10:41
+# Run progress: 47.22% complete, ETA 00:06:34
 # Fork: 2 of 2
-# Warmup Iteration   1: 43700.668 ops/s
-# Warmup Iteration   2: 60797.133 ops/s
-# Warmup Iteration   3: 61950.991 ops/s
-Iteration   1: 63565.581 ops/s
-Iteration   2: 63533.199 ops/s
+# Warmup Iteration   1: 40355.025 ops/s
+# Warmup Iteration   2: 56288.361 ops/s
+# Warmup Iteration   3: 59074.308 ops/s
+Iteration   1: 61906.798 ops/s
+Iteration   2: 61801.860 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.present":
-  64284.798 ±(99.9%) 5489.205 ops/s [Average]
-  (min, avg, max) = (63533.199, 64284.798, 65041.741), stdev = 849.461
-  CI (99.9%): [58795.593, 69774.003] (assumes normal distribution)
+  61603.760 ±(99.9%) 2209.503 ops/s [Average]
+  (min, avg, max) = (61136.294, 61603.760, 61906.798), stdev = 341.923
+  CI (99.9%): [59394.258, 63813.263] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -659,43 +659,43 @@ Result "org.wrongwrong.extra.deser.wrapper.T_20P_Ctor.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.T_20P_Func.missing
 
-# Run progress: 36.11% complete, ETA 00:10:35
+# Run progress: 48.15% complete, ETA 00:06:27
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 14828.633 ops/s
-# Warmup Iteration   2: 33620.739 ops/s
-# Warmup Iteration   3: 37609.725 ops/s
-Iteration   1: 37584.430 ops/s
-Iteration   2: 37475.959 ops/s
+# Warmup Iteration   1: 15121.814 ops/s
+# Warmup Iteration   2: 31478.128 ops/s
+# Warmup Iteration   3: 37071.329 ops/s
+Iteration   1: 36630.334 ops/s
+Iteration   2: 36762.356 ops/s
 
-# Run progress: 36.81% complete, ETA 00:10:28
+# Run progress: 49.07% complete, ETA 00:06:20
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 14330.892 ops/s
-# Warmup Iteration   2: 33403.674 ops/s
-# Warmup Iteration   3: 37398.487 ops/s
-Iteration   1: 37349.968 ops/s
-Iteration   2: 37221.580 ops/s
+# Warmup Iteration   1: 14899.437 ops/s
+# Warmup Iteration   2: 30248.894 ops/s
+# Warmup Iteration   3: 35198.947 ops/s
+Iteration   1: 35180.539 ops/s
+Iteration   2: 35060.404 ops/s
 
-# Run progress: 37.50% complete, ETA 00:10:21
+# Run progress: 50.00% complete, ETA 00:06:13
 # Fork: 1 of 2
-# Warmup Iteration   1: 13692.164 ops/s
-# Warmup Iteration   2: 30984.060 ops/s
-# Warmup Iteration   3: 37000.493 ops/s
-Iteration   1: 36979.637 ops/s
-Iteration   2: 36904.911 ops/s
+# Warmup Iteration   1: 13563.024 ops/s
+# Warmup Iteration   2: 30597.734 ops/s
+# Warmup Iteration   3: 36882.879 ops/s
+Iteration   1: 36838.480 ops/s
+Iteration   2: 35963.529 ops/s
 
-# Run progress: 38.19% complete, ETA 00:10:14
+# Run progress: 50.93% complete, ETA 00:06:06
 # Fork: 2 of 2
-# Warmup Iteration   1: 14335.369 ops/s
-# Warmup Iteration   2: 32168.953 ops/s
-# Warmup Iteration   3: 37446.173 ops/s
-Iteration   1: 37484.087 ops/s
-Iteration   2: 37412.087 ops/s
+# Warmup Iteration   1: 14251.275 ops/s
+# Warmup Iteration   2: 31181.811 ops/s
+# Warmup Iteration   3: 36563.362 ops/s
+Iteration   1: 36824.731 ops/s
+Iteration   2: 36558.364 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.T_20P_Func.missing":
-  37195.181 ±(99.9%) 1906.855 ops/s [Average]
-  (min, avg, max) = (36904.911, 37195.181, 37484.087), stdev = 295.088
-  CI (99.9%): [35288.326, 39102.035] (assumes normal distribution)
+  36546.276 ±(99.9%) 2645.106 ops/s [Average]
+  (min, avg, max) = (35963.529, 36546.276, 36838.480), stdev = 409.333
+  CI (99.9%): [33901.170, 39191.382] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -709,343 +709,43 @@ Result "org.wrongwrong.extra.deser.wrapper.T_20P_Func.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.extra.deser.wrapper.T_20P_Func.present
 
-# Run progress: 38.89% complete, ETA 00:10:08
+# Run progress: 51.85% complete, ETA 00:05:59
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 25087.089 ops/s
-# Warmup Iteration   2: 47647.021 ops/s
-# Warmup Iteration   3: 48758.954 ops/s
-Iteration   1: 50046.631 ops/s
-Iteration   2: 50083.660 ops/s
+# Warmup Iteration   1: 26024.173 ops/s
+# Warmup Iteration   2: 45602.451 ops/s
+# Warmup Iteration   3: 47744.449 ops/s
+Iteration   1: 50094.993 ops/s
+Iteration   2: 50042.656 ops/s
 
-# Run progress: 39.58% complete, ETA 00:10:01
+# Run progress: 52.78% complete, ETA 00:05:52
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 29295.234 ops/s
-# Warmup Iteration   2: 48093.853 ops/s
-# Warmup Iteration   3: 49515.157 ops/s
-Iteration   1: 50692.484 ops/s
-Iteration   2: 50647.586 ops/s
+# Warmup Iteration   1: 26929.806 ops/s
+# Warmup Iteration   2: 45513.455 ops/s
+# Warmup Iteration   3: 47513.830 ops/s
+Iteration   1: 49638.023 ops/s
+Iteration   2: 49684.441 ops/s
 
-# Run progress: 40.28% complete, ETA 00:09:54
+# Run progress: 53.70% complete, ETA 00:05:46
 # Fork: 1 of 2
-# Warmup Iteration   1: 25848.887 ops/s
-# Warmup Iteration   2: 47304.156 ops/s
-# Warmup Iteration   3: 48581.732 ops/s
-Iteration   1: 49633.863 ops/s
-Iteration   2: 49759.573 ops/s
+# Warmup Iteration   1: 26198.511 ops/s
+# Warmup Iteration   2: 46757.379 ops/s
+# Warmup Iteration   3: 49096.197 ops/s
+Iteration   1: 51078.514 ops/s
+Iteration   2: 51504.139 ops/s
 
-# Run progress: 40.97% complete, ETA 00:09:47
+# Run progress: 54.63% complete, ETA 00:05:39
 # Fork: 2 of 2
-# Warmup Iteration   1: 26415.375 ops/s
-# Warmup Iteration   2: 48037.928 ops/s
-# Warmup Iteration   3: 49037.805 ops/s
-Iteration   1: 50301.157 ops/s
-Iteration   2: 50316.264 ops/s
+# Warmup Iteration   1: 28572.068 ops/s
+# Warmup Iteration   2: 45502.301 ops/s
+# Warmup Iteration   3: 48091.101 ops/s
+Iteration   1: 50075.358 ops/s
+Iteration   2: 50317.633 ops/s
 
 
 Result "org.wrongwrong.extra.deser.wrapper.T_20P_Func.present":
-  50002.714 ±(99.9%) 2307.545 ops/s [Average]
-  (min, avg, max) = (49633.863, 50002.714, 50316.264), stdev = 357.095
-  CI (99.9%): [47695.169, 52310.259] (assumes normal distribution)
-
-
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.extra.ser.value_class.A_1P.call
-
-# Run progress: 41.67% complete, ETA 00:09:40
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 571005.107 ops/s
-# Warmup Iteration   2: 859267.323 ops/s
-# Warmup Iteration   3: 888213.344 ops/s
-Iteration   1: 887388.183 ops/s
-Iteration   2: 885183.293 ops/s
-
-# Run progress: 42.36% complete, ETA 00:09:33
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 523056.235 ops/s
-# Warmup Iteration   2: 869297.439 ops/s
-# Warmup Iteration   3: 903065.658 ops/s
-Iteration   1: 902261.194 ops/s
-Iteration   2: 899943.256 ops/s
-
-# Run progress: 43.06% complete, ETA 00:09:26
-# Fork: 1 of 2
-# Warmup Iteration   1: 599117.530 ops/s
-# Warmup Iteration   2: 901791.147 ops/s
-# Warmup Iteration   3: 920517.155 ops/s
-Iteration   1: 920817.651 ops/s
-Iteration   2: 918437.563 ops/s
-
-# Run progress: 43.75% complete, ETA 00:09:19
-# Fork: 2 of 2
-# Warmup Iteration   1: 544345.335 ops/s
-# Warmup Iteration   2: 841573.975 ops/s
-# Warmup Iteration   3: 869849.852 ops/s
-Iteration   1: 866706.029 ops/s
-Iteration   2: 865999.419 ops/s
-
-
-Result "org.wrongwrong.extra.ser.value_class.A_1P.call":
-  892990.166 ±(99.9%) 198867.490 ops/s [Average]
-  (min, avg, max) = (865999.419, 892990.166, 920817.651), stdev = 30774.964
-  CI (99.9%): [694122.676, 1091857.655] (assumes normal distribution)
-
-
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.extra.ser.value_class.E_5P.call
-
-# Run progress: 44.44% complete, ETA 00:09:12
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 170723.162 ops/s
-# Warmup Iteration   2: 247561.779 ops/s
-# Warmup Iteration   3: 266307.596 ops/s
-Iteration   1: 266451.745 ops/s
-Iteration   2: 266529.406 ops/s
-
-# Run progress: 45.14% complete, ETA 00:09:05
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 180350.227 ops/s
-# Warmup Iteration   2: 244661.695 ops/s
-# Warmup Iteration   3: 262723.675 ops/s
-Iteration   1: 261504.310 ops/s
-Iteration   2: 258175.935 ops/s
-
-# Run progress: 45.83% complete, ETA 00:08:58
-# Fork: 1 of 2
-# Warmup Iteration   1: 171696.329 ops/s
-# Warmup Iteration   2: 238520.419 ops/s
-# Warmup Iteration   3: 252392.739 ops/s
-Iteration   1: 254056.160 ops/s
-Iteration   2: 253904.793 ops/s
-
-# Run progress: 46.53% complete, ETA 00:08:51
-# Fork: 2 of 2
-# Warmup Iteration   1: 173416.081 ops/s
-# Warmup Iteration   2: 237496.222 ops/s
-# Warmup Iteration   3: 252088.209 ops/s
-Iteration   1: 252913.462 ops/s
-Iteration   2: 253275.911 ops/s
-
-
-Result "org.wrongwrong.extra.ser.value_class.E_5P.call":
-  253537.581 ±(99.9%) 3463.379 ops/s [Average]
-  (min, avg, max) = (252913.462, 253537.581, 254056.160), stdev = 535.962
-  CI (99.9%): [250074.202, 257000.960] (assumes normal distribution)
-
-
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.extra.ser.value_class.T_20P.call
-
-# Run progress: 47.22% complete, ETA 00:08:44
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 49121.210 ops/s
-# Warmup Iteration   2: 64473.770 ops/s
-# Warmup Iteration   3: 65864.785 ops/s
-Iteration   1: 67444.429 ops/s
-Iteration   2: 67352.674 ops/s
-
-# Run progress: 47.92% complete, ETA 00:08:37
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 49577.316 ops/s
-# Warmup Iteration   2: 64626.223 ops/s
-# Warmup Iteration   3: 66041.208 ops/s
-Iteration   1: 67707.826 ops/s
-Iteration   2: 67606.583 ops/s
-
-# Run progress: 48.61% complete, ETA 00:08:30
-# Fork: 1 of 2
-# Warmup Iteration   1: 48117.025 ops/s
-# Warmup Iteration   2: 63864.190 ops/s
-# Warmup Iteration   3: 65573.519 ops/s
-Iteration   1: 67050.232 ops/s
-Iteration   2: 67001.244 ops/s
-
-# Run progress: 49.31% complete, ETA 00:08:23
-# Fork: 2 of 2
-# Warmup Iteration   1: 47972.492 ops/s
-# Warmup Iteration   2: 64637.585 ops/s
-# Warmup Iteration   3: 66187.044 ops/s
-Iteration   1: 67698.756 ops/s
-Iteration   2: 67749.003 ops/s
-
-
-Result "org.wrongwrong.extra.ser.value_class.T_20P.call":
-  67374.809 ±(99.9%) 2611.220 ops/s [Average]
-  (min, avg, max) = (67001.244, 67374.809, 67749.003), stdev = 404.089
-  CI (99.9%): [64763.589, 69986.029] (assumes normal distribution)
-
-
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.extra.ser.wrapper.A_1P.call
-
-# Run progress: 50.00% complete, ETA 00:08:16
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 1141289.431 ops/s
-# Warmup Iteration   2: 1908772.952 ops/s
-# Warmup Iteration   3: 1943508.886 ops/s
-Iteration   1: 1936576.884 ops/s
-Iteration   2: 1927408.240 ops/s
-
-# Run progress: 50.69% complete, ETA 00:08:09
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 1019320.964 ops/s
-# Warmup Iteration   2: 1894571.329 ops/s
-# Warmup Iteration   3: 1899346.146 ops/s
-Iteration   1: 1892897.254 ops/s
-Iteration   2: 1879684.250 ops/s
-
-# Run progress: 51.39% complete, ETA 00:08:02
-# Fork: 1 of 2
-# Warmup Iteration   1: 1020552.404 ops/s
-# Warmup Iteration   2: 1865676.542 ops/s
-# Warmup Iteration   3: 1911714.772 ops/s
-Iteration   1: 1899267.857 ops/s
-Iteration   2: 1891657.839 ops/s
-
-# Run progress: 52.08% complete, ETA 00:07:55
-# Fork: 2 of 2
-# Warmup Iteration   1: 1125554.628 ops/s
-# Warmup Iteration   2: 1895409.890 ops/s
-# Warmup Iteration   3: 1981375.168 ops/s
-Iteration   1: 1970395.639 ops/s
-Iteration   2: 1959471.801 ops/s
-
-
-Result "org.wrongwrong.extra.ser.wrapper.A_1P.call":
-  1930198.284 ±(99.9%) 261552.915 ops/s [Average]
-  (min, avg, max) = (1891657.839, 1930198.284, 1970395.639), stdev = 40475.603
-  CI (99.9%): [1668645.369, 2191751.200] (assumes normal distribution)
-
-
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.extra.ser.wrapper.E_5P.call
-
-# Run progress: 52.78% complete, ETA 00:07:48
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 711675.730 ops/s
-# Warmup Iteration   2: 1126643.884 ops/s
-# Warmup Iteration   3: 1153362.388 ops/s
-Iteration   1: 1151235.090 ops/s
-Iteration   2: 1146752.805 ops/s
-
-# Run progress: 53.47% complete, ETA 00:07:41
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 759206.956 ops/s
-# Warmup Iteration   2: 1169588.812 ops/s
-# Warmup Iteration   3: 1206737.812 ops/s
-Iteration   1: 1195215.184 ops/s
-Iteration   2: 1204566.196 ops/s
-
-# Run progress: 54.17% complete, ETA 00:07:34
-# Fork: 1 of 2
-# Warmup Iteration   1: 788080.135 ops/s
-# Warmup Iteration   2: 1142485.028 ops/s
-# Warmup Iteration   3: 1175045.539 ops/s
-Iteration   1: 1175257.150 ops/s
-Iteration   2: 1172529.358 ops/s
-
-# Run progress: 54.86% complete, ETA 00:07:27
-# Fork: 2 of 2
-# Warmup Iteration   1: 725899.532 ops/s
-# Warmup Iteration   2: 1132893.452 ops/s
-# Warmup Iteration   3: 1178207.712 ops/s
-Iteration   1: 1179667.746 ops/s
-Iteration   2: 1175481.623 ops/s
-
-
-Result "org.wrongwrong.extra.ser.wrapper.E_5P.call":
-  1175733.969 ±(99.9%) 19036.444 ops/s [Average]
-  (min, avg, max) = (1172529.358, 1175733.969, 1179667.746), stdev = 2945.911
-  CI (99.9%): [1156697.525, 1194770.413] (assumes normal distribution)
-
-
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.extra.ser.wrapper.T_20P.call
-
-# Run progress: 55.56% complete, ETA 00:07:20
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 313223.232 ops/s
-# Warmup Iteration   2: 413177.877 ops/s
-# Warmup Iteration   3: 424614.471 ops/s
-Iteration   1: 434733.432 ops/s
-Iteration   2: 434956.475 ops/s
-
-# Run progress: 56.25% complete, ETA 00:07:13
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 314665.149 ops/s
-# Warmup Iteration   2: 419753.824 ops/s
-# Warmup Iteration   3: 434822.458 ops/s
-Iteration   1: 444596.386 ops/s
-Iteration   2: 443353.551 ops/s
-
-# Run progress: 56.94% complete, ETA 00:07:06
-# Fork: 1 of 2
-# Warmup Iteration   1: 288039.693 ops/s
-# Warmup Iteration   2: 421134.018 ops/s
-# Warmup Iteration   3: 434022.370 ops/s
-Iteration   1: 444464.814 ops/s
-Iteration   2: 444401.513 ops/s
-
-# Run progress: 57.64% complete, ETA 00:06:59
-# Fork: 2 of 2
-# Warmup Iteration   1: 299987.877 ops/s
-# Warmup Iteration   2: 415453.036 ops/s
-# Warmup Iteration   3: 426550.078 ops/s
-Iteration   1: 436200.987 ops/s
-Iteration   2: 435800.986 ops/s
-
-
-Result "org.wrongwrong.extra.ser.wrapper.T_20P.call":
-  440217.075 ±(99.9%) 31477.166 ops/s [Average]
-  (min, avg, max) = (435800.986, 440217.075, 444464.814), stdev = 4871.126
-  CI (99.9%): [408739.909, 471694.241] (assumes normal distribution)
+  50743.911 ±(99.9%) 4284.095 ops/s [Average]
+  (min, avg, max) = (50075.358, 50743.911, 51504.139), stdev = 662.968
+  CI (99.9%): [46459.816, 55028.006] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1059,43 +759,43 @@ Result "org.wrongwrong.extra.ser.wrapper.T_20P.call":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.A_1P_Ctor.missing
 
-# Run progress: 58.33% complete, ETA 00:06:52
+# Run progress: 55.56% complete, ETA 00:05:32
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 68850.552 ops/s
-# Warmup Iteration   2: 291407.670 ops/s
-# Warmup Iteration   3: 371849.629 ops/s
-Iteration   1: 369721.063 ops/s
-Iteration   2: 368707.178 ops/s
+# Warmup Iteration   1: 105826.731 ops/s
+# Warmup Iteration   2: 345390.957 ops/s
+# Warmup Iteration   3: 403482.399 ops/s
+Iteration   1: 403238.386 ops/s
+Iteration   2: 399169.169 ops/s
 
-# Run progress: 59.03% complete, ETA 00:06:45
+# Run progress: 56.48% complete, ETA 00:05:25
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 68797.040 ops/s
-# Warmup Iteration   2: 316235.869 ops/s
-# Warmup Iteration   3: 370904.446 ops/s
-Iteration   1: 369652.507 ops/s
-Iteration   2: 368337.693 ops/s
+# Warmup Iteration   1: 76446.291 ops/s
+# Warmup Iteration   2: 314894.430 ops/s
+# Warmup Iteration   3: 383644.848 ops/s
+Iteration   1: 386818.715 ops/s
+Iteration   2: 379369.965 ops/s
 
-# Run progress: 59.72% complete, ETA 00:06:38
+# Run progress: 57.41% complete, ETA 00:05:18
 # Fork: 1 of 2
-# Warmup Iteration   1: 65646.440 ops/s
-# Warmup Iteration   2: 321574.919 ops/s
-# Warmup Iteration   3: 371181.363 ops/s
-Iteration   1: 368561.862 ops/s
-Iteration   2: 366632.191 ops/s
+# Warmup Iteration   1: 77092.563 ops/s
+# Warmup Iteration   2: 328301.984 ops/s
+# Warmup Iteration   3: 403542.179 ops/s
+Iteration   1: 403163.903 ops/s
+Iteration   2: 400477.251 ops/s
 
-# Run progress: 60.42% complete, ETA 00:06:32
+# Run progress: 58.33% complete, ETA 00:05:11
 # Fork: 2 of 2
-# Warmup Iteration   1: 71489.296 ops/s
-# Warmup Iteration   2: 312465.901 ops/s
-# Warmup Iteration   3: 369495.738 ops/s
-Iteration   1: 369187.470 ops/s
-Iteration   2: 367505.100 ops/s
+# Warmup Iteration   1: 97845.469 ops/s
+# Warmup Iteration   2: 324177.166 ops/s
+# Warmup Iteration   3: 398657.071 ops/s
+Iteration   1: 397267.796 ops/s
+Iteration   2: 395886.712 ops/s
 
 
 Result "org.wrongwrong.main.deser.A_1P_Ctor.missing":
-  367971.656 ±(99.9%) 7309.372 ops/s [Average]
-  (min, avg, max) = (366632.191, 367971.656, 369187.470), stdev = 1131.133
-  CI (99.9%): [360662.284, 375281.028] (assumes normal distribution)
+  399198.915 ±(99.9%) 21122.958 ops/s [Average]
+  (min, avg, max) = (395886.712, 399198.915, 403163.903), stdev = 3268.801
+  CI (99.9%): [378075.957, 420321.873] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1109,43 +809,43 @@ Result "org.wrongwrong.main.deser.A_1P_Ctor.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.A_1P_Ctor.present
 
-# Run progress: 61.11% complete, ETA 00:06:25
+# Run progress: 59.26% complete, ETA 00:05:04
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 389503.847 ops/s
-# Warmup Iteration   2: 640192.960 ops/s
-# Warmup Iteration   3: 666796.568 ops/s
-Iteration   1: 665299.058 ops/s
-Iteration   2: 663391.843 ops/s
+# Warmup Iteration   1: 374201.761 ops/s
+# Warmup Iteration   2: 629055.262 ops/s
+# Warmup Iteration   3: 683944.264 ops/s
+Iteration   1: 675667.774 ops/s
+Iteration   2: 678885.203 ops/s
 
-# Run progress: 61.81% complete, ETA 00:06:18
+# Run progress: 60.19% complete, ETA 00:04:57
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 391382.664 ops/s
-# Warmup Iteration   2: 636528.464 ops/s
-# Warmup Iteration   3: 656712.526 ops/s
-Iteration   1: 658058.329 ops/s
-Iteration   2: 655435.184 ops/s
+# Warmup Iteration   1: 374522.783 ops/s
+# Warmup Iteration   2: 628830.192 ops/s
+# Warmup Iteration   3: 693668.694 ops/s
+Iteration   1: 693175.113 ops/s
+Iteration   2: 690012.813 ops/s
 
-# Run progress: 62.50% complete, ETA 00:06:11
+# Run progress: 61.11% complete, ETA 00:04:50
 # Fork: 1 of 2
-# Warmup Iteration   1: 397309.004 ops/s
-# Warmup Iteration   2: 647671.930 ops/s
-# Warmup Iteration   3: 665852.615 ops/s
-Iteration   1: 664741.557 ops/s
-Iteration   2: 663726.760 ops/s
+# Warmup Iteration   1: 366427.167 ops/s
+# Warmup Iteration   2: 587769.979 ops/s
+# Warmup Iteration   3: 645808.627 ops/s
+Iteration   1: 646017.565 ops/s
+Iteration   2: 644057.594 ops/s
 
-# Run progress: 63.19% complete, ETA 00:06:04
+# Run progress: 62.04% complete, ETA 00:04:43
 # Fork: 2 of 2
-# Warmup Iteration   1: 379264.802 ops/s
-# Warmup Iteration   2: 628857.060 ops/s
-# Warmup Iteration   3: 654890.605 ops/s
-Iteration   1: 654586.426 ops/s
-Iteration   2: 653001.809 ops/s
+# Warmup Iteration   1: 374395.315 ops/s
+# Warmup Iteration   2: 626474.304 ops/s
+# Warmup Iteration   3: 678802.975 ops/s
+Iteration   1: 674950.097 ops/s
+Iteration   2: 676654.729 ops/s
 
 
 Result "org.wrongwrong.main.deser.A_1P_Ctor.present":
-  659014.138 ±(99.9%) 39265.093 ops/s [Average]
-  (min, avg, max) = (653001.809, 659014.138, 664741.557), stdev = 6076.317
-  CI (99.9%): [619749.045, 698279.231] (assumes normal distribution)
+  660419.996 ±(99.9%) 114982.780 ops/s [Average]
+  (min, avg, max) = (644057.594, 660419.996, 676654.729), stdev = 17793.713
+  CI (99.9%): [545437.216, 775402.777] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1159,43 +859,43 @@ Result "org.wrongwrong.main.deser.A_1P_Ctor.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.A_1P_Func.missing
 
-# Run progress: 63.89% complete, ETA 00:05:57
+# Run progress: 62.96% complete, ETA 00:04:36
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 67999.913 ops/s
-# Warmup Iteration   2: 238468.510 ops/s
-# Warmup Iteration   3: 325897.968 ops/s
-Iteration   1: 328318.582 ops/s
-Iteration   2: 326735.236 ops/s
+# Warmup Iteration   1: 58063.018 ops/s
+# Warmup Iteration   2: 234883.115 ops/s
+# Warmup Iteration   3: 337696.664 ops/s
+Iteration   1: 348599.661 ops/s
+Iteration   2: 345010.327 ops/s
 
-# Run progress: 64.58% complete, ETA 00:05:50
+# Run progress: 63.89% complete, ETA 00:04:29
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 60845.913 ops/s
-# Warmup Iteration   2: 225584.744 ops/s
-# Warmup Iteration   3: 309431.070 ops/s
-Iteration   1: 316584.923 ops/s
-Iteration   2: 316319.496 ops/s
+# Warmup Iteration   1: 72192.869 ops/s
+# Warmup Iteration   2: 254289.979 ops/s
+# Warmup Iteration   3: 360317.831 ops/s
+Iteration   1: 360092.519 ops/s
+Iteration   2: 356577.879 ops/s
 
-# Run progress: 65.28% complete, ETA 00:05:44
+# Run progress: 64.81% complete, ETA 00:04:22
 # Fork: 1 of 2
-# Warmup Iteration   1: 70813.286 ops/s
-# Warmup Iteration   2: 244100.883 ops/s
-# Warmup Iteration   3: 325485.886 ops/s
-Iteration   1: 324169.557 ops/s
-Iteration   2: 322847.998 ops/s
+# Warmup Iteration   1: 75244.770 ops/s
+# Warmup Iteration   2: 258155.660 ops/s
+# Warmup Iteration   3: 361554.530 ops/s
+Iteration   1: 359595.617 ops/s
+Iteration   2: 354373.112 ops/s
 
-# Run progress: 65.97% complete, ETA 00:05:37
+# Run progress: 65.74% complete, ETA 00:04:16
 # Fork: 2 of 2
-# Warmup Iteration   1: 62513.805 ops/s
-# Warmup Iteration   2: 231421.486 ops/s
-# Warmup Iteration   3: 306731.146 ops/s
-Iteration   1: 313710.163 ops/s
-Iteration   2: 312764.834 ops/s
+# Warmup Iteration   1: 79961.016 ops/s
+# Warmup Iteration   2: 274454.788 ops/s
+# Warmup Iteration   3: 345123.135 ops/s
+Iteration   1: 341454.022 ops/s
+Iteration   2: 341122.797 ops/s
 
 
 Result "org.wrongwrong.main.deser.A_1P_Func.missing":
-  318373.138 ±(99.9%) 38559.411 ops/s [Average]
-  (min, avg, max) = (312764.834, 318373.138, 324169.557), stdev = 5967.112
-  CI (99.9%): [279813.727, 356932.549] (assumes normal distribution)
+  349136.387 ±(99.9%) 60164.224 ops/s [Average]
+  (min, avg, max) = (341122.797, 349136.387, 359595.617), stdev = 9310.480
+  CI (99.9%): [288972.163, 409300.611] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1209,43 +909,43 @@ Result "org.wrongwrong.main.deser.A_1P_Func.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.A_1P_Func.present
 
-# Run progress: 66.67% complete, ETA 00:05:30
+# Run progress: 66.67% complete, ETA 00:04:09
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 188855.746 ops/s
-# Warmup Iteration   2: 405465.943 ops/s
-# Warmup Iteration   3: 432070.927 ops/s
-Iteration   1: 430610.539 ops/s
-Iteration   2: 430053.675 ops/s
+# Warmup Iteration   1: 200343.741 ops/s
+# Warmup Iteration   2: 404703.625 ops/s
+# Warmup Iteration   3: 469776.350 ops/s
+Iteration   1: 467336.246 ops/s
+Iteration   2: 465148.198 ops/s
 
-# Run progress: 67.36% complete, ETA 00:05:23
+# Run progress: 67.59% complete, ETA 00:04:02
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 147451.547 ops/s
-# Warmup Iteration   2: 395757.979 ops/s
-# Warmup Iteration   3: 426936.881 ops/s
-Iteration   1: 425750.907 ops/s
-Iteration   2: 424868.701 ops/s
+# Warmup Iteration   1: 183883.002 ops/s
+# Warmup Iteration   2: 398419.691 ops/s
+# Warmup Iteration   3: 461894.143 ops/s
+Iteration   1: 457680.828 ops/s
+Iteration   2: 459118.822 ops/s
 
-# Run progress: 68.06% complete, ETA 00:05:16
+# Run progress: 68.52% complete, ETA 00:03:55
 # Fork: 1 of 2
-# Warmup Iteration   1: 209897.174 ops/s
-# Warmup Iteration   2: 389867.026 ops/s
-# Warmup Iteration   3: 421774.021 ops/s
-Iteration   1: 421481.183 ops/s
-Iteration   2: 420770.511 ops/s
+# Warmup Iteration   1: 201564.032 ops/s
+# Warmup Iteration   2: 394240.858 ops/s
+# Warmup Iteration   3: 456433.762 ops/s
+Iteration   1: 448847.151 ops/s
+Iteration   2: 454432.655 ops/s
 
-# Run progress: 68.75% complete, ETA 00:05:09
+# Run progress: 69.44% complete, ETA 00:03:48
 # Fork: 2 of 2
-# Warmup Iteration   1: 155589.433 ops/s
-# Warmup Iteration   2: 395139.648 ops/s
-# Warmup Iteration   3: 427224.476 ops/s
-Iteration   1: 426884.733 ops/s
-Iteration   2: 425889.104 ops/s
+# Warmup Iteration   1: 166710.570 ops/s
+# Warmup Iteration   2: 392851.072 ops/s
+# Warmup Iteration   3: 455020.723 ops/s
+Iteration   1: 453867.058 ops/s
+Iteration   2: 453667.232 ops/s
 
 
 Result "org.wrongwrong.main.deser.A_1P_Func.present":
-  423756.383 ±(99.9%) 19891.679 ops/s [Average]
-  (min, avg, max) = (420770.511, 423756.383, 426884.733), stdev = 3078.259
-  CI (99.9%): [403864.704, 443648.062] (assumes normal distribution)
+  452703.524 ±(99.9%) 16744.763 ops/s [Average]
+  (min, avg, max) = (448847.151, 452703.524, 454432.655), stdev = 2591.271
+  CI (99.9%): [435958.761, 469448.287] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1259,43 +959,43 @@ Result "org.wrongwrong.main.deser.A_1P_Func.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.E_5P_Ctor.missing
 
-# Run progress: 69.44% complete, ETA 00:05:02
+# Run progress: 70.37% complete, ETA 00:03:41
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 54369.162 ops/s
-# Warmup Iteration   2: 125052.184 ops/s
-# Warmup Iteration   3: 134017.393 ops/s
-Iteration   1: 133700.493 ops/s
-Iteration   2: 133463.562 ops/s
+# Warmup Iteration   1: 40752.877 ops/s
+# Warmup Iteration   2: 114575.162 ops/s
+# Warmup Iteration   3: 136273.507 ops/s
+Iteration   1: 137734.266 ops/s
+Iteration   2: 137064.050 ops/s
 
-# Run progress: 70.14% complete, ETA 00:04:55
+# Run progress: 71.30% complete, ETA 00:03:34
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 37837.528 ops/s
-# Warmup Iteration   2: 115216.078 ops/s
-# Warmup Iteration   3: 130374.384 ops/s
-Iteration   1: 129535.037 ops/s
-Iteration   2: 129504.969 ops/s
+# Warmup Iteration   1: 42580.995 ops/s
+# Warmup Iteration   2: 115791.510 ops/s
+# Warmup Iteration   3: 135543.714 ops/s
+Iteration   1: 134417.764 ops/s
+Iteration   2: 134528.904 ops/s
 
-# Run progress: 70.83% complete, ETA 00:04:49
+# Run progress: 72.22% complete, ETA 00:03:27
 # Fork: 1 of 2
-# Warmup Iteration   1: 29211.139 ops/s
-# Warmup Iteration   2: 102431.175 ops/s
-# Warmup Iteration   3: 126020.541 ops/s
-Iteration   1: 129106.347 ops/s
-Iteration   2: 128614.919 ops/s
+# Warmup Iteration   1: 46413.588 ops/s
+# Warmup Iteration   2: 119508.246 ops/s
+# Warmup Iteration   3: 138524.069 ops/s
+Iteration   1: 137309.150 ops/s
+Iteration   2: 137641.775 ops/s
 
-# Run progress: 71.53% complete, ETA 00:04:42
+# Run progress: 73.15% complete, ETA 00:03:20
 # Fork: 2 of 2
-# Warmup Iteration   1: 41878.747 ops/s
-# Warmup Iteration   2: 117678.463 ops/s
-# Warmup Iteration   3: 127655.899 ops/s
-Iteration   1: 127412.716 ops/s
-Iteration   2: 126816.486 ops/s
+# Warmup Iteration   1: 42138.009 ops/s
+# Warmup Iteration   2: 117152.681 ops/s
+# Warmup Iteration   3: 139206.181 ops/s
+Iteration   1: 139303.846 ops/s
+Iteration   2: 138778.474 ops/s
 
 
 Result "org.wrongwrong.main.deser.E_5P_Ctor.missing":
-  127987.617 ±(99.9%) 6825.611 ops/s [Average]
-  (min, avg, max) = (126816.486, 127987.617, 129106.347), stdev = 1056.271
-  CI (99.9%): [121162.006, 134813.228] (assumes normal distribution)
+  138258.311 ±(99.9%) 6067.320 ops/s [Average]
+  (min, avg, max) = (137309.150, 138258.311, 139303.846), stdev = 938.925
+  CI (99.9%): [132190.991, 144325.632] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1309,43 +1009,43 @@ Result "org.wrongwrong.main.deser.E_5P_Ctor.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.E_5P_Ctor.present
 
-# Run progress: 72.22% complete, ETA 00:04:35
+# Run progress: 74.07% complete, ETA 00:03:13
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 153595.561 ops/s
-# Warmup Iteration   2: 220101.035 ops/s
-# Warmup Iteration   3: 228038.392 ops/s
-Iteration   1: 232887.833 ops/s
-Iteration   2: 232777.879 ops/s
+# Warmup Iteration   1: 136357.067 ops/s
+# Warmup Iteration   2: 212049.484 ops/s
+# Warmup Iteration   3: 220140.967 ops/s
+Iteration   1: 230874.744 ops/s
+Iteration   2: 230060.884 ops/s
 
-# Run progress: 72.92% complete, ETA 00:04:28
+# Run progress: 75.00% complete, ETA 00:03:06
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 153529.336 ops/s
-# Warmup Iteration   2: 223346.737 ops/s
-# Warmup Iteration   3: 233549.132 ops/s
-Iteration   1: 236608.176 ops/s
-Iteration   2: 236040.627 ops/s
+# Warmup Iteration   1: 149705.943 ops/s
+# Warmup Iteration   2: 216314.002 ops/s
+# Warmup Iteration   3: 225264.036 ops/s
+Iteration   1: 236080.195 ops/s
+Iteration   2: 235960.890 ops/s
 
-# Run progress: 73.61% complete, ETA 00:04:21
+# Run progress: 75.93% complete, ETA 00:02:59
 # Fork: 1 of 2
-# Warmup Iteration   1: 153947.542 ops/s
-# Warmup Iteration   2: 227112.175 ops/s
-# Warmup Iteration   3: 240203.445 ops/s
-Iteration   1: 242012.284 ops/s
-Iteration   2: 242161.025 ops/s
+# Warmup Iteration   1: 151442.025 ops/s
+# Warmup Iteration   2: 218930.422 ops/s
+# Warmup Iteration   3: 233293.778 ops/s
+Iteration   1: 239590.166 ops/s
+Iteration   2: 239595.093 ops/s
 
-# Run progress: 74.31% complete, ETA 00:04:14
+# Run progress: 76.85% complete, ETA 00:02:52
 # Fork: 2 of 2
-# Warmup Iteration   1: 146427.375 ops/s
-# Warmup Iteration   2: 218591.334 ops/s
-# Warmup Iteration   3: 223368.156 ops/s
-Iteration   1: 229632.643 ops/s
-Iteration   2: 228253.519 ops/s
+# Warmup Iteration   1: 147258.439 ops/s
+# Warmup Iteration   2: 216171.397 ops/s
+# Warmup Iteration   3: 225186.636 ops/s
+Iteration   1: 236058.355 ops/s
+Iteration   2: 237278.048 ops/s
 
 
 Result "org.wrongwrong.main.deser.E_5P_Ctor.present":
-  235514.868 ±(99.9%) 49172.805 ops/s [Average]
-  (min, avg, max) = (228253.519, 235514.868, 242161.025), stdev = 7609.546
-  CI (99.9%): [186342.063, 284687.673] (assumes normal distribution)
+  238130.416 ±(99.9%) 11375.129 ops/s [Average]
+  (min, avg, max) = (236058.355, 238130.416, 239595.093), stdev = 1760.314
+  CI (99.9%): [226755.287, 249505.544] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1359,43 +1059,43 @@ Result "org.wrongwrong.main.deser.E_5P_Ctor.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.E_5P_Func.missing
 
-# Run progress: 75.00% complete, ETA 00:04:07
+# Run progress: 77.78% complete, ETA 00:02:45
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 32343.361 ops/s
-# Warmup Iteration   2: 97275.137 ops/s
-# Warmup Iteration   3: 121711.666 ops/s
-Iteration   1: 123308.672 ops/s
-Iteration   2: 122803.860 ops/s
+# Warmup Iteration   1: 36717.215 ops/s
+# Warmup Iteration   2: 96131.101 ops/s
+# Warmup Iteration   3: 133510.334 ops/s
+Iteration   1: 133737.332 ops/s
+Iteration   2: 132721.923 ops/s
 
-# Run progress: 75.69% complete, ETA 00:04:00
+# Run progress: 78.70% complete, ETA 00:02:39
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 35117.706 ops/s
-# Warmup Iteration   2: 101632.465 ops/s
-# Warmup Iteration   3: 123840.304 ops/s
-Iteration   1: 124987.354 ops/s
-Iteration   2: 124652.040 ops/s
+# Warmup Iteration   1: 38419.086 ops/s
+# Warmup Iteration   2: 108670.635 ops/s
+# Warmup Iteration   3: 132257.994 ops/s
+Iteration   1: 132487.454 ops/s
+Iteration   2: 132053.131 ops/s
 
-# Run progress: 76.39% complete, ETA 00:03:53
+# Run progress: 79.63% complete, ETA 00:02:32
 # Fork: 1 of 2
-# Warmup Iteration   1: 35419.175 ops/s
-# Warmup Iteration   2: 90571.542 ops/s
-# Warmup Iteration   3: 120686.058 ops/s
-Iteration   1: 123658.594 ops/s
-Iteration   2: 123501.388 ops/s
+# Warmup Iteration   1: 35749.733 ops/s
+# Warmup Iteration   2: 100293.250 ops/s
+# Warmup Iteration   3: 131637.364 ops/s
+Iteration   1: 132245.951 ops/s
+Iteration   2: 131448.826 ops/s
 
-# Run progress: 77.08% complete, ETA 00:03:47
+# Run progress: 80.56% complete, ETA 00:02:25
 # Fork: 2 of 2
-# Warmup Iteration   1: 32769.037 ops/s
-# Warmup Iteration   2: 87430.224 ops/s
-# Warmup Iteration   3: 119376.224 ops/s
-Iteration   1: 123064.141 ops/s
-Iteration   2: 123107.589 ops/s
+# Warmup Iteration   1: 34395.481 ops/s
+# Warmup Iteration   2: 98377.836 ops/s
+# Warmup Iteration   3: 132246.470 ops/s
+Iteration   1: 131019.671 ops/s
+Iteration   2: 131330.621 ops/s
 
 
 Result "org.wrongwrong.main.deser.E_5P_Func.missing":
-  123332.928 ±(99.9%) 1893.047 ops/s [Average]
-  (min, avg, max) = (123064.141, 123332.928, 123658.594), stdev = 292.951
-  CI (99.9%): [121439.880, 125225.975] (assumes normal distribution)
+  131511.267 ±(99.9%) 3374.203 ops/s [Average]
+  (min, avg, max) = (131019.671, 131511.267, 132245.951), stdev = 522.162
+  CI (99.9%): [128137.064, 134885.471] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1409,43 +1109,43 @@ Result "org.wrongwrong.main.deser.E_5P_Func.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.E_5P_Func.present
 
-# Run progress: 77.78% complete, ETA 00:03:40
+# Run progress: 81.48% complete, ETA 00:02:18
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 69422.289 ops/s
-# Warmup Iteration   2: 160399.808 ops/s
-# Warmup Iteration   3: 165088.669 ops/s
-Iteration   1: 168726.161 ops/s
-Iteration   2: 168214.350 ops/s
+# Warmup Iteration   1: 89833.992 ops/s
+# Warmup Iteration   2: 162122.753 ops/s
+# Warmup Iteration   3: 170619.703 ops/s
+Iteration   1: 179712.990 ops/s
+Iteration   2: 179978.705 ops/s
 
-# Run progress: 78.47% complete, ETA 00:03:33
+# Run progress: 82.41% complete, ETA 00:02:11
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 86136.536 ops/s
-# Warmup Iteration   2: 163572.162 ops/s
-# Warmup Iteration   3: 167446.834 ops/s
-Iteration   1: 171575.693 ops/s
-Iteration   2: 171579.516 ops/s
+# Warmup Iteration   1: 76282.912 ops/s
+# Warmup Iteration   2: 163487.877 ops/s
+# Warmup Iteration   3: 171477.537 ops/s
+Iteration   1: 180571.571 ops/s
+Iteration   2: 178849.154 ops/s
 
-# Run progress: 79.17% complete, ETA 00:03:26
+# Run progress: 83.33% complete, ETA 00:02:04
 # Fork: 1 of 2
-# Warmup Iteration   1: 74674.488 ops/s
-# Warmup Iteration   2: 163117.238 ops/s
-# Warmup Iteration   3: 167194.753 ops/s
-Iteration   1: 170942.224 ops/s
-Iteration   2: 171059.265 ops/s
+# Warmup Iteration   1: 77630.314 ops/s
+# Warmup Iteration   2: 165641.059 ops/s
+# Warmup Iteration   3: 173273.992 ops/s
+Iteration   1: 182534.995 ops/s
+Iteration   2: 182357.522 ops/s
 
-# Run progress: 79.86% complete, ETA 00:03:19
+# Run progress: 84.26% complete, ETA 00:01:57
 # Fork: 2 of 2
-# Warmup Iteration   1: 74062.258 ops/s
-# Warmup Iteration   2: 158460.210 ops/s
-# Warmup Iteration   3: 163426.232 ops/s
-Iteration   1: 167198.099 ops/s
-Iteration   2: 167188.845 ops/s
+# Warmup Iteration   1: 75819.861 ops/s
+# Warmup Iteration   2: 163829.077 ops/s
+# Warmup Iteration   3: 171974.095 ops/s
+Iteration   1: 181055.356 ops/s
+Iteration   2: 181375.245 ops/s
 
 
 Result "org.wrongwrong.main.deser.E_5P_Func.present":
-  169097.108 ±(99.9%) 14207.667 ops/s [Average]
-  (min, avg, max) = (167188.845, 169097.108, 171059.265), stdev = 2198.652
-  CI (99.9%): [154889.441, 183304.775] (assumes normal distribution)
+  181830.779 ±(99.9%) 4692.802 ops/s [Average]
+  (min, avg, max) = (181055.356, 181830.779, 182534.995), stdev = 726.216
+  CI (99.9%): [177137.978, 186523.581] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1459,43 +1159,43 @@ Result "org.wrongwrong.main.deser.E_5P_Func.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.T_20P_Ctor.missing
 
-# Run progress: 80.56% complete, ETA 00:03:12
+# Run progress: 85.19% complete, ETA 00:01:50
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 13672.478 ops/s
-# Warmup Iteration   2: 33570.139 ops/s
-# Warmup Iteration   3: 36683.011 ops/s
-Iteration   1: 36655.296 ops/s
-Iteration   2: 36729.138 ops/s
+# Warmup Iteration   1: 12712.637 ops/s
+# Warmup Iteration   2: 31197.052 ops/s
+# Warmup Iteration   3: 36881.437 ops/s
+Iteration   1: 36941.295 ops/s
+Iteration   2: 36755.077 ops/s
 
-# Run progress: 81.25% complete, ETA 00:03:05
+# Run progress: 86.11% complete, ETA 00:01:43
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 16848.013 ops/s
-# Warmup Iteration   2: 33637.635 ops/s
-# Warmup Iteration   3: 36407.542 ops/s
-Iteration   1: 36447.435 ops/s
-Iteration   2: 36390.449 ops/s
+# Warmup Iteration   1: 14059.150 ops/s
+# Warmup Iteration   2: 30740.878 ops/s
+# Warmup Iteration   3: 36515.075 ops/s
+Iteration   1: 36471.864 ops/s
+Iteration   2: 36440.397 ops/s
 
-# Run progress: 81.94% complete, ETA 00:02:58
+# Run progress: 87.04% complete, ETA 00:01:36
 # Fork: 1 of 2
-# Warmup Iteration   1: 14862.615 ops/s
-# Warmup Iteration   2: 33503.135 ops/s
-# Warmup Iteration   3: 37078.969 ops/s
-Iteration   1: 37360.557 ops/s
-Iteration   2: 37260.795 ops/s
+# Warmup Iteration   1: 10231.873 ops/s
+# Warmup Iteration   2: 31136.251 ops/s
+# Warmup Iteration   3: 36430.005 ops/s
+Iteration   1: 36560.649 ops/s
+Iteration   2: 36478.462 ops/s
 
-# Run progress: 82.64% complete, ETA 00:02:52
+# Run progress: 87.96% complete, ETA 00:01:29
 # Fork: 2 of 2
-# Warmup Iteration   1: 15593.249 ops/s
-# Warmup Iteration   2: 34167.493 ops/s
-# Warmup Iteration   3: 37095.541 ops/s
-Iteration   1: 37062.446 ops/s
-Iteration   2: 37069.119 ops/s
+# Warmup Iteration   1: 16074.667 ops/s
+# Warmup Iteration   2: 29951.091 ops/s
+# Warmup Iteration   3: 35535.897 ops/s
+Iteration   1: 35776.965 ops/s
+Iteration   2: 35780.518 ops/s
 
 
 Result "org.wrongwrong.main.deser.T_20P_Ctor.missing":
-  37188.229 ±(99.9%) 950.969 ops/s [Average]
-  (min, avg, max) = (37062.446, 37188.229, 37360.557), stdev = 147.163
-  CI (99.9%): [36237.261, 38139.198] (assumes normal distribution)
+  36149.149 ±(99.9%) 2772.360 ops/s [Average]
+  (min, avg, max) = (35776.965, 36149.149, 36560.649), stdev = 429.026
+  CI (99.9%): [33376.789, 38921.508] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1509,43 +1209,43 @@ Result "org.wrongwrong.main.deser.T_20P_Ctor.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.T_20P_Ctor.present
 
-# Run progress: 83.33% complete, ETA 00:02:45
+# Run progress: 88.89% complete, ETA 00:01:22
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 45014.256 ops/s
-# Warmup Iteration   2: 62579.800 ops/s
-# Warmup Iteration   3: 64712.230 ops/s
-Iteration   1: 66292.838 ops/s
-Iteration   2: 66237.013 ops/s
+# Warmup Iteration   1: 40678.423 ops/s
+# Warmup Iteration   2: 58535.104 ops/s
+# Warmup Iteration   3: 61634.805 ops/s
+Iteration   1: 64814.800 ops/s
+Iteration   2: 64789.937 ops/s
 
-# Run progress: 84.03% complete, ETA 00:02:38
+# Run progress: 89.81% complete, ETA 00:01:16
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 43504.113 ops/s
-# Warmup Iteration   2: 66392.566 ops/s
-# Warmup Iteration   3: 68419.959 ops/s
-Iteration   1: 69660.949 ops/s
-Iteration   2: 69860.776 ops/s
+# Warmup Iteration   1: 41808.083 ops/s
+# Warmup Iteration   2: 59150.864 ops/s
+# Warmup Iteration   3: 61913.034 ops/s
+Iteration   1: 65007.589 ops/s
+Iteration   2: 65173.687 ops/s
 
-# Run progress: 84.72% complete, ETA 00:02:31
+# Run progress: 90.74% complete, ETA 00:01:09
 # Fork: 1 of 2
-# Warmup Iteration   1: 42371.332 ops/s
-# Warmup Iteration   2: 62474.299 ops/s
-# Warmup Iteration   3: 64214.655 ops/s
-Iteration   1: 65783.960 ops/s
-Iteration   2: 65833.683 ops/s
+# Warmup Iteration   1: 42029.604 ops/s
+# Warmup Iteration   2: 59470.780 ops/s
+# Warmup Iteration   3: 62479.233 ops/s
+Iteration   1: 65402.980 ops/s
+Iteration   2: 65448.025 ops/s
 
-# Run progress: 85.42% complete, ETA 00:02:24
+# Run progress: 91.67% complete, ETA 00:01:02
 # Fork: 2 of 2
-# Warmup Iteration   1: 47980.339 ops/s
-# Warmup Iteration   2: 67534.624 ops/s
-# Warmup Iteration   3: 69947.031 ops/s
-Iteration   1: 71546.501 ops/s
-Iteration   2: 71391.773 ops/s
+# Warmup Iteration   1: 42879.799 ops/s
+# Warmup Iteration   2: 58879.015 ops/s
+# Warmup Iteration   3: 61680.048 ops/s
+Iteration   1: 64755.575 ops/s
+Iteration   2: 64772.439 ops/s
 
 
 Result "org.wrongwrong.main.deser.T_20P_Ctor.present":
-  68638.979 ±(99.9%) 21122.033 ops/s [Average]
-  (min, avg, max) = (65783.960, 68638.979, 71546.501), stdev = 3268.658
-  CI (99.9%): [47516.946, 89761.012] (assumes normal distribution)
+  65094.755 ±(99.9%) 2471.188 ops/s [Average]
+  (min, avg, max) = (64755.575, 65094.755, 65448.025), stdev = 382.419
+  CI (99.9%): [62623.567, 67565.943] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1559,43 +1259,43 @@ Result "org.wrongwrong.main.deser.T_20P_Ctor.present":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.T_20P_Func.missing
 
-# Run progress: 86.11% complete, ETA 00:02:17
+# Run progress: 92.59% complete, ETA 00:00:55
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 14857.371 ops/s
-# Warmup Iteration   2: 31700.527 ops/s
-# Warmup Iteration   3: 36381.038 ops/s
-Iteration   1: 36607.535 ops/s
-Iteration   2: 36475.019 ops/s
+# Warmup Iteration   1: 12249.614 ops/s
+# Warmup Iteration   2: 30043.066 ops/s
+# Warmup Iteration   3: 36201.239 ops/s
+Iteration   1: 36226.469 ops/s
+Iteration   2: 36145.072 ops/s
 
-# Run progress: 86.81% complete, ETA 00:02:10
+# Run progress: 93.52% complete, ETA 00:00:48
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 13233.173 ops/s
-# Warmup Iteration   2: 32408.009 ops/s
-# Warmup Iteration   3: 35352.720 ops/s
-Iteration   1: 36025.969 ops/s
-Iteration   2: 35895.695 ops/s
+# Warmup Iteration   1: 13952.773 ops/s
+# Warmup Iteration   2: 30394.935 ops/s
+# Warmup Iteration   3: 35345.081 ops/s
+Iteration   1: 35496.570 ops/s
+Iteration   2: 35284.889 ops/s
 
-# Run progress: 87.50% complete, ETA 00:02:03
+# Run progress: 94.44% complete, ETA 00:00:41
 # Fork: 1 of 2
-# Warmup Iteration   1: 13229.667 ops/s
-# Warmup Iteration   2: 31053.460 ops/s
-# Warmup Iteration   3: 37201.500 ops/s
-Iteration   1: 37104.289 ops/s
-Iteration   2: 37017.116 ops/s
+# Warmup Iteration   1: 12364.947 ops/s
+# Warmup Iteration   2: 29602.608 ops/s
+# Warmup Iteration   3: 35158.260 ops/s
+Iteration   1: 34754.936 ops/s
+Iteration   2: 35129.791 ops/s
 
-# Run progress: 88.19% complete, ETA 00:01:57
+# Run progress: 95.37% complete, ETA 00:00:34
 # Fork: 2 of 2
-# Warmup Iteration   1: 12881.267 ops/s
-# Warmup Iteration   2: 33606.344 ops/s
-# Warmup Iteration   3: 37271.935 ops/s
-Iteration   1: 37391.516 ops/s
-Iteration   2: 37307.374 ops/s
+# Warmup Iteration   1: 13356.843 ops/s
+# Warmup Iteration   2: 29789.766 ops/s
+# Warmup Iteration   3: 35938.621 ops/s
+Iteration   1: 35943.113 ops/s
+Iteration   2: 35830.872 ops/s
 
 
 Result "org.wrongwrong.main.deser.T_20P_Func.missing":
-  37205.074 ±(99.9%) 1123.666 ops/s [Average]
-  (min, avg, max) = (37017.116, 37205.074, 37391.516), stdev = 173.889
-  CI (99.9%): [36081.408, 38328.739] (assumes normal distribution)
+  35414.678 ±(99.9%) 3672.324 ops/s [Average]
+  (min, avg, max) = (34754.936, 35414.678, 35943.113), stdev = 568.296
+  CI (99.9%): [31742.354, 39087.002] (assumes normal distribution)
 
 
 # JMH version: 1.25
@@ -1609,196 +1309,46 @@ Result "org.wrongwrong.main.deser.T_20P_Func.missing":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.wrongwrong.main.deser.T_20P_Func.present
 
-# Run progress: 88.89% complete, ETA 00:01:50
+# Run progress: 96.30% complete, ETA 00:00:27
 # Warmup Fork: 1 of 2
-# Warmup Iteration   1: 26509.914 ops/s
-# Warmup Iteration   2: 47113.779 ops/s
-# Warmup Iteration   3: 48382.412 ops/s
-Iteration   1: 49617.042 ops/s
-Iteration   2: 49667.832 ops/s
+# Warmup Iteration   1: 28727.887 ops/s
+# Warmup Iteration   2: 45708.749 ops/s
+# Warmup Iteration   3: 47695.220 ops/s
+Iteration   1: 50034.565 ops/s
+Iteration   2: 49859.901 ops/s
 
-# Run progress: 89.58% complete, ETA 00:01:43
+# Run progress: 97.22% complete, ETA 00:00:20
 # Warmup Fork: 2 of 2
-# Warmup Iteration   1: 27085.954 ops/s
-# Warmup Iteration   2: 47594.976 ops/s
-# Warmup Iteration   3: 48848.839 ops/s
-Iteration   1: 50004.879 ops/s
-Iteration   2: 49979.084 ops/s
+# Warmup Iteration   1: 26545.473 ops/s
+# Warmup Iteration   2: 45899.079 ops/s
+# Warmup Iteration   3: 47828.486 ops/s
+Iteration   1: 50487.140 ops/s
+Iteration   2: 50455.112 ops/s
 
-# Run progress: 90.28% complete, ETA 00:01:36
+# Run progress: 98.15% complete, ETA 00:00:13
 # Fork: 1 of 2
-# Warmup Iteration   1: 27764.620 ops/s
-# Warmup Iteration   2: 47431.981 ops/s
-# Warmup Iteration   3: 48508.056 ops/s
-Iteration   1: 49837.305 ops/s
-Iteration   2: 49733.284 ops/s
+# Warmup Iteration   1: 26415.668 ops/s
+# Warmup Iteration   2: 45061.687 ops/s
+# Warmup Iteration   3: 47139.873 ops/s
+Iteration   1: 49540.479 ops/s
+Iteration   2: 49519.806 ops/s
 
-# Run progress: 90.97% complete, ETA 00:01:29
+# Run progress: 99.07% complete, ETA 00:00:06
 # Fork: 2 of 2
-# Warmup Iteration   1: 28787.388 ops/s
-# Warmup Iteration   2: 49468.703 ops/s
-# Warmup Iteration   3: 50619.313 ops/s
-Iteration   1: 51747.796 ops/s
-Iteration   2: 51812.018 ops/s
+# Warmup Iteration   1: 25078.768 ops/s
+# Warmup Iteration   2: 45554.349 ops/s
+# Warmup Iteration   3: 48126.002 ops/s
+Iteration   1: 50410.054 ops/s
+Iteration   2: 50574.453 ops/s
 
 
 Result "org.wrongwrong.main.deser.T_20P_Func.present":
-  50782.601 ±(99.9%) 7448.546 ops/s [Average]
-  (min, avg, max) = (49733.284, 50782.601, 51812.018), stdev = 1152.671
-  CI (99.9%): [43334.055, 58231.146] (assumes normal distribution)
+  50011.198 ±(99.9%) 3615.991 ops/s [Average]
+  (min, avg, max) = (49519.806, 50011.198, 50574.453), stdev = 559.579
+  CI (99.9%): [46395.207, 53627.189] (assumes normal distribution)
 
 
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.main.ser.A_1P.call
-
-# Run progress: 91.67% complete, ETA 00:01:22
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 1451243.585 ops/s
-# Warmup Iteration   2: 2155743.721 ops/s
-# Warmup Iteration   3: 2177440.688 ops/s
-Iteration   1: 2168079.500 ops/s
-Iteration   2: 2157858.699 ops/s
-
-# Run progress: 92.36% complete, ETA 00:01:15
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 1398272.680 ops/s
-# Warmup Iteration   2: 2118574.079 ops/s
-# Warmup Iteration   3: 2176959.388 ops/s
-Iteration   1: 2160274.370 ops/s
-Iteration   2: 2159283.124 ops/s
-
-# Run progress: 93.06% complete, ETA 00:01:08
-# Fork: 1 of 2
-# Warmup Iteration   1: 1262195.903 ops/s
-# Warmup Iteration   2: 2007704.357 ops/s
-# Warmup Iteration   3: 2115314.349 ops/s
-Iteration   1: 2101967.043 ops/s
-Iteration   2: 2071817.026 ops/s
-
-# Run progress: 93.75% complete, ETA 00:01:01
-# Fork: 2 of 2
-# Warmup Iteration   1: 1533949.738 ops/s
-# Warmup Iteration   2: 2277783.789 ops/s
-# Warmup Iteration   3: 2290209.302 ops/s
-Iteration   1: 2275071.732 ops/s
-Iteration   2: 2276562.023 ops/s
-
-
-Result "org.wrongwrong.main.ser.A_1P.call":
-  2181354.456 ±(99.9%) 709331.193 ops/s [Average]
-  (min, avg, max) = (2071817.026, 2181354.456, 2276562.023), stdev = 109769.787
-  CI (99.9%): [1472023.263, 2890685.649] (assumes normal distribution)
-
-
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.main.ser.E_5P.call
-
-# Run progress: 94.44% complete, ETA 00:00:55
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 756705.794 ops/s
-# Warmup Iteration   2: 1201884.873 ops/s
-# Warmup Iteration   3: 1213963.808 ops/s
-Iteration   1: 1132439.208 ops/s
-Iteration   2: 1228592.420 ops/s
-
-# Run progress: 95.14% complete, ETA 00:00:48
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 800708.056 ops/s
-# Warmup Iteration   2: 1210341.595 ops/s
-# Warmup Iteration   3: 1253063.590 ops/s
-Iteration   1: 1252582.904 ops/s
-Iteration   2: 1245917.110 ops/s
-
-# Run progress: 95.83% complete, ETA 00:00:41
-# Fork: 1 of 2
-# Warmup Iteration   1: 811077.066 ops/s
-# Warmup Iteration   2: 1204389.000 ops/s
-# Warmup Iteration   3: 1260291.703 ops/s
-Iteration   1: 1257631.460 ops/s
-Iteration   2: 1255313.568 ops/s
-
-# Run progress: 96.53% complete, ETA 00:00:34
-# Fork: 2 of 2
-# Warmup Iteration   1: 822584.925 ops/s
-# Warmup Iteration   2: 1202211.331 ops/s
-# Warmup Iteration   3: 1236215.208 ops/s
-Iteration   1: 1233228.604 ops/s
-Iteration   2: 1228928.261 ops/s
-
-
-Result "org.wrongwrong.main.ser.E_5P.call":
-  1243775.473 ±(99.9%) 95613.583 ops/s [Average]
-  (min, avg, max) = (1228928.261, 1243775.473, 1257631.460), stdev = 14796.308
-  CI (99.9%): [1148161.890, 1339389.056] (assumes normal distribution)
-
-
-# JMH version: 1.25
-# VM version: JDK 1.8.0_382, OpenJDK 64-Bit Server VM, 25.382-b05
-# VM invoker: /opt/hostedtoolcache/Java_Adopt_jdk/8.0.382-5/x64/jre/bin/java
-# VM options: <none>
-# Warmup: 3 iterations, 1 s each, 3 calls per op
-# Measurement: 2 iterations, 1500 ms each, 3 calls per op
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: org.wrongwrong.main.ser.T_20P.call
-
-# Run progress: 97.22% complete, ETA 00:00:27
-# Warmup Fork: 1 of 2
-# Warmup Iteration   1: 339115.562 ops/s
-# Warmup Iteration   2: 455691.115 ops/s
-# Warmup Iteration   3: 478637.591 ops/s
-Iteration   1: 478887.459 ops/s
-Iteration   2: 479054.116 ops/s
-
-# Run progress: 97.92% complete, ETA 00:00:20
-# Warmup Fork: 2 of 2
-# Warmup Iteration   1: 342398.966 ops/s
-# Warmup Iteration   2: 457976.904 ops/s
-# Warmup Iteration   3: 480485.123 ops/s
-Iteration   1: 479283.904 ops/s
-Iteration   2: 479056.944 ops/s
-
-# Run progress: 98.61% complete, ETA 00:00:13
-# Fork: 1 of 2
-# Warmup Iteration   1: 327942.960 ops/s
-# Warmup Iteration   2: 449376.765 ops/s
-# Warmup Iteration   3: 475697.816 ops/s
-Iteration   1: 475538.693 ops/s
-Iteration   2: 474498.059 ops/s
-
-# Run progress: 99.31% complete, ETA 00:00:06
-# Fork: 2 of 2
-# Warmup Iteration   1: 333066.432 ops/s
-# Warmup Iteration   2: 453917.040 ops/s
-# Warmup Iteration   3: 478266.954 ops/s
-Iteration   1: 478074.534 ops/s
-Iteration   2: 456945.375 ops/s
-
-
-Result "org.wrongwrong.main.ser.T_20P.call":
-  471264.165 ±(99.9%) 62444.190 ops/s [Average]
-  (min, avg, max) = (456945.375, 471264.165, 478074.534), stdev = 9663.308
-  CI (99.9%): [408819.975, 533708.356] (assumes normal distribution)
-
-
-# Run complete. Total time: 00:16:30
+# Run complete. Total time: 00:12:26
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -1806,42 +1356,33 @@ experiments, perform baseline and negative tests that provide experimental contr
 the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
 Do not assume the numbers tell you what you want them to tell.
 
-Benchmark                                    Mode  Cnt        Score        Error  Units
-o.w.extra.deser.Collections.array           thrpt    4   391904.741 ±  42141.421  ops/s
-o.w.extra.deser.Collections.list            thrpt    4   399713.448 ±  94512.818  ops/s
-o.w.extra.deser.Collections.map             thrpt    4   289671.651 ±   2993.202  ops/s
-o.w.extra.deser.wrapper.A_1P_Ctor.missing   thrpt    4   362871.651 ±  86890.022  ops/s
-o.w.extra.deser.wrapper.A_1P_Ctor.present   thrpt    4   645499.921 ±  62063.115  ops/s
-o.w.extra.deser.wrapper.A_1P_Func.missing   thrpt    4   327399.334 ±  11025.952  ops/s
-o.w.extra.deser.wrapper.A_1P_Func.present   thrpt    4   424558.640 ±  25623.951  ops/s
-o.w.extra.deser.wrapper.E_5P_Ctor.missing   thrpt    4   133447.265 ±   2950.591  ops/s
-o.w.extra.deser.wrapper.E_5P_Ctor.present   thrpt    4   236398.097 ±  14253.591  ops/s
-o.w.extra.deser.wrapper.E_5P_Func.missing   thrpt    4   125617.926 ±   5146.840  ops/s
-o.w.extra.deser.wrapper.E_5P_Func.present   thrpt    4   168315.749 ±  23564.074  ops/s
-o.w.extra.deser.wrapper.T_20P_Ctor.missing  thrpt    4    37936.619 ±    549.586  ops/s
-o.w.extra.deser.wrapper.T_20P_Ctor.present  thrpt    4    64284.798 ±   5489.205  ops/s
-o.w.extra.deser.wrapper.T_20P_Func.missing  thrpt    4    37195.181 ±   1906.855  ops/s
-o.w.extra.deser.wrapper.T_20P_Func.present  thrpt    4    50002.714 ±   2307.545  ops/s
-o.w.extra.ser.value_class.A_1P.call         thrpt    4   892990.166 ± 198867.490  ops/s
-o.w.extra.ser.value_class.E_5P.call         thrpt    4   253537.581 ±   3463.379  ops/s
-o.w.extra.ser.value_class.T_20P.call        thrpt    4    67374.809 ±   2611.220  ops/s
-o.w.extra.ser.wrapper.A_1P.call             thrpt    4  1930198.284 ± 261552.915  ops/s
-o.w.extra.ser.wrapper.E_5P.call             thrpt    4  1175733.969 ±  19036.444  ops/s
-o.w.extra.ser.wrapper.T_20P.call            thrpt    4   440217.075 ±  31477.166  ops/s
-o.w.main.deser.A_1P_Ctor.missing            thrpt    4   367971.656 ±   7309.372  ops/s
-o.w.main.deser.A_1P_Ctor.present            thrpt    4   659014.138 ±  39265.093  ops/s
-o.w.main.deser.A_1P_Func.missing            thrpt    4   318373.138 ±  38559.411  ops/s
-o.w.main.deser.A_1P_Func.present            thrpt    4   423756.383 ±  19891.679  ops/s
-o.w.main.deser.E_5P_Ctor.missing            thrpt    4   127987.617 ±   6825.611  ops/s
-o.w.main.deser.E_5P_Ctor.present            thrpt    4   235514.868 ±  49172.805  ops/s
-o.w.main.deser.E_5P_Func.missing            thrpt    4   123332.928 ±   1893.047  ops/s
-o.w.main.deser.E_5P_Func.present            thrpt    4   169097.108 ±  14207.667  ops/s
-o.w.main.deser.T_20P_Ctor.missing           thrpt    4    37188.229 ±    950.969  ops/s
-o.w.main.deser.T_20P_Ctor.present           thrpt    4    68638.979 ±  21122.033  ops/s
-o.w.main.deser.T_20P_Func.missing           thrpt    4    37205.074 ±   1123.666  ops/s
-o.w.main.deser.T_20P_Func.present           thrpt    4    50782.601 ±   7448.546  ops/s
-o.w.main.ser.A_1P.call                      thrpt    4  2181354.456 ± 709331.193  ops/s
-o.w.main.ser.E_5P.call                      thrpt    4  1243775.473 ±  95613.583  ops/s
-o.w.main.ser.T_20P.call                     thrpt    4   471264.165 ±  62444.190  ops/s
+Benchmark                                    Mode  Cnt       Score        Error  Units
+o.w.extra.deser.Collections.array           thrpt    4  393939.582 ±  19158.124  ops/s
+o.w.extra.deser.Collections.list            thrpt    4  384546.566 ±  10103.699  ops/s
+o.w.extra.deser.Collections.map             thrpt    4  301430.438 ±   4750.712  ops/s
+o.w.extra.deser.wrapper.A_1P_Ctor.missing   thrpt    4  401582.462 ±  36354.300  ops/s
+o.w.extra.deser.wrapper.A_1P_Ctor.present   thrpt    4  638495.490 ±   7837.322  ops/s
+o.w.extra.deser.wrapper.A_1P_Func.missing   thrpt    4  356633.636 ±  32327.068  ops/s
+o.w.extra.deser.wrapper.A_1P_Func.present   thrpt    4  461505.557 ±  14956.802  ops/s
+o.w.extra.deser.wrapper.E_5P_Ctor.missing   thrpt    4  139702.815 ±   8965.700  ops/s
+o.w.extra.deser.wrapper.E_5P_Ctor.present   thrpt    4  238362.467 ±  14648.254  ops/s
+o.w.extra.deser.wrapper.E_5P_Func.missing   thrpt    4  132760.899 ±  13498.573  ops/s
+o.w.extra.deser.wrapper.E_5P_Func.present   thrpt    4  176526.873 ±   9183.540  ops/s
+o.w.extra.deser.wrapper.T_20P_Ctor.missing  thrpt    4   37358.091 ±   2188.941  ops/s
+o.w.extra.deser.wrapper.T_20P_Ctor.present  thrpt    4   61603.760 ±   2209.503  ops/s
+o.w.extra.deser.wrapper.T_20P_Func.missing  thrpt    4   36546.276 ±   2645.106  ops/s
+o.w.extra.deser.wrapper.T_20P_Func.present  thrpt    4   50743.911 ±   4284.095  ops/s
+o.w.main.deser.A_1P_Ctor.missing            thrpt    4  399198.915 ±  21122.958  ops/s
+o.w.main.deser.A_1P_Ctor.present            thrpt    4  660419.996 ± 114982.780  ops/s
+o.w.main.deser.A_1P_Func.missing            thrpt    4  349136.387 ±  60164.224  ops/s
+o.w.main.deser.A_1P_Func.present            thrpt    4  452703.524 ±  16744.763  ops/s
+o.w.main.deser.E_5P_Ctor.missing            thrpt    4  138258.311 ±   6067.320  ops/s
+o.w.main.deser.E_5P_Ctor.present            thrpt    4  238130.416 ±  11375.129  ops/s
+o.w.main.deser.E_5P_Func.missing            thrpt    4  131511.267 ±   3374.203  ops/s
+o.w.main.deser.E_5P_Func.present            thrpt    4  181830.779 ±   4692.802  ops/s
+o.w.main.deser.T_20P_Ctor.missing           thrpt    4   36149.149 ±   2772.360  ops/s
+o.w.main.deser.T_20P_Ctor.present           thrpt    4   65094.755 ±   2471.188  ops/s
+o.w.main.deser.T_20P_Func.missing           thrpt    4   35414.678 ±   3672.324  ops/s
+o.w.main.deser.T_20P_Func.present           thrpt    4   50011.198 ±   3615.991  ops/s
 
 Benchmark result is saved to /home/runner/work/kogera-benchmark/kogera-benchmark/ci-reports/OriginalStrictNullCheck-thrpt.csv
