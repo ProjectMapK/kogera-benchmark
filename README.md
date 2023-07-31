@@ -40,7 +40,10 @@ If you want to specify more detailed options, edit `build.gradle.kts`.
 
 # Results
 The currently published scores compare `jackson-module-kogera 2.15.2-beta0` with `jackson-module-kotlin 2.15.2`.  
-Please note that these scores are measured by `GitHub Actions` and are not always the same.
+Please note that these scores are measured by `GitHub Actions` and are not always the same.  
+Also, the cache may stop updating the images for up to 5 minutes,
+and the `README` may not have been updated after the benchmark was run,
+so the description and images may not always match.
 
 The letters `A` and `E` in the benchmark names are values to adjust the sort order of the results
 and represent the number of properties (1 = `A`, 5 = `E`, ...).
