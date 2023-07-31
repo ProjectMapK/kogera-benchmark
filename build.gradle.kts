@@ -92,7 +92,10 @@ fun getExcludeSettings(): List<String> {
     // Benchmarks on value class deserialization are valid only for Kogera.
     if (!isKogera) acc.add("org.wrongwrong.extra.deser.value_class.*")
     // StrictNullCheck does not affect serialization, so benchmarks are excluded.
-    if (mapper.contains("StrictNullCheck")) acc.add("org.wrongwrong.*.ser")
+    if (mapper.contains("StrictNullCheck"))  {
+        acc.add("org.wrongwrong.main.ser.*")
+        acc.add("org.wrongwrong.extra.ser.*")
+    }
 
     return acc
 }
