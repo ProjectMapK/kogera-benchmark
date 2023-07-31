@@ -86,6 +86,17 @@ abstract class BenchmarkBase {
     }
 }
 
+fun getExcludeSettings(): List<String> {
+    val acc = mutableListOf<String>()
+
+    // Benchmarks on value class deserialization are valid only for Kogera.
+    if (!isKogera) acc.add("org.wrongwrong.extra.deser.value_class.*")
+    // StrictNullCheck does not affect serialization, so benchmarks are excluded.
+    if (mapper.contains("StrictNullCheck")) acc.add("org.wrongwrong.*.ser")
+
+    return acc
+}
+
 jmh {
     if (isSingleShot) {
         benchmarkMode = listOf("ss")
@@ -109,8 +120,7 @@ jmh {
     }
 
     include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
-    // Benchmarks on value class deserialization are valid only for Kogera.
-    exclude = if (isKogera) emptyList() else listOf("org.wrongwrong.extra.deser.value_class.*")
+    exclude = getExcludeSettings()
 
     failOnError = true
     isIncludeTests = false
