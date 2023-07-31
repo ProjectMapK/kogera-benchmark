@@ -39,7 +39,7 @@ The following is an example of running all four benchmarks described in the `REA
 If you want to specify more detailed options, edit `build.gradle.kts`.
 
 # Results
-The currently published scores compare `jackson-module-kogera 2.15.2-beta0` with `jackson-module-kotlin 2.15.2`.  
+The currently published scores compare `jackson-module-kogera 2.15.2-beta1` with `jackson-module-kotlin 2.15.2`.  
 Please note that these scores are measured by `GitHub Actions` and are not always the same.  
 Also, the cache may stop updating the images for up to 5 minutes,
 and the `README` may not have been updated after the benchmark was run,
