@@ -10,6 +10,7 @@ on:
       - "**.kt"
       - "**.java"
       - .github/workflows/benchmark.yml
+  workflow_dispatch:
 jobs:
   benchmark:
     runs-on: ubuntu-22.04
