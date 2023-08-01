@@ -131,7 +131,7 @@ There is not much difference except for the `Collection`.
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRtSIkLr1stFR2taQczT53qdiqlGzg3_j9xFyi9woBVTKSNEcen6h9-9jKvCLKTJUWSoLWFNKnoJpr6/pubchart?oid=351902777&format=image)
 
 ### SingleShot mode
-In `Kogera`, there is more score reduction when `StrictNullChecks` is enabled than in `Original`.
+The trend is the same as for the throughput mode, but the difference is smaller.
 
 #### original
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQixP8gQJ1uiQTCiXWDfYi4SmKBeSlJfBZx2uZ34PJIFBR454T_ubMrz2_lma0VVxKGOwkWnZRgqEes/pubchart?oid=351902777&format=image)
