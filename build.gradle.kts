@@ -25,7 +25,7 @@ val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
 val isOnlyMain: Boolean = getOptionOrDefault("isOnlyMain", true)
 val isCi: Boolean = System.getenv().containsKey("CI") // True when executed in GitHub Actions
 
-val kogeraVersion = "2.15.2-beta1"
+val kogeraVersion = "2.15.2-beta2"
 val originalVersion = "2.15.2"
 
 dependencies {
