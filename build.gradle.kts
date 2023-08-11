@@ -14,15 +14,29 @@ repositories {
     maven { setUrl("https://jitpack.io") }
 }
 
+enum class BenchmarkSet {
+    // for CI
+    MainSer,
+    MainDeser,
+    ValueClassSer,
+    ValueClassDeser,
+    StrictNullChecks,
+    // for Local
+    OnlyMain,
+    Full;
+}
+
 fun getOptionOrDefault(name: String, default: Boolean): Boolean =
     project.properties[name]?.let { (it as String).toBoolean() } ?: default
 
 // @see org.wrongwrong.Mapper for find options
 val mapper: String = project.properties["mapper"] as? String ?: "Kogera"
 val isKogera = mapper.contains("Kogera")
+val benchmarkSet: BenchmarkSet = (project.properties["benchmarkSet"] as? String)
+    ?.let { BenchmarkSet.valueOf(it) }
+    ?: BenchmarkSet.OnlyMain
 
 val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
-val isOnlyMain: Boolean = getOptionOrDefault("isOnlyMain", true)
 val isCi: Boolean = System.getenv().containsKey("CI") // True when executed in GitHub Actions
 
 val kogeraVersion = "2.15.2-beta2"
@@ -86,18 +100,16 @@ abstract class BenchmarkBase {
     }
 }
 
-fun getExcludeSettings(): List<String> {
-    val acc = mutableListOf<String>()
-
-    // Benchmarks on value class deserialization are valid only for Kogera.
-    if (!isKogera) acc.add("org.wrongwrong.extra.deser.value_class.*")
-    // StrictNullCheck does not affect serialization, so benchmarks are excluded.
-    if (mapper.contains("StrictNullCheck"))  {
-        acc.add("org.wrongwrong.main.ser.*")
-        acc.add("org.wrongwrong.extra.ser.*")
-    }
-
-    return acc
+fun BenchmarkSet.includes(): List<String> = when (this) {
+    BenchmarkSet.MainSer -> listOf("org.wrongwrong.main.ser.*")
+    BenchmarkSet.MainDeser -> listOf("org.wrongwrong.main.deser.*")
+    BenchmarkSet.ValueClassSer -> listOf("org.wrongwrong.extra.ser.value_class.*", "org.wrongwrong.extra.ser.wrapper.*")
+    BenchmarkSet.ValueClassDeser ->
+        listOf("org.wrongwrong.extra.deser.value_class.*", "org.wrongwrong.extra.deser.wrapper.*")
+    BenchmarkSet.StrictNullChecks ->
+        listOf("org.wrongwrong.extra.deser.value_class.Collections", "org.wrongwrong.main.deser.*")
+    BenchmarkSet.OnlyMain -> listOf("org.wrongwrong.main.*")
+    BenchmarkSet.Full -> listOf("org.wrongwrong.*")
 }
 
 jmh {
@@ -122,8 +134,11 @@ jmh {
         forceGC = false
     }
 
-    include = if (isOnlyMain) listOf("org.wrongwrong.main.*") else listOf("org.wrongwrong.*")
-    exclude = getExcludeSettings()
+    include = benchmarkSet.includes()
+    exclude = if (benchmarkSet == BenchmarkSet.Full && !isKogera)
+        listOf("org.wrongwrong.extra.deser.value_class.*")
+    else
+        emptyList()
 
     failOnError = true
     isIncludeTests = false
@@ -132,11 +147,11 @@ jmh {
 
     val mode = if (isSingleShot) "ss" else "thrpt"
     val name = if (isCi) {
-        "$mapper-$mode"
+        "$mapper-$benchmarkSet-$mode"
     } else {
         val dateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss").format(LocalDateTime.now())
         val targetDependency = if (isKogera) "${mapper}-$kogeraVersion" else "${mapper}-$originalVersion"
-        val targetBenchmark = if (isOnlyMain) "main" else "full"
+        val targetBenchmark = benchmarkSet.name
         listOf(dateTime, targetDependency, targetBenchmark, mode).joinToString(separator = "_")
     }
 
