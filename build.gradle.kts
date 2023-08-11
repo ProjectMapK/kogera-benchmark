@@ -29,12 +29,20 @@ enum class BenchmarkSet {
 fun getOptionOrDefault(name: String, default: Boolean): Boolean =
     project.properties[name]?.let { (it as String).toBoolean() } ?: default
 
-// @see org.wrongwrong.Mapper for find options
-val mapper: String = project.properties["mapper"] as? String ?: "Kogera"
-val isKogera = mapper.contains("Kogera")
 val benchmarkSet: BenchmarkSet = (project.properties["benchmarkSet"] as? String)
     ?.let { BenchmarkSet.valueOf(it) }
     ?: BenchmarkSet.OnlyMain
+// @see org.wrongwrong.Mapper for find options
+val mapper: String = (project.properties["mapper"] as? String)
+    ?.let {
+        // for CI
+        if (benchmarkSet == BenchmarkSet.StrictNullChecks && (it == "Kogera" || it == "Original")) {
+            it + "StrictNullCheck"
+        } else {
+            it
+        }
+    } ?: "Kogera"
+val isKogera = mapper.contains("Kogera")
 
 val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
 val isCi: Boolean = System.getenv().containsKey("CI") // True when executed in GitHub Actions
