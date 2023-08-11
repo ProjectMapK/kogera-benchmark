@@ -14,6 +14,11 @@ on:
 jobs:
   benchmark:
     runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        mapper: [Original, Kogera]
+        benchmark-set: [MainSer, MainDeser, ValueClassSer, ValueClassDeser, StrictNullChecks]
+        is-single-shot: [true, false]
     timeout-minutes: 1200
     steps:
       - name: Checkout
@@ -25,51 +30,14 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
-      - name: Remove Old Reports
-        run: |
-          rm -f ./ci-reports/*.csv
-          rm -f ./ci-reports/*.txt
-      - name: Original Single Shot
+      - name: Benchmark
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: 7.6.2
-          arguments: jmh -Pmapper=Original -PisSingleShot=true -PisOnlyMain=false
-      - name: Original Throughput
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=Original -PisSingleShot=false -PisOnlyMain=false
-      - name: Original StrictNullCheck Single Shot
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=OriginalStrictNullCheck -PisSingleShot=true -PisOnlyMain=false
-      - name: Original StrictNullCheck Throughput
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=OriginalStrictNullCheck -PisSingleShot=false -PisOnlyMain=false
-      - name: Kogera Single Shot
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -PisSingleShot=true -PisOnlyMain=false
-      - name: Kogera Throughput
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -PisSingleShot=false -PisOnlyMain=false
-      - name: Kogera StrictNullCheck Single Shot
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh  -Pmapper=KogeraStrictNullCheck -PisSingleShot=true -PisOnlyMain=false
-      - name: Kogera StrictNullCheck Throughput
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=KogeraStrictNullCheck -PisSingleShot=false -PisOnlyMain=false
+          arguments: jmh -Pmapper=${{ matrix.mapper }} -PbenchmarkSet=${{ matrix.benchmark-set }} -PisSingleShot=${{ matrix.is-single-shot }}
       - name: Update Reports
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Reports
+          skip_fetch: false
+          skip_checkout: false
