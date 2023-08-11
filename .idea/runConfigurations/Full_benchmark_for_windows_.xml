@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Full benchmark(for windows)" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="./gradlew jmh --no-daemon -Pmapper=Original -PisSingleShot=true -PisOnlyMain=false; ./gradlew jmh --no-daemon -Pmapper=Original -PisSingleShot=false -PisOnlyMain=false; ./gradlew jmh --no-daemon -PisSingleShot=true -PisOnlyMain=false; ./gradlew jmh --no-daemon -PisSingleShot=false -PisOnlyMain=false" />
+    <option name="SCRIPT_TEXT" value="./gradlew jmh --no-daemon -Pmapper=Original -PisSingleShot=true -PbenchmarkSet=Full; ./gradlew jmh --no-daemon -Pmapper=Original -PisSingleShot=false -PbenchmarkSet=Full; ./gradlew jmh --no-daemon -PisSingleShot=true -PbenchmarkSet=Full; ./gradlew jmh --no-daemon -PisSingleShot=false -PbenchmarkSet=Full" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />
