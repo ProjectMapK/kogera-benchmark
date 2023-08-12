@@ -17,8 +17,8 @@ and benchmarks related to deserialization of `value class` are only run when usi
 
 A simple configuration is provided in arguments.  
 By rewriting the `isSingleShot` property, you can benchmark the performance on the first run.  
-By rewriting the `isOnlyMain` property, you can exec all benchmarks.  
-By rewriting the `mapper` property, you can benchmark using the `ObjectMapper` configuration defined in [org.wrongwrong.Mapper](./src/jmh/kotlin/org/wrongwrong/Mapper.kt).
+By rewriting the `mapper` property, you can benchmark using the `ObjectMapper` configuration defined in [org.wrongwrong.Mapper](./src/jmh/kotlin/org/wrongwrong/Mapper.kt).  
+By rewriting the `benchmarkSet` property, you can choose which benchmarks to run(Locally, it is recommended to run OnlyMain or Full).
 
 Available `mapper` types are as follows
 
@@ -30,10 +30,10 @@ Available `mapper` types are as follows
 The following is an example of running all four benchmarks described in the `README` in succession.
 
 ```shell
-./gradlew jmh -Pmapper=Original -PisSingleShot=true -PisOnlyMain=false;
-./gradlew jmh -Pmapper=Original -PisSingleShot=false -PisOnlyMain=false;
-./gradlew jmh -PisSingleShot=true -PisOnlyMain=false;
-./gradlew jmh -PisSingleShot=false -PisOnlyMain=false
+./gradlew jmh -Pmapper=Original -PisSingleShot=true -PbenchmarkSet=Full;
+./gradlew jmh -Pmapper=Original -PisSingleShot=false -PbenchmarkSet=Full;
+./gradlew jmh -PisSingleShot=true -PbenchmarkSet=Full;
+./gradlew jmh -PisSingleShot=false -PbenchmarkSet=Full
 ```
 
 If you want to specify more detailed options, edit `build.gradle.kts`.

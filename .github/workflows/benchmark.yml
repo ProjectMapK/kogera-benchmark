@@ -14,10 +14,58 @@ on:
 jobs:
   benchmark:
     runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        benchmark:
+          - name: BasicSerialize
+            conventional:
+              set: MainSer
+              mapper: Original
+            present:
+              set: MainSer
+              mapper: Kogera
+          - name: BasicDeserialize
+            conventional:
+              set: MainDeser
+              mapper: Original
+            present:
+              set: MainDeser
+              mapper: Kogera
+          - name: ValueClassSerialize
+            conventional:
+              set: WrapperSer
+              mapper: Kogera
+            present:
+              set: ValueClassSer
+              mapper: Kogera
+          - name: ValueClassDeserialize
+            conventional:
+              set: WrapperDeser
+              mapper: Kogera
+            present:
+              set: ValueClassDeser
+              mapper: Kogera
+          - name: StrictNullChecksKogera
+            conventional:
+              set: StrictNullChecks
+              mapper: Kogera
+            present:
+              set: StrictNullChecks
+              mapper: KogeraStrictNullCheck
+          - name: StrictNullChecksOriginal
+            conventional:
+              set: StrictNullChecks
+              mapper: Original
+            present:
+              set: StrictNullChecks
+              mapper: OriginalStrictNullCheck
+        is-single-shot: [true, false]
     timeout-minutes: 1200
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Make report dir
+        run: mkdir tmp
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: Set up java
@@ -25,51 +73,47 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
+      - name: Benchmark Conventional
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 7.6.2
+          arguments: |
+            jmh
+            -Pmapper=${{ matrix.benchmark.conventional.mapper }}
+            -PbenchmarkSet=${{ matrix.benchmark.conventional.set }}
+            -PisSingleShot=${{ matrix.is-single-shot }}
+            -PfileName=Conventional
+      - name: Benchmark Present
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 7.6.2
+          arguments: |
+            jmh
+            -Pmapper=${{ matrix.benchmark.present.mapper }}
+            -PbenchmarkSet=${{ matrix.benchmark.present.set }}
+            -PisSingleShot=${{ matrix.is-single-shot }}
+            -PfileName=Present
+      - name: Upload Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: "${{ matrix.benchmark.name }}-${{ (matrix.is-single-shot && 'ss') || 'thrpt' }}"
+          path: tmp
+  update-reports:
+    runs-on: ubuntu-22.04
+    needs: benchmark
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Remove Old Reports
-        run: |
-          rm -f ./ci-reports/*.csv
-          rm -f ./ci-reports/*.txt
-      - name: Original Single Shot
-        uses: gradle/gradle-build-action@v2
+        run: | # TODO: remove ls -R
+          find ./ci-reports/ -type f -name '*.txt' -delete
+          find ./ci-reports/ -type f -name '*.csv' -delete
+          ls -R
+      - name: Download reports
+        uses: actions/download-artifact@v3
         with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=Original -PisSingleShot=true -PisOnlyMain=false
-      - name: Original Throughput
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=Original -PisSingleShot=false -PisOnlyMain=false
-      - name: Original StrictNullCheck Single Shot
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=OriginalStrictNullCheck -PisSingleShot=true -PisOnlyMain=false
-      - name: Original StrictNullCheck Throughput
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=OriginalStrictNullCheck -PisSingleShot=false -PisOnlyMain=false
-      - name: Kogera Single Shot
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -PisSingleShot=true -PisOnlyMain=false
-      - name: Kogera Throughput
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -PisSingleShot=false -PisOnlyMain=false
-      - name: Kogera StrictNullCheck Single Shot
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh  -Pmapper=KogeraStrictNullCheck -PisSingleShot=true -PisOnlyMain=false
-      - name: Kogera StrictNullCheck Throughput
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: 7.6.2
-          arguments: jmh -Pmapper=KogeraStrictNullCheck -PisSingleShot=false -PisOnlyMain=false
-      - name: Update Reports
+          path: ci-reports
+      - name: Commit Reports
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Reports
