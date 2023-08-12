@@ -16,9 +16,38 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        mapper: [Original, Kogera]
-        benchmark-set: [MainSer, MainDeser, ValueClassSer, ValueClassDeser, StrictNullChecks]
-        is-single-shot: [true, false]
+        benchmark:
+          - conventional:
+              set: MainSer
+              mapper: Original
+            present:
+              set: MainSer
+              mapper: Kogera
+          - conventional:
+              set: MainDeser
+              mapper: Original
+            present:
+              set: MainDeser
+              mapper: Kogera
+          - conventional:
+              set: WrapperSer
+              mapper: Kogera
+            present:
+              set: ValueClassSer
+              mapper: Kogera
+          - conventional:
+              set: WrapperDeser
+              mapper: Kogera
+            present:
+              set: ValueClassDeser
+              mapper: Kogera
+          - conventional:
+              set: StrictNullChecks
+              mapper: Original
+            present:
+              set: StrictNullChecks
+              mapper: Kogera
+        is-single-shot: [true]
     timeout-minutes: 1200
     steps:
       - name: Checkout
@@ -30,11 +59,15 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
-      - name: Benchmark
+      - name: Benchmark Conventional
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: 7.6.2
-          arguments: jmh -Pmapper=${{ matrix.mapper }} -PbenchmarkSet=${{ matrix.benchmark-set }} -PisSingleShot=${{ matrix.is-single-shot }}
+          arguments: |
+            jmh
+            -Pmapper=${{ matrix.benchmark.conventional.mapper }}
+            -PbenchmarkSet=${{ matrix.benchmark.conventional.set }}
+            -PisSingleShot=${{ matrix.is-single-shot }}
       - name: Update Reports
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
