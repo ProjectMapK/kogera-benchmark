@@ -105,10 +105,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Remove Old Reports
-        run: | # TODO: remove ls -R
+        run: |
           find ./ci-reports/ -type f -name '*.txt' -delete
           find ./ci-reports/ -type f -name '*.csv' -delete
-          ls -R
       - name: Download reports
         uses: actions/download-artifact@v3
         with:
