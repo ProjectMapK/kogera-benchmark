@@ -17,41 +17,48 @@ jobs:
     strategy:
       matrix:
         benchmark:
-          - conventional:
+          - name: MainSer
+            conventional:
               set: MainSer
               mapper: Original
             present:
               set: MainSer
               mapper: Kogera
-          - conventional:
-              set: MainDeser
-              mapper: Original
-            present:
-              set: MainDeser
-              mapper: Kogera
-          - conventional:
+          # - name: MainDeser
+          #   conventional:
+          #     set: MainDeser
+          #     mapper: Original
+          #   present:
+          #     set: MainDeser
+          #     mapper: Kogera
+          - name: ValueClassSer
+            conventional:
               set: WrapperSer
               mapper: Kogera
             present:
               set: ValueClassSer
               mapper: Kogera
-          - conventional:
-              set: WrapperDeser
-              mapper: Kogera
-            present:
-              set: ValueClassDeser
-              mapper: Kogera
-          - conventional:
-              set: StrictNullChecks
-              mapper: Original
-            present:
-              set: StrictNullChecks
-              mapper: Kogera
+          # - name: ValueClassDeser
+          #   conventional:
+          #     set: WrapperDeser
+          #     mapper: Kogera
+          #   present:
+          #     set: ValueClassDeser
+          #     mapper: Kogera
+          # - name: StrictNullChecks
+          #   conventional:
+          #     set: StrictNullChecks
+          #     mapper: Original
+          #   present:
+          #     set: StrictNullChecks
+          #     mapper: Kogera
         is-single-shot: [true]
     timeout-minutes: 1200
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Make report dir
+        run: mkdir tmp
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: Set up java
@@ -68,9 +75,35 @@ jobs:
             -Pmapper=${{ matrix.benchmark.conventional.mapper }}
             -PbenchmarkSet=${{ matrix.benchmark.conventional.set }}
             -PisSingleShot=${{ matrix.is-single-shot }}
-      - name: Update Reports
+            -PfileName=Conventional
+      - name: Benchmark Present
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 7.6.2
+          arguments: |
+            jmh
+            -Pmapper=${{ matrix.benchmark.present.mapper }}
+            -PbenchmarkSet=${{ matrix.benchmark.present.set }}
+            -PisSingleShot=${{ matrix.is-single-shot }}
+            -PfileName=Present
+      - name: Upload Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: "${{ matrix.benchmark.name }}-${{ (matrix.is-single-shot && 'ss') || 'thrpt' }}"
+          path: tmp
+  update-reports:
+    runs-on: ubuntu-22.04
+    needs: benchmark
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Download reports
+        uses: actions/download-artifact@v3
+        with:
+          path: ci-reports
+      - name: Display structure of downloaded files
+        run: ls -R
+      - name: Commit Reports
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Reports
-          skip_fetch: false
-          skip_checkout: false
