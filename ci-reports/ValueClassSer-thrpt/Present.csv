@@ -1,0 +1,4 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.wrongwrong.extra.ser.value_class.A_1P.call","thrpt",1,4,909944.230898,42888.122524,"ops/s"
+"org.wrongwrong.extra.ser.value_class.E_5P.call","thrpt",1,4,249563.121682,45453.799198,"ops/s"
+"org.wrongwrong.extra.ser.value_class.T_20P.call","thrpt",1,4,69741.384272,1162.982453,"ops/s"
