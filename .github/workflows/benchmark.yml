@@ -24,13 +24,13 @@ jobs:
             present:
               set: MainSer
               mapper: Kogera
-          # - name: MainDeser
-          #   conventional:
-          #     set: MainDeser
-          #     mapper: Original
-          #   present:
-          #     set: MainDeser
-          #     mapper: Kogera
+          - name: MainDeser
+            conventional:
+              set: MainDeser
+              mapper: Original
+            present:
+              set: MainDeser
+              mapper: Kogera
           - name: ValueClassSer
             conventional:
               set: WrapperSer
@@ -38,21 +38,21 @@ jobs:
             present:
               set: ValueClassSer
               mapper: Kogera
-          # - name: ValueClassDeser
-          #   conventional:
-          #     set: WrapperDeser
-          #     mapper: Kogera
-          #   present:
-          #     set: ValueClassDeser
-          #     mapper: Kogera
-          # - name: StrictNullChecks
-          #   conventional:
-          #     set: StrictNullChecks
-          #     mapper: Original
-          #   present:
-          #     set: StrictNullChecks
-          #     mapper: Kogera
-        is-single-shot: [true]
+          - name: ValueClassDeser
+            conventional:
+              set: WrapperDeser
+              mapper: Kogera
+            present:
+              set: ValueClassDeser
+              mapper: Kogera
+          - name: StrictNullChecks
+            conventional:
+              set: StrictNullChecks
+              mapper: Original
+            present:
+              set: StrictNullChecks
+              mapper: Kogera
+        is-single-shot: [true, false]
     timeout-minutes: 1200
     steps:
       - name: Checkout
