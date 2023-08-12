@@ -1,4 +1,0 @@
-"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
-"org.wrongwrong.extra.ser.wrapper.A_1P.call","ss",1,5,113.537418,19.144861,"ms/op"
-"org.wrongwrong.extra.ser.wrapper.E_5P.call","ss",1,5,117.177137,18.616061,"ms/op"
-"org.wrongwrong.extra.ser.wrapper.T_20P.call","ss",1,5,126.986689,7.602271,"ms/op"
