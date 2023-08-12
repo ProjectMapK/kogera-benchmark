@@ -45,13 +45,20 @@ jobs:
             present:
               set: ValueClassDeser
               mapper: Kogera
-          - name: StrictNullChecks
+          - name: StrictNullChecksKogera
+            conventional:
+              set: StrictNullChecks
+              mapper: Kogera
+            present:
+              set: StrictNullChecks
+              mapper: KogeraStrictNullCheck
+          - name: StrictNullChecksOriginal
             conventional:
               set: StrictNullChecks
               mapper: Original
             present:
               set: StrictNullChecks
-              mapper: Kogera
+              mapper: OriginalStrictNullCheck
         is-single-shot: [true, false]
     timeout-minutes: 1200
     steps:

@@ -35,15 +35,7 @@ val benchmarkSet: BenchmarkSet = (project.properties["benchmarkSet"] as? String)
     ?.let { BenchmarkSet.valueOf(it) }
     ?: BenchmarkSet.OnlyMain
 // @see org.wrongwrong.Mapper for find options
-val mapper: String = (project.properties["mapper"] as? String)
-    ?.let {
-        // for CI
-        if (benchmarkSet == BenchmarkSet.StrictNullChecks && (it == "Kogera" || it == "Original")) {
-            it + "StrictNullCheck"
-        } else {
-            it
-        }
-    } ?: "Kogera"
+val mapper: String = (project.properties["mapper"] as? String) ?: "Kogera"
 val isKogera = mapper.contains("Kogera")
 
 val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
