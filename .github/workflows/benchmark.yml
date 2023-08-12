@@ -17,28 +17,28 @@ jobs:
     strategy:
       matrix:
         benchmark:
-          - name: MainSer
+          - name: BasicSerialize
             conventional:
               set: MainSer
               mapper: Original
             present:
               set: MainSer
               mapper: Kogera
-          - name: MainDeser
+          - name: BasicDeserialize
             conventional:
               set: MainDeser
               mapper: Original
             present:
               set: MainDeser
               mapper: Kogera
-          - name: ValueClassSer
+          - name: ValueClassSerialize
             conventional:
               set: WrapperSer
               mapper: Kogera
             present:
               set: ValueClassSer
               mapper: Kogera
-          - name: ValueClassDeser
+          - name: ValueClassDeserialize
             conventional:
               set: WrapperDeser
               mapper: Kogera
