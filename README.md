@@ -63,14 +63,14 @@ The higher the score, the better.
 ### Deserialize
 `kogera` is particularly good at deserialization.
 
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vTZB9ByuRV9XS_eug0vM_IEx_Em_ObiuZMoClXAt7zVZQZ9EnhKCXmbTsRQpoLiBbje6H_R9Hf7v0RI/pubchart?oid=754117157&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSDpaOENd0a-qO_zK7C5_UkSxEKk7BxLjmyg8XVnPP0jj6J5rgoA8cCnm_lj7lflx6NDjvC1yMUPrce/pubchart?oid=1594997844&format=image)
 
 ### Serialize
 As for serialization performance, `Kogera` is slightly inferior.   
 This may be due to the fact that `Original`'s getters are handled by the almost plain `Jackson`,
 while `Kogera` sets an implicit name.
 
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vTZB9ByuRV9XS_eug0vM_IEx_Em_ObiuZMoClXAt7zVZQZ9EnhKCXmbTsRQpoLiBbje6H_R9Hf7v0RI/pubchart?oid=1424094114&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSLh6CF8Ow6kPD1EUPqyNO3qPC8qtsPeMuFZ1YeqU1OT6eCBBX8jwxo-LzDVi18LsHDlKbJA3TAWcuF/pubchart?oid=1594997844&format=image)
 
 ## SingleShot mode
 This is a comparison when the process is executed only once.  
@@ -79,12 +79,12 @@ The lower the score, the better.
 ### Deserialize
 Although not as different as the throughput mode, the trend is toward `Kogera` being better.  
 
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSkI9k_uQtaxfmvCTuXpU7u5KzTteMV63O8Uz4dod_LeuSRX-z2ZxR4J7broxtJVGa0zcnxbbPgLZeC/pubchart?oid=754117157&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8Tr1JxT-agRWgoq4T7tEM-WvoYmbsUYlpZ5BzAy1X9sv5J5QU1QoZnF8uNrWXYnxDZy6KWrqd-Dz7/pubchart?oid=1594997844&format=image)
 
 ### Serialize
 As for serialization, the difference is larger than in throughput mode, and I am considering improvements.
 
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSkI9k_uQtaxfmvCTuXpU7u5KzTteMV63O8Uz4dod_LeuSRX-z2ZxR4J7broxtJVGa0zcnxbbPgLZeC/pubchart?oid=1424094114&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRdynU4YG3xLrDFhZr4996tdpmekH9FeVSstBwA5U_bZ2sPTZpiqJtDTxA_uPyAhOffvgtSbMoWbQkN/pubchart?oid=1594997844&format=image)
 
 ## Comparison of normal class and `value class`
 This section compares the serialization and deserialization performance using `Kogera`
@@ -97,20 +97,20 @@ The reason for this is that the `value class` requires more reflection processin
 
 ### Throughput mode
 #### Deserialize
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQr4_nhi0wY05LfKLJobcRMUWgn-nACTuDmMsJSNhstbiA0ZDaDQqQfmAiTzjGrn6HhcihdywsDC2XY/pubchart?oid=1135896566&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vR5Q4ZR1-79wxOyCeKbYUK2x9MPG5X6NP6vjWkd3vrX1Jj9LmmmIGeZzXuDB87YVHUentSg_Km_dBU8/pubchart?oid=1594997844&format=image)
 
 #### Serialize
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQr4_nhi0wY05LfKLJobcRMUWgn-nACTuDmMsJSNhstbiA0ZDaDQqQfmAiTzjGrn6HhcihdywsDC2XY/pubchart?oid=746620310&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vToCbNCtK4vBbFQBZxPBO-7_UQEubTNDM4JQO_HmRT1ydDUyXm8Wqjep166SgUObc1F3m7iUas3XpmT/pubchart?oid=1594997844&format=image)
 
 ### SingleShot mode
 Although the difference is smaller in SingleShot mode,
 the tendency for inferior scores in the `value class` is still present.
 
 #### Deserialize
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQr4_nhi0wY05LfKLJobcRMUWgn-nACTuDmMsJSNhstbiA0ZDaDQqQfmAiTzjGrn6HhcihdywsDC2XY/pubchart?oid=1507400004&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQrHxIyPMW5u27PWUlT9fXxJX-F7LrRks_mIaYfJ4BhodtptKQluhwRqD76bwGivg8XIi5wTBiNF9Ky/pubchart?oid=1594997844&format=image)
 
 #### Serialize
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQr4_nhi0wY05LfKLJobcRMUWgn-nACTuDmMsJSNhstbiA0ZDaDQqQfmAiTzjGrn6HhcihdywsDC2XY/pubchart?oid=2008357899&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRuZdBEemGH8Rw5V-aLYJHZ1DeVPqo7f9uSSa2w1MKgUV6rZCefjhFfjiqodMF2QAQs3jleqlyqCDRd/pubchart?oid=1594997844&format=image)
 
 ## Comparison of strictNullChecks
 If the `StrictNullChecks` option is enabled,
@@ -125,16 +125,16 @@ For the `Collection`, there is almost no difference for `Kogera`, whereas for `O
 There is not much difference except for the `Collection`.
 
 #### original
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSgFV1Qiv8WWxJ83wUVJXVU9xagYSC7YVcCZAu3S51-VSBDT33qdJkqq3-Gqdl5vQHJsxkUPvSjihhv/pubchart?oid=351902777&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQXihzOd9NmRsjAGJ9jH2s0iCPutgGQ-2h7MgUCcKTRNeny8vn7w2uJIS9de3SvuIkVLGluVNFAPkgc/pubchart?oid=1594997844&format=image)
 
 #### kogera
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRtSIkLr1stFR2taQczT53qdiqlGzg3_j9xFyi9woBVTKSNEcen6h9-9jKvCLKTJUWSoLWFNKnoJpr6/pubchart?oid=351902777&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQfruDoDVPeQyW27J_Ig7nFOI-ItWDkXhXCk82Z8Fmd8MlfmV-0FS_PsyFlPpbF2v8nU1dtYVFvI08n/pubchart?oid=1594997844&format=image)
 
 ### SingleShot mode
 The trend is the same as for the throughput mode, but the difference is smaller.
 
 #### original
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQixP8gQJ1uiQTCiXWDfYi4SmKBeSlJfBZx2uZ34PJIFBR454T_ubMrz2_lma0VVxKGOwkWnZRgqEes/pubchart?oid=351902777&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRzTTZVNDOnI257B-ufXCnwkKWUJvCt5HUhWwaWjlq8hFbgYaJmoUBZZxoKQEvEQqS7beGH7mq9LB-m/pubchart?oid=1594997844&format=image)
 
 #### kogera
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPItNnF2urmh3xbGpsbD_1CvUzKO6cTKSQYHQrZTTUb5e0s_sYvELJXjTp3yqDBsBbKx6bSFjypa_M/pubchart?oid=351902777&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vTYxIPUawD5d7RkBoEZZso3Ul2aHqHcbSKWBs2ncw07lyTcVdvZw_S-m9-60NJs0JKvPSNaXNJjPCXK/pubchart?oid=1594997844&format=image)
