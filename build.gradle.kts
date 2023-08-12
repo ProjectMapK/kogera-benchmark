@@ -1,3 +1,4 @@
+import me.champeau.gradle.JMHPluginExtension
 import java.time.format.DateTimeFormatter
 import java.time.LocalDateTime
 
@@ -123,6 +124,33 @@ fun BenchmarkSet.includes(): List<String> = when (this) {
     BenchmarkSet.Full -> listOf("org.wrongwrong.*")
 }
 
+fun JMHPluginExtension.setThrptDetails() {
+
+    if (isCi) {
+        // For CI, the setting is focused on score stability.
+        warmupForks = 3
+        warmupBatchSize = 3
+        warmupIterations = 3
+        warmup = "1500ms"
+
+        fork = 3
+        batchSize = 3
+        iterations = 3
+        timeOnIteration = "1500ms"
+    } else {
+        // For local, the setting that produces the minimum stable score experienced on the author's PC.
+        warmupForks = 2
+        warmupBatchSize = 3
+        warmupIterations = 3
+        warmup = "1s"
+
+        fork = 2
+        batchSize = 3
+        iterations = 2
+        timeOnIteration = "1500ms"
+    }
+}
+
 jmh {
     val mode: String
 
@@ -133,18 +161,9 @@ jmh {
         forceGC = true
     } else {
         mode = "thrpt"
-
-        warmupForks = 2
-        warmupBatchSize = 3
-        warmupIterations = 3
-        warmup = "1s"
-
-        fork = 2
-        batchSize = 3
-        iterations = 2
-        timeOnIteration = "1500ms"
-
         forceGC = false
+
+        setThrptDetails()
     }
     benchmarkMode = listOf(mode)
 
