@@ -14,6 +14,13 @@ repositories {
     maven { setUrl("https://jitpack.io") }
 }
 
+enum class Mapper {
+    Original,
+    Kogera,
+    OriginalStrictNullCheck,
+    KogeraStrictNullCheck;
+}
+
 enum class BenchmarkSet {
     // for CI
     MainSer,
@@ -35,8 +42,8 @@ val benchmarkSet: BenchmarkSet = (project.properties["benchmarkSet"] as? String)
     ?.let { BenchmarkSet.valueOf(it) }
     ?: BenchmarkSet.OnlyMain
 // @see org.wrongwrong.Mapper for find options
-val mapper: String = (project.properties["mapper"] as? String) ?: "Kogera"
-val isKogera = mapper.contains("Kogera")
+val mapper: Mapper = (project.properties["mapper"] as? String)?.let { Mapper.valueOf(it) } ?: Mapper.Kogera
+val isKogera = mapper.name.contains("Kogera")
 
 val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
 val isCi: Boolean = System.getenv().containsKey("CI") // True when executed in GitHub Actions
@@ -111,19 +118,21 @@ fun BenchmarkSet.includes(): List<String> = when (this) {
     BenchmarkSet.WrapperSer -> listOf("org.wrongwrong.extra.ser.wrapper.*")
     BenchmarkSet.WrapperDeser -> listOf("org.wrongwrong.extra.deser.wrapper.*")
     BenchmarkSet.StrictNullChecks ->
-        listOf("org.wrongwrong.extra.deser.value_class.Collections", "org.wrongwrong.main.deser.*")
+        listOf("org.wrongwrong.extra.deser.Collections", "org.wrongwrong.main.deser.*")
     BenchmarkSet.OnlyMain -> listOf("org.wrongwrong.main.*")
     BenchmarkSet.Full -> listOf("org.wrongwrong.*")
 }
 
 jmh {
+    val mode: String
+
     if (isSingleShot) {
-        benchmarkMode = listOf("ss")
+        mode = "ss"
         timeUnit = "ms"
 
         forceGC = true
     } else {
-        benchmarkMode = listOf("thrpt")
+        mode = "thrpt"
 
         warmupForks = 2
         warmupBatchSize = 3
@@ -137,6 +146,7 @@ jmh {
 
         forceGC = false
     }
+    benchmarkMode = listOf(mode)
 
     include = benchmarkSet.includes()
     exclude = if (benchmarkSet == BenchmarkSet.Full && !isKogera)
@@ -149,7 +159,6 @@ jmh {
 
     resultFormat = "CSV"
 
-    val mode = if (isSingleShot) "ss" else "thrpt"
     val name = if (isCi) {
         ciFileName!!
     } else {
