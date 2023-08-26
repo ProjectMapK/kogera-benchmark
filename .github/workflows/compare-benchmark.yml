@@ -1,0 +1,92 @@
+on:
+  workflow_dispatch:
+    inputs:
+      conventional-type:
+        description: local jar or remote
+        required: true
+        type: choice
+        options:
+          - kogera local jar
+          - kogera remote
+          - original local jar
+          - original remote
+      conventional-version:
+        description: snapshot-jar or remote version
+        required: true
+        type: string
+      present-type:
+        description: local jar or remote
+        required: true
+        type: choice
+        options:
+          - kogera local jar
+          - kogera remote
+          - original local jar
+          - original remote
+      present-version:
+        description: snapshot-jar or remote version
+        required: true
+        type: string
+jobs:
+  benchmark:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        is-single-shot: [true]
+        # is-single-shot: [true, false]
+    timeout-minutes: 1200
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Make report dir
+        run: mkdir tmp
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
+      - name: Set up java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+      - name: Benchmark Conventional
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 7.6.2
+          arguments: |
+            jmh
+            -Pmapper=${{ matrix.benchmark.conventional.mapper }}
+            -PbenchmarkSet=Full
+            -PisSingleShot=${{ matrix.is-single-shot }}
+            -PfileName="Conventional-${{ (matrix.is-single-shot && 'ss') || 'thrpt' }}"
+      - name: Benchmark Present
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 7.6.2
+          arguments: |
+            jmh
+            -Pmapper=${{ matrix.benchmark.present.mapper }}
+            -PbenchmarkSet=Full
+            -PisSingleShot=${{ matrix.is-single-shot }}
+            -PfileName="Present-${{ (matrix.is-single-shot && 'ss') || 'thrpt' }}"
+      - name: Upload Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: "${{ matrix.benchmark.name }}-${{ (matrix.is-single-shot && 'ss') || 'thrpt' }}"
+          path: tmp
+  update-reports:
+    runs-on: ubuntu-22.04
+    needs: benchmark
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Remove Old Reports
+        run: |
+          find ./compare-reports/ -type f -name '*.txt' -delete
+          find ./compare-reports/ -type f -name '*.csv' -delete
+      - name: Download reports
+        uses: actions/download-artifact@v3
+        with:
+          path: ci-reports
+      - name: Commit Reports
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Reports
