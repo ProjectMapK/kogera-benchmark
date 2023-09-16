@@ -62,7 +62,8 @@ Due to the performance degradation associated with the additional features,
 
 ## Comparison of normal class and `value class`
 This section compares the serialization and deserialization performance using `Kogera`
-for the `value class` and the `data class` (`wrapper`).
+for the `value class` and the `data class` (`wrapper`).  
+Only `present` is compared, since the use of default arguments makes almost no difference in principle.
 
 Overall, the `value class` scores are significantly inferior.  
 The reason for this is that the `value class` requires more reflection processing.

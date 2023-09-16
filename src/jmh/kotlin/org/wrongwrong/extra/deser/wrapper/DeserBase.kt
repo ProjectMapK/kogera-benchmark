@@ -26,7 +26,4 @@ abstract class DeserBase<T : Any>(
 
     @Benchmark
     fun present(): T = mapper.readValue(fullJson, clazz)
-
-    @Benchmark
-    fun missing(): T = mapper.readValue(replacedJson, clazz)
 }
