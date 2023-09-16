@@ -118,8 +118,9 @@ fun BenchmarkSet.includes(): List<String> = when (this) {
     BenchmarkSet.ValueClassDeser -> listOf("org.wrongwrong.extra.deser.value_class.*")
     BenchmarkSet.WrapperSer -> listOf("org.wrongwrong.extra.ser.wrapper.*")
     BenchmarkSet.WrapperDeser -> listOf("org.wrongwrong.extra.deser.wrapper.*")
+    // missing is excluded from the comparison because they are theoretically less affected by StrictNullChecks
     BenchmarkSet.StrictNullChecks ->
-        listOf("org.wrongwrong.extra.deser.Collections", "org.wrongwrong.main.deser.*")
+        listOf("org.wrongwrong.extra.deser.Collections", "org.wrongwrong.main.deser.*.present")
     BenchmarkSet.OnlyMain -> listOf("org.wrongwrong.main.*")
     BenchmarkSet.Full -> listOf("org.wrongwrong.*")
 }
