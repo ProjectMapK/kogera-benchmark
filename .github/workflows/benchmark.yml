@@ -61,6 +61,7 @@ jobs:
               mapper: OriginalStrictNullCheck
         is-single-shot: [true, false]
     timeout-minutes: 60
+    name: "${{ matrix.benchmark.name }}-${{ (matrix.is-single-shot && 'ss') || 'thrpt' }}"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
