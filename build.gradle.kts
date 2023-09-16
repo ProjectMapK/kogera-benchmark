@@ -50,7 +50,7 @@ val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
 val isCi: Boolean = System.getenv().containsKey("CI") // True when executed in GitHub Actions
 val ciFileName: String? = project.properties["fileName"] as String?
 
-val kogeraVersion = "2.15.2-beta3"
+val kogeraVersion = "228e5466bc"
 val originalVersion = "2.15.2"
 
 dependencies {
