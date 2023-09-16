@@ -60,7 +60,7 @@ jobs:
               set: StrictNullChecks
               mapper: OriginalStrictNullCheck
         is-single-shot: [true, false]
-    timeout-minutes: 1200
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
