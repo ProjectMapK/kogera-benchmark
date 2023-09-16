@@ -128,7 +128,7 @@ fun JMHPluginExtension.setThrptDetails() {
 
     if (isCi) {
         // For CI, the setting is focused on score stability.
-        warmupForks = 3
+        warmupForks = 2
         warmupBatchSize = 3
         warmupIterations = 3
         warmup = "1500ms"
