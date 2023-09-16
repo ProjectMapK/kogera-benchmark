@@ -125,7 +125,6 @@ fun BenchmarkSet.includes(): List<String> = when (this) {
 }
 
 fun JMHPluginExtension.setThrptDetails() {
-
     if (isCi) {
         // For CI, the setting is focused on score stability.
         warmupForks = 2
@@ -159,6 +158,13 @@ jmh {
         timeUnit = "ms"
 
         forceGC = true
+
+        // For CI, the setting is focused on score stability.
+        if (isCi) {
+            fork = 10
+        } else {
+            fork = 5
+        }
     } else {
         mode = "thrpt"
         forceGC = false
