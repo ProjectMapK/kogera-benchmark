@@ -68,7 +68,7 @@ Only `present` is compared, since the use of default arguments makes almost no d
 Overall, the `value class` scores are significantly inferior.  
 The reason for this is that the `value class` requires more reflection processing.
 
-In `Kogera`, the `JsonUnbox` annotation has been added to improve the performance of serialization, which requires only `unbox`.
+In `Kogera`, the `JsonKUnbox` annotation has been added to improve the performance of serialization, which requires only `unbox`.
 When used, the throughput will outperform the `data class`.
 
 ### Throughput mode
@@ -79,7 +79,7 @@ When used, the throughput will outperform the `data class`.
 ##### Normal
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vToCbNCtK4vBbFQBZxPBO-7_UQEubTNDM4JQO_HmRT1ydDUyXm8Wqjep166SgUObc1F3m7iUas3XpmT/pubchart?oid=1594997844&format=image)
 
-##### With `JsonUnbox`
+##### With `JsonKUnbox`
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSfIMsy639_XZK9zXHMGopw6xLQAy9yTm_sFiZSBWwZ_awaxI0a56SAvzrlJIY6hK8bYIu2kfJ0h5lx/pubchart?oid=1594997844&format=image)
 
 ### SingleShot mode
@@ -93,7 +93,7 @@ the tendency for inferior scores in the `value class` is still present.
 ##### Normal
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRuZdBEemGH8Rw5V-aLYJHZ1DeVPqo7f9uSSa2w1MKgUV6rZCefjhFfjiqodMF2QAQs3jleqlyqCDRd/pubchart?oid=1594997844&format=image)
 
-##### With `JsonUnbox`
+##### With `JsonKUnbox`
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRDbC6WJhOLs2AWp1-U7zeUcmSRjkf-jmHk3tgcpR1GA_o-maUndT516WpdJaiK8GQH1T-LF1ewP37x/pubchart?oid=1594997844&format=image)
 
 ## Comparison of strictNullChecks
