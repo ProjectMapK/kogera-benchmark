@@ -1,11 +1,11 @@
 package org.wrongwrong.extra.ser.json_unbox_value_class
 
-import io.github.projectmapk.jackson.module.kogera.annotation.JsonUnbox
+import io.github.projectmapk.jackson.module.kogera.annotation.JsonKUnbox
 import kotlin.random.Random
 import kotlin.reflect.KFunction
 
 @JvmInline
-@JsonUnbox
+@JsonKUnbox
 value class ValueClass(val value: Int)
 
 fun <T> KFunction<T>.fromRandomIntValues() = call(
