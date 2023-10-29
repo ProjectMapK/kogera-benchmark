@@ -38,12 +38,12 @@ jobs:
             present:
               set: ValueClassSer
               mapper: Kogera
-          - name: ValueClassSerializeWithJsonUnbox
+          - name: ValueClassSerializeWithJsonKUnbox
             conventional:
               set: WrapperSer
               mapper: Kogera
             present:
-              set: ValueClassSerWithJsonUnbox
+              set: ValueClassSerWithJsonKUnbox
               mapper: Kogera
           - name: ValueClassDeserialize
             conventional:

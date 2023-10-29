@@ -27,7 +27,7 @@ enum class BenchmarkSet {
     MainSer,
     MainDeser,
     ValueClassSer,
-    ValueClassSerWithJsonUnbox,
+    ValueClassSerWithJsonKUnbox,
     ValueClassDeser,
     WrapperSer,
     WrapperDeser,
@@ -116,7 +116,7 @@ fun BenchmarkSet.includes(): List<String> = when (this) {
     BenchmarkSet.MainSer -> listOf("org.wrongwrong.main.ser.*")
     BenchmarkSet.MainDeser -> listOf("org.wrongwrong.main.deser.*")
     BenchmarkSet.ValueClassSer -> listOf("org.wrongwrong.extra.ser.value_class.*")
-    BenchmarkSet.ValueClassSerWithJsonUnbox -> listOf("org.wrongwrong.extra.ser.json_unbox_value_class.*")
+    BenchmarkSet.ValueClassSerWithJsonKUnbox -> listOf("org.wrongwrong.extra.ser.json_k_unbox_value_class.*")
     BenchmarkSet.ValueClassDeser -> listOf("org.wrongwrong.extra.deser.value_class.*")
     BenchmarkSet.WrapperSer -> listOf("org.wrongwrong.extra.ser.wrapper.*")
     BenchmarkSet.WrapperDeser -> listOf("org.wrongwrong.extra.deser.wrapper.*")

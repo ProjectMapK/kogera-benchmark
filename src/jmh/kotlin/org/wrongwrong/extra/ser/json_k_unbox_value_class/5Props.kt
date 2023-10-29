@@ -1,4 +1,4 @@
-package org.wrongwrong.extra.ser.json_unbox_value_class
+package org.wrongwrong.extra.ser.json_k_unbox_value_class
 
 import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level

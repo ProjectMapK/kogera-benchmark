@@ -1,4 +1,0 @@
-"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
-"org.wrongwrong.extra.ser.json_unbox_value_class.A_1P.call","ss",1,10,141.535170,7.953758,"ms/op"
-"org.wrongwrong.extra.ser.json_unbox_value_class.E_5P.call","ss",1,10,149.008496,10.701632,"ms/op"
-"org.wrongwrong.extra.ser.json_unbox_value_class.T_20P.call","ss",1,10,165.500719,13.631065,"ms/op"

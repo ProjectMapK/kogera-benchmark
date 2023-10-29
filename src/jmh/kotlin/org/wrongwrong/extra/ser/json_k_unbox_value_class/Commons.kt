@@ -1,4 +1,4 @@
-package org.wrongwrong.extra.ser.json_unbox_value_class
+package org.wrongwrong.extra.ser.json_k_unbox_value_class
 
 import io.github.projectmapk.jackson.module.kogera.annotation.JsonKUnbox
 import kotlin.random.Random
