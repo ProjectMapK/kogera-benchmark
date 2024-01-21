@@ -51,8 +51,8 @@ val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
 val isCi: Boolean = System.getenv().containsKey("CI") // True when executed in GitHub Actions
 val ciFileName: String? = project.properties["fileName"] as String?
 
-val kogeraVersion = "2.16.0-beta9"
-val originalVersion = "2.16.0"
+val kogeraVersion = "2.16.1-beta10"
+val originalVersion = "2.16.1"
 
 dependencies {
     jmhImplementation(kotlin("reflect"))
