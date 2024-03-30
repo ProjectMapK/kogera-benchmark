@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.KotlinFeature
 import com.fasterxml.jackson.module.kotlin.KotlinModule
+import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper as originalMapper
 import io.github.projectmapk.jackson.module.kogera.KotlinFeature as KogeraFeature
 import io.github.projectmapk.jackson.module.kogera.KotlinModule as KogeraModule
@@ -14,14 +15,19 @@ private fun ObjectMapper.applyCommonOptions() =
 
 enum class Mapper {
     Original {
-        override val value: ObjectMapper = originalMapper().applyCommonOptions()
+        override val value: ObjectMapper = originalMapper {
+            enable(KotlinFeature.KotlinPropertyNameAsImplicitName)
+        }.applyCommonOptions()
     },
     Kogera {
         override val value: ObjectMapper = kogeraMapper().applyCommonOptions()
     },
     OriginalStrictNullCheck {
         override val value: ObjectMapper = ObjectMapper()
-            .registerModule(KotlinModule.Builder().enable(KotlinFeature.StrictNullChecks).build())
+            .registerKotlinModule {
+                enable(KotlinFeature.StrictNullChecks)
+                    .enable(KotlinFeature.KotlinPropertyNameAsImplicitName)
+            }
             .applyCommonOptions()
     },
     KogeraStrictNullCheck {
