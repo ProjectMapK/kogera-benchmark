@@ -198,4 +198,23 @@ jmh {
     val outputDir = if (isCi) "${project.rootDir}/tmp" else "${project.rootDir}/jmh-reports"
     resultsFile = project.file("${outputDir}/${name}.csv")
     humanOutputFile = if (isCi) null else project.file("${outputDir}/${name}.txt")
+
+    // Output options when jmh task
+    if (project.gradle.startParameter.taskNames.contains("jmh")) {
+        val props = this::class.java.methods
+            .filter {
+                it.returnType.run { this == Property::class.java || this == ListProperty::class.java } &&
+                        it.parameterCount == 0
+            }
+            .associate {
+                // All property names begin with "get" and are formatted with substring(3).
+                it.name.substring(3) to when (val value = it.invoke(this)) {
+                    is Property<*> -> value.orNull
+                    is ListProperty<*> -> value.orNull
+                    else -> throw IllegalStateException("${value::class.java} is not Property")
+                }
+            }
+
+        logger.log(LogLevel.LIFECYCLE, "> JMH props:\n$props")
+    }
 }
