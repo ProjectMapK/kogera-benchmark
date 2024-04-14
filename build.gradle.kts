@@ -120,8 +120,10 @@ fun BenchmarkSet.includes(): List<String> = when (this) {
     BenchmarkSet.WrapperSer -> listOf("org.wrongwrong.extra.ser.wrapper.*")
     BenchmarkSet.WrapperDeser -> listOf("org.wrongwrong.extra.deser.wrapper.*")
     // missing is excluded from the comparison because they are theoretically less affected by StrictNullChecks
+    // JMH plugin has been updated from 0.5.3, and now it is combined into one regular expression,
+    // because it caused an error when multiple expressions were specified.
     BenchmarkSet.StrictNullChecks ->
-        listOf("org.wrongwrong.extra.deser.Collections", "org.wrongwrong.main.deser.*_Ctor.present")
+        listOf("org.wrongwrong.extra.deser.Collections|org.wrongwrong.main.deser.*_Ctor.present")
     BenchmarkSet.OnlyMain -> listOf("org.wrongwrong.main.*")
     BenchmarkSet.Full -> listOf("org.wrongwrong.*")
 }
