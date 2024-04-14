@@ -1,10 +1,10 @@
-import me.champeau.gradle.JMHPluginExtension
+import me.champeau.jmh.JmhParameters
 import java.time.format.DateTimeFormatter
 import java.time.LocalDateTime
 
 plugins {
     kotlin("jvm") version "1.8.22"
-    id("me.champeau.gradle.jmh") version "0.5.3"
+    id("me.champeau.jmh") version "0.7.2"
 }
 
 group = "org.wrongwrong"
@@ -67,12 +67,13 @@ tasks.test {
     useJUnitPlatform()
 }
 
-val generatedSrcPath = "$buildDir/generated/kotlin"
+val generatedSrcPath = "${layout.buildDirectory.get()}/generated/kotlin"
 kotlin {
     // for PackageVersion
     sourceSets["jmh"].apply {
         kotlin.srcDir(generatedSrcPath)
     }
+    jvmToolchain(8)
 }
 
 tasks {
@@ -107,7 +108,6 @@ abstract class BenchmarkBase {
 
     compileKotlin {
         dependsOn.add(generateBenchmarkBase)
-        kotlinOptions.jvmTarget = "1.8"
     }
 }
 
@@ -126,7 +126,7 @@ fun BenchmarkSet.includes(): List<String> = when (this) {
     BenchmarkSet.Full -> listOf("org.wrongwrong.*")
 }
 
-fun JMHPluginExtension.setThrptDetails() {
+fun JmhParameters.setThrptDetails() {
     if (isCi) {
         // For CI, the setting is focused on score stability.
         warmupForks = 2
@@ -162,10 +162,10 @@ jmh {
         forceGC = true
 
         // For CI, the setting is focused on score stability.
-        if (isCi) {
-            fork = 10
+        fork = if (isCi) {
+            10
         } else {
-            fork = 5
+            5
         }
     } else {
         mode = "thrpt"
@@ -175,14 +175,14 @@ jmh {
     }
     benchmarkMode = listOf(mode)
 
-    include = benchmarkSet.includes()
-    exclude = if (benchmarkSet == BenchmarkSet.Full && !isKogera)
+    includes = benchmarkSet.includes()
+    excludes = if (benchmarkSet == BenchmarkSet.Full && !isKogera)
         listOf("org.wrongwrong.extra.deser.value_class.*")
     else
         emptyList()
 
     failOnError = true
-    isIncludeTests = false
+    includeTests = false
 
     resultFormat = "CSV"
 
