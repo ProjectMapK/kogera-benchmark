@@ -83,18 +83,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
       - name: Benchmark Conventional
         run: |
-          ./gradlew jmh \
-          -Pmapper=${{ matrix.benchmark.conventional.mapper }} \
-          -PbenchmarkSet=${{ matrix.benchmark.conventional.set }} \
-          -PisSingleShot=${{ matrix.is-single-shot }} \
-          -PfileName=Conventional
+          ./gradlew jmh -Pmapper=${{ matrix.benchmark.conventional.mapper }} -PbenchmarkSet=${{ matrix.benchmark.conventional.set }} -PisSingleShot=${{ matrix.is-single-shot }} -PfileName=Conventional
       - name: Benchmark Present
         run: |
-          ./gradlew jmh \
-          -Pmapper=${{ matrix.benchmark.present.mapper }} \
-          -PbenchmarkSet=${{ matrix.benchmark.present.set }} \
-          -PisSingleShot=${{ matrix.is-single-shot }} \
-          -PfileName=Present
+          ./gradlew jmh -Pmapper=${{ matrix.benchmark.present.mapper }} -PbenchmarkSet=${{ matrix.benchmark.present.set }} -PisSingleShot=${{ matrix.is-single-shot }} -PfileName=Present
       - name: Upload Reports
         uses: actions/upload-artifact@v4
         with:
