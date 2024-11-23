@@ -18,7 +18,7 @@ On the other hand, there is almost no difference in serialization,
 because there is no particular point that can be improved.
 
 # About benchmark results
-The currently published scores compare `jackson-module-kogera 2.15.2-beta4` with `jackson-module-kotlin 2.15.2`.
+Check [build.gradle.kts](https://github.com/ProjectMapK/kogera-benchmark/blob/master/build.gradle.kts#L54-L55) for the currently compared version.
 
 The letters `A` and `E` in the benchmark names are values to adjust the sort order of the results
 and represent the number of properties (1 = `A`, 5 = `E`, ...).
