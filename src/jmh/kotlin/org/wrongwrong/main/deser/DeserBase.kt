@@ -12,7 +12,7 @@ abstract class DeserBase<T : Any>(
     private val creator: KFunction<T>,
     clazz: KClass<T>
 ) : BenchmarkBase() {
-    private val clazz = clazz.java
+    private val type = mapper.constructType(clazz.java)
     private lateinit var fullJson: String
     private lateinit var replacedJson: String
 
@@ -25,8 +25,8 @@ abstract class DeserBase<T : Any>(
     }
 
     @Benchmark
-    fun present(): T = mapper.readValue(fullJson, clazz)
+    fun present(): T = mapper.readValue(fullJson, type)
 
     @Benchmark
-    fun missing(): T = mapper.readValue(replacedJson, clazz)
+    fun missing(): T = mapper.readValue(replacedJson, type)
 }

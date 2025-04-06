@@ -1,6 +1,5 @@
 package org.wrongwrong.extra.deser
 
-import com.fasterxml.jackson.module.kotlin.readValue
 import org.openjdk.jmh.annotations.Benchmark
 import org.openjdk.jmh.annotations.Level
 import org.openjdk.jmh.annotations.Setup
@@ -10,6 +9,10 @@ open class Collections : BenchmarkBase() {
     class ArrayWrapper(val value: Array<Int>)
     data class ListWrapper(val value: List<Int>)
     data class MapWrapper(val value: Map<String, Int>)
+
+    val arrayWrapperType = mapper.constructType(ArrayWrapper::class.java)
+    val listWrapperType = mapper.constructType(ListWrapper::class.java)
+    val mapWrapperType = mapper.constructType(MapWrapper::class.java)
 
     lateinit var arraySrc: String
     lateinit var mapSrc: String
@@ -31,11 +34,11 @@ open class Collections : BenchmarkBase() {
     }
 
     @Benchmark
-    fun array() = mapper.readValue<ArrayWrapper>(arraySrc)
+    fun array(): ArrayWrapper = mapper.readValue(arraySrc, arrayWrapperType)
 
     @Benchmark
-    fun list() = mapper.readValue<ListWrapper>(arraySrc)
+    fun list(): ListWrapper = mapper.readValue(arraySrc, listWrapperType)
 
     @Benchmark
-    fun map() = mapper.readValue<MapWrapper>(mapSrc)
+    fun map(): MapWrapper = mapper.readValue(mapSrc, mapWrapperType)
 }
