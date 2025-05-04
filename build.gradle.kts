@@ -3,7 +3,7 @@ import java.time.format.DateTimeFormatter
 import java.time.LocalDateTime
 
 plugins {
-    kotlin("jvm") version "1.9.25"
+    kotlin("jvm") version "2.0.21"
     id("me.champeau.jmh") version "0.7.2"
 }
 
@@ -51,7 +51,7 @@ val isSingleShot: Boolean = getOptionOrDefault("isSingleShot", false)
 val isCi: Boolean = System.getenv().containsKey("CI") // True when executed in GitHub Actions
 val ciFileName: String? = project.properties["fileName"] as String?
 
-val kogeraVersion = "2.19.0-beta21"
+val kogeraVersion = "2.19.0-beta22"
 val originalVersion = "2.19.0"
 
 dependencies {
