@@ -77,7 +77,7 @@ jobs:
       - name: Set up java
         uses: actions/setup-java@v4
         with:
-          java-version: '8'
+          java-version: '17'
           distribution: 'corretto'
       - name: Set up gradle
         uses: gradle/actions/setup-gradle@v4
