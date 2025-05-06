@@ -4,7 +4,7 @@ import java.time.LocalDateTime
 
 plugins {
     kotlin("jvm") version "2.0.21"
-    id("me.champeau.jmh") version "0.7.2"
+    id("me.champeau.jmh") version "0.7.3"
 }
 
 group = "org.wrongwrong"
