@@ -26,6 +26,7 @@ enum class BenchmarkSet {
     // for CI
     MainSer,
     MainDeser,
+    ValueClass,
     ValueClassSer,
     ValueClassSerWithJsonKUnbox,
     ValueClassDeser,
@@ -114,6 +115,13 @@ abstract class BenchmarkBase {
 fun BenchmarkSet.includes(): List<String> = when (this) {
     BenchmarkSet.MainSer -> listOf("org.wrongwrong.main.ser.*")
     BenchmarkSet.MainDeser -> listOf("org.wrongwrong.main.deser.*")
+    BenchmarkSet.ValueClass -> listOf(
+        "org.wrongwrong.extra.ser.value_class.*",
+        "org.wrongwrong.extra.ser.json_k_unbox_value_class.*",
+        "org.wrongwrong.extra.deser.value_class.*"
+    )
+        .joinToString("|")
+        .let { listOf(it) }
     BenchmarkSet.ValueClassSer -> listOf("org.wrongwrong.extra.ser.value_class.*")
     BenchmarkSet.ValueClassSerWithJsonKUnbox -> listOf("org.wrongwrong.extra.ser.json_k_unbox_value_class.*")
     BenchmarkSet.ValueClassDeser -> listOf("org.wrongwrong.extra.deser.value_class.*")
