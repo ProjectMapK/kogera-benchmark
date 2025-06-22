@@ -1,7 +1,0 @@
-"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
-"org.wrongwrong.extra.deser.Collections.array","ss",1,10,23.841954,1.559142,"ms/op"
-"org.wrongwrong.extra.deser.Collections.list","ss",1,10,24.763754,4.148700,"ms/op"
-"org.wrongwrong.extra.deser.Collections.map","ss",1,10,25.006779,1.051155,"ms/op"
-"org.wrongwrong.main.deser.A_1P_Ctor.present","ss",1,10,24.604291,3.981288,"ms/op"
-"org.wrongwrong.main.deser.E_5P_Ctor.present","ss",1,10,22.815513,0.786738,"ms/op"
-"org.wrongwrong.main.deser.T_20P_Ctor.present","ss",1,10,28.538233,0.968987,"ms/op"
