@@ -52,20 +52,6 @@ jobs:
             present:
               set: ValueClassDeser
               mapper: Kogera
-          - name: StrictNullChecksKogera
-            conventional:
-              set: StrictNullChecks
-              mapper: Kogera
-            present:
-              set: StrictNullChecks
-              mapper: KogeraStrictNullCheck
-          - name: StrictNullChecksOriginal
-            conventional:
-              set: StrictNullChecks
-              mapper: Original
-            present:
-              set: StrictNullChecks
-              mapper: OriginalStrictNullCheck
         is-single-shot: [true, false]
     timeout-minutes: 60
     name: "${{ matrix.benchmark.name }}-${{ (matrix.is-single-shot && 'ss') || 'thrpt' }}"

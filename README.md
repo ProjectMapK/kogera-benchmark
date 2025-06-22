@@ -96,32 +96,9 @@ the tendency for inferior scores in the `value class` is still present.
 ##### With `JsonKUnbox`
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRDbC6WJhOLs2AWp1-U7zeUcmSRjkf-jmHk3tgcpR1GA_o-maUndT516WpdJaiK8GQH1T-LF1ewP37x/pubchart?oid=1594997844&format=image)
 
-## Comparison of strictNullChecks
-If the `StrictNullChecks` option is enabled,
-the deserialization score associated with the `Collection` is reduced because of element checking.  
-Also, `Original` will theoretically lower the score for all deserialization operations because of the `null` checks required for all arguments on every call.  
-On the other hand, `Kogera` has its own improvements to reduce these score reductions.
-
-Here are the benchmark scores defined in `extra.deser.Collections` and `main.deser`.
-
-### Throughput mode
-For the `Collection`, there is almost no difference for `Kogera`, whereas for `Original` there is a relatively large difference.  
-There is not much difference except for the `Collection`.
-
-#### Original
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQXihzOd9NmRsjAGJ9jH2s0iCPutgGQ-2h7MgUCcKTRNeny8vn7w2uJIS9de3SvuIkVLGluVNFAPkgc/pubchart?oid=1594997844&format=image)
-
-#### Kogera
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vQfruDoDVPeQyW27J_Ig7nFOI-ItWDkXhXCk82Z8Fmd8MlfmV-0FS_PsyFlPpbF2v8nU1dtYVFvI08n/pubchart?oid=1594997844&format=image)
-
-### SingleShot mode
-The trend is the same as for the throughput mode, but the difference is smaller.
-
-#### Original
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vRzTTZVNDOnI257B-ufXCnwkKWUJvCt5HUhWwaWjlq8hFbgYaJmoUBZZxoKQEvEQqS7beGH7mq9LB-m/pubchart?oid=1594997844&format=image)
-
-#### Kogera
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vTYxIPUawD5d7RkBoEZZso3Ul2aHqHcbSKWBs2ncw07lyTcVdvZw_S-m9-60NJs0JKvPSNaXNJjPCXK/pubchart?oid=1594997844&format=image)
+## ~~Comparison of strictNullChecks~~
+Since `2.19.0`, `jackson-module-kotlin` provides a `strictNullChecks` implementation equivalent to `kogera`,
+so this comparison is no longer updated.
 
 # How to run benchmarks
 `./gradlew jmh` to run the benchmark.  
