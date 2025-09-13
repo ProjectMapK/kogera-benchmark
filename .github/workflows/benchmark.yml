@@ -57,11 +57,11 @@ jobs:
     name: "${{ matrix.benchmark.name }}-${{ (matrix.is-single-shot && 'ss') || 'thrpt' }}"
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Make report dir
         run: mkdir tmp
       - name: Set up java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '17'
           distribution: 'corretto'
@@ -83,16 +83,16 @@ jobs:
     needs: benchmark
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Remove Old Reports
         run: |
           find ./ci-reports/ -type f -name '*.txt' -delete
           find ./ci-reports/ -type f -name '*.csv' -delete
       - name: Download reports
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: ci-reports
       - name: Commit Reports
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: Update Reports
