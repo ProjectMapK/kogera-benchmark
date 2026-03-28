@@ -1,4 +1,4 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
-"org.wrongwrong.extra.ser.wrapper.A_1P.call","ss",1,10,94.109279,2.363493,"ms/op"
-"org.wrongwrong.extra.ser.wrapper.E_5P.call","ss",1,10,96.311138,5.497899,"ms/op"
-"org.wrongwrong.extra.ser.wrapper.T_20P.call","ss",1,10,108.581295,2.429884,"ms/op"
+"org.wrongwrong.extra.ser.wrapper.A_1P.call","ss",1,10,100.999286,4.025867,"ms/op"
+"org.wrongwrong.extra.ser.wrapper.E_5P.call","ss",1,10,104.376276,3.519874,"ms/op"
+"org.wrongwrong.extra.ser.wrapper.T_20P.call","ss",1,10,117.360076,4.316044,"ms/op"
